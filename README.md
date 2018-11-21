@@ -48,6 +48,7 @@ Project
 │   │
 │   └───Library                 // keep in this group all shared code between features
 │   │   │
+│   │   └───Configuration       // Classes with the app configuration, like serverURL 
 │   │   └───Model               // Persisted data model
 │   │   └───Feed
 │   │   └───Services
@@ -55,6 +56,11 @@ Project
 │   │
 │   └───Resources               // Resource files, like images, grouped by type
 │   │   │   Images.xcassets     // Keep all images in one asset to help searches
+│   │   │
+│   │   └───environments        // Plist files with the configuration of each environment
+│   │   │   |   integration.plist
+│   │   │   |   production.plist
+│   │   │   |   staging.plist
 │   │   │
 │   │   └───pdf
 │   │   └───certificates
@@ -91,7 +97,7 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 
 ### Sample codes
 
-- [Swift 4 json parsing and creating](https://grokswift.com/json-swift-4/)
+- [Swift 4 json parsing and creating](https://grokswift.com/json-swift-4/) _(See class Library/Model/PersonDTO.swift)_
 - Load plist project files
 - Web Service 
 - Multi environment configurations
