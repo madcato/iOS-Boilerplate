@@ -7,10 +7,10 @@ This project includes some basic source codes, configurations and external integ
 ### Files
 
 - README.md (this file)
-- CHANGELOG
-- CONTRIBUTING.md
-- LICENSE.md
-- .gitignore
+- CHANGELOG [How to keep a CHANGELOG](https://keepachangelog.com/en/0.3.0/)
+- CONTRIBUTING.md (sample file from **Ruby On Rails**)
+- LICENSE (initially MIT license)
+- .gitignore (created with http://www.gitignore.io)
 
 ### Configureation
 
