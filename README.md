@@ -115,7 +115,22 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 - [Swift style guide](wiki) Mantain in your wiki the conventions used by your team
   [Use Linkeding swift style guide](https://github.com/linkedin/swift-style-guide)
 
-## Howto install
+## HowTo install
 
-// TODO: explain how to install this project from zero.
+###Requirements
+
+* Xcode 9+
+* iOS 10+
+
+###Getting the source
+
+First, check out the source, including all the dependencies:
+
+git clone --recurse-submodules https://github.com/madcato/iOS-Boilerplate
+
+###Building it
+
+Open the project, iOS-Boilerplate.xcodeproj, and build and run.
+
+
 
