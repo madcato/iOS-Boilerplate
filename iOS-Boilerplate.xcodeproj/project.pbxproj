@@ -17,6 +17,9 @@
 		3485E7B021A55E07002248B7 /* iOS_BoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E7AF21A55E07002248B7 /* iOS_BoilerplateUITests.swift */; };
 		3485E80921A5899F002248B7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3485E7FC21A58984002248B7 /* Alamofire.framework */; };
 		3485E80A21A5899F002248B7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3485E7FC21A58984002248B7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3485E80E21A58A5C002248B7 /* PersonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E80D21A58A5C002248B7 /* PersonDTO.swift */; };
+		3485E81021A59083002248B7 /* PersonDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E80F21A59083002248B7 /* PersonDTOTests.swift */; };
+		3485E81221A59358002248B7 /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = 3485E81121A59358002248B7 /* person.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +125,9 @@
 		3485E7AF21A55E07002248B7 /* iOS_BoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_BoilerplateUITests.swift; sourceTree = "<group>"; };
 		3485E7B121A55E07002248B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3485E7F021A58984002248B7 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		3485E80D21A58A5C002248B7 /* PersonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDTO.swift; sourceTree = "<group>"; };
+		3485E80F21A59083002248B7 /* PersonDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDTOTests.swift; sourceTree = "<group>"; };
+		3485E81121A59358002248B7 /* person.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = person.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,7 @@
 			children = (
 				3485E7D021A58115002248B7 /* Feature001 */,
 				3485E7A621A55E07002248B7 /* Info.plist */,
+				3485E80F21A59083002248B7 /* PersonDTOTests.swift */,
 			);
 			path = "iOS-BoilerplateTests";
 			sourceTree = "<group>";
@@ -243,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				3485E79321A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld */,
+				3485E80D21A58A5C002248B7 /* PersonDTO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +312,7 @@
 		3485E7CC21A58041002248B7 /* json */ = {
 			isa = PBXGroup;
 			children = (
+				3485E81121A59358002248B7 /* person.json */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -527,6 +536,7 @@
 			files = (
 				3485E79A21A55E07002248B7 /* LaunchScreen.storyboard in Resources */,
 				3485E79721A55E07002248B7 /* Assets.xcassets in Resources */,
+				3485E81221A59358002248B7 /* person.json in Resources */,
 				3485E79221A55E05002248B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3485E80E21A58A5C002248B7 /* PersonDTO.swift in Sources */,
 				3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */,
 				3485E78F21A55E05002248B7 /* ViewController.swift in Sources */,
 				3485E78D21A55E05002248B7 /* AppDelegate.swift in Sources */,
@@ -562,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3485E81021A59083002248B7 /* PersonDTOTests.swift in Sources */,
 				3485E7A521A55E07002248B7 /* iOS_BoilerplateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
