@@ -10,7 +10,7 @@ This project includes some basic source codes, configurations and external integ
 - CHANGELOG [How to keep a CHANGELOG](https://keepachangelog.com/en/0.3.0/)
 - CONTRIBUTING.md (sample file from **Ruby On Rails**)
 - LICENSE (initially MIT license)
-- .gitignore (created with http://www.gitignore.io)
+- .gitignore (created with [gitignore.io](http://www.gitignore.io))
 
 ### Configuration
 
@@ -112,7 +112,8 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 
 ## Project wiki
 
-- [Swift style guide](wiki)
+- [Swift style guide](wiki) Mantain in your wiki the conventions used by your team
+  [Use Linkeding swift style guide](https://github.com/linkedin/swift-style-guide)
 
 ## Howto install
 
