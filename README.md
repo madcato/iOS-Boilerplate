@@ -132,5 +132,3 @@ git clone --recurse-submodules https://github.com/madcato/iOS-Boilerplate
 
 Open the project, iOS-Boilerplate.xcodeproj, and build and run.
 
-
-
