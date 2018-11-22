@@ -31,4 +31,14 @@ class ConfigurationTest: XCTestCase {
         XCTAssertEqual(Configuration.apiToken, "token")
     }
 
+    func testChangeEnviromentConfiguration() {
+        Configuration.environment = Environment.production
+        XCTAssertEqual(Configuration.serverURL, "http://production.domain.com")
+        XCTAssertEqual(Configuration.apiToken, "2138901234h12kg435")
+
+        Configuration.environment = Environment.staging
+        XCTAssertEqual(Configuration.serverURL, "http://pre.domain.com")
+        XCTAssertEqual(Configuration.apiToken, "adsfaf232323c4kjhg234l76")
+    }
+
 }
