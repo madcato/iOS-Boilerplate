@@ -24,6 +24,7 @@
 		3485E82A21A5B0D9002248B7 /* environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3485E82721A5B0D9002248B7 /* environments.plist */; };
 		3485E82D21A5B1F0002248B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E82C21A5B1EF002248B7 /* Environment.swift */; };
 		3485E83021A5B5FB002248B7 /* ConfigurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E82E21A5B496002248B7 /* ConfigurationTest.swift */; };
+		3487742321A6AC32001675D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3487742121A6AC32001675D3 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,9 @@
 		3485E82721A5B0D9002248B7 /* environments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
 		3485E82C21A5B1EF002248B7 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		3485E82E21A5B496002248B7 /* ConfigurationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTest.swift; sourceTree = "<group>"; };
+		3487742221A6AC32001675D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = "iOS-Boilerplate/Base.lproj/Localizable.strings"; sourceTree = SOURCE_ROOT; };
+		3487742421A6AC4F001675D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3487742721A6AC74001675D3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = ../../es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +302,7 @@
 				3485E7CB21A58035002248B7 /* Html */,
 				3485E7CC21A58041002248B7 /* Json */,
 				3485E7C921A58025002248B7 /* PDF */,
+				3487741E21A6AB77001675D3 /* Strings */,
 				3485E7CD21A58048002248B7 /* Video */,
 			);
 			path = Resources;
@@ -412,6 +417,14 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		3487741E21A6AB77001675D3 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				3487742121A6AC32001675D3 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -500,6 +513,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 3485E78021A55E05002248B7;
 			productRefGroup = 3485E78A21A55E05002248B7 /* Products */;
@@ -577,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3485E79A21A55E07002248B7 /* LaunchScreen.storyboard in Resources */,
+				3487742321A6AC32001675D3 /* Localizable.strings in Resources */,
 				3485E79721A55E07002248B7 /* Assets.xcassets in Resources */,
 				3485E81221A59358002248B7 /* person.json in Resources */,
 				3485E79221A55E05002248B7 /* Main.storyboard in Resources */,
@@ -669,6 +684,16 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		3487742121A6AC32001675D3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3487742221A6AC32001675D3 /* Base */,
+				3487742421A6AC4F001675D3 /* en */,
+				3487742721A6AC74001675D3 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -677,6 +702,7 @@
 			baseConfigurationReference = 3485E82121A5ABA0002248B7 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -739,6 +765,7 @@
 			baseConfigurationReference = 3485E82321A5AE37002248B7 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -919,6 +946,7 @@
 			baseConfigurationReference = 3485E82421A5AE39002248B7 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
