@@ -6,8 +6,8 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
-import Foundation
 import Alamofire
+import Foundation
 
 class BookNomadsService {
     func getBook(by isbn: String, onOK: @escaping (BookDTO?) -> Void, onError: @escaping (Int, String) -> Void) {
@@ -15,20 +15,19 @@ class BookNomadsService {
             .validate()
             .responseJSON { response in
                 guard case let .failure(error) = response.result else {
-                    do{
+                    do {
                         guard let json = response.data else {
                             return
                         }
                         let decoder = JSONDecoder()
                         let book = try decoder.decode(BookDTO.self, from: json)
                         onOK(book)
-                    }catch let err{
-                        print(err)
+                    } catch {
+                        print(error)
                     }
                     return
                 }
-                onError(response.response?.statusCode ?? 0,error.localizedDescription)
-        }
-
+                onError(response.response?.statusCode ?? 0, error.localizedDescription)
+            }
     }
 }

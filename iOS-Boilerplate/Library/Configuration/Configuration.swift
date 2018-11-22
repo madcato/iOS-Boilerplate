@@ -56,19 +56,20 @@ class Configuration {
 
     private init() {}
 
-    private static var internalEnvironmentsConfig: [String : [String : String] ]?
+    private static var internalEnvironmentsConfig: [String: [String: String] ]?
 
-    private static var environmentsConfig: [String : [String : String] ] = {
+    private static var environmentsConfig: [String: [String: String] ] = {
         if let conf = internalEnvironmentsConfig {
             return conf
         }
         if let url = Bundle.main.url(forResource: "environments", withExtension: "plist") {
             do {
                 let data = try Data(contentsOf: url)
+                let prop = PropertyListSerialization.ReadOptions(rawValue: 0)
                 let plist = try PropertyListSerialization.propertyList(from: data,
-                                                                      options:
-                                                            PropertyListSerialization.ReadOptions.init(rawValue: 0),
-                                                                      format: nil) as? [String : [String : String]]
+                                                                       options: prop,
+                                                                       format: nil)
+                    as? [String: [String: String]]
                 if let result = plist {
                     internalEnvironmentsConfig = result
                     return result
