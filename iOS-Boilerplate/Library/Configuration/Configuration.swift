@@ -11,31 +11,68 @@ import UIKit
 class Configuration {
     static var environment: Environment = {
         if let configuration = Bundle.main.object(forInfoDictionaryKey: "Configuration") as? String {
-            if configuration == "Staging" {
+            if configuration == "staging" {
                 return Environment.staging
             }
-            if configuration == "Integration" {
+            if configuration == "integration" {
                 return Environment.integration
             }
-            if configuration == "Production" {
+            if configuration == "production" {
                 return Environment.production
             }
         }
         return Environment.integration
     }()
 
-//    static var serverURL: String {
-//        switch(environment) {
-//        case .production
-//        }
-//    }
+    static var serverURL: String {
+        return info(with: kServerURLkey)
+    }
 
-    private lazy var enviroments
-    private lazy var productionConfig: [String : String] = {
-        if let path = Bundle.main.path(forResource: "production", ofType: "plist") {
-            return Dictionary.init(contentsOfFile: path)
+    static var apiToken: String {
+        return info(with: kAPIToken)
+    }
+
+    private static func info(with key: String) -> String {
+        guard let conf = environmentsConfig[environment.rawValue] else {
+            print("Environment \(environment.rawValue) not defined")
+            assert(false)
+            return ""
         }
-        return Dictionary()
-    }()
+        guard let result = conf[key] else {
+            print("Key \(key) not defined in enviroments.plist")
+            assert(false) // Key not defined in enviroments.plist
+            return ""
+        }
+        return result
+    }
+
+    private static let kServerURLkey = "serverURL"
+    private static let kAPIToken = "api-token"
+
     private init() {}
+
+    private static var internalEnvironmentsConfig: [String : [String : String] ]?
+
+    private static var environmentsConfig: [String : [String : String] ] = {
+        if let conf = internalEnvironmentsConfig {
+            return conf
+        }
+        if let url = Bundle.main.url(forResource: "environments", withExtension: "plist") {
+            do {
+                let data = try Data(contentsOf: url)
+                let plist = try PropertyListSerialization.propertyList(from: data,
+                                                                      options:
+                                                            PropertyListSerialization.ReadOptions.init(rawValue: 0),
+                                                                      format: nil) as? [String : [String : String]]
+                if let result = plist {
+                    internalEnvironmentsConfig = result
+                    return result
+                }
+            } catch {
+                 print(error)
+                assert(false) // Error reading environemnts.plist file
+            }
+        }
+        return [:]
+    }()
 }

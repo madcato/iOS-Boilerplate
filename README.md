@@ -80,6 +80,7 @@ Project
 │    └───CoreMotion.framework
 │    │   libz.dylib
 │    │   libarichive.framework
+│    │
 │    └───Security.framework
 │
 └───iOS-BoilerplateTests
@@ -98,10 +99,9 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 ### Sample codes
 
 - [Swift 4 json parsing and creating](https://grokswift.com/json-swift-4/) _(See class Library/Model/PersonDTO.swift)_
-- Load plist project files
-- Web Service 
-- Multi environment configurations
+- Multi environment configurations [Using Xcode Configuration (.xcconfig) to Manage Different Build Settings](https://appcoda.com/xcconfig-guide/)
 - Multi language
+- Web Service 
 - Testing, Mocks, UI testing 
 - Core Data
 - Basic utils
