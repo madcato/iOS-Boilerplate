@@ -32,6 +32,10 @@ class Configuration {
         return info(with: kAPIToken)
     }
 
+    static var basePath: String {
+        return info(with: kBasePath)
+    }
+
     private static func info(with key: String) -> String {
         guard let conf = environmentsConfig[environment.rawValue] else {
             print("Environment \(environment.rawValue) not defined")
@@ -48,6 +52,7 @@ class Configuration {
 
     private static let kServerURLkey = "serverURL"
     private static let kAPIToken = "api-token"
+    private static let kBasePath = "basePath"
 
     private init() {}
 

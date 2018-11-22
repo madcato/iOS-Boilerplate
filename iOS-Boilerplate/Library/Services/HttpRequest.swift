@@ -7,54 +7,56 @@
 //
 
 import Foundation
+import UIKit
 import Alamofire
 
-enum HTTPRequestMethod {
+enum HttpRequestMethod {
     case Get
     case Post
 }
 
-class HTTPRequest {
+class HttpRequest {
 
     func baseUrl() -> String {
-        return Settings.kDefaultProtocol
-            + Settings.kDefaultServerHost
-            + Settings.kBasePath
+        return Configuration.serverURL + Configuration.basePath
     }
 
     func endpointUrl(endpoint: String) -> String {
         return baseUrl() + endpoint
     }
 
+    func customHeaders() -> [String: String] {
+        return [:]
+    }
+
     //    curl -H 'Content-Type: application/json'
     //        -H 'Accept: application/json'
     //        -H 'secret: aakjsdklfj;ajsdflkajsdkfj'
-    //        -X POST http://localhost:3000/api/v1/employee_user/login -d "{\"email\":\"vela.dan@gmail.com\",\"password\":\"tQDJC42S1OmTvnitug9edA\"}"
+    //        -X POST http://localhost:3000/api/v1/employee_user/login -d "{\"email\":\"vela.dan@gmail.com\",
+    //                                                                     \"password\":\"tQDJC42S1OmTvnitug9edA\"}"
 
-    func convertMethod(method: HTTPRequestMethod) -> HTTPMethod {
-        switch method {
-        case .Get:
-            return HTTPMethod.get
-        case .Post:
-            return HTTPMethod.post
-        }
-    }
-
-    func start(method:HTTPRequestMethod, endpoint: String, parameters: [String:String], onOK: @escaping (Any?) -> (), onError: @escaping (Int, String) -> ()) {
-        let headers = [
+    func start(method: HttpRequestMethod,
+               endpoint: String,
+               parameters: [String:String],
+               onOK: @escaping (Any?) -> (),
+               onError: @escaping (Int, String) -> ()) {
+        var headers = [
             "Accept": "application/json",
-            "secret": Settings.kApiKey
+            "secret": Configuration.apiToken
         ]
-
-        Alamofire.request(endpointUrl(endpoint: endpoint),
-                          method: convertMethod(method: method),
+        headers = headers.merging(customHeaders(), uniquingKeysWith: { (a, b) -> String in b })
+        let url = endpointUrl(endpoint: endpoint)
+        Alamofire.request(url,
+                          method: translate(method: method),
                           parameters: parameters,
                           encoding: JSONEncoding(options: []),
-                          headers: headers)
+                          headers: [:])
             .validate()
             .responseJSON { response in
-                guard case let .failure(error) = response.result else { onOK(response.result.value); return; }
-
+                guard case let .failure(error) = response.result else {
+                    onOK(response.result.value)
+                    return
+                }
                 if let error = error as? AFError {
                     switch error {
                     case .invalidURL(let url):
@@ -68,14 +70,14 @@ class HTTPRequest {
                     case .responseValidationFailed(let reason):
                         print("Response validation failed: \(error.localizedDescription)")
                         print("Failure Reason: \(reason)")
-
                         switch reason {
                         case .dataFileNil, .dataFileReadFailed:
                             print("Downloaded file could not be read")
                         case .missingContentType(let acceptableContentTypes):
                             print("Content Type Missing: \(acceptableContentTypes)")
                         case .unacceptableContentType(let acceptableContentTypes, let responseContentType):
-                            print("Response content type: \(responseContentType) was unacceptable: \(acceptableContentTypes)")
+                            print("Response content type: \(responseContentType) was unacceptable: " +
+                                "\(acceptableContentTypes)")
                         case .unacceptableStatusCode(let code):
                             print("Response status code was unacceptable: \(code)")
                         }
@@ -83,15 +85,22 @@ class HTTPRequest {
                         print("Response serialization failed: \(error.localizedDescription)")
                         print("Failure Reason: \(reason)")
                     }
-
-                    print("Underlying error: \(error.underlyingError)")
+                    print("Underlying error: \(String(describing: error.underlyingError))")
                 } else if let error = error as? URLError {
                     print("URLError occurred: \(error)")
                 } else {
                     print("Unknown error: \(error)")
                 }
-
                 onError(response.response?.statusCode ?? 0,error.localizedDescription)
+        }
+    }
+
+    private func translate(method: HttpRequestMethod) -> HTTPMethod {
+        switch method {
+        case .Get:
+            return HTTPMethod.get
+        case .Post:
+            return HTTPMethod.post
         }
     }
 }

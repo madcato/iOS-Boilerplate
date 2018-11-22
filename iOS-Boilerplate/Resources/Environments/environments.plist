@@ -8,6 +8,8 @@
 		<string>token</string>
 		<key>serverURL</key>
 		<string>http://int.domain.com</string>
+		<key>basePath</key>
+		<string>/api</string>
 	</dict>
 	<key>production</key>
 	<dict>
@@ -15,6 +17,8 @@
 		<string>2138901234h12kg435</string>
 		<key>serverURL</key>
 		<string>http://production.domain.com</string>
+		<key>basePath</key>
+		<string>/api</string>
 	</dict>
 	<key>staging</key>
 	<dict>
@@ -22,6 +26,8 @@
 		<string>adsfaf232323c4kjhg234l76</string>
 		<key>serverURL</key>
 		<string>http://pre.domain.com</string>
+		<key>basePath</key>
+		<string>/api</string>
 	</dict>
 </dict>
 </plist>
