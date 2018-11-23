@@ -5,7 +5,7 @@ stages:
 build_project:
   stage: build
   script:
-    - xcodebuild clean -project iOS-Boilerplate.xcodeproj -scheme OSFramework | xcpretty
+    - xcodebuild clean -project iOS-Boilerplate.xcodeproj -scheme iOS-Boilerplate | xcpretty
   tags:
     - xcode
 
