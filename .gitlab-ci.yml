@@ -12,7 +12,6 @@ build_project:
 fastlane_test:
   stage: test
   script:
-    - bundle update
     - bundle exec fastlane tests
   tags:
     - xcode
