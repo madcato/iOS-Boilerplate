@@ -1,0 +1,21 @@
+stages:
+  - build
+  - test
+
+build_project:
+  stage: build
+  script:
+    - xcodebuild clean -project iOS-Boilerplate.xcodeproj -scheme OSFramework | xcpretty
+  tags:
+    - xcode
+
+fastlane_test:
+  stage: test
+  script:
+    - bundle update
+    - bundle exec fastlane tests
+  tags:
+    - xcode
+
+variables:
+  GIT_SSL_NO_VERIFY: "1"

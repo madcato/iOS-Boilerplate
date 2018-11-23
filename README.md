@@ -142,3 +142,7 @@ Open the project, iOS-Boilerplate.xcodeproj, and build and run.
     $  bundle exec fastlane beta
 
 The computer where fastlane is going to run must have the provissioning and private key installed
+
+### Launch tests with fastlane
+
+    $  bundle exec fastlane tests
