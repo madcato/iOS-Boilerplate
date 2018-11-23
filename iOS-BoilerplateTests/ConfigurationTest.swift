@@ -22,14 +22,17 @@ class ConfigurationTest: XCTestCase {
     }
 
     func testConfiguration() {
+        Configuration.environment = Environment.integration
         XCTAssertEqual(Configuration.environment, Environment.integration)
     }
 
     func testServerURLConfiguration() {
+        Configuration.environment = Environment.integration
         XCTAssertEqual(Configuration.serverURL, "http://int.domain.com")
     }
 
     func testApiTokenConfiguration() {
+        Configuration.environment = Environment.integration
         XCTAssertEqual(Configuration.apiToken, "token")
     }
 

@@ -122,18 +122,23 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 
 ## HowTo install
 
-###Requirements
+### Requirements
 
 * Xcode 9+
 * iOS 10+
 
-###Getting the source
+### Getting the source
 
 First, check out the source, including all the dependencies:
 
 git clone --recurse-submodules https://github.com/madcato/iOS-Boilerplate
 
-###Building it
+### Building it
 
 Open the project, iOS-Boilerplate.xcodeproj, and build and run.
 
+### Build with fastlane
+
+    $  bundle exec fastlane beta
+
+The computer where fastlane is going to run must have the provissioning and private key installed
