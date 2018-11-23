@@ -153,6 +153,7 @@
 		340088F321A820640072B1F0 /* UIViewController+showAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+showAlert.swift"; sourceTree = "<group>"; };
 		340088FA21A822940072B1F0 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		340088FB21A822940072B1F0 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		340C8C5221A8385500D7178F /* iOS-Boilerplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Boilerplate.entitlements"; sourceTree = "<group>"; };
 		3485E78921A55E05002248B7 /* iOS-Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485E78C21A55E05002248B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3485E78E21A55E05002248B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -290,6 +291,7 @@
 		3485E78B21A55E05002248B7 /* iOS-Boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				340C8C5221A8385500D7178F /* iOS-Boilerplate.entitlements */,
 				3485E7C021A5639E002248B7 /* Startup */,
 				3485E7C221A57F4F002248B7 /* Feature001 */,
 				3485E7C321A57F7F002248B7 /* Library */,
@@ -577,6 +579,11 @@
 				TargetAttributes = {
 					3485E78821A55E05002248B7 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					3485E79F21A55E07002248B7 = {
 						CreatedOnToolsVersion = 10.0;
