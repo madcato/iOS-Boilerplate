@@ -111,7 +111,6 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 
 - [fastlane](https://fastlane.tools)
 - [CI/CD with giltlab](https://docs.gitlab.com/ee/ci/yaml/)
-- [sonarqube](https://www.sonarqube.org)
 - [Swiftlint](https://github.com/realm/SwiftLint)
 - [Dangerfile](https://github.com/danger/swift) llok https://github.com/realm/SwiftLint/blob/master/Dangerfile
 - ??? RubyOnRails subproject to test remote API
