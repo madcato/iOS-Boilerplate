@@ -26,7 +26,7 @@ before_script:
 danger_zone:
   stage: danger
   script:
-    - bundle exec danger --verify-ssl
+    - bundle exec danger
 
 variables:
   GIT_SSL_NO_VERIFY: "1"
