@@ -1,6 +1,10 @@
 stages:
   - build
   - test
+  - danger
+
+before_script:
+  - bundle install danger
 
 build_project:
   stage: build
@@ -16,6 +20,12 @@ fastlane_test:
   tags:
     - xcode
 
+danger_zone:
+  stage: danger
+  script:
+    - bundle exec danger
+
 variables:
   GIT_SSL_NO_VERIFY: "1"
   GIT_SUBMODULE_STRATEGY: recursive
+  DANGER_GITLAB_API_TOKEN: "bMZhSw-P7mM-VcnuFr24"
