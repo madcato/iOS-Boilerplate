@@ -1,25 +1,38 @@
 stages:
+<<<<<<< HEAD
   - build
   - test
   - danger
 
 before_script: 
   - bundle install danger
+=======
+#  - build
+#  - test
+  - danger
+>>>>>>> 3da7c7a336f810675a98c9efe950a44fee076c07
 
-build_project:
-  stage: build
-  script:
-    - xcodebuild clean -project iOS-Boilerplate.xcodeproj -scheme iOS-Boilerplate | xcpretty
-  tags:
-    - xcode
+#before_script:
+#  - bundle install
 
-fastlane_test:
-  stage: test
+#build_project:
+#  stage: build
+#  script:
+#    - xcodebuild clean -project iOS-Boilerplate.xcodeproj -scheme iOS-Boilerplate | xcpretty
+#  tags:
+#    - xcode
+
+#fastlane_test:
+#  stage: test
+#  script:
+#    - bundle exec fastlane tests
+#  tags:
+#    - xcode
+
+danger_zone:
+  stage: danger
   script:
-    - bundle update
-    - bundle exec fastlane tests
-  tags:
-    - xcode
+    - bundle exec danger
 
 danger:
   stage: danger
@@ -28,3 +41,5 @@ danger:
 
 variables:
   GIT_SSL_NO_VERIFY: "1"
+  GIT_SUBMODULE_STRATEGY: recursive
+  DANGER_GITLAB_API_TOKEN: "bMZhSw-P7mM-VcnuFr24"
