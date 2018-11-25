@@ -4,7 +4,7 @@ stages:
   - danger
 
 before_script: 
-  - bundle install danger
+  - bundle install
 
 #before_script:
 #  - bundle install
