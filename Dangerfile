@@ -15,3 +15,17 @@ fail("fit left in tests") if `grep -r fit specs/ `.length > 1
 message("This is a pru.")
 
 swiftlint.lint_files
+
+# xcodebuild
+xcodebuild.json_file = "./fastlane/reports/xcpretty-json-formatter-results.json"
+xcodebuild.parse_warnings # returns number of warnings
+xcodebuild.parse_errors # returns number of errors
+xcodebuild.parse_tests # returns number of test failures
+xcodebuild.perfect_build # returns a bool indicating if the build was perfect
+
+# xcov
+xcov.report(
+   scheme: 'iOS-Boilerplate',
+   project: 'iOS-Boilerplate.xcodeproj',
+   minimum_coverage_percentage: 25
+)
