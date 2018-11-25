@@ -1,6 +1,10 @@
 stages:
   - build
   - test
+  - danger
+
+before_script: 
+  - bundle install danger
 
 build_project:
   stage: build
@@ -16,6 +20,11 @@ fastlane_test:
     - bundle exec fastlane tests
   tags:
     - xcode
+
+danger:
+  stage: danger
+  script:
+    - bundle exec danger
 
 variables:
   GIT_SSL_NO_VERIFY: "1"
