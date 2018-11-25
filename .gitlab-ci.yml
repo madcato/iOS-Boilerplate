@@ -1,16 +1,10 @@
 stages:
-<<<<<<< HEAD
-  - build
-  - test
+#  - build
+#  - test
   - danger
 
 before_script: 
   - bundle install danger
-=======
-#  - build
-#  - test
-  - danger
->>>>>>> 3da7c7a336f810675a98c9efe950a44fee076c07
 
 #before_script:
 #  - bundle install
@@ -30,11 +24,6 @@ before_script:
 #    - xcode
 
 danger_zone:
-  stage: danger
-  script:
-    - bundle exec danger
-
-danger:
   stage: danger
   script:
     - bundle exec danger
