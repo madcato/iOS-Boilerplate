@@ -146,3 +146,6 @@ The computer where fastlane is going to run must have the provissioning and priv
 ### Launch tests with fastlane
 
     $  bundle exec fastlane tests
+    
+    
+
