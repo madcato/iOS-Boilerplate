@@ -24,6 +24,12 @@ platform :ios do
     upload_to_testflight
   end
 
+  lane :build do
+    get_certificates           # invokes cert
+    get_provisioning_profile   # invokes sigh
+    build_app(scheme: "iOS-Boilerplate")
+  end
+
   lane :tests do
     run_tests(scheme: "iOS-Boilerplate")
   end
