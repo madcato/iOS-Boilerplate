@@ -23,7 +23,9 @@ class OSDNIValidator: NSObject {
      - Returns: **true** if valid
     */
     func isValid(dni: String) -> Bool {
-        guard dni.count == 9 else { return false }
+        guard dni.count == 9 else {
+            return false
+        }
 
         var buffer = dni.uppercased()
         let range = buffer.makeRange(0..<1)
@@ -32,9 +34,11 @@ class OSDNIValidator: NSObject {
         buffer = buffer.replacingOccurrences(of: "Z", with: "2", options: .caseInsensitive, range: range)
 
         let number = buffer[..<(buffer.index(buffer.endIndex, offsetBy: -1))]
-        let baseNumber = Int(number)
+        guard let baseNumber = Int(number) else {
+            return false  // Is not a number
+        }
         let letterMap = "TRWAGMYFPDXBNJZSQVHLCKET"
-        let lettersIds = baseNumber! % 23
+        let lettersIds = baseNumber % 23
         let expectedLetter = letterMap[lettersIds]
         let providedLetter = buffer[8]
         return expectedLetter == providedLetter

@@ -12,12 +12,15 @@ extension UIResponder {
     func changeRootControllerTo(_ viewController: UIViewController,
                                 window: UIWindow?,
                                 onEnd: @escaping (_ ended: Bool) -> Void) {
+        guard let window = window else {
+            return
+        }
         // Show main view with animation
-        UIView.transition(with: window!,
+        UIView.transition(with: window,
                           duration: 0.8,
                           options: UIView.AnimationOptions.transitionCrossDissolve,
                           animations: {
-            window?.rootViewController = viewController
+            window.rootViewController = viewController
         },
                           completion: { (ended: Bool) in
             onEnd(ended)

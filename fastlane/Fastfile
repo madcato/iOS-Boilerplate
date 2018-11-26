@@ -42,6 +42,16 @@ platform :ios do
     )
   end
 
+  lane :lint do
+    swiftlint(
+    mode: :lint,
+    output_file: "swiftlint.result",
+    quiet: true,
+    reporter: "html",
+    ignore_exit_status: true
+  )
+  end
+
   def setMergeId
     `CI_MERGE_REQUEST_IID=$(curl --request GET --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" "https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/repository/commits/$CI_COMMIT_SHA/merge_requests" --insecure | jq --raw-output ".[0].iid")`
   end
@@ -49,7 +59,7 @@ platform :ios do
   lane :post_swiftlint_to_gitlab do
     setMergeId
     `echo "body=" > report.html`
-    `swiftlint lint --quiet --enable-all-rules --reporter html >> report.html`
+    `cat swiftlint.result >> report.html`
     `[ -n CI_MERGE_REQUEST_IID ] && curl --request POST --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" -d @report.html https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID/notes --insecure`
   end
 

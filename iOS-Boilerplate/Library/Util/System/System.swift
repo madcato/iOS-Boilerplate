@@ -100,8 +100,11 @@ class System {
             NSLog("Could not find Settings.bundle")
             return
         }
-        let settings = NSDictionary(contentsOfFile: settingsBundle.appending("Root.plist"))
-        if let preferences = settings!["PreferenceSpecifiers"] as? NSArray {
+        guard let settings = NSDictionary(contentsOfFile: settingsBundle.appending("Root.plist")) else {
+            NSLog("Could not load Root.plist")
+            return
+        }
+        if let preferences = settings["PreferenceSpecifiers"] as? NSArray {
             let defaultsToRegister: [String: Any] = collectProperties(preferences)
             UserDefaults.standard.register(defaults: defaultsToRegister)
         }

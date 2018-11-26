@@ -56,10 +56,11 @@ class Configuration {
 
     private init() {}
 
-    private static var internalEnvironmentsConfig: [String: [String: String] ]?
+    private static var internalEnvironmentsConfig: [String: [String: String]] = [:]
 
-    private static var environmentsConfig: [String: [String: String] ] = {
-        if let conf = internalEnvironmentsConfig {
+    private static var environmentsConfig: [String: [String: String]] = {
+        let conf = internalEnvironmentsConfig
+        if conf.isEmpty == false {
             return conf
         }
         if let url = Bundle.main.url(forResource: "environments", withExtension: "plist") {

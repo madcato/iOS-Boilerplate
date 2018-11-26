@@ -133,7 +133,7 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 
 First, check out the source, including all the dependencies:
 
-git clone --recurse-submodules https://github.com/madcato/iOS-Boilerplate
+    $ git clone --recurse-submodules https://github.com/madcato/iOS-Boilerplate
 
 ### Building it
 
@@ -148,6 +148,5 @@ The computer where fastlane is going to run must have the provissioning and priv
 ### Launch tests with fastlane
 
     $  bundle exec fastlane tests
-    
-    
+
 

@@ -17,6 +17,7 @@ build_project:
 lint_project:
   stage: lint
   script:
+    - gundel exec fastlane lint
     - bundle exec fastlane post_swiftlint_to_gitlab
   tags:
     - xcode
