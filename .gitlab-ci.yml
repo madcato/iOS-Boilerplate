@@ -9,7 +9,7 @@ before_script:
 build_project:
   stage: build
   script:
-    - xcodebuild clean -project iOS-Boilerplate.xcodeproj -scheme iOS-Boilerplate | xcpretty
+    - bundle exec fastlane build
   tags:
     - xcode
 
