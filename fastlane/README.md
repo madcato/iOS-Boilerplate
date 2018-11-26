@@ -31,6 +31,16 @@ fastlane ios build
 fastlane ios tests
 ```
 
+### ios cov
+```
+fastlane ios cov
+```
+
+### ios post_swiftlint_to_gitlab
+```
+fastlane ios post_swiftlint_to_gitlab
+```
+
 
 ----
 
