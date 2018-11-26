@@ -19,7 +19,7 @@ fastlane_test:
     - bundle exec fastlane tests
     - xcov -p iOS-Boilerplate.xcodeproj -s iOS-Boilerplate -o xcov_output
     - 'CI_MERGE_REQUEST_ID=$(curl --request GET --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" "https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/repository/commits/$CI_COMMIT_SHA/merge_requests" --insecure | jq --raw-output ".[0].id")'
-       - 'curl --request POST --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" -d @xcov_output/report.md https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_ID/notes --insecure'
+    - 'curl --request POST --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" -d @xcov_output/report.md https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_ID/notes --insecure'
   tags:
     - xcode
 
