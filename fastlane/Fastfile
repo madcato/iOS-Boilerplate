@@ -60,14 +60,14 @@ platform :ios do
   end
 
   lane :post_swiftlint_to_gitlab do
-    setMergeId
+    setMergeId()
     `echo "body=" > ../report.html`
     `cat ../swiftlint.result >> ../report.html`
     `[ -n CI_MERGE_REQUEST_IID ] && curl --request POST --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" -d @../report.html https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID/notes --insecure`
   end
 
   lane :post_cov_to_gitlab do
-    setMergeId
+    setMergeId()
     `echo "body=" > ../xreport.md`
     `cat ../xcov_output/report.md >> ../xreport.md`
     `'[ -n CI_MERGE_REQUEST_IID ] && curl --request POST --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" -d @../xreport.md https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID/notes --insecure`
