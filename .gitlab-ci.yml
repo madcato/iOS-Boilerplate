@@ -10,14 +10,14 @@ build_project:
   script:
     - bundle exec fastlane tests
     - bundle exec fastlane cov
-    - bundel exec fastlane post_cov_to_gitlab
+    - bundle exec fastlane post_cov_to_gitlab
   tags:
     - xcode
 
 lint_project:
   stage: lint
   script:
-    - gundel exec fastlane lint
+    - bundle exec fastlane lint
     - bundle exec fastlane post_swiftlint_to_gitlab
   tags:
     - xcode
