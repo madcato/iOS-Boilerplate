@@ -51,30 +51,4 @@ platform :ios do
     ignore_exit_status: true
   )
   end
-
-  def setMergeId
-    `echo CI_MERGE_REQUEST_IID`
-    `echo $CI_MERGE_REQUEST_IID`
-    `echo CI_MERGE_REQUEST_IID`
-    `curl --request GET --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" "https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/repository/commits/$CI_COMMIT_SHA/merge_requests" --insecure`
-    `CI_MERGE_REQUEST_IID=$(curl --request GET --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" "https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/repository/commits/$CI_COMMIT_SHA/merge_requests" --insecure | jq --raw-output ".[0].iid")`
-    `echo CI_MERGE_REQUEST_IID`
-    `echo $CI_MERGE_REQUEST_IID`
-    `echo CI_MERGE_REQUEST_IID`
-  end
-
-  lane :post_swiftlint_to_gitlab do
-    setMergeId
-    `echo "body=" > ../report.html`
-    `cat ../swiftlint.result >> ../report.html`
-    `[ -n CI_MERGE_REQUEST_IID ] && curl --request POST --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" -d @../report.html https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID/notes --insecure`
-  end
-
-  lane :post_cov_to_gitlab do
-    setMergeId
-    `echo "body=" > ../xreport.md`
-    `cat ../xcov_output/report.md >> ../xreport.md`
-    `'[ -n CI_MERGE_REQUEST_IID ] && curl --request POST --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" -d @../xreport.md https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID/notes --insecure`
-    `echo "curl --request POST --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" -d @../xreport.md https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID/notes --insecure"`
-  end
 end
