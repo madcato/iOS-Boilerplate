@@ -9,7 +9,7 @@
 import Foundation
 
 enum Environment: String {
-    case production = "Production"
-    case staging = "Staging"
-    case integration = "Integration"
+    case production
+    case staging
+    case integration
 }

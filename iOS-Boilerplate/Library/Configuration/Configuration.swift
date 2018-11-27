@@ -39,12 +39,10 @@ class Configuration {
     private static func info(with key: String) -> String {
         guard let conf = environmentsConfig[environment.rawValue] else {
             print("Environment \(environment.rawValue) not defined")
-            assert(false)
             return ""
         }
         guard let result = conf[key] else {
-            print("Key \(key) not defined in enviroments.plist")
-            assert(false) // Key not defined in enviroments.plist
+            print("Key \(key) not defined in enviroments.plist")  // Key not defined in enviroments.plist
             return ""
         }
         return result
@@ -76,8 +74,7 @@ class Configuration {
                     return result
                 }
             } catch {
-                 print(error)
-                assert(false) // Error reading environemnts.plist file
+                 print(error)  // Error reading environemnts.plist file
             }
         }
         return [:]
