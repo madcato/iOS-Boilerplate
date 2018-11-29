@@ -1,5 +1,6 @@
 [![pipeline status](https://gitlab.veladan.org/veladan/ios-boilerplate/badges/master/pipeline.svg)](https://gitlab.veladan.org/veladan/ios-boilerplate/commits/master)
 [![coverage report](https://gitlab.veladan.org/veladan/ios-boilerplate/badges/master/coverage.svg)](https://gitlab.veladan.org/veladan/ios-boilerplate/commits/master)
+
 # iOS Boilerplate
 
 This project includes some basic source codes, configurations and external integrations to start a basic iOS project
@@ -183,7 +184,7 @@ Open the project, iOS-Boilerplate.xcodeproj, and build and run.
 
 The computer where fastlane is going to run must have the provissioning and private key installed
 
-### Send app to TaestFlight with fastlane
+### Send app to TestFlight with fastlane
 
     $  bundle exec fastlane beta
 
