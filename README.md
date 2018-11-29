@@ -97,7 +97,11 @@ Project
 Included in the project directly using [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). It's better not to use Carthage or Cocoapods.
 
 - [Alamofire](https://github.com/Alamofire/Alamofire)
+  For accesing remote http servers
 - [SDWebImage](https://github.com/SDWebImage/SDWebImage)
+  To download and show images asyncronously
+- [Mansonry](https://github.com/SnapKit/Masonry)
+  To use Constraints from code without becoming insane.
 
 This way is easy to keep the control of the version using git submodules. You can try different branches easyly. You can try new versions, and rollback it if necesary.
 
