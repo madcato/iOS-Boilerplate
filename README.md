@@ -98,6 +98,10 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 
 - [Alamofire](https://github.com/Alamofire/Alamofire)
 
+This way is easy to keep the control of the version using git submodules. You can try different branches easyly. You can try new versions, and rollback it if necesary.
+
+Also when you have to keep a customized version of other people software, is easier to keep your own branch and merge new versions into your tweaked code. To do this, make a fork of the third party submodule or push it into your own managed remote repository to create your own threads.
+
 ### Sample codes
 
 - [Swift 4 json parsing and creating](https://grokswift.com/json-swift-4/) _(See class Library/Model/PersonDTO.swift)_
@@ -112,10 +116,16 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 ### Integrations
 
 - [fastlane](https://fastlane.tools)
+  To manage the build of the project and publish the app into TestFlight and App Store
 - [CI/CD with giltlab](https://docs.gitlab.com/ee/ci/yaml/)
+  To create automated jobs for building, analyze code and publications
 - [Swiftlint](https://github.com/realm/SwiftLint)
-- [Dangerfile](https://github.com/danger/swift) llok https://github.com/realm/SwiftLint/blob/master/Dangerfile
-- ??? RubyOnRails subproject to test remote API
+  To analyze statically code quality
+
+#### Furture integrations
+
+- [Dangerfile](https://github.com/danger/swift)
+  To add automated customized rules to the process of Pull Request.
 
 ## Project wiki
 
