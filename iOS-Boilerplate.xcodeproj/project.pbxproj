@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088D721A81AB00072B1F0 /* CoreDataStack.swift */; };
-		340088DC21A81E5C0072B1F0 /* AppDelegate+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DB21A81E5C0072B1F0 /* AppDelegate+ChangeRootController.swift */; };
+		340088DC21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */; };
 		340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DD21A81E8E0072B1F0 /* UrlHelper.swift */; };
 		340088E021A81F4C0072B1F0 /* PropertyListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DF21A81F4C0072B1F0 /* PropertyListHelper.swift */; };
-		340088E821A81F930072B1F0 /* NSDate+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E221A81F930072B1F0 /* NSDate+JSON.swift */; };
+		340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E221A81F930072B1F0 /* Date+JSON.swift */; };
 		340088E921A81F930072B1F0 /* OSEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E321A81F930072B1F0 /* OSEmailValidator.swift */; };
 		340088EA21A81F930072B1F0 /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E421A81F930072B1F0 /* Serializator.swift */; };
 		340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E521A81F930072B1F0 /* String+subscript.swift */; };
@@ -26,12 +26,17 @@
 		340088FD21A822940072B1F0 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FB21A822940072B1F0 /* System.swift */; };
 		340088FE21A82E760072B1F0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F7641121A6E4A800E68956 /* Alamofire.framework */; };
 		340088FF21A82E760072B1F0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34F7641121A6E4A800E68956 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
+		3420DF6321AFDF0D0004C59F /* AutoEquatable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */; };
+		3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */; };
+		3420DF6A21AFDFEB0004C59F /* AutoMock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6621AFDFE60004C59F /* AutoMock.generated.swift */; };
+		3420DF6B21AFE0730004C59F /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
 		3485E78D21A55E05002248B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78C21A55E05002248B7 /* AppDelegate.swift */; };
 		3485E78F21A55E05002248B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78E21A55E05002248B7 /* ViewController.swift */; };
 		3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3485E79321A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld */; };
 		3485E79721A55E07002248B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79621A55E07002248B7 /* Assets.xcassets */; };
-		3485E7A521A55E07002248B7 /* iOS_BoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E7A421A55E07002248B7 /* iOS_BoilerplateTests.swift */; };
-		3485E7B021A55E07002248B7 /* iOS_BoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E7AF21A55E07002248B7 /* iOS_BoilerplateUITests.swift */; };
+		3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E7A421A55E07002248B7 /* BoilerplateTests.swift */; };
+		3485E7B021A55E07002248B7 /* BoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E7AF21A55E07002248B7 /* BoilerplateUITests.swift */; };
 		3485E80E21A58A5C002248B7 /* PersonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E80D21A58A5C002248B7 /* PersonDTO.swift */; };
 		3485E81021A59083002248B7 /* PersonDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E80F21A59083002248B7 /* PersonDTOTests.swift */; };
 		3485E81221A59358002248B7 /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = 3485E81121A59358002248B7 /* person.json */; };
@@ -137,10 +142,10 @@
 
 /* Begin PBXFileReference section */
 		340088D721A81AB00072B1F0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		340088DB21A81E5C0072B1F0 /* AppDelegate+ChangeRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ChangeRootController.swift"; sourceTree = "<group>"; };
+		340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+ChangeRootController.swift"; sourceTree = "<group>"; };
 		340088DD21A81E8E0072B1F0 /* UrlHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlHelper.swift; sourceTree = "<group>"; };
 		340088DF21A81F4C0072B1F0 /* PropertyListHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListHelper.swift; sourceTree = "<group>"; };
-		340088E221A81F930072B1F0 /* NSDate+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+JSON.swift"; sourceTree = "<group>"; };
+		340088E221A81F930072B1F0 /* Date+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+JSON.swift"; sourceTree = "<group>"; };
 		340088E321A81F930072B1F0 /* OSEmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEmailValidator.swift; sourceTree = "<group>"; };
 		340088E421A81F930072B1F0 /* Serializator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializator.swift; sourceTree = "<group>"; };
 		340088E521A81F930072B1F0 /* String+subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+subscript.swift"; sourceTree = "<group>"; };
@@ -154,6 +159,11 @@
 		340088FA21A822940072B1F0 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		340088FB21A822940072B1F0 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		340C8C5221A8385500D7178F /* iOS-Boilerplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Boilerplate.entitlements"; sourceTree = "<group>"; };
+		3420DF5F21AFDBB90004C59F /* AutoMock.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoMock.stencil; sourceTree = "<group>"; };
+		3420DF6021AFDCD40004C59F /* FakeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeProtocol.swift; sourceTree = "<group>"; };
+		3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoEquatable.stencil; sourceTree = "<group>"; };
+		3420DF6621AFDFE60004C59F /* AutoMock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMock.generated.swift; sourceTree = "<group>"; };
+		3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
 		3485E78921A55E05002248B7 /* iOS-Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485E78C21A55E05002248B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3485E78E21A55E05002248B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -163,10 +173,10 @@
 		3485E79921A55E07002248B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3485E79B21A55E07002248B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3485E7A021A55E07002248B7 /* iOS-BoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-BoilerplateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3485E7A421A55E07002248B7 /* iOS_BoilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_BoilerplateTests.swift; sourceTree = "<group>"; };
+		3485E7A421A55E07002248B7 /* BoilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateTests.swift; sourceTree = "<group>"; };
 		3485E7A621A55E07002248B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3485E7AB21A55E07002248B7 /* iOS-BoilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-BoilerplateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3485E7AF21A55E07002248B7 /* iOS_BoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_BoilerplateUITests.swift; sourceTree = "<group>"; };
+		3485E7AF21A55E07002248B7 /* BoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateUITests.swift; sourceTree = "<group>"; };
 		3485E7B121A55E07002248B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3485E80D21A58A5C002248B7 /* PersonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDTO.swift; sourceTree = "<group>"; };
 		3485E80F21A59083002248B7 /* PersonDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDTOTests.swift; sourceTree = "<group>"; };
@@ -226,7 +236,7 @@
 				340088F921A822860072B1F0 /* System */,
 				340088EE21A820530072B1F0 /* View */,
 				340088E121A81F870072B1F0 /* Formats */,
-				340088DB21A81E5C0072B1F0 /* AppDelegate+ChangeRootController.swift */,
+				340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */,
 				340088DD21A81E8E0072B1F0 /* UrlHelper.swift */,
 				340088DF21A81F4C0072B1F0 /* PropertyListHelper.swift */,
 			);
@@ -236,7 +246,7 @@
 		340088E121A81F870072B1F0 /* Formats */ = {
 			isa = PBXGroup;
 			children = (
-				340088E221A81F930072B1F0 /* NSDate+JSON.swift */,
+				340088E221A81F930072B1F0 /* Date+JSON.swift */,
 				340088E721A81F930072B1F0 /* OSDNIValidator.swift */,
 				340088E321A81F930072B1F0 /* OSEmailValidator.swift */,
 				340088E421A81F930072B1F0 /* Serializator.swift */,
@@ -267,10 +277,38 @@
 			path = System;
 			sourceTree = "<group>";
 		};
+		3420DF5721AFDB220004C59F /* Sourcery */ = {
+			isa = PBXGroup;
+			children = (
+				3420DF6521AFDFA30004C59F /* Outputs */,
+				3420DF6421AFDF980004C59F /* Templates */,
+			);
+			path = Sourcery;
+			sourceTree = "<group>";
+		};
+		3420DF6421AFDF980004C59F /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				3420DF5F21AFDBB90004C59F /* AutoMock.stencil */,
+				3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		3420DF6521AFDFA30004C59F /* Outputs */ = {
+			isa = PBXGroup;
+			children = (
+				3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */,
+				3420DF6621AFDFE60004C59F /* AutoMock.generated.swift */,
+			);
+			path = Outputs;
+			sourceTree = "<group>";
+		};
 		3485E78021A55E05002248B7 = {
 			isa = PBXGroup;
 			children = (
 				34F7640521A6E4A800E68956 /* Alamofire.xcodeproj */,
+				3420DF5721AFDB220004C59F /* Sourcery */,
 				3485E78B21A55E05002248B7 /* iOS-Boilerplate */,
 				3485E7A321A55E07002248B7 /* iOS-BoilerplateTests */,
 				3485E7AE21A55E07002248B7 /* iOS-BoilerplateUITests */,
@@ -382,6 +420,7 @@
 		3485E7C621A57FE1002248B7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3420DF6021AFDCD40004C59F /* FakeProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -456,7 +495,7 @@
 		3485E7D021A58115002248B7 /* Feature001 */ = {
 			isa = PBXGroup;
 			children = (
-				3485E7A421A55E07002248B7 /* iOS_BoilerplateTests.swift */,
+				3485E7A421A55E07002248B7 /* BoilerplateTests.swift */,
 			);
 			path = Feature001;
 			sourceTree = "<group>";
@@ -464,7 +503,7 @@
 		3485E7D121A58122002248B7 /* Feature001 */ = {
 			isa = PBXGroup;
 			children = (
-				3485E7AF21A55E07002248B7 /* iOS_BoilerplateUITests.swift */,
+				3485E7AF21A55E07002248B7 /* BoilerplateUITests.swift */,
 			);
 			path = Feature001;
 			sourceTree = "<group>";
@@ -680,6 +719,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3487744921A6C011001675D3 /* Main.storyboard in Resources */,
+				3420DF6321AFDF0D0004C59F /* AutoEquatable.stencil in Resources */,
 				3487744821A6C004001675D3 /* LaunchScreen.storyboard in Resources */,
 				3487742321A6AC32001675D3 /* Localizable.strings in Resources */,
 				3485E79721A55E07002248B7 /* Assets.xcassets in Resources */,
@@ -730,11 +770,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				340088F521A820640072B1F0 /* UIViewController+navigationItem.swift in Sources */,
-				340088DC21A81E5C0072B1F0 /* AppDelegate+ChangeRootController.swift in Sources */,
+				340088DC21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift in Sources */,
 				3485E80E21A58A5C002248B7 /* PersonDTO.swift in Sources */,
 				340088EC21A81F930072B1F0 /* String+urlEncode.swift in Sources */,
 				3485E82D21A5B1F0002248B7 /* Environment.swift in Sources */,
 				3485E81A21A5A716002248B7 /* Configuration.swift in Sources */,
+				3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */,
 				34F7642021A6E94100E68956 /* BookNomadsService.swift in Sources */,
 				340088E021A81F4C0072B1F0 /* PropertyListHelper.swift in Sources */,
 				340088F821A820640072B1F0 /* UIViewController+showAlert.swift in Sources */,
@@ -747,7 +788,8 @@
 				340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */,
 				340088F421A820640072B1F0 /* UIViewController+imageBackground.swift in Sources */,
 				34F7641E21A6E4E400E68956 /* HttpRequest.swift in Sources */,
-				340088E821A81F930072B1F0 /* NSDate+JSON.swift in Sources */,
+				3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */,
+				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,
 				3485E78D21A55E05002248B7 /* AppDelegate.swift in Sources */,
 				340088E921A81F930072B1F0 /* OSEmailValidator.swift in Sources */,
@@ -762,10 +804,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3420DF6B21AFE0730004C59F /* FakeProtocol.swift in Sources */,
 				34F7642521A6ECF100E68956 /* BookNomadsServiceTests.swift in Sources */,
 				3485E83021A5B5FB002248B7 /* ConfigurationTest.swift in Sources */,
 				3485E81021A59083002248B7 /* PersonDTOTests.swift in Sources */,
-				3485E7A521A55E07002248B7 /* iOS_BoilerplateTests.swift in Sources */,
+				3420DF6A21AFDFEB0004C59F /* AutoMock.generated.swift in Sources */,
+				3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,7 +817,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3485E7B021A55E07002248B7 /* iOS_BoilerplateUITests.swift in Sources */,
+				3485E7B021A55E07002248B7 /* BoilerplateUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,6 @@
+sources:
+  - iOS-Boilerplate/Library
+  - iOS-Boilerplate/Feature001
+templates:
+  - ./Sourcery/Templates
+output: ./Sourcery/Outputs

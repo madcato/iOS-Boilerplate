@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AppInfo {
+enum AppInfo {
     static func appName() -> String {
         guard let appNameStr = Bundle.main.infoDictionary?["CFBundleName"] as? String else {
             return "app_name"

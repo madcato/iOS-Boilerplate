@@ -138,6 +138,10 @@ Also when you have to keep a customized version of other people software, is eas
 
 * Xcode 9+
 * iOS 10+
+* brew
+* fastlane
+* sourcery
+* swiftlint
 
 ### Getting the source
 
@@ -145,11 +149,36 @@ First, check out the source, including all the dependencies:
 
     $ git clone --recurse-submodules https://github.com/madcato/iOS-Boilerplate
 
+### Installing other dependencies
+
+#### [Brew](https://brew.sh)
+
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+#### [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/)
+
+    $ xcode-select --install
+    $ brew cask install fastlane
+
+#### [Sourcery](https://github.com/krzysztofzablocki/Sourcery)
+
+    $ brew install sourcery
+
+#### [SwiftLint](https://github.com/realm/SwiftLint)
+
+    $ brew install swiftlint
+
 ### Building it
 
 Open the project, iOS-Boilerplate.xcodeproj, and build and run.
 
 ### Build with fastlane
+
+    $  bundle exec fastlane build
+
+The computer where fastlane is going to run must have the provissioning and private key installed
+
+### Send app to TaestFlight with fastlane
 
     $  bundle exec fastlane beta
 
@@ -159,5 +188,3 @@ The computer where fastlane is going to run must have the provissioning and priv
 
     $  bundle exec fastlane tests
 
-
-hola

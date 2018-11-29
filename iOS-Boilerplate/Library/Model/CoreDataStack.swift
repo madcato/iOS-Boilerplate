@@ -228,7 +228,7 @@ class CoreDataStack: NSObject {
     func createFetchedResultsController(_ entityName: String,
                                         _ sortBy: SortBy? = nil,
                                         _ wherePredicate: Where? = nil,
-                                        sectionNameKeyPath: String?) ->
+                                        sectionNameKeyPath: String? = nil) ->
         NSFetchedResultsController<NSManagedObject>? {
             let fetchRequest = NSFetchRequest<NSManagedObject>()
             let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)

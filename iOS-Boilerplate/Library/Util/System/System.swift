@@ -8,7 +8,7 @@
 
 import UIKit
 
-class System {
+enum System {
     // When the mobile detects something near the display, turn off it
     static func enableProximitySensor() {
         UIDevice.current.isProximityMonitoringEnabled = true

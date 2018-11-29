@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PropertyListHelper {
+enum PropertyListHelper {
     static func loadArray(fromFile fileName: String) -> [Any]? {
         if let fileUrl = Bundle.main.url(forResource: fileName,
                                          withExtension: "plist"),

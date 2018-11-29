@@ -44,7 +44,7 @@ class HttpRequest {
             "Accept": "application/json",
             "secret": Configuration.apiToken
         ]
-        headers = headers.merging(customHeaders()) { strA, strB -> String in strB }
+        headers = headers.merging(customHeaders()) { _, strB -> String in strB }
         let url = endpointUrl(endpoint: endpoint)
         Alamofire.request(url,
                           method: translate(method: method),
