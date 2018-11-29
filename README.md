@@ -97,6 +97,7 @@ Project
 Included in the project directly using [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). It's better not to use Carthage or Cocoapods.
 
 - [Alamofire](https://github.com/Alamofire/Alamofire)
+- [SDWebImage](https://github.com/SDWebImage/SDWebImage)
 
 This way is easy to keep the control of the version using git submodules. You can try different branches easyly. You can try new versions, and rollback it if necesary.
 
