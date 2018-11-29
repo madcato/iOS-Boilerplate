@@ -225,12 +225,12 @@ class CoreDataStack: NSObject {
         }
     }
 
-    func createFetchedResultsController(_ entityName: String,
-                                        _ sortBy: SortBy? = nil,
-                                        _ wherePredicate: Where? = nil,
-                                        sectionNameKeyPath: String? = nil) ->
-        NSFetchedResultsController<NSManagedObject>? {
-            let fetchRequest = NSFetchRequest<NSManagedObject>()
+    func createFetchedResultsController<T: NSManagedObject>(_ entityName: String,
+                                                            _ sortBy: SortBy? = nil,
+                                                            _ wherePredicate: Where? = nil,
+                                                            sectionNameKeyPath: String? = nil) ->
+        NSFetchedResultsController<T> {
+            let fetchRequest = NSFetchRequest<T>()
             let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
             assert(entity != nil)
             fetchRequest.entity = entity
@@ -250,7 +250,7 @@ class CoreDataStack: NSObject {
             return aFetchedResultsController
     }
 
-    func fetch(_ fetchedResultController: NSFetchedResultsController<NSManagedObject>) {
+    func fetch<T: NSManagedObject>(_ fetchedResultController: NSFetchedResultsController<T>) {
         do {
             try fetchedResultController.performFetch()
         } catch let error as NSError {
@@ -258,10 +258,8 @@ class CoreDataStack: NSObject {
         }
     }
 
-    func createObject(_ entityName: String) -> NSManagedObject? {
-        let managedObject = NSEntityDescription.insertNewObject(forEntityName: entityName,
-                                                                into: self.managedObjectContext)
-        return managedObject
+    func createObject<T: NSManagedObject>() -> T {
+        return T(context: self.managedObjectContext)
     }
 
     func deleteObjects(_ entityName: String, wherePredicate: Where? = nil) {

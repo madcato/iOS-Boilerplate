@@ -27,7 +27,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="FTI-5k-RNN" kind="show" id="GLX-sW-bNf"/>
+                                    <segue destination="FTI-5k-RNN" kind="show" identifier="showDetail" id="GLX-sW-bNf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -46,12 +46,16 @@
         <scene sceneID="VzJ-hr-aEf">
             <objects>
                 <viewController id="FTI-5k-RNN" customClass="DetailViewController" customModule="iOS_Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Vh8-fO-zcb">
+                    <view key="view" contentMode="scaleToFill" id="Vh8-fO-zcb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwf-fi-cj0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwf-fi-cj0">
                                 <rect key="frame" x="84" y="297" width="207" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="207" id="MFP-kJ-wi8"/>
+                                    <constraint firstAttribute="height" constant="73" id="Yb5-TJ-l7Q"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,13 +63,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bwf-fi-cj0" firstAttribute="centerY" secondItem="Vh8-fO-zcb" secondAttribute="centerY" id="dXD-R5-9FA"/>
-                            <constraint firstItem="bwf-fi-cj0" firstAttribute="top" secondItem="i9T-Ti-dtG" secondAttribute="top" constant="277" id="eub-yS-QVP"/>
-                            <constraint firstItem="bwf-fi-cj0" firstAttribute="leading" secondItem="i9T-Ti-dtG" secondAttribute="leading" constant="84" id="j7l-8c-Jt0"/>
-                            <constraint firstItem="bwf-fi-cj0" firstAttribute="centerX" secondItem="Vh8-fO-zcb" secondAttribute="centerX" id="pj6-hK-i1I"/>
+                            <constraint firstItem="bwf-fi-cj0" firstAttribute="centerY" secondItem="Vh8-fO-zcb" secondAttribute="centerY" id="Dxt-8C-0QE"/>
+                            <constraint firstItem="bwf-fi-cj0" firstAttribute="centerX" secondItem="Vh8-fO-zcb" secondAttribute="centerX" id="jjz-3o-Vfd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i9T-Ti-dtG"/>
                     </view>
+                    <connections>
+                        <outlet property="detailDescriptionLabel" destination="bwf-fi-cj0" id="zpp-Vy-cYv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THN-uK-Lse" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

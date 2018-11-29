@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     var detailViewController: DetailViewController?
-    private var internalFetchedResultsController: NSFetchedResultsController<Event>?
+//    private var internalFetchedResultsController: NSFetchedResultsController<Event>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,58 +26,23 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
 
     @objc
     func insertNewObject(_ sender: Any) {
-        let context = self.fetchedResultsController.managedObjectContext
-        let newEvent = Event(context: context)
-
-        // If appropriate, configure the new managed object.
+        let database = AppDelegate.shared.database
+        let newEvent = database.createObject() as Event
         newEvent.timestamp = Date()
-
-        // Save the context.
-        do {
-            try context.save()
-        } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate.
-            // You should not use this function in a shipping application, although it may
-            // be useful during development.
-            let nserror = error as NSError
-            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-        }
+        database.saveContext()
     }
 
     // MARK: - Fetched results controller
 
-    var fetchedResultsController: NSFetchedResultsController<Event> {
-        guard let controller = internalFetchedResultsController else {
-            let fetchRequest: NSFetchRequest<Event> = Event.fetchRequest()
-            // Set the batch size to a suitable number.
-            fetchRequest.fetchBatchSize = 20
-            // Edit the sort key as appropriate.
-            let sortDescriptor = NSSortDescriptor(key: "timestamp", ascending: false)
-            fetchRequest.sortDescriptors = [sortDescriptor]
-            let managedObjectContext = AppDelegate.shared.database.managedObjectContext
-            // Edit the section name key path and cache name if appropriate.
-            // nil for section name key path means "no sections".
-            let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest,
-                                                                       managedObjectContext: managedObjectContext,
-                                                                       sectionNameKeyPath: nil,
-                                                                       cacheName: "Master")
-            aFetchedResultsController.delegate = self
-            internalFetchedResultsController = aFetchedResultsController
-            do {
-                try aFetchedResultsController.performFetch()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate.
-                // You should not use this function in a shipping application, although it
-                // may be useful during development.
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-            }
-            return aFetchedResultsController
-        }
+    lazy var fetchedResultsController: NSFetchedResultsController<Event> = {
+        let database = AppDelegate.shared.database
+        let controller = database.createFetchedResultsController(
+            "Event",
+            SortBy("timestamp")) as NSFetchedResultsController<Event>
+        controller.delegate = self
+        database.fetch(controller)
         return controller
-    }
+    }()
 
     func controllerWillChangeContent(
         _ controller: NSFetchedResultsController<NSFetchRequestResult>) {
@@ -141,8 +106,7 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let object = fetchedResultsController.object(at: indexPath)
-                guard let controller = (segue.destination as?
-                    UINavigationController)?.topViewController as? DetailViewController else {
+                guard let controller = segue.destination as? DetailViewController else {
                         return
                     }
                 controller.detailItem = object
