@@ -12,17 +12,19 @@ import UIKit
 class ViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     var detailViewController: DetailViewController?
     lazy var database: CoreDataStack = {
-        return AppDelegate.database
+        AppDelegate.database
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
+        editButtonItem.accessibilityIdentifier = "EditButtonId"
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .add,
                                         target: self,
                                         action: #selector(insertNewObject(_:)))
+        addButton.accessibilityIdentifier = "AddButtonId"
         navigationItem.rightBarButtonItem = addButton
     }
 

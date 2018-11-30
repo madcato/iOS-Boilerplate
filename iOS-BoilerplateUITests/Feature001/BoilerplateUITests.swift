@@ -32,7 +32,7 @@ class BoilerplateUITests: XCTestCase {
     func testAddNewElement() {
         let app = XCUIApplication()
         let currentCellNumber = app.tables.cells.count
-        app.navigationBars["Root View Controller"].buttons["Añadir"].tap()
+        app.navigationBars["Root View Controller"].buttons["AddButtonId"].tap()
         let incrementedCellNumber = app.tables.cells.count
         XCTAssertEqual(currentCellNumber + 1, incrementedCellNumber)
     }
@@ -40,12 +40,12 @@ class BoilerplateUITests: XCTestCase {
     func testRemoveOneElement() {
         let app = XCUIApplication()
         let rootViewControllerNavigationBar = app.navigationBars["Root View Controller"]
-        rootViewControllerNavigationBar.buttons["Editar"].tap()
+        rootViewControllerNavigationBar.buttons["EditButtonId"].tap()
 
         let tablesQuery = app.tables
         let currentCellNumber = tablesQuery.cells.count
         tablesQuery.cells.buttons.allElementsBoundByIndex[0].tap()
-        tablesQuery.buttons["Eliminar"].tap()
+        tablesQuery.cells.buttons.allElementsBoundByIndex[1].tap()
         rootViewControllerNavigationBar.buttons["OK"].tap()
         let decrementedCellNumber = app.tables.cells.count
         XCTAssertEqual(currentCellNumber - 1, decrementedCellNumber)
