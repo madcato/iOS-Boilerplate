@@ -177,7 +177,7 @@ class CoreDataStack: NSObject {
 
     // MARK: - Core Data quering
 
-    func getObjectFrom<T: NSManagedObject>(_ entityName: String, _ wherePredicate: Where) -> T? {
+    func getObject<T: NSManagedObject>(ofType entityName: String, _ wherePredicate: Where) -> T? {
         let fetchRequest = NSFetchRequest<T>()
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
         assert(entity != nil)
@@ -200,9 +200,9 @@ class CoreDataStack: NSObject {
         }
     }
 
-    func getResultsFrom(_ entityName: String,
-                        _ sortBy: SortBy? = nil,
-                        _ wherePredicate: Where? = nil) -> [Any] {
+    func getObjects(ofType entityName: String,
+                    _ sortBy: SortBy? = nil,
+                    _ wherePredicate: Where? = nil) -> [Any] {
         let fetchRequest = NSFetchRequest<NSManagedObject>()
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
         assert(entity != nil)
