@@ -28,4 +28,26 @@ class BoilerplateUITests: XCTestCase {
             super.tearDown()
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+
+    func testAddNewElement() {
+        let app = XCUIApplication()
+        let currentCellNumber = app.tables.cells.count
+        app.navigationBars["Root View Controller"].buttons["Añadir"].tap()
+        let incrementedCellNumber = app.tables.cells.count
+        XCTAssertEqual(currentCellNumber + 1, incrementedCellNumber)
+    }
+
+    func testRemoveOneElement() {
+        let app = XCUIApplication()
+        let rootViewControllerNavigationBar = app.navigationBars["Root View Controller"]
+        rootViewControllerNavigationBar.buttons["Editar"].tap()
+
+        let tablesQuery = app.tables
+        let currentCellNumber = tablesQuery.cells.count
+        tablesQuery.cells.buttons.allElementsBoundByIndex[0].tap()
+        tablesQuery.buttons["Eliminar"].tap()
+        rootViewControllerNavigationBar.buttons["OK"].tap()
+        let decrementedCellNumber = app.tables.cells.count
+        XCTAssertEqual(currentCellNumber - 1, decrementedCellNumber)
+    }
 }
