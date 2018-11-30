@@ -46,7 +46,6 @@ class BoilerplateUITests: XCTestCase {
         let currentCellNumber = tablesQuery.cells.count
         tablesQuery.cells.buttons.allElementsBoundByIndex[0].tap()
         tablesQuery.cells.buttons.allElementsBoundByIndex[1].tap()
-        rootViewControllerNavigationBar.buttons["OK"].tap()
         let decrementedCellNumber = app.tables.cells.count
         XCTAssertEqual(currentCellNumber - 1, decrementedCellNumber)
     }
