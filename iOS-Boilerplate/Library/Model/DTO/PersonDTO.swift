@@ -34,28 +34,4 @@ class PersonDTO: Codable {
         self.userId = userId
         self.id = id
     }
-
-    static func decode(jsonData: Data) -> PersonDTO? {
-        let decoder = JSONDecoder()
-        do {
-            let person = try decoder.decode(PersonDTO.self, from: jsonData)
-            return person
-        } catch {
-            print("error trying to convert json Data to PersonDTO object")
-            print(error)
-        }
-        return nil
-    }
-
-    func encode() -> Data? {
-        let encoder = JSONEncoder()
-        do {
-            let data = try encoder.encode(self)
-            return data
-        } catch {
-            print("error trying to convert PersonDTO object to json Data")
-            print(error)
-        }
-        return nil
-    }
 }

@@ -6,15 +6,11 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
-protocol AutoMockable { }
-
 /// This protocol is only used to show how Sourcery works
 protocol FakeProtocol: AutoMockable {
     func run()
     func show(result: String)
 }
-
-protocol AutoEquatable { }
 
 /// Gender type
 public enum Gender {

@@ -24,13 +24,5 @@ return true
 
 
 // MARK: - AutoEquatable for classes, protocols, structs
-// MARK: - Person AutoEquatable
-extension Person: Equatable {}
-public func == (lhs: Person, rhs: Person) -> Bool {
-guard lhs.name == rhs.name else { return false }
-guard lhs.age == rhs.age else { return false }
-guard lhs.gender == rhs.gender else { return false }
-return true
-}
 
 // MARK: - AutoEquatable for Enums

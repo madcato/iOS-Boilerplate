@@ -23,7 +23,29 @@ class ModelHelper: XCTestCase {
         database = nil
     }
 
+    func loadFileToData(_ name: String, ofType: String) -> Data? {
+        let testBundle = Bundle(for: type(of: self))
+        if let path = testBundle.path(forResource: name, ofType: ofType) {
+            if let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+                return data
+            }
+        }
+        XCTFail("File not loaded")
+        return nil
+    }
+
     func loadFixtures() {
-        
+        loadEvents()
+    }
+
+    func loadEvents() {
+        if let data = loadFileToData("Event", ofType: "json"),
+            let array = EventDTO.decode(array: data) {
+            for eventDTO in array {
+                let event: Event? = database?.createObject()
+                event?.timestamp = Date.fromJSON(eventDTO.timestamp)
+            }
+            database?.saveContext()
+        }
     }
 }

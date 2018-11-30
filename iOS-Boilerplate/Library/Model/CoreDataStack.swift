@@ -177,8 +177,8 @@ class CoreDataStack: NSObject {
 
     // MARK: - Core Data quering
 
-    func getObjectFrom(_ entityName: String, _ wherePredicate: Where) -> NSManagedObject? {
-        let fetchRequest = NSFetchRequest<NSManagedObject>()
+    func getObjectFrom<T: NSManagedObject>(_ entityName: String, _ wherePredicate: Where) -> T? {
+        let fetchRequest = NSFetchRequest<T>()
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
         assert(entity != nil)
         fetchRequest.entity = entity

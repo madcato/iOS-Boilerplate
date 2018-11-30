@@ -1,0 +1,58 @@
+// swiftlint:disable file_length
+import Foundation
+
+{% for type in types.classes where type.based.Codable %}
+extension {{ type.name }} {
+    /// Decode this object from a json from a Data object
+    static func decode(object jsonData: Data) -> {{ type.name }}? {
+        let decoder = JSONDecoder()
+        do {
+            let decoded = try decoder.decode({{ type.name }}.self, from: jsonData)
+            return decoded
+        } catch let error {
+            print("error trying to convert json Data to {{ type.name }} object")
+            print(error)
+        }
+        return nil
+    }
+
+    /// Encode this object into a Data object of type json
+    func encode() -> Data? {
+        let encoder = JSONEncoder()
+        do {
+            let data = try encoder.encode(self)
+            return data
+        } catch {
+        print("error trying to convert {{ type.name }} object to json Data")
+        print(error)
+        }
+        return nil
+    }
+
+    /// Decode an arroy of objects from a json from a Data object
+    static func decode(array jsonData: Data) -> [{{ type.name }}]? {
+        let decoder = JSONDecoder()
+        do {
+            let decoded = try decoder.decode([{{ type.name }}].self, from: jsonData)
+            return decoded
+        } catch let error {
+            print("error trying to convert json Data to [{{ type.name }}] object")
+            print(error)
+        }
+        return nil
+    }
+
+    /// Encode this object into a Data object of type json
+    static func encode(array: [{{ type.name }}]) -> Data? {
+        let encoder = JSONEncoder()
+        do {
+            let data = try encoder.encode(array)
+            return data
+        } catch {
+            print("error trying to convert {{ type.name }} object to json Data")
+            print(error)
+        }
+        return nil
+    }
+}
+{% endfor %}

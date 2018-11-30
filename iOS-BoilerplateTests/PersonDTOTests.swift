@@ -29,7 +29,7 @@ class PersonDTOTests: XCTestCase {
                 return
             }
             let jsonData = try Data(contentsOf: fileURL)
-            let person = PersonDTO.decode(jsonData: jsonData)
+            let person = PersonDTO.decode(object: jsonData)
             XCTAssertNotNil(person)
             guard let person2 = person else {
                 return
