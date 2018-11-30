@@ -37,6 +37,9 @@
 		3420DF9121AFEE2B0004C59F /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3420DF8E21AFEE1C0004C59F /* Masonry.framework */; };
 		3420DF9221AFEE2B0004C59F /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3420DF8E21AFEE1C0004C59F /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3420DFE621B03ADA0004C59F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DFE521B03ADA0004C59F /* DetailViewController.swift */; };
+		34306A2B21B12335005B0A84 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A2A21B12335005B0A84 /* EventTests.swift */; };
+		34306A2D21B12367005B0A84 /* ModelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A2C21B12367005B0A84 /* ModelHelper.swift */; };
+		34306A3021B1259A005B0A84 /* Event.json in Resources */ = {isa = PBXBuildFile; fileRef = 34306A2F21B1259A005B0A84 /* Event.json */; };
 		3485E78D21A55E05002248B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78C21A55E05002248B7 /* AppDelegate.swift */; };
 		3485E78F21A55E05002248B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78E21A55E05002248B7 /* ViewController.swift */; };
 		3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3485E79321A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld */; };
@@ -246,6 +249,9 @@
 		3420DF8621AFECA20004C59F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		3420DF8821AFEE1C0004C59F /* Masonry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry.xcodeproj; path = Frameworks/Masonry/Masonry.xcodeproj; sourceTree = "<group>"; };
 		3420DFE521B03ADA0004C59F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		34306A2A21B12335005B0A84 /* EventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
+		34306A2C21B12367005B0A84 /* ModelHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHelper.swift; sourceTree = "<group>"; };
+		34306A2F21B1259A005B0A84 /* Event.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Event.json; sourceTree = "<group>"; };
 		3485E78921A55E05002248B7 /* iOS-Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485E78C21A55E05002248B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3485E78E21A55E05002248B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -426,6 +432,23 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		34306A1C21B12308005B0A84 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				34306A2C21B12367005B0A84 /* ModelHelper.swift */,
+				34306A2A21B12335005B0A84 /* EventTests.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		34306A2E21B12587005B0A84 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				34306A2F21B1259A005B0A84 /* Event.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		3485E78021A55E05002248B7 = {
 			isa = PBXGroup;
 			children = (
@@ -468,6 +491,8 @@
 		3485E7A321A55E07002248B7 /* iOS-BoilerplateTests */ = {
 			isa = PBXGroup;
 			children = (
+				34306A2E21B12587005B0A84 /* Fixtures */,
+				34306A1C21B12308005B0A84 /* ModelTests */,
 				3485E7D021A58115002248B7 /* Feature001 */,
 				3485E7A621A55E07002248B7 /* Info.plist */,
 				3485E80F21A59083002248B7 /* PersonDTOTests.swift */,
@@ -925,6 +950,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34306A3021B1259A005B0A84 /* Event.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,7 +1027,9 @@
 				3420DF6B21AFE0730004C59F /* FakeProtocol.swift in Sources */,
 				34F7642521A6ECF100E68956 /* BookNomadsServiceTests.swift in Sources */,
 				3485E83021A5B5FB002248B7 /* ConfigurationTest.swift in Sources */,
+				34306A2B21B12335005B0A84 /* EventTests.swift in Sources */,
 				3485E81021A59083002248B7 /* PersonDTOTests.swift in Sources */,
+				34306A2D21B12367005B0A84 /* ModelHelper.swift in Sources */,
 				3420DF6A21AFDFEB0004C59F /* AutoMock.generated.swift in Sources */,
 				3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */,
 			);

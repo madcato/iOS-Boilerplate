@@ -11,7 +11,9 @@ import UIKit
 
 class ViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     var detailViewController: DetailViewController?
-//    private var internalFetchedResultsController: NSFetchedResultsController<Event>?
+    lazy var database: CoreDataStack = {
+        return AppDelegate.database
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,6 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
 
     @objc
     func insertNewObject(_ sender: Any) {
-        let database = AppDelegate.shared.database
         let newEvent = database.createObject() as Event
         newEvent.timestamp = Date()
         database.saveContext()
@@ -35,7 +36,6 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
     // MARK: - Fetched results controller
 
     lazy var fetchedResultsController: NSFetchedResultsController<Event> = {
-        let database = AppDelegate.shared.database
         let controller = database.createFetchedResultsController(
             "Event",
             SortBy("timestamp")) as NSFetchedResultsController<Event>

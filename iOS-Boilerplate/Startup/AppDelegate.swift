@@ -21,7 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return AppDelegate()
     }
 
-    lazy var database: CoreDataStack = {
+    static var database: CoreDataStack {
+        return shared.internalDatabase
+    }
+
+    lazy var internalDatabase: CoreDataStack = {
         CoreDataStack(modelName: "iOS_Boilerplate")
     }()
 
@@ -44,6 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        database.saveContext()
+        internalDatabase.saveContext()
     }
 }
