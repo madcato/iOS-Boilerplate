@@ -10,6 +10,11 @@ import Alamofire
 import Foundation
 import UIKit
 
+enum HttpResult<T> {
+    case success(T)
+    case error(Int, String)
+}
+
 enum HttpRequestMethod {
     case get
     case post
@@ -31,15 +36,14 @@ class HttpRequest {
 
     //    curl -H 'Content-Type: application/json'
     //        -H 'Accept: application/json'
-    //        -H 'secret: aakjsdklfj;ajsdflkajsdkfj'
+    //        -H 'secret: aakjsdklfj;ajasdfghlkajsdkfj'
     //        -X POST http://localhost:3000/api/v1/employee_user/login -d "{\"email\":\"vela.dan@gmail.com\",
-    //                                                                     \"password\":\"tQDJC42S1OmTvnitug9edA\"}"
+    //                                                                     \"password\":\"tQDJC43S1OmTvnitug9edA\"}"
 
     func start(method: HttpRequestMethod,
                endpoint: String,
                parameters: [String: String],
-               onOK: @escaping (Any?) -> Void,
-               onError: @escaping (Int, String) -> Void) {
+               completion: @escaping (HttpResult<Any?>) -> Void) {
         var headers = [
             "Accept": "application/json",
             "secret": Configuration.apiToken
@@ -54,11 +58,11 @@ class HttpRequest {
             .validate()
             .responseJSON { response in
                 guard case let .failure(error) = response.result else {
-                    onOK(response.result.value)
+                    completion(.success(response.result.value))
                     return
                 }
                 self.treat(error)
-                onError(response.response?.statusCode ?? 0, error.localizedDescription)
+                completion(.error(response.response?.statusCode ?? 0, error.localizedDescription))
             }
     }
 
