@@ -11,7 +11,7 @@ import Alamofire
 extension Http {
 final class Client {
     private let manager: Alamofire.SessionManager
-    private let baseURL = URL(string: "https://www.booknomads.com/api/v0/")!
+    private let baseURL = URL(string: "https://www.booknomads.com/api/v0")!
     private let queue = DispatchQueue(label: "AlamofireLabel")
 
     init(accessToken: String) {
@@ -26,7 +26,6 @@ final class Client {
 //        self.manager.retrier = OAuth2Retrier()
     }
 
-    
 //    func request2<Response>(_ endpoint: Http.Endpoint<Response>) -> Response {
 //        return Response.create { observer in
 //            let request = self.manager.request(
@@ -59,9 +58,12 @@ final class Client {
             .responseData(queue: self.queue) { response in
                 guard case let .failure(error) = response.result else {
                     // Decode with Endpoint extensions
-                    if let result = response.result.flatMap(endpoint.decode) as? Response {
-                        completion(Http.Result.success(result))
-                        return
+                    let result = response.result.flatMap(endpoint.decode)
+                    switch result {
+                    case let .success(data):
+                        completion(Http.Result.success(data))
+                    case let .failure(error):
+                        completion(.error(-1, error.localizedDescription))
                     }
                     return
                 }

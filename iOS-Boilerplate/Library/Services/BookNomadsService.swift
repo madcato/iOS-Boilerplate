@@ -11,23 +11,14 @@ import Foundation
 
 class BookNomadsService {
     func getBook(by isbn: String, onOK: @escaping (BookDTO?) -> Void, onError: @escaping (Int, String) -> Void) {
-        Alamofire.request("https://www.booknomads.com/api/v0/isbn/\(isbn)")
-            .validate()
-            .responseJSON { response in
-                guard case let .failure(error) = response.result else {
-                    do {
-                        guard let json = response.data else {
-                            return
-                        }
-                        let decoder = JSONDecoder()
-                        let book = try decoder.decode(BookDTO.self, from: json)
-                        onOK(book)
-                    } catch {
-                        print(error)
-                    }
-                    return
-                }
-                onError(response.response?.statusCode ?? 0, error.localizedDescription)
+        let client = Http.Client(accessToken: "")
+        client.request(API.bookNomadsISBN(isbn)) { result in
+            switch result {
+            case let .success(book):
+                onOK(book)
+            case let .error(code, desc):
+                onError(code, desc)
             }
+        }
     }
 }
