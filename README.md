@@ -103,7 +103,11 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 - [SDWebImage](https://github.com/SDWebImage/SDWebImage)
   To download and show images asyncronously
 - [Mansonry](https://github.com/SnapKit/Masonry)
-  To use Constraints from code without becoming insane.
+  To use Constraints from code without becoming insane
+- [Nimble](https://github.com/Quick/Nimble)
+  To define expectations for automated testing
+- [Quick](https://github.com/Quick/Quick#how-to-install-quick)
+  BDD for Swift
 
 This way is easy to keep the control of the version using git submodules. You can try different branches easyly. You can try new versions, and rollback it if necesary.
 

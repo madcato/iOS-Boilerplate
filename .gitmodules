@@ -7,3 +7,6 @@
 [submodule "Frameworks/Masonry"]
 	path = Frameworks/Masonry
 	url = git@github.com:SnapKit/Masonry.git
+[submodule "Frameworks/Nimble"]
+	path = Frameworks/Nimble
+	url = git@github.com:Quick/Nimble.git

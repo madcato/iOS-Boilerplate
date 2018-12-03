@@ -160,6 +160,48 @@
 			remoteGlobalIDString = 3485E78821A55E05002248B7;
 			remoteInfo = "iOS-Boilerplate";
 		};
+		34BE86E221B5710A00B4FD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34BE86D021B5710A00B4FD22 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
+			remoteInfo = "Nimble-macOS";
+		};
+		34BE86E421B5710A00B4FD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34BE86D021B5710A00B4FD22 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
+			remoteInfo = "Nimble-macOSTests";
+		};
+		34BE86E621B5710A00B4FD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34BE86D021B5710A00B4FD22 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74291940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		34BE86E821B5710A00B4FD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34BE86D021B5710A00B4FD22 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F1A74341940169200FFFC47;
+			remoteInfo = "Nimble-iOSTests";
+		};
+		34BE86EA21B5710A00B4FD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34BE86D021B5710A00B4FD22 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F5DF1551BDCA0CE00C3A531;
+			remoteInfo = "Nimble-tvOS";
+		};
+		34BE86EC21B5710A00B4FD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34BE86D021B5710A00B4FD22 /* Nimble.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F5DF15E1BDCA0CE00C3A531;
+			remoteInfo = "Nimble-tvOSTests";
+		};
 		34F7641021A6E4A800E68956 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34F7640521A6E4A800E68956 /* Alamofire.xcodeproj */;
@@ -288,6 +330,7 @@
 		3487742421A6AC4F001675D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3487742721A6AC74001675D3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = ../../es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3487742B21A6BD43001675D3 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		34BE86D021B5710A00B4FD22 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Frameworks/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		34F7640521A6E4A800E68956 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Frameworks/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		34F7641F21A6E94100E68956 /* BookNomadsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNomadsService.swift; sourceTree = "<group>"; };
 		34F7642421A6ECF100E68956 /* BookNomadsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNomadsServiceTests.swift; sourceTree = "<group>"; };
@@ -479,6 +522,7 @@
 				34F7640521A6E4A800E68956 /* Alamofire.xcodeproj */,
 				3420DF6C21AFEC1C0004C59F /* SDWebImage.xcodeproj */,
 				3420DF8821AFEE1C0004C59F /* Masonry.xcodeproj */,
+				34BE86D021B5710A00B4FD22 /* Nimble.xcodeproj */,
 				3420DF5721AFDB220004C59F /* Sourcery */,
 				3485E78B21A55E05002248B7 /* iOS-Boilerplate */,
 				3485E7A321A55E07002248B7 /* iOS-BoilerplateTests */,
@@ -709,6 +753,19 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
+		34BE86D121B5710A00B4FD22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34BE86E321B5710A00B4FD22 /* Nimble.framework */,
+				34BE86E521B5710A00B4FD22 /* NimbleTests.xctest */,
+				34BE86E721B5710A00B4FD22 /* Nimble.framework */,
+				34BE86E921B5710A00B4FD22 /* NimbleTests.xctest */,
+				34BE86EB21B5710A00B4FD22 /* Nimble.framework */,
+				34BE86ED21B5710A00B4FD22 /* NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		34F7640621A6E4A800E68956 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -834,6 +891,10 @@
 					ProjectRef = 3420DF8821AFEE1C0004C59F /* Masonry.xcodeproj */;
 				},
 				{
+					ProductGroup = 34BE86D121B5710A00B4FD22 /* Products */;
+					ProjectRef = 34BE86D021B5710A00B4FD22 /* Nimble.xcodeproj */;
+				},
+				{
 					ProductGroup = 3420DF6D21AFEC1C0004C59F /* Products */;
 					ProjectRef = 3420DF6C21AFEC1C0004C59F /* SDWebImage.xcodeproj */;
 				},
@@ -902,6 +963,48 @@
 			fileType = wrapper.framework;
 			path = Masonry.framework;
 			remoteRef = 3420DF8F21AFEE1C0004C59F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34BE86E321B5710A00B4FD22 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 34BE86E221B5710A00B4FD22 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34BE86E521B5710A00B4FD22 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 34BE86E421B5710A00B4FD22 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34BE86E721B5710A00B4FD22 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 34BE86E621B5710A00B4FD22 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34BE86E921B5710A00B4FD22 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 34BE86E821B5710A00B4FD22 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34BE86EB21B5710A00B4FD22 /* Nimble.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Nimble.framework;
+			remoteRef = 34BE86EA21B5710A00B4FD22 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34BE86ED21B5710A00B4FD22 /* NimbleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NimbleTests.xctest;
+			remoteRef = 34BE86EC21B5710A00B4FD22 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		34F7641121A6E4A800E68956 /* Alamofire.framework */ = {
