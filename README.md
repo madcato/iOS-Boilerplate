@@ -108,6 +108,8 @@ Included in the project directly using [git submodules](https://git-scm.com/book
   To define expectations for automated testing
 - [Quick](https://github.com/Quick/Quick#how-to-install-quick)
   BDD for Swift
+- [AlamofireNetworkActivityIndicator](https://github.com/Alamofire/AlamofireNetworkActivityIndicator)
+  To manage the network activity indicator automatically with Alamofire
 
 This way is easy to keep the control of the version using git submodules. You can try different branches easyly. You can try new versions, and rollback it if necesary.
 
@@ -137,6 +139,8 @@ Also when you have to keep a customized version of other people software, is eas
 
 - [Dangerfile](https://github.com/danger/swift)
   To add automated customized rules to the process of Pull Request.
+- [FormatterKit](https://github.com/mattt/FormatterKit)
+  ```stringWithFormat:``` for the sophisticated hacker set
 
 ## Project wiki
 
@@ -199,3 +203,8 @@ The computer where fastlane is going to run must have the provissioning and priv
 
     $  bundle exec fastlane tests
 
+
+## Recommended links
+
+- https://medium.com/cocoaacademymag/unit-testing-network-request-3a75061fcf4c
+- https://kean.github.io/post/api-client

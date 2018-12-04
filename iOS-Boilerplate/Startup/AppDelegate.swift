@@ -6,6 +6,7 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
+import AlamofireNetworkActivityIndicator
 import CoreData
 import UIKit
 
@@ -32,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        enableNetworkIndicator()
         return true
     }
 
@@ -49,5 +51,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         internalDatabase.saveContext()
+    }
+
+    private func enableNetworkIndicator() {
+        NetworkActivityIndicatorManager.shared.isEnabled = true
+        // To show the network indicator only when the response is very slow
+        NetworkActivityIndicatorManager.shared.startDelay = 1.0
+        // To avoid eliminating the indicator to fast
+        NetworkActivityIndicatorManager.shared.completionDelay = 0.2
     }
 }
