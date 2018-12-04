@@ -32,6 +32,7 @@
 		341C20AC21B66357007227E2 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341C203821B662FE007227E2 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341C20AF21B6635D007227E2 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C202721B662FE007227E2 /* Masonry.framework */; };
 		341C20B021B6635D007227E2 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341C202721B662FE007227E2 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		341C20B421B66881007227E2 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE875D21B57AE300B4FD22 /* ServiceTests.swift */; };
 		3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
 		3420DF6321AFDF0D0004C59F /* AutoEquatable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */; };
 		3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */; };
@@ -64,7 +65,6 @@
 		3487742321A6AC32001675D3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3487742121A6AC32001675D3 /* Localizable.strings */; };
 		3487744821A6C004001675D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79821A55E07002248B7 /* LaunchScreen.storyboard */; };
 		3487744921A6C011001675D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79021A55E05002248B7 /* Main.storyboard */; };
-		34BE875E21B57AE300B4FD22 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE875D21B57AE300B4FD22 /* ServiceTests.swift */; };
 		34BE876521B590D100B4FD22 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE876421B590D100B4FD22 /* API.swift */; };
 		34BE878821B5928200B4FD22 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE878721B5928200B4FD22 /* Client.swift */; };
 		34F7641E21A6E4E400E68956 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487742B21A6BD43001675D3 /* Http.swift */; };
@@ -1438,7 +1438,7 @@
 				34306A2D21B12367005B0A84 /* ModelHelper.swift in Sources */,
 				34306A4121B148DF005B0A84 /* AutoEquatable.swift in Sources */,
 				3420DF6A21AFDFEB0004C59F /* AutoMock.generated.swift in Sources */,
-				34BE875E21B57AE300B4FD22 /* ServiceTests.swift in Sources */,
+				341C20B421B66881007227E2 /* ServiceTests.swift in Sources */,
 				34306A4221B148E2005B0A84 /* AutoMockable.swift in Sources */,
 				3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */,
 			);
