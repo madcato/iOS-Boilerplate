@@ -22,7 +22,29 @@ guard compare(lhsItem, rhs[idx]) else { return false }
 return true
 }
 
-
 // MARK: - AutoEquatable for classes, protocols, structs
+// MARK: - BookDTO AutoEquatable
+extension BookDTO: Equatable {} 
+internal func == (lhs: BookDTO, rhs: BookDTO) -> Bool {
+guard lhs.isbn == rhs.isbn else { return false }
+guard lhs.title == rhs.title else { return false }
+guard lhs.subtitle == rhs.subtitle else { return false }
+guard lhs.description == rhs.description else { return false }
+guard lhs.coverThumb == rhs.coverThumb else { return false }
+guard lhs.languageCode == rhs.languageCode else { return false }
+guard lhs.subjects == rhs.subjects else { return false }
+guard lhs.authors == rhs.authors else { return false }
+return true
+}
+// MARK: - Person AutoEquatable
+extension Person: Equatable {} 
+public func == (lhs: Person, rhs: Person) -> Bool {
+guard lhs.name == rhs.name else { return false }
+guard lhs.age == rhs.age else { return false }
+guard lhs.gender == rhs.gender else { return false }
+return true
+}
 
 // MARK: - AutoEquatable for Enums
+
+// MARK: -M

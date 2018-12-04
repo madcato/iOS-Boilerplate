@@ -106,7 +106,7 @@ Included in the project directly using [git submodules](https://git-scm.com/book
   To use Constraints from code without becoming insane
 - [Nimble](https://github.com/Quick/Nimble)
   To define expectations for automated testing
-- [Quick](https://github.com/Quick/Quick#how-to-install-quick)
+- [Quick](https://github.com/Quick/Quick)
   BDD for Swift
 - [AlamofireNetworkActivityIndicator](https://github.com/Alamofire/AlamofireNetworkActivityIndicator)
   To manage the network activity indicator automatically with Alamofire

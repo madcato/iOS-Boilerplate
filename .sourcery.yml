@@ -1,4 +1,5 @@
 sources:
+  - Sourcery/Markers
   - iOS-Boilerplate/Library
   - iOS-Boilerplate/Feature001
 templates:

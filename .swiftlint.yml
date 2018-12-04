@@ -44,7 +44,6 @@ opt_in_rules:
   - multiline_arguments
   - multiline_function_chains
   - no_extension_access_modifier
-  - nimble_operator
   - number_separator
   - object_literal
   - operator_usage_whitespace

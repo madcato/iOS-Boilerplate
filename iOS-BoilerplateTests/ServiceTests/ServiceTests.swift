@@ -6,6 +6,8 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
+// swiftlint:disable closure_body_length
+
 @testable import iOS_Boilerplate
 import Nimble
 import Quick
@@ -32,6 +34,15 @@ class ServiceTests: QuickSpec {
                                                     " for isbn. Error \(code), \(desc)")
                                             })
                     expect(book).toEventuallyNot(beNil())
+                    let expectedBook = BookDTO()
+                    expectedBook.authors = [["Name": "Louis"]]
+                    expectedBook.isbn = "9789000010134"
+                    expectedBook.languageCode = "nl"
+                    expectedBook.title = "Speak english"
+                    expectedBook.coverThumb = ""
+                    expectedBook.description = ""
+                    expectedBook.subjects = ["Non-fictie informatief/professioneel algemeen"]
+                    expect(book).to(equal(expectedBook))
                 }
             }
         }
