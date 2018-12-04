@@ -13,3 +13,6 @@
 [submodule "Frameworks/Quick"]
 	path = Frameworks/Quick
 	url = git@github.com:Quick/Quick.git
+[submodule "Frameworks/AlamofireNetworkActivityIndicator"]
+	path = Frameworks/AlamofireNetworkActivityIndicator
+	url = git@github.com:Alamofire/AlamofireNetworkActivityIndicator.git
