@@ -21,8 +21,8 @@ class PersonDTOTests: XCTestCase {
     }
 
     func testDecode() {
-        let mainBundle = Bundle(for: PersonDTO.self)
-        let fileURL = mainBundle.url(forResource: "person", withExtension: "json")
+        let mainBundle = Bundle(for: type(of: self))
+        let fileURL = mainBundle.url(forResource: "Person", withExtension: "json")
         XCTAssertNotNil(fileURL)
         do {
             guard let fileURL = fileURL else {

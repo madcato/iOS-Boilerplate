@@ -34,7 +34,7 @@ class ServiceTests: QuickSpec {
                                                     " for isbn. Error \(code), \(desc)")
                                             })
                     expect(book).toEventuallyNot(beNil())
-                    let expectedBook = BookDTO()
+                    var expectedBook = BookDTO()
                     expectedBook.authors = [["Name": "Louis"]]
                     expectedBook.isbn = "9789000010134"
                     expectedBook.languageCode = "nl"

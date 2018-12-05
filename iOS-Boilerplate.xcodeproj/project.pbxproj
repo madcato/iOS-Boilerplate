@@ -28,6 +28,11 @@
 		3418106A21B7BB5700BC9E1C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341C204B21B662FE007227E2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341810A521B7C46200BC9E1C /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3418109621B7C45600BC9E1C /* AlamofireImage.framework */; };
 		341810A621B7C46200BC9E1C /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3418109621B7C45600BC9E1C /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		341810B121B7CE9B00BC9E1C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C206721B662FE007227E2 /* Nimble.framework */; };
+		341810B221B7CEA100BC9E1C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C208721B662FE007227E2 /* Quick.framework */; };
+		341810B321B7CEAF00BC9E1C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C208721B662FE007227E2 /* Quick.framework */; };
+		341810B421B7CEB600BC9E1C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C206721B662FE007227E2 /* Nimble.framework */; };
+		341810B521B7D9B400BC9E1C /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = 3485E81121A59358002248B7 /* Person.json */; };
 		341C20A721B66350007227E2 /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C209E21B66311007227E2 /* AlamofireNetworkActivityIndicator.framework */; };
 		341C20A821B66350007227E2 /* AlamofireNetworkActivityIndicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341C209E21B66311007227E2 /* AlamofireNetworkActivityIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341C20AF21B6635D007227E2 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C202721B662FE007227E2 /* Masonry.framework */; };
@@ -57,7 +62,6 @@
 		3485E7B021A55E07002248B7 /* BoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E7AF21A55E07002248B7 /* BoilerplateUITests.swift */; };
 		3485E80E21A58A5C002248B7 /* PersonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E80D21A58A5C002248B7 /* PersonDTO.swift */; };
 		3485E81021A59083002248B7 /* PersonDTOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E80F21A59083002248B7 /* PersonDTOTests.swift */; };
-		3485E81221A59358002248B7 /* person.json in Resources */ = {isa = PBXBuildFile; fileRef = 3485E81121A59358002248B7 /* person.json */; };
 		3485E81A21A5A716002248B7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E81921A5A716002248B7 /* Configuration.swift */; };
 		3485E82A21A5B0D9002248B7 /* environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3485E82721A5B0D9002248B7 /* environments.plist */; };
 		3485E82D21A5B1F0002248B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E82C21A5B1EF002248B7 /* Environment.swift */; };
@@ -143,6 +147,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4C9043761AABBFC5001B4E60;
 			remoteInfo = "AlamofireImage iOS";
+		};
+		341810A921B7CE5E00BC9E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 341C205821B662FE007227E2 /* Nimble.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1A74281940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		341810AB21B7CE6800BC9E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 341C206E21B662FE007227E2 /* Quick.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5D117B19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
+		};
+		341810AD21B7CE7B00BC9E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 341C205821B662FE007227E2 /* Nimble.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1A74281940169200FFFC47;
+			remoteInfo = "Nimble-iOS";
+		};
+		341810AF21B7CE8400BC9E1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 341C206E21B662FE007227E2 /* Quick.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5D117B19473F2100F6D13D;
+			remoteInfo = "Quick-iOS";
 		};
 		341C202621B662FE007227E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -450,7 +482,7 @@
 		3485E7B121A55E07002248B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3485E80D21A58A5C002248B7 /* PersonDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDTO.swift; sourceTree = "<group>"; };
 		3485E80F21A59083002248B7 /* PersonDTOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDTOTests.swift; sourceTree = "<group>"; };
-		3485E81121A59358002248B7 /* person.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = person.json; sourceTree = "<group>"; };
+		3485E81121A59358002248B7 /* Person.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Person.json; sourceTree = "<group>"; };
 		3485E81921A5A716002248B7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		3485E82721A5B0D9002248B7 /* environments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
 		3485E82C21A5B1EF002248B7 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -484,6 +516,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341810B221B7CEA100BC9E1C /* Quick.framework in Frameworks */,
+				341810B121B7CE9B00BC9E1C /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +525,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341810B421B7CEB600BC9E1C /* Nimble.framework in Frameworks */,
+				341810B321B7CEAF00BC9E1C /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +740,7 @@
 			isa = PBXGroup;
 			children = (
 				34306A2F21B1259A005B0A84 /* Event.json */,
+				3485E81121A59358002248B7 /* Person.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -892,7 +929,6 @@
 		3485E7CC21A58041002248B7 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				3485E81121A59358002248B7 /* person.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -999,6 +1035,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				341810AC21B7CE6800BC9E1C /* PBXTargetDependency */,
+				341810AA21B7CE5E00BC9E1C /* PBXTargetDependency */,
 				3485E7A221A55E07002248B7 /* PBXTargetDependency */,
 			);
 			name = "iOS-BoilerplateTests";
@@ -1017,6 +1055,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				341810B021B7CE8400BC9E1C /* PBXTargetDependency */,
+				341810AE21B7CE7B00BC9E1C /* PBXTargetDependency */,
 				3485E7AD21A55E07002248B7 /* PBXTargetDependency */,
 			);
 			name = "iOS-BoilerplateUITests";
@@ -1371,7 +1411,6 @@
 				3487744821A6C004001675D3 /* LaunchScreen.storyboard in Resources */,
 				3487742321A6AC32001675D3 /* Localizable.strings in Resources */,
 				3485E79721A55E07002248B7 /* Assets.xcassets in Resources */,
-				3485E81221A59358002248B7 /* person.json in Resources */,
 				3485E82A21A5B0D9002248B7 /* environments.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1380,6 +1419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341810B521B7D9B400BC9E1C /* Person.json in Resources */,
 				34306A3021B1259A005B0A84 /* Event.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1494,6 +1534,26 @@
 			isa = PBXTargetDependency;
 			name = "AlamofireImage iOS";
 			targetProxy = 341810A721B7C46200BC9E1C /* PBXContainerItemProxy */;
+		};
+		341810AA21B7CE5E00BC9E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Nimble-iOS";
+			targetProxy = 341810A921B7CE5E00BC9E1C /* PBXContainerItemProxy */;
+		};
+		341810AC21B7CE6800BC9E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Quick-iOS";
+			targetProxy = 341810AB21B7CE6800BC9E1C /* PBXContainerItemProxy */;
+		};
+		341810AE21B7CE7B00BC9E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Nimble-iOS";
+			targetProxy = 341810AD21B7CE7B00BC9E1C /* PBXContainerItemProxy */;
+		};
+		341810B021B7CE8400BC9E1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Quick-iOS";
+			targetProxy = 341810AF21B7CE8400BC9E1C /* PBXContainerItemProxy */;
 		};
 		341C20AA21B66350007227E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

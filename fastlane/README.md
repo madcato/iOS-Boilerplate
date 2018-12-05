@@ -41,16 +41,6 @@ fastlane ios cov
 fastlane ios lint
 ```
 
-### ios post_swiftlint_to_gitlab
-```
-fastlane ios post_swiftlint_to_gitlab
-```
-
-### ios post_cov_to_gitlab
-```
-fastlane ios post_cov_to_gitlab
-```
-
 
 ----
 
