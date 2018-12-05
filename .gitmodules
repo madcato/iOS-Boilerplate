@@ -16,3 +16,6 @@
 [submodule "Frameworks/AlamofireImage"]
 	path = Frameworks/AlamofireImage
 	url = git@github.com:Alamofire/AlamofireImage.git
+[submodule "Frameworks/FLEX"]
+	path = Frameworks/FLEX
+	url = git@github.com:Flipboard/FLEX.git

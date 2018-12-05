@@ -112,6 +112,8 @@ Included in the project directly using [git submodules](https://git-scm.com/book
   To manage the network activity indicator automatically with Alamofire
 - [AlamofireImage](https://github.com/Alamofire/AlamofireImage)
   AlamofireImage is an image component library for Alamofire
+- [FLEX](https://github.com/Flipboard/FLEX
+  Debugging helper. (Press the screen during 4 seconds with two fingers to launch helper)
 
 This way is easy to keep the control of the version using git submodules. You can try different branches easyly. You can try new versions, and rollback it if necesary.
 

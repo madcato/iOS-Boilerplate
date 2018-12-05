@@ -8,6 +8,9 @@
 
 import AlamofireNetworkActivityIndicator
 import CoreData
+#if DEBUG
+import FLEX
+#endif
 import UIKit
 
 @UIApplicationMain
@@ -34,6 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         enableNetworkIndicator()
+        #if DEBUG
+        condifgureFLEXLauncher()
+        #endif
         return true
     }
 
@@ -59,5 +65,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NetworkActivityIndicatorManager.shared.startDelay = 1.0
         // To avoid eliminating the indicator to fast
         NetworkActivityIndicatorManager.shared.completionDelay = 0.2
+    }
+
+    // MARK: - FLEX
+
+    private func condifgureFLEXLauncher() {
+        let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(AppDelegate.launchFLEX))
+        recognizer.minimumPressDuration = 4.0
+        recognizer.numberOfTapsRequired = 0
+        recognizer.numberOfTouchesRequired = 2  // Use two fingers
+        self.window?.addGestureRecognizer(recognizer)
+    }
+
+    @objc
+    private func launchFLEX() {
+        FLEXManager.shared().showExplorer()
     }
 }
