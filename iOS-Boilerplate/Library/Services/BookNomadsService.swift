@@ -9,10 +9,9 @@
 import Alamofire
 import Foundation
 
-class BookNomadsService {
+class BookNomadsService: NetworkingInjected {
     func getBook(by isbn: String, onOK: @escaping (BookDTO?) -> Void, onError: @escaping (Int, String) -> Void) {
-        let client = Http.Client(accessToken: "")
-        client.request(API.bookNomadsISBN(isbn)) { result in
+        apiClient.request(API.bookNomadsISBN(isbn)) { result in
             switch result {
             case let .success(book):
                 onOK(book)

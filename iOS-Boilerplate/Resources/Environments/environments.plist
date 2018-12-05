@@ -7,7 +7,7 @@
 		<key>api-token</key>
 		<string>token</string>
 		<key>serverURL</key>
-		<string>http://int.domain.com</string>
+		<string>https://www.booknomads.com/api/v0</string>
 		<key>basePath</key>
 		<string>/api</string>
 	</dict>

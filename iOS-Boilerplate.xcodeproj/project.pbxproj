@@ -36,6 +36,9 @@
 		341810BF21B7E28900BC9E1C /* FLEX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341810BC21B7E26400BC9E1C /* FLEX.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		341810C021B7E28900BC9E1C /* FLEX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341810BC21B7E26400BC9E1C /* FLEX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C321B80BF100BC9E1C /* Decodable+Codable.swift */; };
+		341810C621B8152400BC9E1C /* NetworkingInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C521B8152400BC9E1C /* NetworkingInjector.swift */; };
+		341810C921B8316400BC9E1C /* MockServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C821B8316400BC9E1C /* MockServicesTests.swift */; };
+		341810CB21B8321400BC9E1C /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810CA21B8321400BC9E1C /* MockAPIClient.swift */; };
 		341C20A721B66350007227E2 /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C209E21B66311007227E2 /* AlamofireNetworkActivityIndicator.framework */; };
 		341C20A821B66350007227E2 /* AlamofireNetworkActivityIndicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341C209E21B66311007227E2 /* AlamofireNetworkActivityIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341C20AF21B6635D007227E2 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C202721B662FE007227E2 /* Masonry.framework */; };
@@ -472,6 +475,9 @@
 		3418108921B7C45600BC9E1C /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = Frameworks/AlamofireImage/AlamofireImage.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341810B621B7E26400BC9E1C /* FLEX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FLEX.xcodeproj; path = Frameworks/FLEX/FLEX.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341810C321B80BF100BC9E1C /* Decodable+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Codable.swift"; sourceTree = "<group>"; };
+		341810C521B8152400BC9E1C /* NetworkingInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingInjector.swift; sourceTree = "<group>"; };
+		341810C821B8316400BC9E1C /* MockServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServicesTests.swift; sourceTree = "<group>"; };
+		341810CA21B8321400BC9E1C /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
 		341C202121B662FE007227E2 /* Masonry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry.xcodeproj; path = Frameworks/Masonry/Masonry.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341C203F21B662FE007227E2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Frameworks/Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341C205821B662FE007227E2 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Frameworks/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -637,6 +643,15 @@
 				341810BE21B7E26400BC9E1C /* FLEXTestsMethodsList.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		341810C721B8312A00BC9E1C /* MockServices */ = {
+			isa = PBXGroup;
+			children = (
+				341810C821B8316400BC9E1C /* MockServicesTests.swift */,
+				341810CA21B8321400BC9E1C /* MockAPIClient.swift */,
+			);
+			path = MockServices;
 			sourceTree = "<group>";
 		};
 		341C1FFF21B662F2007227E2 /* Submodules */ = {
@@ -827,6 +842,7 @@
 		3485E7A321A55E07002248B7 /* iOS-BoilerplateTests */ = {
 			isa = PBXGroup;
 			children = (
+				341810C721B8312A00BC9E1C /* MockServices */,
 				34BE873B21B57ABE00B4FD22 /* ServiceTests */,
 				34306A2E21B12587005B0A84 /* Fixtures */,
 				34306A1C21B12308005B0A84 /* ModelTests */,
@@ -920,6 +936,7 @@
 				3487742B21A6BD43001675D3 /* Http.swift */,
 				34BE876421B590D100B4FD22 /* API.swift */,
 				34BE878721B5928200B4FD22 /* Client.swift */,
+				341810C521B8152400BC9E1C /* NetworkingInjector.swift */,
 				34F7641F21A6E94100E68956 /* BookNomadsService.swift */,
 			);
 			path = Services;
@@ -1543,6 +1560,7 @@
 				340088E921A81F930072B1F0 /* OSEmailValidator.swift in Sources */,
 				34F7642721A6F64B00E68956 /* BookDTO.swift in Sources */,
 				340088F721A820640072B1F0 /* CALayer+XibConfiguration.swift in Sources */,
+				341810C621B8152400BC9E1C /* NetworkingInjector.swift in Sources */,
 				340088ED21A81F930072B1F0 /* OSDNIValidator.swift in Sources */,
 				34BE876521B590D100B4FD22 /* API.swift in Sources */,
 				340088FC21A822940072B1F0 /* AppInfo.swift in Sources */,
@@ -1564,6 +1582,8 @@
 				341C20B421B66881007227E2 /* ServiceTests.swift in Sources */,
 				34306A4221B148E2005B0A84 /* AutoMockable.swift in Sources */,
 				3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */,
+				341810CB21B8321400BC9E1C /* MockAPIClient.swift in Sources */,
+				341810C921B8316400BC9E1C /* MockServicesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

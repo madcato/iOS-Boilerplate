@@ -9,44 +9,22 @@
 import Alamofire
 
 extension Http {
-final class Client {
+class Client {
     private let manager: Alamofire.SessionManager
-    private let baseURL = URL(string: "https://www.booknomads.com/api/v0")!
+    private let baseURL = URL(string: Configuration.serverURL)!
     private let queue = DispatchQueue(label: "AlamofireLabel")
 
     init(accessToken: String) {
         var defaultHeaders = Alamofire.SessionManager.defaultHTTPHeaders
-        defaultHeaders["Authorization"] = "Bearer \(accessToken)"
+//        defaultHeaders["Authorization"] = "Bearer \(accessToken)"
         defaultHeaders["Accept"] = "application/json"
-        defaultHeaders["secret"] = Configuration.apiToken
+        defaultHeaders["secret"] = accessToken
         let configuration = URLSessionConfiguration.default
         // Add `Auth` header to the default HTTP headers set by `Alamofire`
         configuration.httpAdditionalHeaders = defaultHeaders
         self.manager = Alamofire.SessionManager(configuration: configuration)
 //        self.manager.retrier = OAuth2Retrier()
     }
-
-//    func request2<Response>(_ endpoint: Http.Endpoint<Response>) -> Response {
-//        return Response.create { observer in
-//            let request = self.manager.request(
-//                self.url(path: endpoint.path),
-//                method: httpMethod(from: endpoint.method),
-//                parameters: endpoint.parameters
-//            )
-//            request
-//                .validate()
-//                .responseData(queue: self.queue) { response in
-//                    let result = response.result.flatMap(endpoint.decode)
-//                    switch result {
-//                    case let .success(val): observer(.success(val))
-//                    case let .failure(err): observer(.error(err))
-//                    }
-//            }
-//            return Disposables.create {
-//                request.cancel()
-//            }
-//        }
-//    }
 
     func request<Response>(_ endpoint: Http.Endpoint<Response>,
                            completion: @escaping (Http.Result<Response>) -> Void) {

@@ -19,6 +19,7 @@ class ServiceTests: QuickSpec {
             var networkService: BookNomadsService?
 
             beforeEach {
+                NetworkingInjector.apiClient = Http.Client(accessToken: Configuration.apiToken)
                 networkService = BookNomadsService()
             }
 

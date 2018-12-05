@@ -28,7 +28,7 @@ class ConfigurationTest: XCTestCase {
 
     func testServerURLConfiguration() {
         Configuration.environment = Environment.integration
-        XCTAssertEqual(Configuration.serverURL, "http://int.domain.com")
+        XCTAssertEqual(Configuration.serverURL, "https://www.booknomads.com/api/v0")
     }
 
     func testApiTokenConfiguration() {

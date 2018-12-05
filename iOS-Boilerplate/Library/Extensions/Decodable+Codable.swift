@@ -38,7 +38,7 @@ extension Decodable {
 
 extension Encodable {
     /// Encode this object into a Data object of type json
-    static func encode<T: Encodable>(_ object: T) -> Data? {
+    static func encode<T: Encodable>(object: T) -> Data? {
         let encoder = JSONEncoder()
         do {
             let data = try encoder.encode(object)

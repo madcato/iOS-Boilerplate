@@ -40,11 +40,11 @@ class ModelHelper: XCTestCase {
 
     func loadEvents() {
         if let data = loadFileToData("Event", ofType: "json"),
-            let array = EventDTO.decode(array: data) {
+            let array: [EventDTO] = EventDTO.decode(array: data) {
             for eventDTO in array {
                 let event: Event? = database?.createObject()
                 event?.timestamp = Date.fromJSON(eventDTO.timestamp)
-            }
+                }
             database?.saveContext()
         }
     }
