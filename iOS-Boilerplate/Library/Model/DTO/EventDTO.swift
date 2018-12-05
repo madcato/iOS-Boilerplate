@@ -8,6 +8,6 @@
 
 import Foundation
 
-class EventDTO: Codable, AutoEquatable {
+struct EventDTO: Codable, AutoEquatable {
     var timestamp: String = ""
 }

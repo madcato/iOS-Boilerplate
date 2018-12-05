@@ -63,11 +63,6 @@ class CoreDataStack: NSObject {
     }
 
     private func createSQLitePersistentStore(_ fileName: String) -> NSPersistentStoreCoordinator {
-        // The persistent store coordinator for the application. This implementation
-        // creates and returns a coordinator, having added the store for the application
-        // to it. This property is optional since there are legitimate error conditions
-        // that could cause the creation of the store to fail.
-        // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         let url = self.applicationDocumentsDirectory.appendingPathComponent(fileName)
         let failureReason = "There was an error creating or loading the application's saved data."
@@ -82,18 +77,7 @@ class CoreDataStack: NSObject {
                                                options: options)
         } catch let error as NSError {
             // Report any error we got.
-            var dict = [String: Any]()
-            dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data" as Any?
-            dict[NSLocalizedFailureReasonErrorKey] = failureReason as Any?
-
-            dict[NSUnderlyingErrorKey] = error
-            let wrappedError = NSError(domain: "YOUR_ERROR_DOMAIN", code: 9999, userInfo: dict)
-            // Replace this with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate.
-            // You should not use this function in a shipping application, although
-            // it may be useful during development.
-            NSLog("Unresolved error \(wrappedError), \(wrappedError.userInfo)")
-            abort()
+            report(error, reason: failureReason)
         } catch {
             // dummy
         }
@@ -115,18 +99,7 @@ class CoreDataStack: NSObject {
                                                options: options)
         } catch let error as NSError {
             // Report any error we got.
-            var dict = [String: Any]()
-            dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data" as Any?
-            dict[NSLocalizedFailureReasonErrorKey] = failureReason as Any?
-
-            dict[NSUnderlyingErrorKey] = error
-            let wrappedError = NSError(domain: "YOUR_ERROR_DOMAIN", code: 9999, userInfo: dict)
-            // Replace this with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate.
-            // You should not use this function in a shipping application, although
-            // it may be useful during development.
-            NSLog("Unresolved error \(wrappedError), \(wrappedError.userInfo)")
-            abort()
+            report(error, reason: failureReason)
         }
         return coordinator
     }
@@ -195,7 +168,7 @@ class CoreDataStack: NSObject {
 
             return fetchedObjects[0]
         } catch let error as NSError {
-            NSLog("Error getObjectFrom %@", error.localizedDescription)
+            report(error, reason: "Failure in getObjectFrom")
             return nil
         }
     }
@@ -220,7 +193,7 @@ class CoreDataStack: NSObject {
 
             return fetchedObjects
         } catch let error as NSError {
-            NSLog("Error getResultsFrom %@", error.localizedDescription)
+            report(error, reason: "Failure in getResultsFrom")
             return []
         }
     }
@@ -254,7 +227,7 @@ class CoreDataStack: NSObject {
         do {
             try fetchedResultController.performFetch()
         } catch let error as NSError {
-            NSLog("Error performFetch %@", error.localizedDescription)
+            report(error, reason: "Failure in perfomrFetch")
         }
     }
 
@@ -285,7 +258,7 @@ class CoreDataStack: NSObject {
                 self.managedObjectContext.delete(object)
             }
         } catch let error as NSError {
-            NSLog("Error deleteObjects %@", error.localizedDescription)
+            report(error, reason: "Failure in deleteObjects")
         }
     }
 
@@ -303,7 +276,7 @@ class CoreDataStack: NSObject {
             }
             try self.managedObjectContext.save()
         } catch let error as NSError {
-            NSLog("Error deleteAll %@", error.localizedDescription)
+            report(error, reason: "Failure in deleteAll")
         }
 
     }
@@ -319,9 +292,24 @@ class CoreDataStack: NSObject {
             }
             return  count
         } catch let error as NSError {
-            NSLog("Error deleteAll %@", error.localizedDescription)
+            report(error, reason: "Failure in count")
         }
         return NSNotFound
+    }
+
+    private func report(_ error: Error, reason: String) {
+        var dict = [String: Any]()
+        dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data" as Any?
+        dict[NSLocalizedFailureReasonErrorKey] = reason as Any?
+
+        dict[NSUnderlyingErrorKey] = error
+        let wrappedError = NSError(domain: "YOUR_ERROR_DOMAIN", code: 9999, userInfo: dict)
+        // Replace this with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate.
+        // You should not use this function in a shipping application, although
+        // it may be useful during development.
+        NSLog("Unresolved error \(wrappedError), \(wrappedError.userInfo)")
+        abort()
     }
 }
 
