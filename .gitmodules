@@ -1,9 +1,6 @@
 [submodule "Frameworks/Alamofire"]
 	path = Frameworks/Alamofire
 	url = git@github.com:Alamofire/Alamofire.git
-[submodule "Frameworks/SDWebImage"]
-	path = Frameworks/SDWebImage
-	url = git@github.com:SDWebImage/SDWebImage.git
 [submodule "Frameworks/Masonry"]
 	path = Frameworks/Masonry
 	url = git@github.com:SnapKit/Masonry.git
