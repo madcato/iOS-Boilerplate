@@ -35,6 +35,7 @@
 		341810B521B7D9B400BC9E1C /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = 3485E81121A59358002248B7 /* Person.json */; };
 		341810BF21B7E28900BC9E1C /* FLEX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341810BC21B7E26400BC9E1C /* FLEX.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		341810C021B7E28900BC9E1C /* FLEX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341810BC21B7E26400BC9E1C /* FLEX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C321B80BF100BC9E1C /* Decodable+Codable.swift */; };
 		341C20A721B66350007227E2 /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C209E21B66311007227E2 /* AlamofireNetworkActivityIndicator.framework */; };
 		341C20A821B66350007227E2 /* AlamofireNetworkActivityIndicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341C209E21B66311007227E2 /* AlamofireNetworkActivityIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341C20AF21B6635D007227E2 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C202721B662FE007227E2 /* Masonry.framework */; };
@@ -52,7 +53,6 @@
 		34306A3021B1259A005B0A84 /* Event.json in Resources */ = {isa = PBXBuildFile; fileRef = 34306A2F21B1259A005B0A84 /* Event.json */; };
 		34306A3321B135C0005B0A84 /* AutoEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3221B135C0005B0A84 /* AutoEquatable.swift */; };
 		34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
-		34306A3B21B1399D005B0A84 /* AutoCodable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3A21B1399D005B0A84 /* AutoCodable.generated.swift */; };
 		34306A4021B13DD6005B0A84 /* EventDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3F21B13DD6005B0A84 /* EventDTO.swift */; };
 		34306A4121B148DF005B0A84 /* AutoEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3221B135C0005B0A84 /* AutoEquatable.swift */; };
 		34306A4221B148E2005B0A84 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
@@ -471,6 +471,7 @@
 		340C8C5221A8385500D7178F /* iOS-Boilerplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Boilerplate.entitlements"; sourceTree = "<group>"; };
 		3418108921B7C45600BC9E1C /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = Frameworks/AlamofireImage/AlamofireImage.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341810B621B7E26400BC9E1C /* FLEX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FLEX.xcodeproj; path = Frameworks/FLEX/FLEX.xcodeproj; sourceTree = SOURCE_ROOT; };
+		341810C321B80BF100BC9E1C /* Decodable+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Codable.swift"; sourceTree = "<group>"; };
 		341C202121B662FE007227E2 /* Masonry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry.xcodeproj; path = Frameworks/Masonry/Masonry.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341C203F21B662FE007227E2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Frameworks/Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341C205821B662FE007227E2 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Frameworks/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -488,8 +489,6 @@
 		34306A2F21B1259A005B0A84 /* Event.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Event.json; sourceTree = "<group>"; };
 		34306A3221B135C0005B0A84 /* AutoEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoEquatable.swift; sourceTree = "<group>"; };
 		34306A3421B135D6005B0A84 /* AutoMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockable.swift; sourceTree = "<group>"; };
-		34306A3621B1360E005B0A84 /* AutoCodable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoCodable.stencil; sourceTree = "<group>"; };
-		34306A3A21B1399D005B0A84 /* AutoCodable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCodable.generated.swift; sourceTree = "<group>"; };
 		34306A3F21B13DD6005B0A84 /* EventDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDTO.swift; sourceTree = "<group>"; };
 		3485E78921A55E05002248B7 /* iOS-Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485E78C21A55E05002248B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -731,7 +730,6 @@
 		3420DF6421AFDF980004C59F /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				34306A3621B1360E005B0A84 /* AutoCodable.stencil */,
 				3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */,
 				3420DF5F21AFDBB90004C59F /* AutoMock.stencil */,
 			);
@@ -741,7 +739,6 @@
 		3420DF6521AFDFA30004C59F /* Outputs */ = {
 			isa = PBXGroup;
 			children = (
-				34306A3A21B1399D005B0A84 /* AutoCodable.generated.swift */,
 				3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */,
 				3420DF6621AFDFE60004C59F /* AutoMock.generated.swift */,
 			);
@@ -912,6 +909,7 @@
 			isa = PBXGroup;
 			children = (
 				3420DF6021AFDCD40004C59F /* FakeProtocol.swift */,
+				341810C321B80BF100BC9E1C /* Decodable+Codable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1527,6 +1525,7 @@
 				340088F821A820640072B1F0 /* UIViewController+showAlert.swift in Sources */,
 				340088EA21A81F930072B1F0 /* Serializator.swift in Sources */,
 				34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */,
+				341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */,
 				340088FD21A822940072B1F0 /* System.swift in Sources */,
 				3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */,
 				340088F621A820640072B1F0 /* UIView+border.swift in Sources */,
@@ -1537,7 +1536,6 @@
 				340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */,
 				340088F421A820640072B1F0 /* UIViewController+imageBackground.swift in Sources */,
 				34F7641E21A6E4E400E68956 /* Http.swift in Sources */,
-				34306A3B21B1399D005B0A84 /* AutoCodable.generated.swift in Sources */,
 				3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,
