@@ -110,6 +110,8 @@ Included in the project directly using [git submodules](https://git-scm.com/book
   BDD for Swift
 - [AlamofireNetworkActivityIndicator](https://github.com/Alamofire/AlamofireNetworkActivityIndicator)
   To manage the network activity indicator automatically with Alamofire
+- [AlamofireImage](https://github.com/Alamofire/AlamofireImage)
+  AlamofireImage is an image component library for Alamofire
 
 This way is easy to keep the control of the version using git submodules. You can try different branches easyly. You can try new versions, and rollback it if necesary.
 

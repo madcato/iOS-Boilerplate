@@ -13,3 +13,6 @@
 [submodule "Frameworks/AlamofireNetworkActivityIndicator"]
 	path = Frameworks/AlamofireNetworkActivityIndicator
 	url = git@github.com:Alamofire/AlamofireNetworkActivityIndicator.git
+[submodule "Frameworks/AlamofireImage"]
+	path = Frameworks/AlamofireImage
+	url = git@github.com:Alamofire/AlamofireImage.git
