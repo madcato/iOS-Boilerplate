@@ -258,8 +258,15 @@ class CoreDataStack: NSObject {
         }
     }
 
+    @available(iOS 10.0, *)
     func createObject<T: NSManagedObject>() -> T {
         return T(context: self.managedObjectContext)
+    }
+
+    func createObject(entityName: String) -> NSManagedObject {
+        let managedObject = NSEntityDescription.insertNewObject(forEntityName: entityName,
+                                                                into: self.managedObjectContext)
+        return managedObject
     }
 
     func deleteObjects(_ entityName: String, wherePredicate: Where? = nil) {

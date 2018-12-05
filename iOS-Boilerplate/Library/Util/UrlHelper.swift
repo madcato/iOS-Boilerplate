@@ -11,7 +11,11 @@ import UIKit
 class UrlHelper {
     func launch(_ urlStr: String) {
         if let url = URL(string: urlStr) {
-            UIApplication.shared.open(url)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         } else {
             assertionFailure()
         }
