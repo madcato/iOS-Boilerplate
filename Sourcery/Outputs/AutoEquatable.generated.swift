@@ -36,12 +36,28 @@ guard lhs.subjects == rhs.subjects else { return false }
 guard lhs.authors == rhs.authors else { return false }
 return true
 }
+// MARK: - EventDTO AutoEquatable
+extension EventDTO: Equatable {} 
+internal func == (lhs: EventDTO, rhs: EventDTO) -> Bool {
+guard lhs.timestamp == rhs.timestamp else { return false }
+return true
+}
 // MARK: - Person AutoEquatable
 extension Person: Equatable {} 
 public func == (lhs: Person, rhs: Person) -> Bool {
 guard lhs.name == rhs.name else { return false }
 guard lhs.age == rhs.age else { return false }
 guard lhs.gender == rhs.gender else { return false }
+return true
+}
+// MARK: - PersonDTO AutoEquatable
+extension PersonDTO: Equatable {} 
+internal func == (lhs: PersonDTO, rhs: PersonDTO) -> Bool {
+guard lhs.title == rhs.title else { return false }
+guard lhs.name == rhs.name else { return false }
+guard lhs.email == rhs.email else { return false }
+guard compareOptionals(lhs: lhs.id, rhs: rhs.id, compare: ==) else { return false }
+guard lhs.userId == rhs.userId else { return false }
 return true
 }
 
