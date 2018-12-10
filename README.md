@@ -145,6 +145,7 @@ Also when you have to keep a customized version of other people software, is eas
   To add automated customized rules to the process of Pull Request.
 - [FormatterKit](https://github.com/mattt/FormatterKit)
   ```stringWithFormat:``` for the sophisticated hacker set
+- [Crashlytics/Fabric](https://fabric.io/kits/ios/crashlytics/manual-install)
 
 ## Project wiki
 
