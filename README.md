@@ -146,6 +146,8 @@ Also when you have to keep a customized version of other people software, is eas
 - [FormatterKit](https://github.com/mattt/FormatterKit)
   ```stringWithFormat:``` for the sophisticated hacker set
 - [Crashlytics/Fabric](https://fabric.io/kits/ios/crashlytics/manual-install)
+- [Sqlite.swift](https://github.com/stephencelis/SQLite.swift)
+  A type-safe, Swift-language layer over SQLite3
 
 ## Project wiki
 
