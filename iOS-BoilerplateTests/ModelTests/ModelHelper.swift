@@ -30,15 +30,14 @@ class ModelHelper: XCTestCase {
                 return data
             }
         }
-        XCTFail("File not loaded")
         return nil
     }
 
     func loadFixtures() {
-        loadEvents()
+        testLoadEvents()
     }
 
-    func loadEvents() {
+    func testLoadEvents() {
         if let data = loadFileToData("Event", ofType: "json"),
             let array: [EventDTO] = EventDTO.decode(array: data) {
             for eventDTO in array {
@@ -46,6 +45,8 @@ class ModelHelper: XCTestCase {
                 event?.timestamp = Date.fromJSON(eventDTO.timestamp)
                 }
             database?.saveContext()
+        } else {
+            XCTFail("File not loaded")
         }
     }
 }

@@ -14,14 +14,17 @@ class SqliteDBManager {
 
     init(database filename: String) {
         let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
-        let documentsDirectory = paths.first ?? "."
+        guard let documentsDirectory = paths.first else {
+            fatalError(".documentDirectory, .userDomainMask inaccesible in SqliteDBManager")
+        }
         let finalDBPath = "\(documentsDirectory)/\(filename)"
         do {
             db = try Connection(finalDBPath)
+            setLoggin()
+            try SQLiteDBMigrations.migrateDatabase(in: db)
         } catch {
             fatalError("Critical error opening sqlite db: \(finalDBPath)")
         }
-        setLoggin()
     }
 
     init(testing: Bool) {
@@ -85,6 +88,18 @@ class SqliteDBManager {
             table.column(email, unique: true)   //      "email" TEXT UNIQUE NOT NULL
             table.column(name)                  //      "name" TEXT
         })                                      // }
+    }
+
+    func runTest() throws {
+        try SQLiteDBMigrations.migrateDatabase(in: db)
+
+        let id = Expression<Int64>("id")
+        let season = Expression<Int64>("season")
+        let name = Expression<String>("name")
+        let episodes = Table("episodes")
+        for episode in try db.prepare(episodes) {
+            print("id: \(episode[id]), season: \(episode[season]), name: \(episode[name])")
+        }
     }
 
     private func setLoggin() {

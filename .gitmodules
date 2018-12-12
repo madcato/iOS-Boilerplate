@@ -22,3 +22,6 @@
 [submodule "Frameworks/SQLite.swift"]
 	path = Frameworks/SQLite.swift
 	url = git@github.com:stephencelis/SQLite.swift.git
+[submodule "Frameworks/SQLiteMigrationManager.swift"]
+	path = Frameworks/SQLiteMigrationManager.swift
+	url = git@github.com:garriguv/SQLiteMigrationManager.swift.git

@@ -75,6 +75,10 @@
 		34B9171D21C0EEFD00409CB8 /* SqliteDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9171C21C0EEFD00409CB8 /* SqliteDBManager.swift */; };
 		34B9173621C0F39200409CB8 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B9172921C0F37100409CB8 /* SQLite.framework */; };
 		34B9173721C0F39200409CB8 /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34B9172921C0F37100409CB8 /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34B9175321C1009000409CB8 /* SQLiteMigrationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B9175021C1008200409CB8 /* SQLiteMigrationManager.framework */; };
+		34B9175521C100B500409CB8 /* SQLiteDBMigrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9175421C100B500409CB8 /* SQLiteDBMigrations.swift */; };
+		34B9175721C1124000409CB8 /* Migrations.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34B9175621C1124000409CB8 /* Migrations.bundle */; };
+		34B9175A21C115FE00409CB8 /* SQLiteDBMigrationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9175921C115FE00409CB8 /* SQLiteDBMigrationsTests.swift */; };
 		34BE876521B590D100B4FD22 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE876421B590D100B4FD22 /* API.swift */; };
 		34BE878821B5928200B4FD22 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE878721B5928200B4FD22 /* Client.swift */; };
 		34F7641E21A6E4E400E68956 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487742B21A6BD43001675D3 /* Http.swift */; };
@@ -483,6 +487,20 @@
 			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
 			remoteInfo = "SQLite iOS";
 		};
+		34B9174F21C1008200409CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B9174A21C1008200409CB8 /* SQLiteMigrationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBE813E41C4BA00200EE04E8;
+			remoteInfo = SQLiteMigrationManager;
+		};
+		34B9175121C1008200409CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34B9174A21C1008200409CB8 /* SQLiteMigrationManager.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBE813EE1C4BA00200EE04E8;
+			remoteInfo = SQLiteMigrationManagerTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -574,6 +592,10 @@
 		34B916F221C0EE7400409CB8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		34B9171C21C0EEFD00409CB8 /* SqliteDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteDBManager.swift; sourceTree = "<group>"; };
 		34B9171E21C0F37000409CB8 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = Frameworks/SQLite.swift/SQLite.xcodeproj; sourceTree = SOURCE_ROOT; };
+		34B9174A21C1008200409CB8 /* SQLiteMigrationManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLiteMigrationManager.xcodeproj; path = Frameworks/SQLiteMigrationManager.swift/SQLiteMigrationManager.xcodeproj; sourceTree = SOURCE_ROOT; };
+		34B9175421C100B500409CB8 /* SQLiteDBMigrations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDBMigrations.swift; sourceTree = "<group>"; };
+		34B9175621C1124000409CB8 /* Migrations.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Migrations.bundle; sourceTree = "<group>"; };
+		34B9175921C115FE00409CB8 /* SQLiteDBMigrationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDBMigrationsTests.swift; sourceTree = "<group>"; };
 		34BE875D21B57AE300B4FD22 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
 		34BE876421B590D100B4FD22 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		34BE878721B5928200B4FD22 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
@@ -587,6 +609,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B9175321C1009000409CB8 /* SQLiteMigrationManager.framework in Frameworks */,
 				34B9173621C0F39200409CB8 /* SQLite.framework in Frameworks */,
 				3420DF8721AFECA20004C59F /* ImageIO.framework in Frameworks */,
 				341C20AF21B6635D007227E2 /* Masonry.framework in Frameworks */,
@@ -703,6 +726,7 @@
 				341C205821B662FE007227E2 /* Nimble.xcodeproj */,
 				341C206E21B662FE007227E2 /* Quick.xcodeproj */,
 				34B9171E21C0F37000409CB8 /* SQLite.xcodeproj */,
+				34B9174A21C1008200409CB8 /* SQLiteMigrationManager.xcodeproj */,
 			);
 			path = Submodules;
 			sourceTree = "<group>";
@@ -897,6 +921,7 @@
 		3485E7A321A55E07002248B7 /* iOS-BoilerplateTests */ = {
 			isa = PBXGroup;
 			children = (
+				34B9175821C115DE00409CB8 /* SQLiteTests */,
 				341810C721B8312A00BC9E1C /* MockServices */,
 				34BE873B21B57ABE00B4FD22 /* ServiceTests */,
 				34306A2E21B12587005B0A84 /* Fixtures */,
@@ -1108,6 +1133,8 @@
 			isa = PBXGroup;
 			children = (
 				34B9171C21C0EEFD00409CB8 /* SqliteDBManager.swift */,
+				34B9175421C100B500409CB8 /* SQLiteDBMigrations.swift */,
+				34B9175621C1124000409CB8 /* Migrations.bundle */,
 			);
 			path = Sqlite;
 			sourceTree = "<group>";
@@ -1124,6 +1151,23 @@
 				34B9173521C0F37100409CB8 /* SQLite.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		34B9174B21C1008200409CB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34B9175021C1008200409CB8 /* SQLiteMigrationManager.framework */,
+				34B9175221C1008200409CB8 /* SQLiteMigrationManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34B9175821C115DE00409CB8 /* SQLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				34B9175921C115FE00409CB8 /* SQLiteDBMigrationsTests.swift */,
+			);
+			path = SQLiteTests;
 			sourceTree = "<group>";
 		};
 		34BE873B21B57ABE00B4FD22 /* ServiceTests */ = {
@@ -1276,6 +1320,10 @@
 				{
 					ProductGroup = 34B9171F21C0F37000409CB8 /* Products */;
 					ProjectRef = 34B9171E21C0F37000409CB8 /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = 34B9174B21C1008200409CB8 /* Products */;
+					ProjectRef = 34B9174A21C1008200409CB8 /* SQLiteMigrationManager.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1610,6 +1658,20 @@
 			remoteRef = 34B9173421C0F37100409CB8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		34B9175021C1008200409CB8 /* SQLiteMigrationManager.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLiteMigrationManager.framework;
+			remoteRef = 34B9174F21C1008200409CB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34B9175221C1008200409CB8 /* SQLiteMigrationManagerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SQLiteMigrationManagerTests.xctest;
+			remoteRef = 34B9175121C1008200409CB8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1623,6 +1685,7 @@
 				3487742321A6AC32001675D3 /* Localizable.strings in Resources */,
 				3485E79721A55E07002248B7 /* Assets.xcassets in Resources */,
 				3485E82A21A5B0D9002248B7 /* environments.plist in Resources */,
+				34B9175721C1124000409CB8 /* Migrations.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1715,6 +1778,7 @@
 				340088E021A81F4C0072B1F0 /* PropertyListHelper.swift in Sources */,
 				3420DFE621B03ADA0004C59F /* DetailViewController.swift in Sources */,
 				340088F821A820640072B1F0 /* UIViewController+showAlert.swift in Sources */,
+				34B9175521C100B500409CB8 /* SQLiteDBMigrations.swift in Sources */,
 				340088EA21A81F930072B1F0 /* Serializator.swift in Sources */,
 				34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */,
 				341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */,
@@ -1757,6 +1821,7 @@
 				3420DF6A21AFDFEB0004C59F /* AutoMock.generated.swift in Sources */,
 				341C20B421B66881007227E2 /* ServiceTests.swift in Sources */,
 				34306A4221B148E2005B0A84 /* AutoMockable.swift in Sources */,
+				34B9175A21C115FE00409CB8 /* SQLiteDBMigrationsTests.swift in Sources */,
 				3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */,
 				341810CB21B8321400BC9E1C /* MockAPIClient.swift in Sources */,
 				341810C921B8316400BC9E1C /* MockServicesTests.swift in Sources */,
