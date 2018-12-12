@@ -114,6 +114,10 @@ Included in the project directly using [git submodules](https://git-scm.com/book
   AlamofireImage is an image component library for Alamofire
 - [FLEX](https://github.com/Flipboard/FLEX
   Debugging helper. (Press the screen during 4 seconds with two fingers to launch helper)
+- [Sqlite.swift](https://github.com/stephencelis/SQLite.swift)
+  A type-safe, Swift-language layer over SQLite3
+- [SQLiteMigrationmanager.swift](https://github.com/garriguv/SQLiteMigrationManager.swift)
+  Migration manager for SQLite.swift
 
 This way is easy to keep the control of the version using git submodules. You can try different branches easyly. You can try new versions, and rollback it if necesary.
 
@@ -146,8 +150,6 @@ Also when you have to keep a customized version of other people software, is eas
 - [FormatterKit](https://github.com/mattt/FormatterKit)
   ```stringWithFormat:``` for the sophisticated hacker set
 - [Crashlytics/Fabric](https://fabric.io/kits/ios/crashlytics/manual-install)
-- [Sqlite.swift](https://github.com/stephencelis/SQLite.swift)
-  A type-safe, Swift-language layer over SQLite3
 
 ## Project wiki
 

@@ -11,7 +11,7 @@ import Alamofire
 extension Http {
 class Client {
     private let manager: Alamofire.SessionManager
-    private let baseURL = URL(string: Configuration.serverURL)!
+    private let baseURL = URL(string: Configuration.serverURL)!  // swiftlint:disable:this force_unwrapping
     private let queue = DispatchQueue(label: "AlamofireLabel")
 
     init(accessToken: String) {

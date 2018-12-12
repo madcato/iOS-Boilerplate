@@ -19,3 +19,6 @@
 [submodule "Frameworks/FLEX"]
 	path = Frameworks/FLEX
 	url = git@github.com:Flipboard/FLEX.git
+[submodule "Frameworks/SQLite.swift"]
+	path = Frameworks/SQLite.swift
+	url = git@github.com:stephencelis/SQLite.swift.git
