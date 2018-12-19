@@ -31,6 +31,9 @@ extension Decodable {
         } catch {
             print("error trying to convert json Data to \(String(describing: [T].self)) object")
             print(error)
+            #if DEBUG
+                fatalError("Unresolved error \(error)")
+            #endif
         }
         return nil
     }

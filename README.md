@@ -151,6 +151,8 @@ Also when you have to keep a customized version of other people software, is eas
 - [FormatterKit](https://github.com/mattt/FormatterKit)
   ```stringWithFormat:``` for the sophisticated hacker set
 - [Crashlytics/Fabric](https://fabric.io/kits/ios/crashlytics/manual-install)
+- [Turbolinks](https://github.com/turbolinks/turbolinks-ios)
+  Mix web view controllers and native controllers to create hibrids apps without the hell of angular.js  
 
 ## Project wiki
 
