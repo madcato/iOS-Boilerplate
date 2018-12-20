@@ -81,6 +81,12 @@
 		34B9175A21C115FE00409CB8 /* SQLiteDBMigrationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B9175921C115FE00409CB8 /* SQLiteDBMigrationsTests.swift */; };
 		34BE876521B590D100B4FD22 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE876421B590D100B4FD22 /* API.swift */; };
 		34BE878821B5928200B4FD22 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE878721B5928200B4FD22 /* Client.swift */; };
+		34D48F4821CBABA2001CEADF /* AppDelegate+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */; };
+		34D48F4B21CBAE45001CEADF /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4A21CBAE45001CEADF /* MainButton.swift */; };
+		34D48F4D21CBAE6B001CEADF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */; };
+		34D48F4F21CBAE82001CEADF /* MainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4E21CBAE82001CEADF /* MainLabel.swift */; };
+		34D48F5121CBAE97001CEADF /* SimpleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F5021CBAE97001CEADF /* SimpleLabel.swift */; };
+		34D48F5321CBAEB6001CEADF /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F5221CBAEB5001CEADF /* CancelButton.swift */; };
 		34F7641E21A6E4E400E68956 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487742B21A6BD43001675D3 /* Http.swift */; };
 		34F7642021A6E94100E68956 /* BookNomadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F7641F21A6E94100E68956 /* BookNomadsService.swift */; };
 		34F7642521A6ECF100E68956 /* BookNomadsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F7642421A6ECF100E68956 /* BookNomadsServiceTests.swift */; };
@@ -599,6 +605,12 @@
 		34BE875D21B57AE300B4FD22 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
 		34BE876421B590D100B4FD22 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		34BE878721B5928200B4FD22 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Theme.swift"; sourceTree = "<group>"; };
+		34D48F4A21CBAE45001CEADF /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainButton.swift; path = "../../../../kapptus-ios-app/netpaydump/MainButton.swift"; sourceTree = "<group>"; };
+		34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		34D48F4E21CBAE82001CEADF /* MainLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLabel.swift; sourceTree = "<group>"; };
+		34D48F5021CBAE97001CEADF /* SimpleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLabel.swift; sourceTree = "<group>"; };
+		34D48F5221CBAEB5001CEADF /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
 		34F7641F21A6E94100E68956 /* BookNomadsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNomadsService.swift; sourceTree = "<group>"; };
 		34F7642421A6ECF100E68956 /* BookNomadsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNomadsServiceTests.swift; sourceTree = "<group>"; };
 		34F7642621A6F64B00E68956 /* BookDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDTO.swift; sourceTree = "<group>"; };
@@ -973,6 +985,8 @@
 		3485E7C321A57F7F002248B7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				34D48F4921CBAD19001CEADF /* Controls */,
+				34D48F1521CBAA8E001CEADF /* Theme */,
 				3485E81821A5A6A6002248B7 /* Configuration */,
 				3485E7C621A57FE1002248B7 /* Extensions */,
 				3485E7C521A57FD4002248B7 /* Feed */,
@@ -1177,6 +1191,26 @@
 				34F7642421A6ECF100E68956 /* BookNomadsServiceTests.swift */,
 			);
 			path = ServiceTests;
+			sourceTree = "<group>";
+		};
+		34D48F1521CBAA8E001CEADF /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		34D48F4921CBAD19001CEADF /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				34D48F4A21CBAE45001CEADF /* MainButton.swift */,
+				34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */,
+				34D48F4E21CBAE82001CEADF /* MainLabel.swift */,
+				34D48F5021CBAE97001CEADF /* SimpleLabel.swift */,
+				34D48F5221CBAEB5001CEADF /* CancelButton.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1772,16 +1806,22 @@
 				340088EC21A81F930072B1F0 /* String+urlEncode.swift in Sources */,
 				3485E82D21A5B1F0002248B7 /* Environment.swift in Sources */,
 				3485E81A21A5A716002248B7 /* Configuration.swift in Sources */,
+				34D48F4F21CBAE82001CEADF /* MainLabel.swift in Sources */,
 				3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */,
+				34D48F5121CBAE97001CEADF /* SimpleLabel.swift in Sources */,
 				34F7642021A6E94100E68956 /* BookNomadsService.swift in Sources */,
 				34BE878821B5928200B4FD22 /* Client.swift in Sources */,
 				340088E021A81F4C0072B1F0 /* PropertyListHelper.swift in Sources */,
+				34D48F5321CBAEB6001CEADF /* CancelButton.swift in Sources */,
 				3420DFE621B03ADA0004C59F /* DetailViewController.swift in Sources */,
 				340088F821A820640072B1F0 /* UIViewController+showAlert.swift in Sources */,
 				34B9175521C100B500409CB8 /* SQLiteDBMigrations.swift in Sources */,
 				340088EA21A81F930072B1F0 /* Serializator.swift in Sources */,
 				34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */,
+				34D48F4821CBABA2001CEADF /* AppDelegate+Theme.swift in Sources */,
+				34D48F4D21CBAE6B001CEADF /* BackgroundView.swift in Sources */,
 				341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */,
+				34D48F4B21CBAE45001CEADF /* MainButton.swift in Sources */,
 				340088FD21A822940072B1F0 /* System.swift in Sources */,
 				3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */,
 				340088F621A820640072B1F0 /* UIView+border.swift in Sources */,

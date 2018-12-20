@@ -45,7 +45,6 @@ opt_in_rules:
   - multiline_function_chains
   - no_extension_access_modifier
   - number_separator
-  - object_literal
   - operator_usage_whitespace
   - overridden_super_call
   - override_in_extension
