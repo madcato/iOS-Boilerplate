@@ -35,6 +35,7 @@
 		341810C621B8152400BC9E1C /* NetworkingInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C521B8152400BC9E1C /* NetworkingInjector.swift */; };
 		341810C921B8316400BC9E1C /* MockServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C821B8316400BC9E1C /* MockServicesTests.swift */; };
 		341810CB21B8321400BC9E1C /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810CA21B8321400BC9E1C /* MockAPIClient.swift */; };
+		3418A0F821CCD66400BBF17A /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418A0F721CCD66400BBF17A /* MainButton.swift */; };
 		341C20AF21B6635D007227E2 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C202721B662FE007227E2 /* Masonry.framework */; };
 		341C20B021B6635D007227E2 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341C202721B662FE007227E2 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341C20B421B66881007227E2 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE875D21B57AE300B4FD22 /* ServiceTests.swift */; };
@@ -82,7 +83,6 @@
 		34BE876521B590D100B4FD22 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE876421B590D100B4FD22 /* API.swift */; };
 		34BE878821B5928200B4FD22 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE878721B5928200B4FD22 /* Client.swift */; };
 		34D48F4821CBABA2001CEADF /* AppDelegate+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */; };
-		34D48F4B21CBAE45001CEADF /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4A21CBAE45001CEADF /* MainButton.swift */; };
 		34D48F4D21CBAE6B001CEADF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */; };
 		34D48F4F21CBAE82001CEADF /* MainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4E21CBAE82001CEADF /* MainLabel.swift */; };
 		34D48F5121CBAE97001CEADF /* SimpleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F5021CBAE97001CEADF /* SimpleLabel.swift */; };
@@ -551,6 +551,7 @@
 		341810C521B8152400BC9E1C /* NetworkingInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingInjector.swift; sourceTree = "<group>"; };
 		341810C821B8316400BC9E1C /* MockServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServicesTests.swift; sourceTree = "<group>"; };
 		341810CA21B8321400BC9E1C /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		3418A0F721CCD66400BBF17A /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		341C202121B662FE007227E2 /* Masonry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry.xcodeproj; path = Frameworks/Masonry/Masonry.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341C203F21B662FE007227E2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Frameworks/Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		341C205821B662FE007227E2 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Frameworks/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -606,7 +607,6 @@
 		34BE876421B590D100B4FD22 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		34BE878721B5928200B4FD22 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Theme.swift"; sourceTree = "<group>"; };
-		34D48F4A21CBAE45001CEADF /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainButton.swift; path = "../../../../kapptus-ios-app/netpaydump/MainButton.swift"; sourceTree = "<group>"; };
 		34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		34D48F4E21CBAE82001CEADF /* MainLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLabel.swift; sourceTree = "<group>"; };
 		34D48F5021CBAE97001CEADF /* SimpleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLabel.swift; sourceTree = "<group>"; };
@@ -1204,7 +1204,7 @@
 		34D48F4921CBAD19001CEADF /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				34D48F4A21CBAE45001CEADF /* MainButton.swift */,
+				3418A0F721CCD66400BBF17A /* MainButton.swift */,
 				34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */,
 				34D48F4E21CBAE82001CEADF /* MainLabel.swift */,
 				34D48F5021CBAE97001CEADF /* SimpleLabel.swift */,
@@ -1821,7 +1821,6 @@
 				34D48F4821CBABA2001CEADF /* AppDelegate+Theme.swift in Sources */,
 				34D48F4D21CBAE6B001CEADF /* BackgroundView.swift in Sources */,
 				341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */,
-				34D48F4B21CBAE45001CEADF /* MainButton.swift in Sources */,
 				340088FD21A822940072B1F0 /* System.swift in Sources */,
 				3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */,
 				340088F621A820640072B1F0 /* UIView+border.swift in Sources */,
@@ -1829,6 +1828,7 @@
 				34306A3321B135C0005B0A84 /* AutoEquatable.swift in Sources */,
 				340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */,
 				3485E78F21A55E05002248B7 /* ViewController.swift in Sources */,
+				3418A0F821CCD66400BBF17A /* MainButton.swift in Sources */,
 				34B9171D21C0EEFD00409CB8 /* SqliteDBManager.swift in Sources */,
 				340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */,
 				340088F421A820640072B1F0 /* UIViewController+imageBackground.swift in Sources */,
