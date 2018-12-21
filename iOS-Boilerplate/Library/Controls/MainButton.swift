@@ -12,7 +12,7 @@ import UIKit
  Use this class to set it in the storyboard, in the Identity Inspector, in Custom class.
  This way, every button with this class setted has the style defined in the Theme class.
  */
-class MainButton: UIView {
+class MainButton: UIButton {
 
     /*
      // Only override drawRect: if you perform custom drawing.
