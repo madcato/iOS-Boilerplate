@@ -220,6 +220,7 @@ The computer where fastlane is going to run must have the provissioning and priv
 
 - https://medium.com/cocoaacademymag/unit-testing-network-request-3a75061fcf4c
 - https://kean.github.io/post/api-client
+- https://clean-swift.com/clean-swift-ios-architecture/
 
 ## Migration guide for SQLite.swift
 
@@ -246,3 +247,16 @@ If the migration must be made with swift code:
   1. Set in ```version``` property the year, month, day, hour, minutos, seconds ('%Y%m%d%H%M%S') in order to allow migration manager to know the order to sort the migrations.
   2. Implement method ```migrateDatabase``` with the changes.
 2. Add the new struct/class name to the migration array (look for property variabla named **migration** in class *SQLiteDBMigrations*
+
+## Implementation sample with Clean-Swift Architecture
+
+In the group ```iOS-Boilerplate/Login``` you can find the sample files implementing a login functionality using an [architecture named Clean-Swift](https://clean-swift.com/clean-swift-ios-architecture/):
+
+Files:
+
+- LoginViewController: view controller that manages the login view.
+- LoginModels: Structs to move data between view controller, interactor and presenter
+- LoginInteractor: This class is used from the view controller in order to run the operations launched by the user interacting with the UI. Also manages any other requirement from the view controller.
+- LoginPresenter: This class adapts the data to the final data types that will be showed in the view. Transformations like Date to String and texts translations are made by this class.
+- LoginRouter: This class manages the view transitions.
+- LoginWorker: This class implements the functionality.

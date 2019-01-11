@@ -6,6 +6,8 @@ excluded:
   - Tests/SwiftLintFrameworkTests/Resources
 analyzer_rules:
   - unused_import
+opt_out_rules:
+  - nesting
 opt_in_rules:
   - anyobject_protocol
   - array_init
@@ -27,7 +29,6 @@ opt_in_rules:
   - extension_access_modifier
   - fallthrough
   - fatal_error_message
-  - file_name
   - first_where
   - force_unwrapping
   - function_default_parameter_at_end

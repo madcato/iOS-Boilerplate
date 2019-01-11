@@ -25,7 +25,11 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
                                         target: self,
                                         action: #selector(insertNewObject(_:)))
         addButton.accessibilityIdentifier = "AddButtonId"
-        navigationItem.rightBarButtonItem = addButton
+        navigationItem.rightBarButtonItems?.append(addButton)
+    }
+
+    @IBAction private func loginButtonTapped(_ sender: UIBarButtonItem) {
+        LoginRouter.showLogin(over: self)
     }
 
     @objc
