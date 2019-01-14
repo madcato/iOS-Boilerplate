@@ -13,7 +13,7 @@
 import UIKit
 
 protocol LoginBusinessLogic {
-  func doSignIn(request: Login.Process.Request)
+    func doSignIn(request: Login.Process.Request)
 }
 
 protocol LoginDataStore {
