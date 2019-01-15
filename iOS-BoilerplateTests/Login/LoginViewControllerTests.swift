@@ -16,8 +16,8 @@ import XCTest
 class LoginViewControllerTests: XCTestCase {
     // MARK: Subject under test
 
-    var sut: LoginViewController!
-    var window: UIWindow!
+    var sut: LoginViewController?
+    var window: UIWindow?
 
     // MARK: Test lifecycle
 
@@ -41,7 +41,10 @@ class LoginViewControllerTests: XCTestCase {
     }
 
     func loadView() {
-        window.addSubview(sut.view)
+        guard let view = sut?.view else {
+            return
+        }
+        window?.addSubview(view)
         RunLoop.current.run(until: Date())
     }
 
@@ -78,6 +81,7 @@ class LoginViewControllerTests: XCTestCase {
 //          sut.displayLogin(viewModel: viewModel)
 //
 //          // Then
-//          //XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update the name text field")
+//          //XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update
+                // the name text field")
 //      }
 }

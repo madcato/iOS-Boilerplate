@@ -16,7 +16,7 @@ import XCTest
 class LoginWorkerTests: XCTestCase {
     // MARK: Subject under test
 
-    var sut: LoginWorker!
+    var sut: LoginWorker?
 
     // MARK: Test lifecycle
 
@@ -39,11 +39,35 @@ class LoginWorkerTests: XCTestCase {
 
     // MARK: Tests
 
-    func testSomething() {
-        // Given
+    func testValidateUserName() {
+        XCTAssertEqual(sut?.validate(userName: nil), false, "nil is not a good username")
+        XCTAssertEqual(sut?.validate(userName: ""), false, "empty is not a good username")
+    }
 
-        // When
+    func testValidatePassword() {
+        XCTAssertEqual(sut?.validate(password: nil), false, "nil is not a good password")
+        XCTAssertEqual(sut?.validate(password: ""), false, "empty is not a good password")
+    }
 
-        // Then
+    func testSignInOk() {
+        let expectation = XCTestExpectation(description: "signin")
+        var result = Login.Process.Response.Result.loginInvalid
+        sut?.doSignIn(for: "dani", and: "1234") { ret in
+            result = ret
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 6.0)
+        XCTAssertEqual(result, Login.Process.Response.Result.loginOk, "must be an ok login")
+    }
+
+    func testSignInBad() {
+        let expectation = XCTestExpectation(description: "signin")
+        var result = Login.Process.Response.Result.loginOk
+        sut?.doSignIn(for: "dani", and: "12dasdf34") { ret in
+            result = ret
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 6.0)
+        XCTAssertEqual(result, Login.Process.Response.Result.loginInvalid, "must be an ok login")
     }
 }

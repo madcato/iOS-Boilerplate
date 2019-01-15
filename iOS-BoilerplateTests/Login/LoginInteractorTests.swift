@@ -16,7 +16,7 @@ import XCTest
 class LoginInteractorTests: XCTestCase {
     // MARK: Subject under test
 
-    var sut: LoginInteractor!
+    var sut: LoginInteractor?
 
     // MARK: Test lifecycle
 
@@ -64,11 +64,11 @@ class LoginInteractorTests: XCTestCase {
     func testDoLoginOk() {
         // Given
         let spy = LoginPresentationLogicSpy()
-        sut.presenter = spy
+        sut?.presenter = spy
         let request = Login.Process.Request(userName: "dani", password: "1234")
 
         // When
-        sut.doSignIn(request: request)
+        sut?.doSignIn(request: request)
 
         // Then
 //        XCTAssertTrue(spy.presentLoginCalled, "testDoLoginOk(request:) should called")
@@ -78,11 +78,11 @@ class LoginInteractorTests: XCTestCase {
     func testDoLoginBad() {
         // Given
         let spy = LoginPresentationLogicSpy()
-        sut.presenter = spy
+        sut?.presenter = spy
         let request = Login.Process.Request(userName: "dani", password: "4321")
 
         // When
-        sut.doSignIn(request: request)
+        sut?.doSignIn(request: request)
 
         // Then
 //        XCTAssertTrue(spy.presentLoginCalled, "testDoLoginOk(request:) should called")
@@ -92,11 +92,11 @@ class LoginInteractorTests: XCTestCase {
     func testDoLoginError() {
         // Given
         let spy = LoginPresentationLogicSpy()
-        sut.presenter = spy
+        sut?.presenter = spy
         let request = Login.Process.Request(userName: "dani", password: nil)
 
         // When
-        sut.doSignIn(request: request)
+        sut?.doSignIn(request: request)
 
         // Then
         XCTAssertTrue(spy.presentErrorCalled, "doSomething(request:) should ask the presenter to format the result")

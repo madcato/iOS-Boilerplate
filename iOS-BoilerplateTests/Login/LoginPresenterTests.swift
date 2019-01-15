@@ -16,7 +16,7 @@ import XCTest
 class LoginPresenterTests: XCTestCase {
     // MARK: Subject under test
 
-    var sut: LoginPresenter!
+    var sut: LoginPresenter?
 
     // MARK: Test lifecycle
 
@@ -69,11 +69,11 @@ class LoginPresenterTests: XCTestCase {
     func testPresentLoginOK() {
         // Given
         let spy = LoginDisplayLogicSpy()
-        sut.viewController = spy
+        sut?.viewController = spy
         let response = Login.Process.Response(result: Login.Process.Response.Result.loginOk)
 
         // When
-        sut.presentLogin(response: response)
+        sut?.presentLogin(response: response)
 
         // Then
         XCTAssertTrue(spy.displayLoginCalled, "presentLogin(response:) login ok")
@@ -82,11 +82,11 @@ class LoginPresenterTests: XCTestCase {
     func testPresentLoginInvalid() {
         // Given
         let spy = LoginDisplayLogicSpy()
-        sut.viewController = spy
+        sut?.viewController = spy
         let response = Login.Process.Response(result: Login.Process.Response.Result.loginInvalid)
 
         // When
-        sut.presentLogin(response: response)
+        sut?.presentLogin(response: response)
 
         // Then
         XCTAssertTrue(spy.displayLoginCalled, "presentLogin(response:) login invalid")
@@ -95,10 +95,10 @@ class LoginPresenterTests: XCTestCase {
     func testInvalidUserName() {
         // Given
         let spy = LoginDisplayLogicSpy()
-        sut.viewController = spy
+        sut?.viewController = spy
 
         // When
-        sut.presentError(code: Login.Process.Response.Error.invalidUserName, description: "error desc")
+        sut?.presentError(code: Login.Process.Response.Error.invalidUserName, description: "error desc")
 
         // Then
         XCTAssertTrue(spy.displayInvalidUserNameCalled, "presentError(response:) bad username")
@@ -107,10 +107,10 @@ class LoginPresenterTests: XCTestCase {
     func testInvalidPassword() {
         // Given
         let spy = LoginDisplayLogicSpy()
-        sut.viewController = spy
+        sut?.viewController = spy
 
         // When
-        sut.presentError(code: Login.Process.Response.Error.invalidPassword, description: "error desc")
+        sut?.presentError(code: Login.Process.Response.Error.invalidPassword, description: "error desc")
 
         // Then
         XCTAssertTrue(spy.displayInvalidPasswordCalled, "presentError(response:) bad password")

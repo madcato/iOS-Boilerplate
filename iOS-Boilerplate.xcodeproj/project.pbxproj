@@ -24,6 +24,23 @@
 		340088F821A820640072B1F0 /* UIViewController+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F321A820640072B1F0 /* UIViewController+showAlert.swift */; };
 		340088FC21A822940072B1F0 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FA21A822940072B1F0 /* AppInfo.swift */; };
 		340088FD21A822940072B1F0 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FB21A822940072B1F0 /* System.swift */; };
+		340D313421EDDEB000E5936D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3420DF8621AFECA20004C59F /* ImageIO.framework */; };
+		340D313F21EDDED000E5936D /* SQLiteMigrationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313621EDDECF00E5936D /* SQLiteMigrationManager.framework */; };
+		340D314021EDDED000E5936D /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313721EDDECF00E5936D /* SQLite.framework */; };
+		340D314121EDDED000E5936D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313821EDDECF00E5936D /* Alamofire.framework */; };
+		340D314221EDDED000E5936D /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313921EDDECF00E5936D /* AlamofireImage.framework */; };
+		340D314321EDDED000E5936D /* FLEX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313A21EDDECF00E5936D /* FLEX.framework */; };
+		340D314421EDDED000E5936D /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313B21EDDECF00E5936D /* AlamofireNetworkActivityIndicator.framework */; };
+		340D314621EDDED000E5936D /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313D21EDDECF00E5936D /* Masonry.framework */; };
+		340D314721EDDED800E5936D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B916F221C0EE7400409CB8 /* libsqlite3.tbd */; };
+		340D314921EDE18400E5936D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313C21EDDECF00E5936D /* Quick.framework */; };
+		340D314A21EDE18400E5936D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313C21EDDECF00E5936D /* Quick.framework */; };
+		340D314B21EDE18800E5936D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313521EDDECF00E5936D /* Nimble.framework */; };
+		340D314C21EDE18800E5936D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313521EDDECF00E5936D /* Nimble.framework */; };
+		340D314E21EDE1BF00E5936D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 340D313521EDDECF00E5936D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		340D314F21EDE1BF00E5936D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 340D313C21EDDECF00E5936D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		340D315221EDE86100E5936D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 340D313521EDDECF00E5936D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		340D315321EDE86100E5936D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 340D313C21EDDECF00E5936D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341810B521B7D9B400BC9E1C /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = 3485E81121A59358002248B7 /* Person.json */; };
 		341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C321B80BF100BC9E1C /* Decodable+Codable.swift */; };
 		341810C621B8152400BC9E1C /* NetworkingInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C521B8152400BC9E1C /* NetworkingInjector.swift */; };
@@ -89,48 +106,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		341810BB21B7E26400BC9E1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 341810B621B7E26400BC9E1C /* FLEX.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3A4C941F1B5B20570088C3F2;
-			remoteInfo = FLEX;
-		};
-		341810BD21B7E26400BC9E1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 341810B621B7E26400BC9E1C /* FLEX.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1C27A8B61F0E5A0300F0D02D;
-			remoteInfo = FLEXTestsMethodsList;
-		};
-		341C202621B662FE007227E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 341C202121B662FE007227E2 /* Masonry.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3AED05B71AD59FD40053CC65;
-			remoteInfo = "Masonry iOS";
-		};
-		341C202821B662FE007227E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 341C202121B662FE007227E2 /* Masonry.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3AED06271AD5A1400053CC65;
-			remoteInfo = "Masonry OSX";
-		};
-		3440F5E121BE55480092CAF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3440F5D921BE55480092CAF9 /* AlamofireNetworkActivityIndicator.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB928391C66E1A600CE5F08;
-			remoteInfo = AlamofireNetworkActivityIndicator;
-		};
-		3440F5E321BE55480092CAF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3440F5D921BE55480092CAF9 /* AlamofireNetworkActivityIndicator.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB928431C66E1A700CE5F08;
-			remoteInfo = AlamofireNetworkActivityIndicatorTests;
-		};
 		3485E7A121A55E07002248B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3485E78121A55E05002248B7 /* Project object */;
@@ -146,6 +121,31 @@
 			remoteInfo = "iOS-Boilerplate";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		340D314D21EDE1A900E5936D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				340D314E21EDE1BF00E5936D /* Nimble.framework in CopyFiles */,
+				340D314F21EDE1BF00E5936D /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340D315121EDE84000E5936D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				340D315221EDE86100E5936D /* Nimble.framework in CopyFiles */,
+				340D315321EDE86100E5936D /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		340088D721A81AB00072B1F0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -166,13 +166,20 @@
 		340088FA21A822940072B1F0 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		340088FB21A822940072B1F0 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		340C8C5221A8385500D7178F /* iOS-Boilerplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Boilerplate.entitlements"; sourceTree = "<group>"; };
-		341810B621B7E26400BC9E1C /* FLEX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FLEX.xcodeproj; path = Frameworks/FLEX/FLEX.xcodeproj; sourceTree = SOURCE_ROOT; };
+		340D313521EDDECF00E5936D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		340D313621EDDECF00E5936D /* SQLiteMigrationManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLiteMigrationManager.framework; path = Carthage/Build/iOS/SQLiteMigrationManager.framework; sourceTree = "<group>"; };
+		340D313721EDDECF00E5936D /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		340D313821EDDECF00E5936D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		340D313921EDDECF00E5936D /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		340D313A21EDDECF00E5936D /* FLEX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLEX.framework; path = Carthage/Build/iOS/FLEX.framework; sourceTree = "<group>"; };
+		340D313B21EDDECF00E5936D /* AlamofireNetworkActivityIndicator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireNetworkActivityIndicator.framework; path = Carthage/Build/iOS/AlamofireNetworkActivityIndicator.framework; sourceTree = "<group>"; };
+		340D313C21EDDECF00E5936D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		340D313D21EDDECF00E5936D /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
 		341810C321B80BF100BC9E1C /* Decodable+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Codable.swift"; sourceTree = "<group>"; };
 		341810C521B8152400BC9E1C /* NetworkingInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingInjector.swift; sourceTree = "<group>"; };
 		341810C821B8316400BC9E1C /* MockServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServicesTests.swift; sourceTree = "<group>"; };
 		341810CA21B8321400BC9E1C /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
 		3418A0F721CCD66400BBF17A /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
-		341C202121B662FE007227E2 /* Masonry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Masonry.xcodeproj; path = Frameworks/Masonry/Masonry.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3420DF5F21AFDBB90004C59F /* AutoMock.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoMock.stencil; sourceTree = "<group>"; };
 		3420DF6021AFDCD40004C59F /* FakeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeProtocol.swift; sourceTree = "<group>"; };
 		3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoEquatable.stencil; sourceTree = "<group>"; };
@@ -197,7 +204,6 @@
 		3438809321ECA62E002FCBE5 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
 		3438809521ECA62E002FCBE5 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
-		3440F5D921BE55480092CAF9 /* AlamofireNetworkActivityIndicator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireNetworkActivityIndicator.xcodeproj; path = Frameworks/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3485E78921A55E05002248B7 /* iOS-Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485E78C21A55E05002248B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3485E78E21A55E05002248B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -246,6 +252,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340D313F21EDDED000E5936D /* SQLiteMigrationManager.framework in Frameworks */,
+				340D313421EDDEB000E5936D /* ImageIO.framework in Frameworks */,
+				340D314621EDDED000E5936D /* Masonry.framework in Frameworks */,
+				340D314021EDDED000E5936D /* SQLite.framework in Frameworks */,
+				340D314421EDDED000E5936D /* AlamofireNetworkActivityIndicator.framework in Frameworks */,
+				340D314221EDDED000E5936D /* AlamofireImage.framework in Frameworks */,
+				340D314321EDDED000E5936D /* FLEX.framework in Frameworks */,
+				340D314121EDDED000E5936D /* Alamofire.framework in Frameworks */,
+				340D314721EDDED800E5936D /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +268,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340D314921EDE18400E5936D /* Quick.framework in Frameworks */,
+				340D314B21EDE18800E5936D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340D314A21EDE18400E5936D /* Quick.framework in Frameworks */,
+				340D314C21EDE18800E5936D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,15 +342,6 @@
 			path = System;
 			sourceTree = "<group>";
 		};
-		341810B721B7E26400BC9E1C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				341810BC21B7E26400BC9E1C /* FLEX.framework */,
-				341810BE21B7E26400BC9E1C /* FLEXTestsMethodsList.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		341810C721B8312A00BC9E1C /* MockServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,25 +349,6 @@
 				341810CA21B8321400BC9E1C /* MockAPIClient.swift */,
 			);
 			path = MockServices;
-			sourceTree = "<group>";
-		};
-		341C1FFF21B662F2007227E2 /* Submodules */ = {
-			isa = PBXGroup;
-			children = (
-				3440F5D921BE55480092CAF9 /* AlamofireNetworkActivityIndicator.xcodeproj */,
-				341810B621B7E26400BC9E1C /* FLEX.xcodeproj */,
-				341C202121B662FE007227E2 /* Masonry.xcodeproj */,
-			);
-			path = Submodules;
-			sourceTree = "<group>";
-		};
-		341C202221B662FE007227E2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				341C202721B662FE007227E2 /* Masonry.framework */,
-				341C202921B662FE007227E2 /* Masonry.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3420DF5721AFDB220004C59F /* Sourcery */ = {
@@ -392,6 +383,15 @@
 			isa = PBXGroup;
 			children = (
 				34B916F221C0EE7400409CB8 /* libsqlite3.tbd */,
+				340D313821EDDECF00E5936D /* Alamofire.framework */,
+				340D313921EDDECF00E5936D /* AlamofireImage.framework */,
+				340D313B21EDDECF00E5936D /* AlamofireNetworkActivityIndicator.framework */,
+				340D313A21EDDECF00E5936D /* FLEX.framework */,
+				340D313D21EDDECF00E5936D /* Masonry.framework */,
+				340D313521EDDECF00E5936D /* Nimble.framework */,
+				340D313C21EDDECF00E5936D /* Quick.framework */,
+				340D313721EDDECF00E5936D /* SQLite.framework */,
+				340D313621EDDECF00E5936D /* SQLiteMigrationManager.framework */,
 				3420DF8621AFECA20004C59F /* ImageIO.framework */,
 			);
 			name = Frameworks;
@@ -456,19 +456,9 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		3440F5DA21BE55480092CAF9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3440F5E221BE55480092CAF9 /* AlamofireNetworkActivityIndicator.framework */,
-				3440F5E421BE55480092CAF9 /* AlamofireNetworkActivityIndicatorTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3485E78021A55E05002248B7 = {
 			isa = PBXGroup;
 			children = (
-				341C1FFF21B662F2007227E2 /* Submodules */,
 				3420DF5721AFDB220004C59F /* Sourcery */,
 				3485E78B21A55E05002248B7 /* iOS-Boilerplate */,
 				3485E7A321A55E07002248B7 /* iOS-BoilerplateTests */,
@@ -777,6 +767,8 @@
 				3440F63D21BE88D60092CAF9 /* ShellScript */,
 				3440F63E21BE89160092CAF9 /* ShellScript */,
 				3485E78721A55E05002248B7 /* Resources */,
+				340D314821EDDF6B00E5936D /* ShellScript */,
+				340D315021EDE25D00E5936D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -794,6 +786,7 @@
 				3485E79C21A55E07002248B7 /* Sources */,
 				3485E79D21A55E07002248B7 /* Frameworks */,
 				3485E79E21A55E07002248B7 /* Resources */,
+				340D314D21EDE1A900E5936D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -812,6 +805,7 @@
 				3485E7A721A55E07002248B7 /* Sources */,
 				3485E7A821A55E07002248B7 /* Frameworks */,
 				3485E7A921A55E07002248B7 /* Resources */,
+				340D315121EDE84000E5936D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -863,20 +857,6 @@
 			mainGroup = 3485E78021A55E05002248B7;
 			productRefGroup = 3485E78A21A55E05002248B7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3440F5DA21BE55480092CAF9 /* Products */;
-					ProjectRef = 3440F5D921BE55480092CAF9 /* AlamofireNetworkActivityIndicator.xcodeproj */;
-				},
-				{
-					ProductGroup = 341810B721B7E26400BC9E1C /* Products */;
-					ProjectRef = 341810B621B7E26400BC9E1C /* FLEX.xcodeproj */;
-				},
-				{
-					ProductGroup = 341C202221B662FE007227E2 /* Products */;
-					ProjectRef = 341C202121B662FE007227E2 /* Masonry.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				3485E78821A55E05002248B7 /* iOS-Boilerplate */,
@@ -885,51 +865,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		341810BC21B7E26400BC9E1C /* FLEX.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = FLEX.framework;
-			remoteRef = 341810BB21B7E26400BC9E1C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		341810BE21B7E26400BC9E1C /* FLEXTestsMethodsList.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = FLEXTestsMethodsList.xctest;
-			remoteRef = 341810BD21B7E26400BC9E1C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		341C202721B662FE007227E2 /* Masonry.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Masonry.framework;
-			remoteRef = 341C202621B662FE007227E2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		341C202921B662FE007227E2 /* Masonry.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Masonry.framework;
-			remoteRef = 341C202821B662FE007227E2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3440F5E221BE55480092CAF9 /* AlamofireNetworkActivityIndicator.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AlamofireNetworkActivityIndicator.framework;
-			remoteRef = 3440F5E121BE55480092CAF9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3440F5E421BE55480092CAF9 /* AlamofireNetworkActivityIndicatorTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AlamofireNetworkActivityIndicatorTests.xctest;
-			remoteRef = 3440F5E321BE55480092CAF9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3485E78721A55E05002248B7 /* Resources */ = {
@@ -966,6 +901,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		340D314821EDDF6B00E5936D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireNetworkActivityIndicator.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FLEX.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SQLiteMigrationManager.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireImage.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireNetworkActivityIndicator.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FLEX.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Masonry.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLite.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLiteMigrationManager.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		340D315021EDE25D00E5936D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings\n";
+		};
 		3440F63D21BE88D60092CAF9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1282,6 +1265,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-Boilerplate/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1304,6 +1291,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-Boilerplate/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1326,6 +1317,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-BoilerplateTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1347,6 +1342,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-BoilerplateTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1367,6 +1366,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-BoilerplateUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1387,6 +1390,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-BoilerplateUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
