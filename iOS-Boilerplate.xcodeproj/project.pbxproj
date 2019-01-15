@@ -768,7 +768,6 @@
 				3440F63E21BE89160092CAF9 /* ShellScript */,
 				3485E78721A55E05002248B7 /* Resources */,
 				340D314821EDDF6B00E5936D /* ShellScript */,
-				340D315021EDE25D00E5936D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -931,23 +930,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		340D315021EDE25D00E5936D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings\n";
 		};
 		3440F63D21BE88D60092CAF9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;

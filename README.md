@@ -96,7 +96,7 @@ Project
 
 ### External frameworks
 
-Included in the project directly using [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). It's better not to use Carthage or Cocoapods.
+Included in the project directly using [Carthage](https://github.com/Carthage/Carthage). This way is easier to manage versions of this external frameworks. Carthage does not add much build time, because it builds the frameworks previously and add them to the repository.
 
 - [Alamofire](https://github.com/Alamofire/Alamofire)
   For accesing remote http servers
@@ -120,9 +120,13 @@ Included in the project directly using [git submodules](https://git-scm.com/book
 - [SQLiteMigrationmanager.swift](https://github.com/garriguv/SQLiteMigrationManager.swift)
   Migration manager for SQLite.swift
 
-This way is easy to keep the control of the version using git submodules. You can try different branches easyly. You can try new versions, and rollback it if necesary.
+#### Carthage version setting
 
-Also when you have to keep a customized version of other people software, is easier to keep your own branch and merge new versions into your tweaked code. To do this, make a fork of the third party submodule or push it into your own managed remote repository to create your own threads.
+[Read about Semver](http://semver.org/) to know the meaning of each component in the version code string: a.b.c
+
+\>= 1.0 for “at least version 1.0”       
+~> 1.0 for “compatible with version 1.0”    
+== 1.0 for “exactly version 1.0”    
 
 ### Sample codes
 
@@ -134,6 +138,7 @@ Also when you have to keep a customized version of other people software, is eas
 - Core Data
 - Basic utils
 - Theme classes (in order to make easy to control the colors of the app using UIAppearance class)
+- Login made with [Clean-Swift architecture](https://clean-swift.com/)
 
 ### Integrations
 
