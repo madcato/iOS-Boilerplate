@@ -4,7 +4,6 @@ stages:
 
 before_script: 
   - bundle install
-  - bundle update fastlane
 
 build_project:
   stage: build
