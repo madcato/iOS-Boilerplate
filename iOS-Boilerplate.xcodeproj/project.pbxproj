@@ -25,22 +25,17 @@
 		340088FC21A822940072B1F0 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FA21A822940072B1F0 /* AppInfo.swift */; };
 		340088FD21A822940072B1F0 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FB21A822940072B1F0 /* System.swift */; };
 		341810B521B7D9B400BC9E1C /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = 3485E81121A59358002248B7 /* Person.json */; };
-		341810BF21B7E28900BC9E1C /* FLEX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341810BC21B7E26400BC9E1C /* FLEX.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		341810C021B7E28900BC9E1C /* FLEX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341810BC21B7E26400BC9E1C /* FLEX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C321B80BF100BC9E1C /* Decodable+Codable.swift */; };
 		341810C621B8152400BC9E1C /* NetworkingInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C521B8152400BC9E1C /* NetworkingInjector.swift */; };
 		341810C921B8316400BC9E1C /* MockServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C821B8316400BC9E1C /* MockServicesTests.swift */; };
 		341810CB21B8321400BC9E1C /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810CA21B8321400BC9E1C /* MockAPIClient.swift */; };
 		3418A0F821CCD66400BBF17A /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418A0F721CCD66400BBF17A /* MainButton.swift */; };
-		341C20AF21B6635D007227E2 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341C202721B662FE007227E2 /* Masonry.framework */; };
-		341C20B021B6635D007227E2 /* Masonry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 341C202721B662FE007227E2 /* Masonry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341C20B421B66881007227E2 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE875D21B57AE300B4FD22 /* ServiceTests.swift */; };
 		3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
 		3420DF6321AFDF0D0004C59F /* AutoEquatable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */; };
 		3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */; };
 		3420DF6A21AFDFEB0004C59F /* AutoMock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6621AFDFE60004C59F /* AutoMock.generated.swift */; };
 		3420DF6B21AFE0730004C59F /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
-		3420DF8721AFECA20004C59F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3420DF8621AFECA20004C59F /* ImageIO.framework */; };
 		3420DFE621B03ADA0004C59F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DFE521B03ADA0004C59F /* DetailViewController.swift */; };
 		342AC58721E89A7F0058C1E0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58121E89A7F0058C1E0 /* LoginPresenter.swift */; };
 		342AC58821E89A7F0058C1E0 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58221E89A7F0058C1E0 /* LoginWorker.swift */; };
@@ -61,8 +56,6 @@
 		3438809721ECA62E002FCBE5 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809321ECA62E002FCBE5 /* LoginInteractorTests.swift */; };
 		3438809821ECA62E002FCBE5 /* LoginWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */; };
 		3438809921ECA62E002FCBE5 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809521ECA62E002FCBE5 /* LoginPresenterTests.swift */; };
-		3440F5E521BE55620092CAF9 /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3440F5E221BE55480092CAF9 /* AlamofireNetworkActivityIndicator.framework */; };
-		3440F5E621BE55620092CAF9 /* AlamofireNetworkActivityIndicator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3440F5E221BE55480092CAF9 /* AlamofireNetworkActivityIndicator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3485E78D21A55E05002248B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78C21A55E05002248B7 /* AppDelegate.swift */; };
 		3485E78F21A55E05002248B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78E21A55E05002248B7 /* ViewController.swift */; };
 		3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3485E79321A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld */; };
@@ -110,13 +103,6 @@
 			remoteGlobalIDString = 1C27A8B61F0E5A0300F0D02D;
 			remoteInfo = FLEXTestsMethodsList;
 		};
-		341810C121B7E28900BC9E1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 341810B621B7E26400BC9E1C /* FLEX.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3A4C941E1B5B20570088C3F2;
-			remoteInfo = FLEX;
-		};
 		341C202621B662FE007227E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 341C202121B662FE007227E2 /* Masonry.xcodeproj */;
@@ -131,13 +117,6 @@
 			remoteGlobalIDString = 3AED06271AD5A1400053CC65;
 			remoteInfo = "Masonry OSX";
 		};
-		341C20B121B6635D007227E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 341C202121B662FE007227E2 /* Masonry.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3AED05B61AD59FD40053CC65;
-			remoteInfo = "Masonry iOS";
-		};
 		3440F5E121BE55480092CAF9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3440F5D921BE55480092CAF9 /* AlamofireNetworkActivityIndicator.xcodeproj */;
@@ -151,13 +130,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 4CB928431C66E1A700CE5F08;
 			remoteInfo = AlamofireNetworkActivityIndicatorTests;
-		};
-		3440F5E721BE55620092CAF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3440F5D921BE55480092CAF9 /* AlamofireNetworkActivityIndicator.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CB928381C66E1A600CE5F08;
-			remoteInfo = AlamofireNetworkActivityIndicator;
 		};
 		3485E7A121A55E07002248B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -174,22 +146,6 @@
 			remoteInfo = "iOS-Boilerplate";
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		34F7638121A6C99100E68956 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				341C20B021B6635D007227E2 /* Masonry.framework in Embed Frameworks */,
-				341810C021B7E28900BC9E1C /* FLEX.framework in Embed Frameworks */,
-				3440F5E621BE55620092CAF9 /* AlamofireNetworkActivityIndicator.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		340088D721A81AB00072B1F0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -290,10 +246,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3420DF8721AFECA20004C59F /* ImageIO.framework in Frameworks */,
-				341C20AF21B6635D007227E2 /* Masonry.framework in Frameworks */,
-				3440F5E521BE55620092CAF9 /* AlamofireNetworkActivityIndicator.framework in Frameworks */,
-				341810BF21B7E28900BC9E1C /* FLEX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,14 +777,10 @@
 				3440F63D21BE88D60092CAF9 /* ShellScript */,
 				3440F63E21BE89160092CAF9 /* ShellScript */,
 				3485E78721A55E05002248B7 /* Resources */,
-				34F7638121A6C99100E68956 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				341C20B221B6635D007227E2 /* PBXTargetDependency */,
-				341810C221B7E28900BC9E1C /* PBXTargetDependency */,
-				3440F5E821BE55620092CAF9 /* PBXTargetDependency */,
 			);
 			name = "iOS-Boilerplate";
 			productName = "iOS-Boilerplate";
@@ -1165,21 +1113,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		341810C221B7E28900BC9E1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FLEX;
-			targetProxy = 341810C121B7E28900BC9E1C /* PBXContainerItemProxy */;
-		};
-		341C20B221B6635D007227E2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Masonry iOS";
-			targetProxy = 341C20B121B6635D007227E2 /* PBXContainerItemProxy */;
-		};
-		3440F5E821BE55620092CAF9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AlamofireNetworkActivityIndicator;
-			targetProxy = 3440F5E721BE55620092CAF9 /* PBXContainerItemProxy */;
-		};
 		3485E7A221A55E07002248B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3485E78821A55E05002248B7 /* iOS-Boilerplate */;
@@ -1345,7 +1278,6 @@
 		3485E7B521A55E07002248B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
@@ -1368,7 +1300,6 @@
 		3485E7B621A55E07002248B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
