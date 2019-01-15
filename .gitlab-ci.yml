@@ -4,6 +4,7 @@ stages:
 
 before_script: 
   - bundle install
+  - brew install carthage
 
 build_project:
   stage: build
