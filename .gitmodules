@@ -1,27 +1,9 @@
-[submodule "Frameworks/Alamofire"]
-	path = Frameworks/Alamofire
-	url = git@github.com:Alamofire/Alamofire.git
 [submodule "Frameworks/Masonry"]
 	path = Frameworks/Masonry
 	url = git@github.com:SnapKit/Masonry.git
-[submodule "Frameworks/Nimble"]
-	path = Frameworks/Nimble
-	url = git@github.com:Quick/Nimble.git
-[submodule "Frameworks/Quick"]
-	path = Frameworks/Quick
-	url = git@github.com:Quick/Quick.git
 [submodule "Frameworks/AlamofireNetworkActivityIndicator"]
 	path = Frameworks/AlamofireNetworkActivityIndicator
 	url = git@github.com:Alamofire/AlamofireNetworkActivityIndicator.git
-[submodule "Frameworks/AlamofireImage"]
-	path = Frameworks/AlamofireImage
-	url = git@github.com:Alamofire/AlamofireImage.git
 [submodule "Frameworks/FLEX"]
 	path = Frameworks/FLEX
 	url = git@github.com:Flipboard/FLEX.git
-[submodule "Frameworks/SQLite.swift"]
-	path = Frameworks/SQLite.swift
-	url = git@github.com:stephencelis/SQLite.swift.git
-[submodule "Frameworks/SQLiteMigrationManager.swift"]
-	path = Frameworks/SQLiteMigrationManager.swift
-	url = git@github.com:garriguv/SQLiteMigrationManager.swift.git
