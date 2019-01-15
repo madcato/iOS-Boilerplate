@@ -1,6 +1,3 @@
 [submodule "Frameworks/Masonry"]
 	path = Frameworks/Masonry
 	url = git@github.com:SnapKit/Masonry.git
-[submodule "Frameworks/AlamofireNetworkActivityIndicator"]
-	path = Frameworks/AlamofireNetworkActivityIndicator
-	url = git@github.com:Alamofire/AlamofireNetworkActivityIndicator.git
