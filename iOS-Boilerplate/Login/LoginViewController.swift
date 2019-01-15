@@ -123,3 +123,18 @@ class LoginViewController: UITableViewController, LoginDisplayLogic {
         activityIndicator.stopAnimating()
     }
 }
+
+extension LoginViewController: UITextFieldDelegate {
+    // MARK: Text field delegate
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField === userName {
+            password.becomeFirstResponder()
+            return false
+        }
+        if textField === password {
+            doSignIn()
+        }
+        return true
+    }
+}
