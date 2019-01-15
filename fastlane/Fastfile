@@ -20,6 +20,7 @@ platform :ios do
   lane :beta do
     get_certificates           # invokes cert
     get_provisioning_profile   # invokes sigh
+    carthage
     build_app(scheme: "iOS-Boilerplate")
     upload_to_testflight
   end
@@ -27,6 +28,7 @@ platform :ios do
   lane :build do
     get_certificates           # invokes cert
     get_provisioning_profile   # invokes sigh
+    carthage
     build_app(scheme: "iOS-Boilerplate")
   end
 
