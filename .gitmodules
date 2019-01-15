@@ -4,6 +4,3 @@
 [submodule "Frameworks/AlamofireNetworkActivityIndicator"]
 	path = Frameworks/AlamofireNetworkActivityIndicator
 	url = git@github.com:Alamofire/AlamofireNetworkActivityIndicator.git
-[submodule "Frameworks/FLEX"]
-	path = Frameworks/FLEX
-	url = git@github.com:Flipboard/FLEX.git
