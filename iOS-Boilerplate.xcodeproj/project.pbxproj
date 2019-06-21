@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0E510322BD588A00C1D31E /* DownloadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510222BD588900C1D31E /* DownloadImageView.swift */; };
+		0B0E512422BD589E00C1D31E /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510722BD589E00C1D31E /* CreateEvent.swift */; };
+		0B0E512522BD589E00C1D31E /* WatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510822BD589E00C1D31E /* WatchEvent.swift */; };
+		0B0E512622BD589E00C1D31E /* PushEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510922BD589E00C1D31E /* PushEvent.swift */; };
+		0B0E512722BD589E00C1D31E /* StarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510A22BD589E00C1D31E /* StarEvent.swift */; };
+		0B0E512822BD589E00C1D31E /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510B22BD589E00C1D31E /* Feed.swift */; };
+		0B0E512922BD589E00C1D31E /* GithubEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510C22BD589E00C1D31E /* GithubEvent.swift */; };
+		0B0E512A22BD589E00C1D31E /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510E22BD589E00C1D31E /* GithubAPI.swift */; };
+		0B0E512B22BD589E00C1D31E /* GithubEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511222BD589E00C1D31E /* GithubEventTableViewCell.swift */; };
+		0B0E512C22BD589E00C1D31E /* PushEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511322BD589E00C1D31E /* PushEventTableViewCell.swift */; };
+		0B0E512D22BD589E00C1D31E /* GithubEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511422BD589E00C1D31E /* GithubEventsViewController.swift */; };
+		0B0E512E22BD589E00C1D31E /* GithubEventsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511522BD589E00C1D31E /* GithubEventsInteractor.swift */; };
+		0B0E512F22BD589E00C1D31E /* GithubEventsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511622BD589E00C1D31E /* GithubEventsModels.swift */; };
+		0B0E513022BD589E00C1D31E /* GithubEventsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511722BD589E00C1D31E /* GithubEventsConfigurator.swift */; };
+		0B0E513122BD589E00C1D31E /* GithubEventsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511822BD589E00C1D31E /* GithubEventsWorker.swift */; };
+		0B0E513222BD589E00C1D31E /* GithubEventDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511A22BD589E00C1D31E /* GithubEventDetailRouter.swift */; };
+		0B0E513322BD589E00C1D31E /* GithubEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511B22BD589E00C1D31E /* GithubEventDetailViewController.swift */; };
+		0B0E513422BD589E00C1D31E /* GithubEventDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511C22BD589E00C1D31E /* GithubEventDetailInteractor.swift */; };
+		0B0E513522BD589E00C1D31E /* GithubEventDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511D22BD589E00C1D31E /* GithubEventDetailModels.swift */; };
+		0B0E513622BD589E00C1D31E /* GithubEventDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511E22BD589E00C1D31E /* GithubEventDetailPresenter.swift */; };
+		0B0E513722BD589E00C1D31E /* CommitMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512022BD589E00C1D31E /* CommitMessageTableViewCell.swift */; };
+		0B0E513822BD589E00C1D31E /* GithubEventDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512122BD589E00C1D31E /* GithubEventDetailConfigurator.swift */; };
+		0B0E513922BD589E00C1D31E /* GithubEventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512222BD589E00C1D31E /* GithubEventsRouter.swift */; };
+		0B0E513A22BD589E00C1D31E /* GithubEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512322BD589E00C1D31E /* GithubEventsPresenter.swift */; };
+		0B0E513C22BD58B300C1D31E /* Github.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B0E513B22BD58B300C1D31E /* Github.storyboard */; };
+		0B0E513E22BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
+		0B0E513F22BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
+		0B0E514022BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
 		340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088D721A81AB00072B1F0 /* CoreDataStack.swift */; };
 		340088DC21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */; };
 		340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DD21A81E8E0072B1F0 /* UrlHelper.swift */; };
@@ -25,7 +53,6 @@
 		340088FC21A822940072B1F0 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FA21A822940072B1F0 /* AppInfo.swift */; };
 		340088FD21A822940072B1F0 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FB21A822940072B1F0 /* System.swift */; };
 		340D313421EDDEB000E5936D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3420DF8621AFECA20004C59F /* ImageIO.framework */; };
-		340D313F21EDDED000E5936D /* SQLiteMigrationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313621EDDECF00E5936D /* SQLiteMigrationManager.framework */; };
 		340D314021EDDED000E5936D /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313721EDDECF00E5936D /* SQLite.framework */; };
 		340D314121EDDED000E5936D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313821EDDECF00E5936D /* Alamofire.framework */; };
 		340D314221EDDED000E5936D /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313921EDDECF00E5936D /* AlamofireImage.framework */; };
@@ -148,6 +175,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B0E510222BD588900C1D31E /* DownloadImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImageView.swift; sourceTree = "<group>"; };
+		0B0E510722BD589E00C1D31E /* CreateEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
+		0B0E510822BD589E00C1D31E /* WatchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchEvent.swift; sourceTree = "<group>"; };
+		0B0E510922BD589E00C1D31E /* PushEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushEvent.swift; sourceTree = "<group>"; };
+		0B0E510A22BD589E00C1D31E /* StarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarEvent.swift; sourceTree = "<group>"; };
+		0B0E510B22BD589E00C1D31E /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		0B0E510C22BD589E00C1D31E /* GithubEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEvent.swift; sourceTree = "<group>"; };
+		0B0E510E22BD589E00C1D31E /* GithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		0B0E511222BD589E00C1D31E /* GithubEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventTableViewCell.swift; sourceTree = "<group>"; };
+		0B0E511322BD589E00C1D31E /* PushEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushEventTableViewCell.swift; sourceTree = "<group>"; };
+		0B0E511422BD589E00C1D31E /* GithubEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventsViewController.swift; sourceTree = "<group>"; };
+		0B0E511522BD589E00C1D31E /* GithubEventsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventsInteractor.swift; sourceTree = "<group>"; };
+		0B0E511622BD589E00C1D31E /* GithubEventsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventsModels.swift; sourceTree = "<group>"; };
+		0B0E511722BD589E00C1D31E /* GithubEventsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventsConfigurator.swift; sourceTree = "<group>"; };
+		0B0E511822BD589E00C1D31E /* GithubEventsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventsWorker.swift; sourceTree = "<group>"; };
+		0B0E511A22BD589E00C1D31E /* GithubEventDetailRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventDetailRouter.swift; sourceTree = "<group>"; };
+		0B0E511B22BD589E00C1D31E /* GithubEventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventDetailViewController.swift; sourceTree = "<group>"; };
+		0B0E511C22BD589E00C1D31E /* GithubEventDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventDetailInteractor.swift; sourceTree = "<group>"; };
+		0B0E511D22BD589E00C1D31E /* GithubEventDetailModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventDetailModels.swift; sourceTree = "<group>"; };
+		0B0E511E22BD589E00C1D31E /* GithubEventDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventDetailPresenter.swift; sourceTree = "<group>"; };
+		0B0E512022BD589E00C1D31E /* CommitMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitMessageTableViewCell.swift; sourceTree = "<group>"; };
+		0B0E512122BD589E00C1D31E /* GithubEventDetailConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventDetailConfigurator.swift; sourceTree = "<group>"; };
+		0B0E512222BD589E00C1D31E /* GithubEventsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventsRouter.swift; sourceTree = "<group>"; };
+		0B0E512322BD589E00C1D31E /* GithubEventsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventsPresenter.swift; sourceTree = "<group>"; };
+		0B0E513B22BD58B300C1D31E /* Github.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Github.storyboard; sourceTree = "<group>"; };
+		0B0E513D22BD605D00C1D31E /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		340088D721A81AB00072B1F0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+ChangeRootController.swift"; sourceTree = "<group>"; };
 		340088DD21A81E8E0072B1F0 /* UrlHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlHelper.swift; sourceTree = "<group>"; };
@@ -252,7 +305,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340D313F21EDDED000E5936D /* SQLiteMigrationManager.framework in Frameworks */,
 				340D313421EDDEB000E5936D /* ImageIO.framework in Frameworks */,
 				340D314621EDDED000E5936D /* Masonry.framework in Frameworks */,
 				340D314021EDDED000E5936D /* SQLite.framework in Frameworks */,
@@ -285,6 +337,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0E510422BD589E00C1D31E /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				0B0E513B22BD58B300C1D31E /* Github.storyboard */,
+				0B0E510522BD589E00C1D31E /* Entities */,
+				0B0E510D22BD589E00C1D31E /* Services */,
+				0B0E510F22BD589E00C1D31E /* Scenes */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
+		0B0E510522BD589E00C1D31E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0B0E510622BD589E00C1D31E /* Payloads */,
+				0B0E510B22BD589E00C1D31E /* Feed.swift */,
+				0B0E510C22BD589E00C1D31E /* GithubEvent.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0B0E510622BD589E00C1D31E /* Payloads */ = {
+			isa = PBXGroup;
+			children = (
+				0B0E510722BD589E00C1D31E /* CreateEvent.swift */,
+				0B0E510822BD589E00C1D31E /* WatchEvent.swift */,
+				0B0E510922BD589E00C1D31E /* PushEvent.swift */,
+				0B0E510A22BD589E00C1D31E /* StarEvent.swift */,
+			);
+			path = Payloads;
+			sourceTree = "<group>";
+		};
+		0B0E510D22BD589E00C1D31E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0B0E510E22BD589E00C1D31E /* GithubAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0B0E510F22BD589E00C1D31E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0B0E511022BD589E00C1D31E /* GithubEventFeed */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0B0E511022BD589E00C1D31E /* GithubEventFeed */ = {
+			isa = PBXGroup;
+			children = (
+				0B0E511122BD589E00C1D31E /* Cells */,
+				0B0E511422BD589E00C1D31E /* GithubEventsViewController.swift */,
+				0B0E511522BD589E00C1D31E /* GithubEventsInteractor.swift */,
+				0B0E511622BD589E00C1D31E /* GithubEventsModels.swift */,
+				0B0E511722BD589E00C1D31E /* GithubEventsConfigurator.swift */,
+				0B0E511822BD589E00C1D31E /* GithubEventsWorker.swift */,
+				0B0E511922BD589E00C1D31E /* EventDetailView */,
+				0B0E512222BD589E00C1D31E /* GithubEventsRouter.swift */,
+				0B0E512322BD589E00C1D31E /* GithubEventsPresenter.swift */,
+			);
+			path = GithubEventFeed;
+			sourceTree = "<group>";
+		};
+		0B0E511122BD589E00C1D31E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0B0E511222BD589E00C1D31E /* GithubEventTableViewCell.swift */,
+				0B0E511322BD589E00C1D31E /* PushEventTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0B0E511922BD589E00C1D31E /* EventDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				0B0E511A22BD589E00C1D31E /* GithubEventDetailRouter.swift */,
+				0B0E511B22BD589E00C1D31E /* GithubEventDetailViewController.swift */,
+				0B0E511C22BD589E00C1D31E /* GithubEventDetailInteractor.swift */,
+				0B0E511D22BD589E00C1D31E /* GithubEventDetailModels.swift */,
+				0B0E511E22BD589E00C1D31E /* GithubEventDetailPresenter.swift */,
+				0B0E511F22BD589E00C1D31E /* Cell */,
+				0B0E512122BD589E00C1D31E /* GithubEventDetailConfigurator.swift */,
+			);
+			path = EventDetailView;
+			sourceTree = "<group>";
+		};
+		0B0E511F22BD589E00C1D31E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0B0E512022BD589E00C1D31E /* CommitMessageTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		340088CE21A81A7E0072B1F0 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +632,7 @@
 				3485E7C021A5639E002248B7 /* Startup */,
 				342AC55121E897F40058C1E0 /* Login */,
 				3485E7C221A57F4F002248B7 /* Feature001 */,
+				0B0E510422BD589E00C1D31E /* Github */,
 				3485E7C321A57F7F002248B7 /* Library */,
 				3485E7C821A58014002248B7 /* Resources */,
 				3485E79621A55E07002248B7 /* Assets.xcassets */,
@@ -496,6 +644,7 @@
 		3485E7A321A55E07002248B7 /* iOS-BoilerplateTests */ = {
 			isa = PBXGroup;
 			children = (
+				0B0E513D22BD605D00C1D31E /* TestHelper.swift */,
 				3438806221ECA5F2002FCBE5 /* Login */,
 				34B9175821C115DE00409CB8 /* SQLiteTests */,
 				341810C721B8312A00BC9E1C /* MockServices */,
@@ -745,6 +894,7 @@
 		34D48F4921CBAD19001CEADF /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				0B0E510222BD588900C1D31E /* DownloadImageView.swift */,
 				3418A0F721CCD66400BBF17A /* MainButton.swift */,
 				34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */,
 				34D48F4E21CBAE82001CEADF /* MainLabel.swift */,
@@ -762,12 +912,12 @@
 			buildConfigurationList = 3485E7B421A55E07002248B7 /* Build configuration list for PBXNativeTarget "iOS-Boilerplate" */;
 			buildPhases = (
 				3485E78521A55E05002248B7 /* Sources */,
-				34F7642821A7092800E68956 /* ShellScript */,
+				34F7642821A7092800E68956 /* Swiftlint */,
 				3485E78621A55E05002248B7 /* Frameworks */,
-				3440F63D21BE88D60092CAF9 /* ShellScript */,
-				3440F63E21BE89160092CAF9 /* ShellScript */,
+				3440F63D21BE88D60092CAF9 /* Increment build number */,
+				3440F63E21BE89160092CAF9 /* Increment Version on Archive */,
 				3485E78721A55E05002248B7 /* Resources */,
-				340D314821EDDF6B00E5936D /* ShellScript */,
+				340D314821EDDF6B00E5936D /* Copy Frameworks Carthage */,
 			);
 			buildRules = (
 			);
@@ -873,6 +1023,7 @@
 				342AC58E21E89A8F0058C1E0 /* Login.storyboard in Resources */,
 				3487744921A6C011001675D3 /* Main.storyboard in Resources */,
 				3420DF6321AFDF0D0004C59F /* AutoEquatable.stencil in Resources */,
+				0B0E513C22BD58B300C1D31E /* Github.storyboard in Resources */,
 				3487744821A6C004001675D3 /* LaunchScreen.storyboard in Resources */,
 				3487742321A6AC32001675D3 /* Localizable.strings in Resources */,
 				3485E79721A55E07002248B7 /* Assets.xcassets in Resources */,
@@ -900,7 +1051,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		340D314821EDDF6B00E5936D /* ShellScript */ = {
+		340D314821EDDF6B00E5936D /* Copy Frameworks Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -914,8 +1065,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/FLEX.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SQLiteMigrationManager.framework",
 			);
+			name = "Copy Frameworks Carthage";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -931,7 +1082,7 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		3440F63D21BE88D60092CAF9 /* ShellScript */ = {
+		3440F63D21BE88D60092CAF9 /* Increment build number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -940,6 +1091,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Increment build number";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -948,7 +1100,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# xcode-build-bump.sh\n# @desc Auto-increment the build number every time the project is run. \n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 6. Insure that your starting build number is set to a whole integer and not a float (e.g. 1, not 1.0)\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
 		};
-		3440F63E21BE89160092CAF9 /* ShellScript */ = {
+		3440F63E21BE89160092CAF9 /* Increment Version on Archive */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
@@ -957,6 +1109,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Increment Version on Archive";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -965,7 +1118,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# xcode-version-bump.sh\n# @desc Auto-increment the version number (only) when a project is archived for export. \n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Check the checkbox \"Run script only when installing\"\n# 6. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 7. Insure your starting version number is in SemVer format (e.g. 1.0.0)\n\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
 		};
-		34F7642821A7092800E68956 /* ShellScript */ = {
+		34F7642821A7092800E68956 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -974,6 +1127,7 @@
 			);
 			inputPaths = (
 			);
+			name = Swiftlint;
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -991,53 +1145,78 @@
 			files = (
 				340088F521A820640072B1F0 /* UIViewController+navigationItem.swift in Sources */,
 				340088DC21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift in Sources */,
+				0B0E512422BD589E00C1D31E /* CreateEvent.swift in Sources */,
+				0B0E512A22BD589E00C1D31E /* GithubAPI.swift in Sources */,
+				0B0E513022BD589E00C1D31E /* GithubEventsConfigurator.swift in Sources */,
+				0B0E512C22BD589E00C1D31E /* PushEventTableViewCell.swift in Sources */,
 				3485E80E21A58A5C002248B7 /* PersonDTO.swift in Sources */,
 				340088EC21A81F930072B1F0 /* String+urlEncode.swift in Sources */,
 				3485E82D21A5B1F0002248B7 /* Environment.swift in Sources */,
+				0B0E512622BD589E00C1D31E /* PushEvent.swift in Sources */,
 				3485E81A21A5A716002248B7 /* Configuration.swift in Sources */,
+				0B0E513122BD589E00C1D31E /* GithubEventsWorker.swift in Sources */,
 				34D48F4F21CBAE82001CEADF /* MainLabel.swift in Sources */,
+				0B0E512522BD589E00C1D31E /* WatchEvent.swift in Sources */,
 				3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */,
 				34D48F5121CBAE97001CEADF /* SimpleLabel.swift in Sources */,
 				342AC58A21E89A7F0058C1E0 /* LoginModels.swift in Sources */,
 				34F7642021A6E94100E68956 /* BookNomadsService.swift in Sources */,
+				0B0E512E22BD589E00C1D31E /* GithubEventsInteractor.swift in Sources */,
 				34BE878821B5928200B4FD22 /* Client.swift in Sources */,
+				0B0E513322BD589E00C1D31E /* GithubEventDetailViewController.swift in Sources */,
 				340088E021A81F4C0072B1F0 /* PropertyListHelper.swift in Sources */,
 				34D48F5321CBAEB6001CEADF /* CancelButton.swift in Sources */,
+				0B0E512822BD589E00C1D31E /* Feed.swift in Sources */,
 				342AC58B21E89A7F0058C1E0 /* LoginViewController.swift in Sources */,
+				0B0E512B22BD589E00C1D31E /* GithubEventTableViewCell.swift in Sources */,
 				3420DFE621B03ADA0004C59F /* DetailViewController.swift in Sources */,
 				340088F821A820640072B1F0 /* UIViewController+showAlert.swift in Sources */,
 				342AC58921E89A7F0058C1E0 /* LoginRouter.swift in Sources */,
+				0B0E512922BD589E00C1D31E /* GithubEvent.swift in Sources */,
+				0B0E512F22BD589E00C1D31E /* GithubEventsModels.swift in Sources */,
 				34B9175521C100B500409CB8 /* SQLiteDBMigrations.swift in Sources */,
 				340088EA21A81F930072B1F0 /* Serializator.swift in Sources */,
 				34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */,
 				34D48F4821CBABA2001CEADF /* AppDelegate+Theme.swift in Sources */,
+				0B0E510322BD588A00C1D31E /* DownloadImageView.swift in Sources */,
 				34D48F4D21CBAE6B001CEADF /* BackgroundView.swift in Sources */,
 				341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */,
 				340088FD21A822940072B1F0 /* System.swift in Sources */,
 				3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */,
 				342AC58821E89A7F0058C1E0 /* LoginWorker.swift in Sources */,
+				0B0E513422BD589E00C1D31E /* GithubEventDetailInteractor.swift in Sources */,
 				340088F621A820640072B1F0 /* UIView+border.swift in Sources */,
 				342AC58C21E89A7F0058C1E0 /* LoginInteractor.swift in Sources */,
+				0B0E513622BD589E00C1D31E /* GithubEventDetailPresenter.swift in Sources */,
 				34306A4021B13DD6005B0A84 /* EventDTO.swift in Sources */,
 				34306A3321B135C0005B0A84 /* AutoEquatable.swift in Sources */,
 				340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */,
 				3485E78F21A55E05002248B7 /* ViewController.swift in Sources */,
+				0B0E513822BD589E00C1D31E /* GithubEventDetailConfigurator.swift in Sources */,
 				3418A0F821CCD66400BBF17A /* MainButton.swift in Sources */,
 				34B9171D21C0EEFD00409CB8 /* SqliteDBManager.swift in Sources */,
 				340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */,
+				0B0E513222BD589E00C1D31E /* GithubEventDetailRouter.swift in Sources */,
 				340088F421A820640072B1F0 /* UIViewController+imageBackground.swift in Sources */,
 				34F7641E21A6E4E400E68956 /* Http.swift in Sources */,
+				0B0E512D22BD589E00C1D31E /* GithubEventsViewController.swift in Sources */,
 				3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,
 				3485E78D21A55E05002248B7 /* AppDelegate.swift in Sources */,
+				0B0E512722BD589E00C1D31E /* StarEvent.swift in Sources */,
+				0B0E513922BD589E00C1D31E /* GithubEventsRouter.swift in Sources */,
 				340088E921A81F930072B1F0 /* OSEmailValidator.swift in Sources */,
 				34F7642721A6F64B00E68956 /* BookDTO.swift in Sources */,
+				0B0E513722BD589E00C1D31E /* CommitMessageTableViewCell.swift in Sources */,
+				0B0E513E22BD605D00C1D31E /* TestHelper.swift in Sources */,
 				342AC58721E89A7F0058C1E0 /* LoginPresenter.swift in Sources */,
 				340088F721A820640072B1F0 /* CALayer+XibConfiguration.swift in Sources */,
 				341810C621B8152400BC9E1C /* NetworkingInjector.swift in Sources */,
+				0B0E513522BD589E00C1D31E /* GithubEventDetailModels.swift in Sources */,
 				340088ED21A81F930072B1F0 /* OSDNIValidator.swift in Sources */,
 				34BE876521B590D100B4FD22 /* API.swift in Sources */,
+				0B0E513A22BD589E00C1D31E /* GithubEventsPresenter.swift in Sources */,
 				340088FC21A822940072B1F0 /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1060,6 +1239,7 @@
 				341C20B421B66881007227E2 /* ServiceTests.swift in Sources */,
 				34306A4221B148E2005B0A84 /* AutoMockable.swift in Sources */,
 				34B9175A21C115FE00409CB8 /* SQLiteDBMigrationsTests.swift in Sources */,
+				0B0E513F22BD605D00C1D31E /* TestHelper.swift in Sources */,
 				3438809721ECA62E002FCBE5 /* LoginInteractorTests.swift in Sources */,
 				3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */,
 				341810CB21B8321400BC9E1C /* MockAPIClient.swift in Sources */,
@@ -1072,6 +1252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3485E7B021A55E07002248B7 /* BoilerplateUITests.swift in Sources */,
+				0B0E514022BD605D00C1D31E /* TestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

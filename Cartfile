@@ -5,5 +5,4 @@ github "flipboard/FLEX" ~> 2.4.0
 github "Quick/Quick"                        # Use lastest version
 github "Quick/Nimble"                       # Use lastest version
 github "stephencelis/SQLite.swift" ~> 0.11.0
-github "garriguv/SQLiteMigrationManager.swift" ~> 0.4.0
 github "SnapKit/Masonry.git" ~> 1.1.0

@@ -21,7 +21,7 @@ class SqliteDBManager {
         do {
             db = try Connection(finalDBPath)
             setLoggin()
-            try SQLiteDBMigrations.migrateDatabase(in: db)
+//            try SQLiteDBMigrations.migrateDatabase(in: db)
         } catch {
             fatalError("Critical error opening sqlite db: \(finalDBPath)")
         }
@@ -91,7 +91,7 @@ class SqliteDBManager {
     }
 
     func runTest() throws {
-        try SQLiteDBMigrations.migrateDatabase(in: db)
+//        try SQLiteDBMigrations.migrateDatabase(in: db)
 
         let id = Expression<Int64>("id")
         let season = Expression<Int64>("season")
