@@ -265,3 +265,7 @@ Files:
 - LoginPresenter: This class adapts the data to the final data types that will be showed in the view. Transformations like Date to String and texts translations are made by this class.
 - LoginRouter: This class manages the view transitions.
 - LoginWorker: This class implements the functionality.
+
+## Antoher implementation sample with Clean-Swift Architecture
+
+Int the group ```Github``` there is a coomplete table view controller and detail view controlles for showing Github event.
