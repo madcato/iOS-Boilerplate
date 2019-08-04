@@ -8,7 +8,7 @@ before_script:
 build_project:
   stage: build
   script:
-    - carthage update
+    - carthage update --platform iOS
     - bundle exec fastlane tests
     - bundle exec fastlane cov
     - 'CI_MERGE_REQUEST_IID=$(curl --request GET --header "Private-Token: $GITLAB_PERSONAL_API_PRIVATE_TOKEN" "https://gitlab.veladan.org/api/v4/projects/$CI_PROJECT_ID/repository/commits/$CI_COMMIT_SHA/merge_requests" --insecure | jq --raw-output ".[0].iid")'
