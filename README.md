@@ -268,4 +268,15 @@ Files:
 
 ## Antoher implementation sample with Clean-Swift Architecture
 
-Int the group ```Github``` there is a coomplete table view controller and detail view controlles for showing Github event.
+Inside the project, the group ```Github```, there is a coomplete table view controller and detail view controlles for showing Github event.
+
+## Recomendations
+
+- Use font styles instead custon or system fonts. Define de font as `Title 1`, `Body`, `Caption` see [UIFontTextStyle Apple documentation](https://developer.apple.com/documentation/uikit/uifonttextstyle). This allows users to activate Acessibility custom fonts.
+- Define custom meaningful names for colors, like: `orangeAction`, `redMain`, `yellowAccent`, `brandBlue`. This way, if the designer needs to change one color, it's easier to change it in only one place.
+- Use `UIAppearance` protocol to define control styles. To simplify styles management.
+- Define custom a `Theme` class to define color, appearances and control styles. To allow to change theme or to create new ones.
+- Define custom clases inheriting form `UIButton`, `UILabel`, etc, to define styles of controls. Examples: `MainButton` class, `CancelButton` class. Use this clases implementation (or its appearances) to define colors, layouts and fonts. Assign this classes in the `Storyboards`.
+- Use `Storyboards` links to avoid creating only one big `Storyboard`, this makes compilation slower and git merging it a mess.
+
+
