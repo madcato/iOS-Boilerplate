@@ -132,7 +132,7 @@ Included in the project directly using [Carthage](https://github.com/Carthage/Ca
 
 - [Swift 4 json parsing and creating](https://grokswift.com/json-swift-4/) _(See class Library/Model/PersonDTO.swift)_
 - Multi environment configurations [Using Xcode Configuration (.xcconfig) to Manage Different Build Settings](https://appcoda.com/xcconfig-guide/)
-- Multi language
+- Multi language (Use Twine: https://github.com/scelis/twine)
 - Web Service 
 - Testing, Mocks, UI testing 
 - Core Data
@@ -280,3 +280,8 @@ Inside the project, the group ```Github```, there is a coomplete table view cont
 - Use `Storyboards` links to avoid creating only one big `Storyboard`, this makes compilation slower and git merging it a mess.
 
 
+## Multi language with Twine
+
+This project includes Twine. The input twine text file is in the base path of the project. In order to share this file with other projects (.Net, Android) its recommended that this file is included into a submodule git repository in order to share it with the rest of the projects. 
+
+This way, each time the repository is refreshed via a `git pull --recurse-submodules`, the last version of the twine file is downloaded.

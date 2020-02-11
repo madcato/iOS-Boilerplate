@@ -911,6 +911,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3485E7B421A55E07002248B7 /* Build configuration list for PBXNativeTarget "iOS-Boilerplate" */;
 			buildPhases = (
+				34F128A223F2D7E800A59AF2 /* Twine */,
 				3485E78521A55E05002248B7 /* Sources */,
 				34F7642821A7092800E68956 /* Swiftlint */,
 				3485E78621A55E05002248B7 /* Frameworks */,
@@ -1117,6 +1118,24 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "# xcode-version-bump.sh\n# @desc Auto-increment the version number (only) when a project is archived for export. \n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Check the checkbox \"Run script only when installing\"\n# 6. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 7. Insure your starting version number is in SemVer format (e.g. 1.0.0)\n\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		34F128A223F2D7E800A59AF2 /* Twine */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Twine;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "twine generate-all-localization-files twine.txt Resources/Locales/ --tags tag1,tag2\n";
 		};
 		34F7642821A7092800E68956 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
