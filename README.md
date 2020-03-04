@@ -196,9 +196,19 @@ First, check out the source, including all the dependencies:
 
     $ brew install sourcery
 
+Configure Sourcery editing file `.sourcery.yml` in the root of the project.
+
 #### [SwiftLint](https://github.com/realm/SwiftLint)
 
     $ brew install swiftlint
+
+Configure SwiftLint editing file `.swiftlint.yml` in the root of the project.
+
+#### [Twine](https://github.com/scelis/twine)
+
+    $ gem install twine
+
+The twine file is in the root directory.
 
 ### Building it
 
