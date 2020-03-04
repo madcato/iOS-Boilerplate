@@ -100,8 +100,6 @@ Included in the project directly using [Carthage](https://github.com/Carthage/Ca
 
 - [Alamofire](https://github.com/Alamofire/Alamofire)
   For accesing remote http servers
-- [SDWebImage](https://github.com/SDWebImage/SDWebImage)
-  To download and show images asyncronously
 - [Mansonry](https://github.com/SnapKit/Masonry)
   To use Constraints from code without becoming insane
 - [Nimble](https://github.com/Quick/Nimble)
