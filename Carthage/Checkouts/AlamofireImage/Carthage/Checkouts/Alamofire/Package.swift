@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.0
 //
 //  Package.swift
 //
@@ -37,5 +37,5 @@ let package = Package(
             name: "Alamofire",
             path: "Source")
     ],
-    swiftLanguageVersions: [.v3, .v4]
+    swiftLanguageVersions: [.v4, .v5]
 )

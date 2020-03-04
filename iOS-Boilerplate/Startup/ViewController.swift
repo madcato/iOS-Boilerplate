@@ -99,6 +99,8 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
             configureCell(tableView.cellForRow(at: indexPath),
                           withEvent: anObject as? Event)
             tableView.moveRow(at: indexPath, to: newIndexPath)
+        @unknown default:
+            fatalError("Uknown case value for enum NSFetchedResultsChangeType")
         }
     }
 

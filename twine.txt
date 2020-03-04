@@ -1,0 +1,10 @@
+[[General]]
+	[yes]
+		en = Yes
+		es = Sí
+		fr = Oui
+		ja = はい
+	[no]
+		en = No
+		fr = Non
+		ja = いいえ

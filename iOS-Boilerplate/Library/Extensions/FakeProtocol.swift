@@ -14,7 +14,9 @@ protocol FakeProtocol: AutoMockable {
 
 /// Gender type
 public enum Gender {
+    /// male gender
     case man
+    /// female gender
     case woman
 }
 

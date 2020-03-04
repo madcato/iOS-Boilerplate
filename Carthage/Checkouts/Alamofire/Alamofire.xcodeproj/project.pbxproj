@@ -289,6 +289,7 @@
 		312D1E0C1FC2551400E51FF1 /* AdvancedUsage.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = AdvancedUsage.md; path = Documentation/AdvancedUsage.md; sourceTree = "<group>"; };
 		316250E41F00ABE900E207A6 /* ISSUE_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = ISSUE_TEMPLATE.md; path = .github/ISSUE_TEMPLATE.md; sourceTree = "<group>"; };
 		316250E51F00ACD000E207A6 /* PULL_REQUEST_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = PULL_REQUEST_TEMPLATE.md; path = .github/PULL_REQUEST_TEMPLATE.md; sourceTree = "<group>"; };
+		3173BF5A231F5A37009F98C2 /* Package@swift-4.2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.2.swift"; sourceTree = "<group>"; };
 		31B2CA9421AA24F5005B371A /* Package@swift-4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.swift"; sourceTree = "<group>"; };
 		31B2CA9521AA25CD005B371A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		31ED52E61D73889D00199085 /* AFError+AlamofireTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AFError+AlamofireTests.swift"; sourceTree = "<group>"; };
@@ -341,7 +342,6 @@
 		4CE292321EF4A393008DA555 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		4CE292331EF4A393008DA555 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		4CE292391EF4B12B008DA555 /* Alamofire.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Alamofire.podspec; sourceTree = "<group>"; };
-		4CE2923A1EF4B12B008DA555 /* Package@swift-3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-3.swift"; sourceTree = "<group>"; };
 		4CF3B4281F5FC7900075BE59 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4CF626EF1BA7CB3E0011A099 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF626F81BA7CB3E0011A099 /* Alamofire tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alamofire tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -650,8 +650,8 @@
 				4CE292391EF4B12B008DA555 /* Alamofire.podspec */,
 				4CF3B4281F5FC7900075BE59 /* LICENSE */,
 				31B2CA9521AA25CD005B371A /* Package.swift */,
+				3173BF5A231F5A37009F98C2 /* Package@swift-4.2.swift */,
 				31B2CA9421AA24F5005B371A /* Package@swift-4.swift */,
-				4CE2923A1EF4B12B008DA555 /* Package@swift-3.swift */,
 			);
 			name = Deployment;
 			sourceTree = "<group>";
@@ -995,6 +995,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F8111E2919A95C8B0040E7D1;
 			productRefGroup = F8111E3419A95C8B0040E7D1 /* Products */;
@@ -1408,7 +1409,7 @@
 				INFOPLIST_FILE = "Source/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
+				MARKETING_VERSION = 4.9.1;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -1427,7 +1428,7 @@
 				INFOPLIST_FILE = "Source/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
+				MARKETING_VERSION = 4.9.1;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -1473,7 +1474,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
+				MARKETING_VERSION = 4.9.1;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1492,7 +1493,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
+				MARKETING_VERSION = 4.9.1;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1510,7 +1511,8 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
+				MARKETING_VERSION = 4.9.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire.watchOS;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1529,7 +1531,8 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
+				MARKETING_VERSION = 4.9.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire.watchOS;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1593,10 +1596,11 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1653,10 +1657,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
@@ -1677,7 +1682,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
+				MARKETING_VERSION = 4.9.1;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1695,7 +1700,7 @@
 				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.alamofire.Alamofire;
+				MARKETING_VERSION = 4.9.1;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
