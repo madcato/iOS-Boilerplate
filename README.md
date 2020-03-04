@@ -210,9 +210,17 @@ Configure SwiftLint editing file `.swiftlint.yml` in the root of the project.
 
 The twine file is in the root directory.
 
+#### [Carthage](https://github.com/Carthage/Carthage)
+
+    $ brew install carthage
+
 ### Building it
 
-Open the project, iOS-Boilerplate.xcodeproj, and build and run.
+First, update carthage:
+
+    $ carthage update --platform ios
+
+Open the project, HolaBarcelona.xcodeproj, and build and run.
 
 ### Build with fastlane
 
