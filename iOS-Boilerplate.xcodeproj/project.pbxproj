@@ -124,6 +124,8 @@
 		34D48F4F21CBAE82001CEADF /* MainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4E21CBAE82001CEADF /* MainLabel.swift */; };
 		34D48F5121CBAE97001CEADF /* SimpleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F5021CBAE97001CEADF /* SimpleLabel.swift */; };
 		34D48F5321CBAEB6001CEADF /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F5221CBAEB5001CEADF /* CancelButton.swift */; };
+		34F2B0582420CA1800B615AC /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2B0572420CA1800B615AC /* Optional.swift */; };
+		34F2B05A2420CAE500B615AC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2B0592420CAE500B615AC /* Array.swift */; };
 		34F54BBA240FCCB30079398C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34F54BB8240FCCB30079398C /* Localizable.strings */; };
 		34F7641E21A6E4E400E68956 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487742B21A6BD43001675D3 /* Http.swift */; };
 		34F7642021A6E94100E68956 /* BookNomadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F7641F21A6E94100E68956 /* BookNomadsService.swift */; };
@@ -291,6 +293,8 @@
 		34D48F4E21CBAE82001CEADF /* MainLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLabel.swift; sourceTree = "<group>"; };
 		34D48F5021CBAE97001CEADF /* SimpleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLabel.swift; sourceTree = "<group>"; };
 		34D48F5221CBAEB5001CEADF /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
+		34F2B0572420CA1800B615AC /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		34F2B0592420CAE500B615AC /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		34F54BB9240FCCB30079398C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		34F54BBB240FCCB80079398C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		34F7641F21A6E94100E68956 /* BookNomadsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNomadsService.swift; sourceTree = "<group>"; };
@@ -731,6 +735,8 @@
 			children = (
 				3420DF6021AFDCD40004C59F /* FakeProtocol.swift */,
 				341810C321B80BF100BC9E1C /* Decodable+Codable.swift */,
+				34F2B0572420CA1800B615AC /* Optional.swift */,
+				34F2B0592420CAE500B615AC /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1172,8 +1178,10 @@
 				3485E80E21A58A5C002248B7 /* PersonDTO.swift in Sources */,
 				340088EC21A81F930072B1F0 /* String+urlEncode.swift in Sources */,
 				3485E82D21A5B1F0002248B7 /* Environment.swift in Sources */,
+				34F2B05A2420CAE500B615AC /* Array.swift in Sources */,
 				0B0E512622BD589E00C1D31E /* PushEvent.swift in Sources */,
 				3485E81A21A5A716002248B7 /* Configuration.swift in Sources */,
+				34F2B0582420CA1800B615AC /* Optional.swift in Sources */,
 				0B0E513122BD589E00C1D31E /* GithubEventsWorker.swift in Sources */,
 				34D48F4F21CBAE82001CEADF /* MainLabel.swift in Sources */,
 				0B0E512522BD589E00C1D31E /* WatchEvent.swift in Sources */,
