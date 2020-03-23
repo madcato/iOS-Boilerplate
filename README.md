@@ -301,3 +301,25 @@ Inside the project, the group ```Github```, there is a coomplete table view cont
 This project includes Twine. The input twine text file is in the base path of the project. In order to share this file with other projects (.Net, Android) its recommended that this file is included into a submodule git repository in order to share it with the rest of the projects. 
 
 This way, each time the repository is refreshed via a `git pull --recurse-submodules`, the last version of the twine file is downloaded.
+
+## Screenshots with fastlane
+
+- [fastlane screenshots documentation](https://docs.fastlane.tools/getting-started/ios/screenshots/)
+
+Define where to capture screens in the file `SnapshotUITest\SnapshotUITest.swift`
+```swift
+    func testSnapshot() {
+        let app = XCUIApplication()
+        snapshot("01MainScreen")
+        app.navigationBars["Root View Controller"].buttons["Login"].tap()
+        app.tables.buttons["Sign in"].tap()
+        snapshot("02LoginScreen")
+        app.alerts.scrollViews.otherElements.buttons["OK"].tap()
+        snapshot("03LoginFailScreen")
+    }
+```
+
+Then capture screenshots by running: `$ fastlane snapshot`
+
+Upload those screenshots files to the App Store with: `$ fastlane deliver`
+

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Snapshot.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>iOS-Boilerplate.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>34322B102428842A00F194E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3485E78821A55E05002248B7</key>
 		<dict>
 			<key>primary</key>
