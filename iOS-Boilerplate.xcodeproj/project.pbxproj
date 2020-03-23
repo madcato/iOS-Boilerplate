@@ -98,6 +98,8 @@
 		34306A4221B148E2005B0A84 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
 		34322B142428842A00F194E3 /* SnapshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B132428842A00F194E3 /* SnapshotUITests.swift */; };
 		34322B1D242885EF00F194E3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1C242885EF00F194E3 /* SnapshotHelper.swift */; };
+		34322B1F24288C5F00F194E3 /* BlinkingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1E24288C5F00F194E3 /* BlinkingImage.swift */; };
+		34322B2124288CB000F194E3 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B2024288CB000F194E3 /* Observer.swift */; };
 		3438809621ECA62E002FCBE5 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809221ECA62E002FCBE5 /* LoginViewControllerTests.swift */; };
 		3438809721ECA62E002FCBE5 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809321ECA62E002FCBE5 /* LoginInteractorTests.swift */; };
 		3438809821ECA62E002FCBE5 /* LoginWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */; };
@@ -267,6 +269,8 @@
 		34322B132428842A00F194E3 /* SnapshotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotUITests.swift; sourceTree = "<group>"; };
 		34322B152428842A00F194E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34322B1C242885EF00F194E3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		34322B1E24288C5F00F194E3 /* BlinkingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingImage.swift; sourceTree = "<group>"; };
+		34322B2024288CB000F194E3 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		3438809221ECA62E002FCBE5 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		3438809321ECA62E002FCBE5 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
@@ -473,6 +477,7 @@
 				340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */,
 				340088DD21A81E8E0072B1F0 /* UrlHelper.swift */,
 				340088DF21A81F4C0072B1F0 /* PropertyListHelper.swift */,
+				34322B2024288CB000F194E3 /* Observer.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -944,6 +949,7 @@
 				34D48F4E21CBAE82001CEADF /* MainLabel.swift */,
 				34D48F5021CBAE97001CEADF /* SimpleLabel.swift */,
 				34D48F5221CBAEB5001CEADF /* CancelButton.swift */,
+				34322B1E24288C5F00F194E3 /* BlinkingImage.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -1261,6 +1267,7 @@
 				0B0E512622BD589E00C1D31E /* PushEvent.swift in Sources */,
 				3485E81A21A5A716002248B7 /* Configuration.swift in Sources */,
 				34F2B0582420CA1800B615AC /* Optional.swift in Sources */,
+				34322B2124288CB000F194E3 /* Observer.swift in Sources */,
 				0B0E513122BD589E00C1D31E /* GithubEventsWorker.swift in Sources */,
 				34D48F4F21CBAE82001CEADF /* MainLabel.swift in Sources */,
 				0B0E512522BD589E00C1D31E /* WatchEvent.swift in Sources */,
@@ -1309,6 +1316,7 @@
 				3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,
+				34322B1F24288C5F00F194E3 /* BlinkingImage.swift in Sources */,
 				3485E78D21A55E05002248B7 /* AppDelegate.swift in Sources */,
 				0B0E512722BD589E00C1D31E /* StarEvent.swift in Sources */,
 				0B0E513922BD589E00C1D31E /* GithubEventsRouter.swift in Sources */,
