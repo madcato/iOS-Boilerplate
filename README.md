@@ -117,6 +117,7 @@ Included in the project directly using [Carthage](https://github.com/Carthage/Ca
   [Sqlite.swift usage manual](https://github.com/stephencelis/SQLite.swift/blob/master/Documentation/Index.md#manual)
 - [SQLiteMigrationmanager.swift](https://github.com/garriguv/SQLiteMigrationManager.swift)
   Migration manager for SQLite.swift
+- [Unidirectional Data Flow in Swift - Inspired by Redux](https://github.com/ReSwift/ReSwift)
 
 #### Carthage version setting
 
@@ -137,6 +138,7 @@ Included in the project directly using [Carthage](https://github.com/Carthage/Ca
 - Basic utils
 - Theme classes (in order to make easy to control the colors of the app using UIAppearance class)
 - Login made with [Clean-Swift architecture](https://clean-swift.com/)
+- Login made with [Redux-iOS architecture](https://github.com/ReSwift/ReSwift)
 
 ### Integrations
 
@@ -271,7 +273,7 @@ If the migration must be made with swift code:
 
 ## Implementation sample with Clean-Swift Architecture
 
-In the group ```iOS-Boilerplate/Login``` you can find the sample files implementing a login functionality using an [architecture named Clean-Swift](https://clean-swift.com/clean-swift-ios-architecture/):
+In the group ```iOS-Boilerplate/Login/Clean-Swift``` you can find the sample files implementing a login functionality using an [architecture named Clean-Swift](https://clean-swift.com/clean-swift-ios-architecture/):
 
 Files:
 
@@ -281,6 +283,14 @@ Files:
 - LoginPresenter: This class adapts the data to the final data types that will be showed in the view. Transformations like Date to String and texts translations are made by this class.
 - LoginRouter: This class manages the view transitions.
 - LoginWorker: This class implements the functionality.
+
+## Implementation sample with Redux Architecture
+
+In the group ```iOS-Boilerplate/Login/Redux``` you can find the sample files implementing a login functionality using an [Redux based architecture named ReSwift](https://github.com/ReSwift/ReSwift):
+
+Files:
+
+- LoginReduxViewController: view controller that manages the login view, also Store, Action and Reducer.
 
 ## Antoher implementation sample with Clean-Swift Architecture
 

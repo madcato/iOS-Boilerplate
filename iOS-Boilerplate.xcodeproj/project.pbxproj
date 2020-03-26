@@ -100,6 +100,8 @@
 		34322B1D242885EF00F194E3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1C242885EF00F194E3 /* SnapshotHelper.swift */; };
 		34322B1F24288C5F00F194E3 /* BlinkingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1E24288C5F00F194E3 /* BlinkingImage.swift */; };
 		34322B2124288CB000F194E3 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B2024288CB000F194E3 /* Observer.swift */; };
+		34322B2F242D193400F194E3 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34322B2E242D193300F194E3 /* ReSwift.framework */; };
+		34322B30242D1C9300F194E3 /* LoginReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B2D242C896000F194E3 /* LoginReduxViewController.swift */; };
 		3438809621ECA62E002FCBE5 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809221ECA62E002FCBE5 /* LoginViewControllerTests.swift */; };
 		3438809721ECA62E002FCBE5 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809321ECA62E002FCBE5 /* LoginInteractorTests.swift */; };
 		3438809821ECA62E002FCBE5 /* LoginWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */; };
@@ -271,6 +273,8 @@
 		34322B1C242885EF00F194E3 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		34322B1E24288C5F00F194E3 /* BlinkingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingImage.swift; sourceTree = "<group>"; };
 		34322B2024288CB000F194E3 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		34322B2D242C896000F194E3 /* LoginReduxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReduxViewController.swift; sourceTree = "<group>"; };
+		34322B2E242D193300F194E3 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		3438809221ECA62E002FCBE5 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		3438809321ECA62E002FCBE5 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
@@ -331,6 +335,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34322B2F242D193400F194E3 /* ReSwift.framework in Frameworks */,
 				340D313421EDDEB000E5936D /* ImageIO.framework in Frameworks */,
 				340D314621EDDED000E5936D /* Masonry.framework in Frameworks */,
 				340D314021EDDED000E5936D /* SQLite.framework in Frameworks */,
@@ -557,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				34B916F221C0EE7400409CB8 /* libsqlite3.tbd */,
+				34322B2E242D193300F194E3 /* ReSwift.framework */,
 				340D313821EDDECF00E5936D /* Alamofire.framework */,
 				340D313921EDDECF00E5936D /* AlamofireImage.framework */,
 				340D313B21EDDECF00E5936D /* AlamofireNetworkActivityIndicator.framework */,
@@ -581,12 +587,8 @@
 		342AC55121E897F40058C1E0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				342AC58121E89A7F0058C1E0 /* LoginPresenter.swift */,
-				342AC58221E89A7F0058C1E0 /* LoginWorker.swift */,
-				342AC58321E89A7F0058C1E0 /* LoginRouter.swift */,
-				342AC58421E89A7F0058C1E0 /* LoginModels.swift */,
-				342AC58521E89A7F0058C1E0 /* LoginViewController.swift */,
-				342AC58621E89A7F0058C1E0 /* LoginInteractor.swift */,
+				34322B2C242C895000F194E3 /* Redux */,
+				34322B2B242C893300F194E3 /* Clean-Swift */,
 				342AC58D21E89A8F0058C1E0 /* Login.storyboard */,
 			);
 			path = Login;
@@ -635,6 +637,27 @@
 				34322B1C242885EF00F194E3 /* SnapshotHelper.swift */,
 			);
 			path = fastlane;
+			sourceTree = "<group>";
+		};
+		34322B2B242C893300F194E3 /* Clean-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				342AC58121E89A7F0058C1E0 /* LoginPresenter.swift */,
+				342AC58221E89A7F0058C1E0 /* LoginWorker.swift */,
+				342AC58321E89A7F0058C1E0 /* LoginRouter.swift */,
+				342AC58421E89A7F0058C1E0 /* LoginModels.swift */,
+				342AC58521E89A7F0058C1E0 /* LoginViewController.swift */,
+				342AC58621E89A7F0058C1E0 /* LoginInteractor.swift */,
+			);
+			path = "Clean-Swift";
+			sourceTree = "<group>";
+		};
+		34322B2C242C895000F194E3 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				34322B2D242C896000F194E3 /* LoginReduxViewController.swift */,
+			);
+			path = Redux;
 			sourceTree = "<group>";
 		};
 		3438806221ECA5F2002FCBE5 /* Login */ = {
@@ -1149,6 +1172,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/FLEX.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
 			);
 			name = "Copy Frameworks Carthage";
 			outputFileListPaths = (
@@ -1161,6 +1185,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Masonry.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLite.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLiteMigrationManager.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1314,6 +1339,7 @@
 				34F7641E21A6E4E400E68956 /* Http.swift in Sources */,
 				0B0E512D22BD589E00C1D31E /* GithubEventsViewController.swift in Sources */,
 				3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */,
+				34322B30242D1C9300F194E3 /* LoginReduxViewController.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,
 				34322B1F24288C5F00F194E3 /* BlinkingImage.swift in Sources */,
