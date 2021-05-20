@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,6 +35,24 @@
 		0B0E513E22BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
 		0B0E513F22BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
 		0B0E514022BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
+		0BFD564326566A290035ABF9 /* Masonry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563A26566A290035ABF9 /* Masonry.xcframework */; };
+		0BFD564426566A290035ABF9 /* Masonry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563A26566A290035ABF9 /* Masonry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BFD564526566A290035ABF9 /* AlamofireImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563B26566A290035ABF9 /* AlamofireImage.xcframework */; };
+		0BFD564626566A290035ABF9 /* AlamofireImage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563B26566A290035ABF9 /* AlamofireImage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BFD564726566A290035ABF9 /* ReSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563C26566A290035ABF9 /* ReSwift.xcframework */; };
+		0BFD564826566A290035ABF9 /* ReSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563C26566A290035ABF9 /* ReSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BFD564926566A290035ABF9 /* Quick.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563D26566A290035ABF9 /* Quick.xcframework */; };
+		0BFD564A26566A290035ABF9 /* Quick.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563D26566A290035ABF9 /* Quick.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BFD564B26566A290035ABF9 /* SQLite.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563E26566A290035ABF9 /* SQLite.xcframework */; };
+		0BFD564C26566A290035ABF9 /* SQLite.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563E26566A290035ABF9 /* SQLite.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BFD564D26566A290035ABF9 /* AlamofireNetworkActivityIndicator.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563F26566A290035ABF9 /* AlamofireNetworkActivityIndicator.xcframework */; };
+		0BFD564E26566A290035ABF9 /* AlamofireNetworkActivityIndicator.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563F26566A290035ABF9 /* AlamofireNetworkActivityIndicator.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BFD564F26566A290035ABF9 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; };
+		0BFD565026566A290035ABF9 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BFD565126566A290035ABF9 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564126566A290035ABF9 /* Alamofire.xcframework */; };
+		0BFD565226566A290035ABF9 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564126566A290035ABF9 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BFD565326566A290035ABF9 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564226566A290035ABF9 /* Nimble.xcframework */; };
+		0BFD565426566A290035ABF9 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564226566A290035ABF9 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088D721A81AB00072B1F0 /* CoreDataStack.swift */; };
 		340088DC21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */; };
 		340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DD21A81E8E0072B1F0 /* UrlHelper.swift */; };
@@ -53,21 +71,7 @@
 		340088FC21A822940072B1F0 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FA21A822940072B1F0 /* AppInfo.swift */; };
 		340088FD21A822940072B1F0 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FB21A822940072B1F0 /* System.swift */; };
 		340D313421EDDEB000E5936D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3420DF8621AFECA20004C59F /* ImageIO.framework */; };
-		340D314021EDDED000E5936D /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313721EDDECF00E5936D /* SQLite.framework */; };
-		340D314121EDDED000E5936D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313821EDDECF00E5936D /* Alamofire.framework */; };
-		340D314221EDDED000E5936D /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313921EDDECF00E5936D /* AlamofireImage.framework */; };
-		340D314321EDDED000E5936D /* FLEX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313A21EDDECF00E5936D /* FLEX.framework */; };
-		340D314421EDDED000E5936D /* AlamofireNetworkActivityIndicator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313B21EDDECF00E5936D /* AlamofireNetworkActivityIndicator.framework */; };
-		340D314621EDDED000E5936D /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313D21EDDECF00E5936D /* Masonry.framework */; };
 		340D314721EDDED800E5936D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B916F221C0EE7400409CB8 /* libsqlite3.tbd */; };
-		340D314921EDE18400E5936D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313C21EDDECF00E5936D /* Quick.framework */; };
-		340D314A21EDE18400E5936D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313C21EDDECF00E5936D /* Quick.framework */; };
-		340D314B21EDE18800E5936D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313521EDDECF00E5936D /* Nimble.framework */; };
-		340D314C21EDE18800E5936D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340D313521EDDECF00E5936D /* Nimble.framework */; };
-		340D314E21EDE1BF00E5936D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 340D313521EDDECF00E5936D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		340D314F21EDE1BF00E5936D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 340D313C21EDDECF00E5936D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		340D315221EDE86100E5936D /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 340D313521EDDECF00E5936D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		340D315321EDE86100E5936D /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 340D313C21EDDECF00E5936D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		341810B521B7D9B400BC9E1C /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = 3485E81121A59358002248B7 /* Person.json */; };
 		341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C321B80BF100BC9E1C /* Decodable+Codable.swift */; };
 		341810C621B8152400BC9E1C /* NetworkingInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C521B8152400BC9E1C /* NetworkingInjector.swift */; };
@@ -100,7 +104,6 @@
 		34322B1D242885EF00F194E3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1C242885EF00F194E3 /* SnapshotHelper.swift */; };
 		34322B1F24288C5F00F194E3 /* BlinkingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1E24288C5F00F194E3 /* BlinkingImage.swift */; };
 		34322B2124288CB000F194E3 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B2024288CB000F194E3 /* Observer.swift */; };
-		34322B2F242D193400F194E3 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34322B2E242D193300F194E3 /* ReSwift.framework */; };
 		34322B30242D1C9300F194E3 /* LoginReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B2D242C896000F194E3 /* LoginReduxViewController.swift */; };
 		3438809621ECA62E002FCBE5 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809221ECA62E002FCBE5 /* LoginViewControllerTests.swift */; };
 		3438809721ECA62E002FCBE5 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809321ECA62E002FCBE5 /* LoginInteractorTests.swift */; };
@@ -164,14 +167,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0BFD565526566A290035ABF9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0BFD565426566A290035ABF9 /* Nimble.xcframework in Embed Frameworks */,
+				0BFD564826566A290035ABF9 /* ReSwift.xcframework in Embed Frameworks */,
+				0BFD564A26566A290035ABF9 /* Quick.xcframework in Embed Frameworks */,
+				0BFD564C26566A290035ABF9 /* SQLite.xcframework in Embed Frameworks */,
+				0BFD565026566A290035ABF9 /* FLEX.xcframework in Embed Frameworks */,
+				0BFD565226566A290035ABF9 /* Alamofire.xcframework in Embed Frameworks */,
+				0BFD564626566A290035ABF9 /* AlamofireImage.xcframework in Embed Frameworks */,
+				0BFD564E26566A290035ABF9 /* AlamofireNetworkActivityIndicator.xcframework in Embed Frameworks */,
+				0BFD564426566A290035ABF9 /* Masonry.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		340D314D21EDE1A900E5936D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				340D314E21EDE1BF00E5936D /* Nimble.framework in CopyFiles */,
-				340D314F21EDE1BF00E5936D /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,8 +201,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				340D315221EDE86100E5936D /* Nimble.framework in CopyFiles */,
-				340D315321EDE86100E5936D /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +233,18 @@
 		0B0E512322BD589E00C1D31E /* GithubEventsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventsPresenter.swift; sourceTree = "<group>"; };
 		0B0E513B22BD58B300C1D31E /* Github.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Github.storyboard; sourceTree = "<group>"; };
 		0B0E513D22BD605D00C1D31E /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		0BFD561E265666AC0035ABF9 /* AlamofireImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AlamofireImage.xcframework; path = "../UST-Global/MarvelDetail/Carthage/Build/AlamofireImage.xcframework"; sourceTree = "<group>"; };
+		0BFD561F265666AC0035ABF9 /* AlamofireNetworkActivityIndicator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AlamofireNetworkActivityIndicator.xcframework; path = "../UST-Global/MarvelDetail/Carthage/Build/AlamofireNetworkActivityIndicator.xcframework"; sourceTree = "<group>"; };
+		0BFD5620265666AC0035ABF9 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = "../UST-Global/MarvelDetail/Carthage/Build/Alamofire.xcframework"; sourceTree = "<group>"; };
+		0BFD563A26566A290035ABF9 /* Masonry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Masonry.xcframework; path = Carthage/Build/Masonry.xcframework; sourceTree = "<group>"; };
+		0BFD563B26566A290035ABF9 /* AlamofireImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AlamofireImage.xcframework; path = Carthage/Build/AlamofireImage.xcframework; sourceTree = "<group>"; };
+		0BFD563C26566A290035ABF9 /* ReSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReSwift.xcframework; path = Carthage/Build/ReSwift.xcframework; sourceTree = "<group>"; };
+		0BFD563D26566A290035ABF9 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
+		0BFD563E26566A290035ABF9 /* SQLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SQLite.xcframework; path = Carthage/Build/SQLite.xcframework; sourceTree = "<group>"; };
+		0BFD563F26566A290035ABF9 /* AlamofireNetworkActivityIndicator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AlamofireNetworkActivityIndicator.xcframework; path = Carthage/Build/AlamofireNetworkActivityIndicator.xcframework; sourceTree = "<group>"; };
+		0BFD564026566A290035ABF9 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FLEX.xcframework; path = Carthage/Build/FLEX.xcframework; sourceTree = "<group>"; };
+		0BFD564126566A290035ABF9 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
+		0BFD564226566A290035ABF9 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
 		340088D721A81AB00072B1F0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+ChangeRootController.swift"; sourceTree = "<group>"; };
 		340088DD21A81E8E0072B1F0 /* UrlHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlHelper.swift; sourceTree = "<group>"; };
@@ -233,15 +263,6 @@
 		340088FA21A822940072B1F0 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		340088FB21A822940072B1F0 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		340C8C5221A8385500D7178F /* iOS-Boilerplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Boilerplate.entitlements"; sourceTree = "<group>"; };
-		340D313521EDDECF00E5936D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		340D313621EDDECF00E5936D /* SQLiteMigrationManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLiteMigrationManager.framework; path = Carthage/Build/iOS/SQLiteMigrationManager.framework; sourceTree = "<group>"; };
-		340D313721EDDECF00E5936D /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
-		340D313821EDDECF00E5936D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		340D313921EDDECF00E5936D /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
-		340D313A21EDDECF00E5936D /* FLEX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLEX.framework; path = Carthage/Build/iOS/FLEX.framework; sourceTree = "<group>"; };
-		340D313B21EDDECF00E5936D /* AlamofireNetworkActivityIndicator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireNetworkActivityIndicator.framework; path = Carthage/Build/iOS/AlamofireNetworkActivityIndicator.framework; sourceTree = "<group>"; };
-		340D313C21EDDECF00E5936D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		340D313D21EDDECF00E5936D /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
 		341810C321B80BF100BC9E1C /* Decodable+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Codable.swift"; sourceTree = "<group>"; };
 		341810C521B8152400BC9E1C /* NetworkingInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingInjector.swift; sourceTree = "<group>"; };
 		341810C821B8316400BC9E1C /* MockServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServicesTests.swift; sourceTree = "<group>"; };
@@ -274,7 +295,6 @@
 		34322B1E24288C5F00F194E3 /* BlinkingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkingImage.swift; sourceTree = "<group>"; };
 		34322B2024288CB000F194E3 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		34322B2D242C896000F194E3 /* LoginReduxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReduxViewController.swift; sourceTree = "<group>"; };
-		34322B2E242D193300F194E3 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		3438809221ECA62E002FCBE5 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		3438809321ECA62E002FCBE5 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
@@ -335,14 +355,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34322B2F242D193400F194E3 /* ReSwift.framework in Frameworks */,
+				0BFD565126566A290035ABF9 /* Alamofire.xcframework in Frameworks */,
+				0BFD564D26566A290035ABF9 /* AlamofireNetworkActivityIndicator.xcframework in Frameworks */,
+				0BFD565326566A290035ABF9 /* Nimble.xcframework in Frameworks */,
+				0BFD564526566A290035ABF9 /* AlamofireImage.xcframework in Frameworks */,
+				0BFD564F26566A290035ABF9 /* FLEX.xcframework in Frameworks */,
+				0BFD564326566A290035ABF9 /* Masonry.xcframework in Frameworks */,
+				0BFD564726566A290035ABF9 /* ReSwift.xcframework in Frameworks */,
+				0BFD564926566A290035ABF9 /* Quick.xcframework in Frameworks */,
 				340D313421EDDEB000E5936D /* ImageIO.framework in Frameworks */,
-				340D314621EDDED000E5936D /* Masonry.framework in Frameworks */,
-				340D314021EDDED000E5936D /* SQLite.framework in Frameworks */,
-				340D314421EDDED000E5936D /* AlamofireNetworkActivityIndicator.framework in Frameworks */,
-				340D314221EDDED000E5936D /* AlamofireImage.framework in Frameworks */,
-				340D314321EDDED000E5936D /* FLEX.framework in Frameworks */,
-				340D314121EDDED000E5936D /* Alamofire.framework in Frameworks */,
+				0BFD564B26566A290035ABF9 /* SQLite.xcframework in Frameworks */,
 				340D314721EDDED800E5936D /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,8 +373,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340D314921EDE18400E5936D /* Quick.framework in Frameworks */,
-				340D314B21EDE18800E5936D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +380,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340D314A21EDE18400E5936D /* Quick.framework in Frameworks */,
-				340D314C21EDE18800E5936D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,17 +579,19 @@
 		3420DF8521AFECA20004C59F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BFD5620265666AC0035ABF9 /* Alamofire.xcframework */,
+				0BFD564126566A290035ABF9 /* Alamofire.xcframework */,
+				0BFD561E265666AC0035ABF9 /* AlamofireImage.xcframework */,
+				0BFD561F265666AC0035ABF9 /* AlamofireNetworkActivityIndicator.xcframework */,
+				0BFD563B26566A290035ABF9 /* AlamofireImage.xcframework */,
+				0BFD563F26566A290035ABF9 /* AlamofireNetworkActivityIndicator.xcframework */,
+				0BFD564026566A290035ABF9 /* FLEX.xcframework */,
+				0BFD563A26566A290035ABF9 /* Masonry.xcframework */,
+				0BFD564226566A290035ABF9 /* Nimble.xcframework */,
+				0BFD563D26566A290035ABF9 /* Quick.xcframework */,
+				0BFD563C26566A290035ABF9 /* ReSwift.xcframework */,
+				0BFD563E26566A290035ABF9 /* SQLite.xcframework */,
 				34B916F221C0EE7400409CB8 /* libsqlite3.tbd */,
-				34322B2E242D193300F194E3 /* ReSwift.framework */,
-				340D313821EDDECF00E5936D /* Alamofire.framework */,
-				340D313921EDDECF00E5936D /* AlamofireImage.framework */,
-				340D313B21EDDECF00E5936D /* AlamofireNetworkActivityIndicator.framework */,
-				340D313A21EDDECF00E5936D /* FLEX.framework */,
-				340D313D21EDDECF00E5936D /* Masonry.framework */,
-				340D313521EDDECF00E5936D /* Nimble.framework */,
-				340D313C21EDDECF00E5936D /* Quick.framework */,
-				340D313721EDDECF00E5936D /* SQLite.framework */,
-				340D313621EDDECF00E5936D /* SQLiteMigrationManager.framework */,
 				3420DF8621AFECA20004C59F /* ImageIO.framework */,
 			);
 			name = Frameworks;
@@ -1009,7 +1029,7 @@
 				3440F63D21BE88D60092CAF9 /* Increment build number */,
 				3440F63E21BE89160092CAF9 /* Increment Version on Archive */,
 				3485E78721A55E05002248B7 /* Resources */,
-				340D314821EDDF6B00E5936D /* Copy Frameworks Carthage */,
+				0BFD565526566A290035ABF9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1065,7 +1085,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = veladan;
 				TargetAttributes = {
 					34322B102428842A00F194E3 = {
@@ -1158,39 +1178,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		340D314821EDDF6B00E5936D /* Copy Frameworks Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/AlamofireNetworkActivityIndicator.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/FLEX.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
-			);
-			name = "Copy Frameworks Carthage";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireImage.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireNetworkActivityIndicator.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FLEX.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Masonry.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLite.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLiteMigrationManager.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
 		3440F63D21BE88D60092CAF9 /* Increment build number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1243,7 +1230,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "twine generate-all-localization-files twine.txt iOS-Boilerplate/Resources/Strings/ --format apple\n";
+			shellScript = "# twine generate-all-localization-files twine.txt iOS-Boilerplate/Resources/Strings/ --format apple\n";
 		};
 		34F7642821A7092800E68956 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1512,6 +1499,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1537,7 +1525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1575,6 +1563,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1594,7 +1583,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1617,7 +1606,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "iOS-Boilerplate/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1643,7 +1632,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "iOS-Boilerplate/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

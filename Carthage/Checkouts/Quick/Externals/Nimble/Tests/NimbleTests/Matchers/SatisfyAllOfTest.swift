@@ -2,14 +2,10 @@ import XCTest
 import Nimble
 import Foundation
 
-final class SatisfyAllOfTest: XCTestCase, XCTestCaseProvider {
+final class SatisfyAllOfTest: XCTestCase {
     func testSatisfyAllOf() {
         expect(2).to(satisfyAllOf(equal(2), beLessThan(3)))
-#if SUPPORT_IMPLICIT_BRIDGING_CONVERSION
-        expect(2).toNot(satisfyAllOf(equal(3), equal("turtles")))
-#else
         expect(2 as NSNumber).toNot(satisfyAllOf(equal(3 as NSNumber), equal("turtles" as NSString)))
-#endif
         expect([1, 2, 3]).to(satisfyAllOf(equal([1, 2, 3]), allPass({$0 < 4}), haveCount(3)))
         expect("turtle").to(satisfyAllOf(contain("e"), beginWith("tur")))
         expect(82.0).to(satisfyAllOf(beGreaterThan(10.5), beLessThan(100.75), beCloseTo(82.00001)))
@@ -32,15 +28,20 @@ final class SatisfyAllOfTest: XCTestCase, XCTestCaseProvider {
         "expected to not match all of: {be greater than <10.5>}, and {be less than <100.75>}, and {be close to <50.1> (within 0.0001)}, got 50.10001") {
             expect(50.10001).toNot(satisfyAllOf(beGreaterThan(10.5), beLessThan(100.75), beCloseTo(50.1)))
         }
+        failsWithErrorMessage(
+        "expected to not match all of: {This matcher should always fail}, and {This matcher should always fail}, got true") {
+            expect(true).toNot(satisfyAllOf(alwaysFail(), alwaysFail()))
+        }
+        failsWithErrorMessage(
+        "expected to match all of: {This matcher should always fail}, and {This matcher should always fail}, got true") {
+            expect(true).to(satisfyAllOf(alwaysFail(), alwaysFail()))
+        }
     }
 
     func testOperatorAnd() {
         expect(2).to(equal(2) && beLessThan(3))
-#if SUPPORT_IMPLICIT_BRIDGING_CONVERSION
         expect(2).to(beLessThan(3) && beGreaterThan(1))
-#else
         expect(2 as NSNumber).to(beLessThan(3 as NSNumber) && beGreaterThan(1 as NSNumber))
-#endif
         expect("turtle").to(contain("t") && endWith("tle"))
         expect(82.0).to(beGreaterThan(10.5) && beLessThan(100.75))
         expect(false).to(beFalsy() && beFalse())

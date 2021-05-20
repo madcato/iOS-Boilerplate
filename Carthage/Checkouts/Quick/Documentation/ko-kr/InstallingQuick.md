@@ -18,7 +18,7 @@ Quick은 예제들과 예제 그룹을 정의하는 구문을 제공합니다. N
 Git 서브 모듈을 사용하여 Quick과 Nimble을 링크하려면:
 
 1. Quick 서브 모듈을 추가하세요.
-2. `.xcworkspace` 가 프로젝트에 아직 없는 경우, 만드세요. ([방법은 이곳에](https://developer.apple.com/library/ios/recipes/xcode_help-structure_navigator/articles/Adding_an_Existing_Project_to_a_Workspace.html))
+2. `.xcworkspace` 가 프로젝트에 아직 없는 경우, 만드세요. ([방법은 이곳에](https://help.apple.com/xcode/mac/11.4/#/devf5378fca9))
 3. `Quick.xcodeproj`를 프로젝트의 `.xcworkspace` 에 추가하세요.
 4. `Nimble.xcodeproj` 또한 프로젝트의 `.xcworkspace` 에 추가하세요. `path/to/Quick/Externals/Nimble` 에 있습니다. Quick의 종속성에서 Nimble을 추가하면 (하위 모듈에서 바로 추가하는 것과 대조적으로), 당신이 사용하고 있는 Quick의 버전에 맞는 Nimble의 올바른 버전을 사용할 수 있게 됩니다.
 5.  `Quick.framework`와 `Nimble.framework`를 test target 프로젝트의 "Link Binary with Libraries" build phase에 링크시키세요.
@@ -44,12 +44,12 @@ git submodule update --init --recursive
 
 `Nimble.framework`도 위와 같이 추가하면 끝입니다!
 
-**서브 모듈 업데이트하기:** Quick이나 Nimble 서브 모듈을 마지막 버전으로 업데이트하기 원한다면, Quick 디렉터리로 들어가서 master 레퍼지토리를 pull 하세요:
+**서브 모듈 업데이트하기:** Quick이나 Nimble 서브 모듈을 마지막 버전으로 업데이트하기 원한다면, Quick 디렉터리로 들어가서 main 레퍼지토리를 pull 하세요:
 
 ```sh
 cd /path/to/your/project/Vendor/Quick
-git checkout master
-git pull --rebase origin master
+git checkout main
+git pull --rebase origin main
 ```
 
 당신의 Git 레퍼지토리는 서브 모듈의 변화를 트래킹할 것입니다. 당신은 Quick 서브 모듈을 업데이트했다는 것을 커밋하기 원할 것입니다.

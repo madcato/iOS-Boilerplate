@@ -1,21 +1,18 @@
-disabled_rules:
-  - 
-
 included:
   - Sources
   - Tests
 
 excluded:
+  - Package.swift
   - Carthage/Checkouts
   - Tests/NimbleTests/XCTestManifests.swift
   - Tests/NimbleTests/Helpers/XCTestCaseProvider.swift
 
-trailing_comma:
-  mandatory_comma: true
+disabled_rules:
+  - 
 
-line_length:
-  ignores_comments: true
-  ignores_function_declarations: true
+opt_in_rules:
+  - yoda_condition
 
 identifier_name:
   max_length: 50
@@ -29,3 +26,12 @@ identifier_name:
     - to
   allowed_symbols:
       - _
+
+line_length:
+  warning: 160
+  error: 240
+  ignores_comments: true
+  ignores_function_declarations: true
+
+trailing_comma:
+  mandatory_comma: true

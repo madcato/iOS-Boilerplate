@@ -168,7 +168,7 @@ Included in the project directly using [Carthage](https://github.com/Carthage/Ca
 
 ### Requirements
 
-* Xcode 9+
+* Xcode 12+
 * iOS 10+
 * brew
 * fastlane
@@ -218,7 +218,7 @@ The twine file is in the root directory.
 
 First, update carthage:
 
-    $ carthage update --platform ios
+    $ carthage update --use-xcframeworks
 
 Open the project, HolaBarcelona.xcodeproj, and build and run.
 

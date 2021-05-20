@@ -22,7 +22,7 @@ you should be able to `import Quick` from within files in your test target.
 To link Quick and Nimble using Git submodules:
 
 1. Add submodule for Quick.
-2. If you don't already have a `.xcworkspace` for your project, create one. ([Here's how](https://developer.apple.com/library/ios/recipes/xcode_help-structure_navigator/articles/Adding_an_Existing_Project_to_a_Workspace.html))
+2. If you don't already have a `.xcworkspace` for your project, create one. ([Here's how](https://help.apple.com/xcode/mac/11.4/#/devf5378fca9))
 3. Add `Quick.xcodeproj` to your project's `.xcworkspace`.
 4. Add `Nimble.xcodeproj` to your project's `.xcworkspace`. It exists in `path/to/Quick/Externals/Nimble`. By adding Nimble from Quick's dependencies (as opposed to adding directly as a submodule), you'll ensure that you're using the correct version of Nimble for whatever version of Quick you're using.
 5. Link `Quick.framework` and `Nimble.framework` in your test target's
@@ -55,12 +55,12 @@ Do the same for the `Nimble.framework`, and you're done!
 
 **Updating the Submodules:** If you ever want to update the Quick
 or Nimble submodules to latest version, enter the Quick directory
-and pull from the master repository:
+and pull from the main repository:
 
 ```sh
 cd /path/to/your/project/Vendor/Quick
-git checkout master
-git pull --rebase origin master
+git checkout main
+git pull --rebase origin main
 ```
 
 Your Git repository will track changes to submodules. You'll want to
