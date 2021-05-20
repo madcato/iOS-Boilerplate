@@ -10,24 +10,21 @@ import XCTest
 
 class TestStringHash: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testMd5() throws {
+        let md5 = "Hola Hola".md5()
+        XCTAssertEqual(md5, "6c093f1bfb40f2977f89e4d0a7ebb4f3")
+        XCTAssertNotEqual(md5, "6c093f1bfb40f2977f89e4d0a7ebb4f2")
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testSha1() throws {
+        let sha1 = "Hola Hola".sha1()
+        XCTAssertEqual(sha1, "4df70561b07b8d5c3a750e106bd48b89b94f692d")
+        XCTAssertNotEqual(sha1, "4df70561b07b8d5c3a750e106bd48b89b94f692a")
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSha256() throws {
+        let sha256 = "Hola Hola".sha256()
+        XCTAssertEqual(sha256, "dc6617b0ca67e8e21bb55030cc29258af0aa7eb94b4ba99cf61afa106578e8a8")
+        XCTAssertNotEqual(sha256, "dc6617b0ca67e8e21bb55030cc29258af0aa7eb94b4ba99cf61afa106578e8a9")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
