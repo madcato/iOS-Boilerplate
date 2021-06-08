@@ -35,6 +35,7 @@
 		0B0E513E22BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
 		0B0E513F22BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
 		0B0E514022BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
+		0B2AEE05266FBBD9007689A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2AEE04266FBBD9007689A3 /* Constants.swift */; };
 		0BFD564326566A290035ABF9 /* Masonry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563A26566A290035ABF9 /* Masonry.xcframework */; };
 		0BFD564426566A290035ABF9 /* Masonry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563A26566A290035ABF9 /* Masonry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0BFD564526566A290035ABF9 /* AlamofireImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563B26566A290035ABF9 /* AlamofireImage.xcframework */; };
@@ -235,6 +236,7 @@
 		0B0E512322BD589E00C1D31E /* GithubEventsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubEventsPresenter.swift; sourceTree = "<group>"; };
 		0B0E513B22BD58B300C1D31E /* Github.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Github.storyboard; sourceTree = "<group>"; };
 		0B0E513D22BD605D00C1D31E /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		0B2AEE04266FBBD9007689A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0BFD561E265666AC0035ABF9 /* AlamofireImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AlamofireImage.xcframework; path = "../UST-Global/MarvelDetail/Carthage/Build/AlamofireImage.xcframework"; sourceTree = "<group>"; };
 		0BFD561F265666AC0035ABF9 /* AlamofireNetworkActivityIndicator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AlamofireNetworkActivityIndicator.xcframework; path = "../UST-Global/MarvelDetail/Carthage/Build/AlamofireNetworkActivityIndicator.xcframework"; sourceTree = "<group>"; };
 		0BFD5620265666AC0035ABF9 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = "../UST-Global/MarvelDetail/Carthage/Build/Alamofire.xcframework"; sourceTree = "<group>"; };
@@ -483,6 +485,14 @@
 				0B0E512022BD589E00C1D31E /* CommitMessageTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0B2AEE03266FBBC4007689A3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0B2AEE04266FBBD9007689A3 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		340088CE21A81A7E0072B1F0 /* DTO */ = {
@@ -793,6 +803,7 @@
 		3485E7C321A57F7F002248B7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				0B2AEE03266FBBC4007689A3 /* Constants */,
 				34D48F4921CBAD19001CEADF /* Controls */,
 				34D48F1521CBAA8E001CEADF /* Theme */,
 				3485E81821A5A6A6002248B7 /* Configuration */,
@@ -1352,6 +1363,7 @@
 				34BE876521B590D100B4FD22 /* API.swift in Sources */,
 				0B0E513A22BD589E00C1D31E /* GithubEventsPresenter.swift in Sources */,
 				340088FC21A822940072B1F0 /* AppInfo.swift in Sources */,
+				0B2AEE05266FBBD9007689A3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
