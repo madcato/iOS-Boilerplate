@@ -70,13 +70,9 @@ extension GithubEventDetailViewController: GithubEventDetailPresenterOutput {
 // MARK: - UITableView delegate
 
 extension GithubEventDetailViewController {
-  func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
-  }
+  func numberOfSections(in tableView: UITableView) -> Int { 1 }
 
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return commits.count
-  }
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { commits.count }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "CommitMessageTableViewCell", for: indexPath)

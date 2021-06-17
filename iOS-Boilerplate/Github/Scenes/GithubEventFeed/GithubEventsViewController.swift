@@ -90,12 +90,10 @@ extension GithubEventsViewController {
     self.loadEvents(reload: true)
   }
 
-  override func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
-  }
+  override func numberOfSections(in tableView: UITableView) -> Int { 1 }
 
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return events.count
+    events.count
   }
 
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -25,15 +25,15 @@ class Configuration {
     }()
 
     static var serverURL: String {
-        return info(with: kServerURLkey)
+        info(with: kServerURLkey)
     }
 
     static var apiToken: String {
-        return info(with: kAPIToken)
+        info(with: kAPIToken)
     }
 
     static var basePath: String {
-        return info(with: kBasePath)
+        info(with: kBasePath)
     }
 
     private static func info(with key: String) -> String {

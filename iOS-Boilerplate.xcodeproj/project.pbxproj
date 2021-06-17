@@ -36,6 +36,7 @@
 		0B0E513F22BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
 		0B0E514022BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
 		0B2AEE05266FBBD9007689A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2AEE04266FBBD9007689A3 /* Constants.swift */; };
+		0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
 		0BFD564326566A290035ABF9 /* Masonry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563A26566A290035ABF9 /* Masonry.xcframework */; };
 		0BFD564426566A290035ABF9 /* Masonry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563A26566A290035ABF9 /* Masonry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0BFD564526566A290035ABF9 /* AlamofireImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD563B26566A290035ABF9 /* AlamofireImage.xcframework */; };
@@ -54,7 +55,6 @@
 		0BFD565226566A290035ABF9 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564126566A290035ABF9 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0BFD565326566A290035ABF9 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564226566A290035ABF9 /* Nimble.xcframework */; };
 		0BFD565426566A290035ABF9 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564226566A290035ABF9 /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0BFD565826566B770035ABF9 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD565726566B770035ABF9 /* String+hash.swift */; };
 		0BFD565B26566BC70035ABF9 /* TestStringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD565A26566BC70035ABF9 /* TestStringHash.swift */; };
 		340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088D721A81AB00072B1F0 /* CoreDataStack.swift */; };
 		340088DC21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */; };
@@ -237,6 +237,7 @@
 		0B0E513B22BD58B300C1D31E /* Github.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Github.storyboard; sourceTree = "<group>"; };
 		0B0E513D22BD605D00C1D31E /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		0B2AEE04266FBBD9007689A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0B9C0C37267B21B800999AB4 /* String+hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hash.swift"; sourceTree = "<group>"; };
 		0BFD561E265666AC0035ABF9 /* AlamofireImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AlamofireImage.xcframework; path = "../UST-Global/MarvelDetail/Carthage/Build/AlamofireImage.xcframework"; sourceTree = "<group>"; };
 		0BFD561F265666AC0035ABF9 /* AlamofireNetworkActivityIndicator.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AlamofireNetworkActivityIndicator.xcframework; path = "../UST-Global/MarvelDetail/Carthage/Build/AlamofireNetworkActivityIndicator.xcframework"; sourceTree = "<group>"; };
 		0BFD5620265666AC0035ABF9 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = "../UST-Global/MarvelDetail/Carthage/Build/Alamofire.xcframework"; sourceTree = "<group>"; };
@@ -249,7 +250,6 @@
 		0BFD564026566A290035ABF9 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FLEX.xcframework; path = Carthage/Build/FLEX.xcframework; sourceTree = "<group>"; };
 		0BFD564126566A290035ABF9 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		0BFD564226566A290035ABF9 /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
-		0BFD565726566B770035ABF9 /* String+hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+hash.swift"; path = "../../../../../Desktop/String+hash.swift"; sourceTree = "<group>"; };
 		0BFD565A26566BC70035ABF9 /* TestStringHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStringHash.swift; sourceTree = "<group>"; };
 		340088D721A81AB00072B1F0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+ChangeRootController.swift"; sourceTree = "<group>"; };
@@ -841,7 +841,7 @@
 				341810C321B80BF100BC9E1C /* Decodable+Codable.swift */,
 				34F2B0572420CA1800B615AC /* Optional.swift */,
 				34F2B0592420CAE500B615AC /* Array.swift */,
-				0BFD565726566B770035ABF9 /* String+hash.swift */,
+				0B9C0C37267B21B800999AB4 /* String+hash.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1301,7 +1301,6 @@
 				34D48F4F21CBAE82001CEADF /* MainLabel.swift in Sources */,
 				0B0E512522BD589E00C1D31E /* WatchEvent.swift in Sources */,
 				3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */,
-				0BFD565826566B770035ABF9 /* String+hash.swift in Sources */,
 				34D48F5121CBAE97001CEADF /* SimpleLabel.swift in Sources */,
 				342AC58A21E89A7F0058C1E0 /* LoginModels.swift in Sources */,
 				34F7642021A6E94100E68956 /* BookNomadsService.swift in Sources */,
@@ -1345,6 +1344,7 @@
 				0B0E512D22BD589E00C1D31E /* GithubEventsViewController.swift in Sources */,
 				3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */,
 				34322B30242D1C9300F194E3 /* LoginReduxViewController.swift in Sources */,
+				0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,
 				34322B1F24288C5F00F194E3 /* BlinkingImage.swift in Sources */,

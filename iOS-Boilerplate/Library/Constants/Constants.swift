@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Constants {
+enum Constants {
     static let numberOfVisibleLines = 6
     static let fifteenMinutesMillis = 15 * 60 * 1000
 }

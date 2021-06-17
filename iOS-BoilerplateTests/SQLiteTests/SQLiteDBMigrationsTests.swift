@@ -11,14 +11,14 @@
 import XCTest
 
 class SQLiteDBMigrationsTests: XCTestCase {
-    func testMigration() {
-        do {
-            let sqlite = SqliteDBManager(testing: true)
-            try sqlite.runTest()
-            XCTAssertTrue(true)
-        } catch {
-            print("Error testing migration \(error)")
-            XCTFail("Migration throws an exception")
-        }
-    }
+//    func testMigration() {
+//        do {
+//            let sqlite = SqliteDBManager(testing: true)
+//            try sqlite.runTest()
+//            XCTAssertTrue(true)
+//        } catch {
+//            print("Error testing migration \(error)")
+//            XCTFail("Migration throws an exception")
+//        }
+//    }
 }

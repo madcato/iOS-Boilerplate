@@ -10,7 +10,7 @@ import Foundation
 
 extension String {
     var length: Int {
-        return self.count
+        self.count
     }
 
     subscript(integerIndex: Int) -> Character {

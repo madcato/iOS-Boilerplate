@@ -33,7 +33,7 @@ class GithubEventsPresenter: GithubEventsPresenterInput {
   }
 
   private func createViewModel(from events: [GithubEvent]) -> [GithubEventsScene.ListEvents.ViewModel.Event] {
-    return events.map {
+    events.map {
       let attributedString = format(userName: $0.actor?.displayLogin ?? "",
                                     eventType: eventTypeStr(for: $0.type),
                                     repo: $0.repo?.name ?? "")

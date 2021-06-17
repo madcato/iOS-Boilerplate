@@ -127,7 +127,7 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
     // MARK: - Table View
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return fetchedResultsController.sections?.count ?? 0
+        fetchedResultsController.sections?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

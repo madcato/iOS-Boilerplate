@@ -22,9 +22,9 @@ extension Date {
     }
 
     func secondsFrom(_ date: Date) -> Int? {
-        return (Calendar.current as NSCalendar).components(NSCalendar.Unit.second,
-                                                           from: date,
-                                                           to: self,
-                                                           options: []).second
+        (Calendar.current as NSCalendar).components(NSCalendar.Unit.second,
+                                                    from: date,
+                                                    to: self,
+                                                    options: []).second
     }
 }

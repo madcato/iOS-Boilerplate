@@ -22,13 +22,13 @@ class SnapshotUITests: XCTestCase {
         super.tearDown()
     }
 
-    func testSnapshot() {
-        let app = XCUIApplication()
-        snapshot("01MainScreen")
-        app.navigationBars["Root View Controller"].buttons["Login"].tap()
-        app.tables.buttons["Sign in"].tap()
-        snapshot("02LoginScreen")
-        app.alerts.scrollViews.otherElements.buttons["OK"].tap()
-        snapshot("03LoginFailScreen")
-    }
+//    func testSnapshot() {
+//        let app = XCUIApplication()
+//        snapshot("01MainScreen")
+//        app.navigationBars["Root View Controller"].buttons["Login"].tap()
+//        app.tables.buttons["Sign in"].tap()
+//        snapshot("02LoginScreen")
+//        app.alerts.scrollViews.otherElements.buttons["OK"].tap()
+//        snapshot("03LoginFailScreen")
+//    }
 }

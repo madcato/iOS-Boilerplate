@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     static var database: CoreDataStack {
-        return shared.internalDatabase
+        shared.internalDatabase
     }
 
     lazy var internalDatabase: CoreDataStack = {

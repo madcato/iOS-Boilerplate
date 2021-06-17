@@ -11,7 +11,7 @@ import UIKit
 extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         get {
-            return layer.cornerRadius
+            layer.cornerRadius
         }
         set {
             layer.cornerRadius = newValue
@@ -21,7 +21,7 @@ extension UIView {
 
     @IBInspectable var borderWidth: CGFloat {
         get {
-            return layer.borderWidth
+            layer.borderWidth
         }
         set {
             layer.borderWidth = newValue

@@ -19,7 +19,7 @@ enum System {
     }
 
     static func radians(degrees: Double) -> Double {
-        return degrees * Double.pi / 180
+        degrees * Double.pi / 180
     }
 
     static func getDateFormatCurrentLocale(dateComponents: String) -> String? {
@@ -67,15 +67,15 @@ enum System {
     }
 
     static func loadFromConfig(_ objectName: String) -> Any? {
-        return UserDefaults.standard.object(forKey: objectName)
+        UserDefaults.standard.object(forKey: objectName)
     }
 
     static func getPreferredLanguage() -> String? {
-        return NSLocale.current.languageCode
+        NSLocale.current.languageCode
     }
 
     static func getLocaleIdentifier() -> String {
-        return Locale.current.identifier
+        Locale.current.identifier
     }
 
     static func batteryLevel() -> Float {
@@ -87,7 +87,7 @@ enum System {
     }
 
     static func screenBright() -> CGFloat {
-        return UIScreen.main.brightness
+        UIScreen.main.brightness
     }
 
     static func setScreenBright(_ bright: CGFloat) {

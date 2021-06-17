@@ -15,17 +15,15 @@ enum NetworkingInjector {
 protocol NetworkingInjected { }
 
 extension NetworkingInjected {
-    var apiClient: Http.Client { return NetworkingInjector.apiClient }
+    var apiClient: Http.Client { NetworkingInjector.apiClient }
 }
 
-//// Dependency declared in type definition
 //class ViewController: UIViewController, NetworkingInjected {
 //    func fetchCurrentWeather() {
 //        apiClient.fetch(...)
 //    }
 //}
 //
-//// This approach makes testing easier as well
 //func test() {
 //    NetworkingInjector.apiClient = MockAPIClient()
 //    let viewController = ViewController()

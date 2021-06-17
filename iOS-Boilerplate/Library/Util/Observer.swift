@@ -25,7 +25,7 @@ class AnyObserver<Value>: Observer {
 
 extension Observer {
   func toAnyObserver() -> AnyObserver<Value> {
-    return AnyObserver<Value>(with: self)
+    AnyObserver<Value>(with: self)
   }
 }
 

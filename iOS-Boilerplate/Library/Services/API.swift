@@ -10,7 +10,7 @@
 
 enum API {
     static func bookNomadsISBN(_ isbn: String) -> Http.Endpoint<BookDTO> {
-        return Http.Endpoint(
+        Http.Endpoint(
             method: .get,
             path: "/isbn/\(isbn)"
         )
