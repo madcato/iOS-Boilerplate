@@ -12,38 +12,41 @@ import Quick
 import XCTest
 
 class ServiceTests: QuickSpec {
-//    override func spec() {
-//        describe("NetworkRequest") {
-//            var networkService: BookNomadsService?
-//
-//            beforeEach {
-//                NetworkingInjector.apiClient = Http.Client(accessToken: Configuration.apiToken)
-//                networkService = BookNomadsService()
-//            }
-//
-//            context("get isbn") {
-//                it("should return a json of type BookDTO when server response is a json object") {
-//                    var book: BookDTO?
-//                    networkService?.getBook(by: "9789000010134",
-//                                            onOK: { response in
-//                                                book = response
-//                                            },
-//                                            onError: { code, desc in
-//                                                print("Error network service" +
-//                                                    " for isbn. Error \(code), \(desc)")
-//                                            })
-//                    expect(book).toEventuallyNot(beNil())
-//                    var expectedBook = BookDTO()
-//                    expectedBook.authors = [["Name": "Louis"]]
-//                    expectedBook.isbn = "9789000010134"
-//                    expectedBook.languageCode = "nl"
-//                    expectedBook.title = "Speak english"
-//                    expectedBook.coverThumb = ""
-//                    expectedBook.description = ""
-//                    expectedBook.subjects = ["Non-fictie informatief/professioneel algemeen"]
-//                    expect(book).to(equal(expectedBook))
-//                }
-//            }
-//        }
-//    }
+    override func spec() {
+        describe("NetworkRequest") {  // swiftlint:disable:this closure_body_length
+            var networkService: MarvelService?
+
+            beforeEach {
+                NetworkingInjector.apiClient = Http.Client()
+                networkService = MarvelService()
+            }
+
+            context("get character") {
+                it("should return a json of type ResponseDto when server response is a json object") {
+                    var character: Marvel.CharacterDto?
+                    let id = 1_011_334
+                    waitUntil(timeout: .seconds(10)) { done in
+                        networkService?.characterDetail(of: id) { result in
+                            switch result {
+                            case let .success(response):
+                                character = response
+                            case let .error(_, strError):
+                                print("\(strError)")
+                            }
+                            done()
+                        }
+                    }
+                    expect(character).toEventuallyNot(beNil())
+                    let expectedCharacter = Marvel.CharacterDto(id: id,
+                                                                name: "3-D Man",
+                                                                description: "",
+                                                                thumbnail: nil,
+                                                                urls: nil)
+                    expect(character?.id).toEventually(equal(expectedCharacter.id))
+                    expect(character?.name).toEventually(equal(expectedCharacter.name))
+                    expect(character?.description).toEventually(equal(expectedCharacter.description))
+                }
+            }
+        }
+    }
 }

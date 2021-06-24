@@ -6,106 +6,74 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
-import Alamofire
+import Foundation
 
 extension Http {
 class Client {
-    private let manager: Alamofire.SessionManager
+    private let session: URLSession!
     private let baseURL = URL(string:
                                 Configuration.serverURL)! // swiftlint:disable:this force_unwrapping
         .appendingPathComponent(Configuration.basePath)
-    private let queue = DispatchQueue(label: "AlamofireLabel")
+    private let queue = DispatchQueue(label: "ClientHttpQueue")
+    private var dataTask: URLSessionDataTask?
 
-    init(accessToken: String) {
-        var defaultHeaders = Alamofire.SessionManager.defaultHTTPHeaders
-//        defaultHeaders["Authorization"] = "Bearer \(accessToken)"
-        defaultHeaders["Accept"] = "application/json"
-        defaultHeaders["secret"] = accessToken
+    init(defaultHeaders: [AnyHashable: Any]? = nil) {
         let configuration = URLSessionConfiguration.default
-        // Add `Auth` header to the default HTTP headers set by `Alamofire`
         configuration.httpAdditionalHeaders = defaultHeaders
-        self.manager = Alamofire.SessionManager(configuration: configuration)
-//        self.manager.retrier = OAuth2Retrier()
+        self.session = URLSession(configuration: configuration)
     }
 
+    /// request data. This is a GET HTTPrequest
+    /// - param endpoint: url of the endpoint and the type of the response.
+    ///               The response will be decoded to this format
+    /// - param completion: this block will be called at the end of the processing, with the resul or the error
+    ///
     func request<Response>(_ endpoint: Http.Endpoint<Response>,
                            completion: @escaping (Http.Result<Response>) -> Void) {
-        let request = self.manager.request(self.url(path: endpoint.path),
-                                           method: translate(method: endpoint.method),
-                                           parameters: endpoint.parameters)
-        request
-            .validate()
-            .responseData(queue: self.queue) { response in
-                guard case let .failure(error) = response.result else {
-                    // Decode with Endpoint extensions
-                    let result = response.result.flatMap(endpoint.decode)
-                    switch result {
-                    case let .success(data):
-                        completion(Http.Result.success(data))
-                    case let .failure(error):
-                        completion(.error(-1, error.localizedDescription))
-                    }
-                    return
+        guard dataTask == nil else {
+            fatalError("Trying to launch a data task before finising previous.")
+        }
+        guard endpoint.method == .get else {
+            fatalError("This method only handle GET")
+        }
+        let url = url(path: endpoint.path)
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+        if let parameters: [String: String?] = endpoint.parameters as? [String: String?] {
+            components?.queryItems = parameters.map { key, value in
+                URLQueryItem(name: key, value: value)
+            }
+        }
+        if let finalQuery = components?.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B") {
+            components?.percentEncodedQuery = finalQuery
+        }
+        let urlRequest = URLRequest(url: components?.url ?? url)
+        dataTask = session.dataTask(with: urlRequest) { [weak self] data, response, error in
+            defer {
+                self?.dataTask = nil
+            }
+            if let error = error {
+                let httpResponse = response as? HTTPURLResponse
+                DispatchQueue.main.async {
+                    completion(Http.Result.error(httpResponse?.statusCode ?? 0, error.localizedDescription))
                 }
-                self.treat(error)
-                completion(.error(response.response?.statusCode ?? 0, error.localizedDescription))
+            } else if let data = data,
+                      let response = response as? HTTPURLResponse,
+                      response.statusCode == 200 {
+                do {
+                    let responseData = try endpoint.decode(data)
+                    DispatchQueue.main.async {
+                        completion(Http.Result.success(responseData))
+                    }
+                } catch {
+                    let nserror = error as NSError
+                    fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                }
+
+            } else {
+                fatalError("Invalid status code")
             }
-    }
-
-    private func translate(method: Method) -> HTTPMethod {
-        switch method {
-        case .get:
-            return HTTPMethod.get
-        case .post:
-            return HTTPMethod.post
-        case .put:
-            return HTTPMethod.put
-        case .patch:
-            return HTTPMethod.patch
-        case .delete:
-            return HTTPMethod.delete
         }
-    }
-
-    private func treat(_ error: Any?) {
-        if let error = error as? AFError {
-            treat(afError: error)
-        } else if let error = error as? URLError {
-            print("URLError occurred: \(error)")
-        } else {
-            print("Unknown error: \(String(describing: error))")
-        }
-    }
-
-    private func treat(afError error: AFError) {
-        switch error {
-        case .invalidURL(let url):
-            print("Invalid URL: \(url) - \(error.localizedDescription)")
-        case .parameterEncodingFailed(let reason):
-            print("Parameter encoding failed: \(error.localizedDescription)")
-            print("Failure Reason: \(reason)")
-        case .multipartEncodingFailed(let reason):
-            print("Multipart encoding failed: \(error.localizedDescription)")
-            print("Failure Reason: \(reason)")
-        case .responseValidationFailed(let reason):
-            print("Response validation failed: \(error.localizedDescription)")
-            print("Failure Reason: \(reason)")
-            switch reason {
-            case .dataFileNil, .dataFileReadFailed:
-                print("Downloaded file could not be read")
-            case .missingContentType(let acceptableContentTypes):
-                print("Content Type Missing: \(acceptableContentTypes)")
-            // swiftlint:disable:next pattern_matching_keywords
-            case .unacceptableContentType(let acceptableTypes, let responseType):
-                print("Response content type: \(responseType) was unacceptable: " + "\(acceptableTypes)")
-            case .unacceptableStatusCode(let code):
-                print("Response status code was unacceptable: \(code)")
-            }
-        case .responseSerializationFailed(let reason):
-            print("Response serialization failed: \(error.localizedDescription)")
-            print("Failure Reason: \(reason)")
-        }
-        print("Underlying error: \(String(describing: error.underlyingError))")
+        dataTask?.resume()
     }
 
     private func url(path: Http.Path) -> URL {

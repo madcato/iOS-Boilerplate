@@ -16,13 +16,13 @@ import XCTest
 class MockServicesTests: QuickSpec, NetworkingInjected {
     override func spec() {
         describe("MockServicesTests") {
-            context("get isbn") {
+            context("get Marchar character") {
                 it("should fail") {
                     let mock = MockAPIClient()
                     mock.objectToReturn = Http.Result.error(1, "fallo")
                     NetworkingInjector.apiClient = mock
 
-                    self.apiClient.request(API.bookNomadsISBN("isbn")) { result in
+                    self.apiClient.request(MarvelAPI.character(2)) { result in
                         switch result {
                         case .success:
                             XCTFail("This request must fail")
@@ -33,22 +33,20 @@ class MockServicesTests: QuickSpec, NetworkingInjected {
                 }
 
                 it("should success") {
-                    let bookDTO = BookDTO(isbn: "",
-                                          title: "response",
-                                          subtitle: "",
-                                          description: "",
-                                          coverThumb: "",
-                                          languageCode: "",
-                                          subjects: [],
-                                          authors: [])
+                    let characterDTO = Marvel.ResponseDto(code: 1,
+                                                          status: "200",
+                                                          copyright: "copy",
+                                                          attributionText: nil,
+                                                          attributionHTML: nil,
+                                                          etag: nil)
                     let mock = MockAPIClient()
-                    mock.objectToReturn = Http.Result.success(bookDTO)
+                    mock.objectToReturn = Http.Result.success(characterDTO)
                     NetworkingInjector.apiClient = mock
 
-                    self.apiClient.request(API.bookNomadsISBN("isbn")) { result in
+                    self.apiClient.request(MarvelAPI.character(1)) { result in
                         switch result {
-                        case let .success(book):
-                            XCTAssertEqual(book.title, "response")
+                        case let .success(character):
+                            XCTAssertEqual(character.copyright, "copy")
                         case .error:
                             XCTFail("This request must success")
                         }

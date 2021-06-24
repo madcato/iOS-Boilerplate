@@ -78,7 +78,6 @@ Project
 │
 └───Frameworks                // External projects,libraries and frameworks
 │    │
-│    └───Alamofire.xcodeproj
 │    └───CoreMotion.framework
 │    │   libz.dylib
 │    │   libarichive.framework
@@ -96,25 +95,14 @@ Project
 
 Included in the project directly using [Carthage](https://github.com/Carthage/Carthage). This way is easier to manage versions of this external frameworks. Carthage does not add much build time, because it builds the frameworks previously and add them to the repository.
 
-- [Alamofire](https://github.com/Alamofire/Alamofire)
-  For accesing remote http servers
 - [Mansonry](https://github.com/SnapKit/Masonry)
   To use Constraints from code without becoming insane
 - [Nimble](https://github.com/Quick/Nimble)
   To define expectations for automated testing
 - [Quick](https://github.com/Quick/Quick)
   BDD for Swift
-- [AlamofireNetworkActivityIndicator](https://github.com/Alamofire/AlamofireNetworkActivityIndicator)
-  To manage the network activity indicator automatically with Alamofire
-- [AlamofireImage](https://github.com/Alamofire/AlamofireImage)
-  AlamofireImage is an image component library for Alamofire
 - [FLEX](https://github.com/Flipboard/FLEX
   Debugging helper. (Press the screen during 4 seconds with two fingers to launch helper)
-- [Sqlite.swift](https://github.com/stephencelis/SQLite.swift)
-  A type-safe, Swift-language layer over SQLite3
-  [Sqlite.swift usage manual](https://github.com/stephencelis/SQLite.swift/blob/master/Documentation/Index.md#manual)
-- [SQLiteMigrationmanager.swift](https://github.com/garriguv/SQLiteMigrationManager.swift)
-  Migration manager for SQLite.swift
 - [Unidirectional Data Flow in Swift - Inspired by Redux](https://github.com/ReSwift/ReSwift)
 
 #### Carthage version setting
@@ -243,31 +231,6 @@ The computer where fastlane is going to run must have the provissioning and priv
 - https://kean.github.io/post/api-client
 - https://clean-swift.com/clean-swift-ios-architecture/
 
-## Migration guide for SQLite.swift
-
-1. Create a migration file in ```Migration.bundle```:
-      $ touch "`ruby -e "puts Time.now.strftime('%Y%m%d%H%M%S').to_i"`"_name.sql
-2. Add the sql command text to that file.
-
-If the migration must be made with swift code:
-
-1. Create a new class inheriting from ```Migration``` class:
-
-        struct NewSeedDB: Migration {
-          var version: Int64 = 20_160_119_131_206_685
-          func migrateDatabase(_ db: Connection) throws {  // swiftlint:disable:this identifier_name
-            let episodes = Table("episodes")
-            let season = Expression<Int>("season")
-            let name = Expression<String>("name")
-            try (1...24).map { "Episode \($0)" }.forEach {
-                _ = try db.run(episodes.insert(season <- 1, name <- $0))
-            }
-          }
-        }
-
-  1. Set in ```version``` property the year, month, day, hour, minutos, seconds ('%Y%m%d%H%M%S') in order to allow migration manager to know the order to sort the migrations.
-  2. Implement method ```migrateDatabase``` with the changes.
-2. Add the new struct/class name to the migration array (look for property variabla named **migration** in class *SQLiteDBMigrations*
 
 ## Implementation sample with Clean-Swift Architecture
 

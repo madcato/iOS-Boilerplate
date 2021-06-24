@@ -8,6 +8,8 @@
 
 // SAMPLE CODE
 
+import Foundation
+
 enum API {
     static func bookNomadsISBN(_ isbn: String) -> Http.Endpoint<BookDTO> {
         Http.Endpoint(
