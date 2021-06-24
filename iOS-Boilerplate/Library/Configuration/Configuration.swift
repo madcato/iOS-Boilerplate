@@ -32,6 +32,10 @@ class Configuration {
         info(with: kAPIToken)
     }
 
+    static var privateToken: String {
+        info(with: kAPIPrivateToken)
+    }
+
     static var basePath: String {
         info(with: kBasePath)
     }
@@ -50,6 +54,7 @@ class Configuration {
 
     private static let kServerURLkey = "serverURL"
     private static let kAPIToken = "api-token"
+    private static let kAPIPrivateToken = "private-api-token"
     private static let kBasePath = "basePath"
 
     private init() {}

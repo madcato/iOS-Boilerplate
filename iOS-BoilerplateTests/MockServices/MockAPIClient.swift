@@ -7,17 +7,20 @@
 //
 
 @testable import iOS_Boilerplate
+import Nimble
+import Quick
+import XCTest
 
 class MockAPIClient: Http.Client {
-    var objectToReturn: Http.Result<BookDTO>?
+    var objectToReturn: Http.Result<Marvel.ResponseDto>?
 
     init() {
-        super.init(accessToken: "")
+        super.init()
     }
 
-    override func request<BookDTO>(_ endpoint: Http.Endpoint<BookDTO>,
-                                   completion: @escaping (Http.Result<BookDTO>) -> Void) {
-        guard let object = objectToReturn as? Http.Result<BookDTO> else {
+    override func request<ResponseDto>(_ endpoint: Http.Endpoint<ResponseDto>,
+                                       completion: @escaping (Http.Result<ResponseDto>) -> Void) {
+        guard let object = objectToReturn as? Http.Result<ResponseDto> else {
             fatalError("Need to set 'objectToReturn' value before calling this method")
         }
         completion(object)

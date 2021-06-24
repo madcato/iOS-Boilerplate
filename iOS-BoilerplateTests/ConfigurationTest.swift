@@ -28,22 +28,22 @@ class ConfigurationTest: XCTestCase {
 
     func testServerURLConfiguration() {
         Configuration.environment = Environment.integration
-        XCTAssertEqual(Configuration.serverURL, "https://www.booknomads.com/api/v0")
+        XCTAssertEqual(Configuration.serverURL, "https://gateway.marvel.com")
     }
 
     func testApiTokenConfiguration() {
         Configuration.environment = Environment.integration
-        XCTAssertEqual(Configuration.apiToken, "token")
+        XCTAssertEqual(Configuration.apiToken, "a42b6d2f81c8ca1d0c30e5c99149b8f5")
     }
 
     func testChangeEnviromentConfiguration() {
         Configuration.environment = Environment.production
-        XCTAssertEqual(Configuration.serverURL, "http://production.domain.com")
-        XCTAssertEqual(Configuration.apiToken, "2138901234h12kg435")
+        XCTAssertEqual(Configuration.serverURL, "https://gateway.marvel.com")
+        XCTAssertEqual(Configuration.apiToken, "a42b6d2f81c8ca1d0c30e5c99149b8f5")
 
         Configuration.environment = Environment.staging
-        XCTAssertEqual(Configuration.serverURL, "http://pre.domain.com")
-        XCTAssertEqual(Configuration.apiToken, "adsfaf232323c4kjhg234l76")
+        XCTAssertEqual(Configuration.serverURL, "https://gateway.marvel.com")
+        XCTAssertEqual(Configuration.apiToken, "a42b6d2f81c8ca1d0c30e5c99149b8f5")
     }
 
 }

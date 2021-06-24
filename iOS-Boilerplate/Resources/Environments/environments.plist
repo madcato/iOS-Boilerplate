@@ -5,29 +5,35 @@
 	<key>integration</key>
 	<dict>
 		<key>api-token</key>
-		<string>token</string>
+		<string>a42b6d2f81c8ca1d0c30e5c99149b8f5</string>
+		<key>private-api-token</key>
+		<string>a23b10d30b1a2b726bd2873baa26a0a7220382e6</string>
 		<key>serverURL</key>
-		<string>https://www.booknomads.com/api/v0</string>
+		<string>https://gateway.marvel.com</string>
 		<key>basePath</key>
-		<string>/api</string>
+		<string>/v1/public</string>
 	</dict>
 	<key>production</key>
 	<dict>
 		<key>api-token</key>
-		<string>2138901234h12kg435</string>
+		<string>a42b6d2f81c8ca1d0c30e5c99149b8f5</string>
+		<key>private-api-token</key>
+		<string>a23b10d30b1a2b726bd2873baa26a0a7220382e6</string>
 		<key>serverURL</key>
-		<string>http://production.domain.com</string>
+		<string>https://gateway.marvel.com</string>
 		<key>basePath</key>
-		<string>/api</string>
+		<string>/v1/public</string>
 	</dict>
 	<key>staging</key>
 	<dict>
 		<key>api-token</key>
-		<string>adsfaf232323c4kjhg234l76</string>
+		<string>a42b6d2f81c8ca1d0c30e5c99149b8f5</string>
+		<key>private-api-token</key>
+		<string>a23b10d30b1a2b726bd2873baa26a0a7220382e6</string>
 		<key>serverURL</key>
-		<string>http://pre.domain.com</string>
+		<string>https://gateway.marvel.com</string>
 		<key>basePath</key>
-		<string>/api</string>
+		<string>/v1/public</string>
 	</dict>
 </dict>
 </plist>
