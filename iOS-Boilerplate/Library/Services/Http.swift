@@ -6,7 +6,6 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
-import Alamofire
 import Foundation
 import UIKit
 
