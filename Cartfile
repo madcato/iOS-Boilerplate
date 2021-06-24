@@ -1,5 +1,3 @@
 github "flipboard/FLEX" ~> 2.4.0
-github "Quick/Quick"                        # Use lastest version
-github "Quick/Nimble"                       # Use lastest version
 github "SnapKit/Masonry.git" ~> 1.1.0
 github "ReSwift/ReSwift" ~> 5.0.0
