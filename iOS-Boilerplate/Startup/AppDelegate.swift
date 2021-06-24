@@ -6,7 +6,6 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
-import AlamofireNetworkActivityIndicator
 import CoreData
 #if DEBUG
 import FLEX
@@ -36,10 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        enableNetworkIndicator()
         configureAppearance()
         #if DEBUG
-        condifgureFLEXLauncher()
+        configureFLEXLauncher()
         #endif
         return true
     }
@@ -60,17 +58,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         internalDatabase.saveContext()
     }
 
-    private func enableNetworkIndicator() {
-        NetworkActivityIndicatorManager.shared.isEnabled = true
-        // To show the network indicator only when the response is very slow
-        NetworkActivityIndicatorManager.shared.startDelay = 1.0
-        // To avoid eliminating the indicator to fast
-        NetworkActivityIndicatorManager.shared.completionDelay = 0.2
-    }
-
     // MARK: - FLEX
 
-    private func condifgureFLEXLauncher() {
+    private func configureFLEXLauncher() {
         let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(AppDelegate.launchFLEX))
         recognizer.minimumPressDuration = 4.0
         recognizer.numberOfTapsRequired = 0

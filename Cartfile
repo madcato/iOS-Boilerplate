@@ -1,3 +1,2 @@
 github "flipboard/FLEX" ~> 2.4.0
 github "SnapKit/Masonry.git" ~> 1.1.0
-github "ReSwift/ReSwift" ~> 5.0.0
