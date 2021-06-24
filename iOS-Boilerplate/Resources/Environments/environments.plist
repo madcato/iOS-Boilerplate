@@ -5,35 +5,35 @@
 	<key>integration</key>
 	<dict>
 		<key>api-token</key>
-		<string>a42b6d2f81c8ca1d0c30e5c99149b8f5</string>
+		<string>2341251251235</string>
 		<key>private-api-token</key>
-		<string>a23b10d30b1a2b726bd2873baa26a0a7220382e6</string>
+		<string>123513613487509834608234724</string>
 		<key>serverURL</key>
-		<string>https://gateway.marvel.com</string>
+		<string>https://int.server.com</string>
 		<key>basePath</key>
 		<string>/v1/public</string>
 	</dict>
 	<key>production</key>
 	<dict>
 		<key>api-token</key>
-		<string>a42b6d2f81c8ca1d0c30e5c99149b8f5</string>
+		<string>8281989128282</string>
 		<key>private-api-token</key>
-		<string>a23b10d30b1a2b726bd2873baa26a0a7220382e6</string>
+		<string>1928374123764917283640871263</string>
 		<key>serverURL</key>
-		<string>https://gateway.marvel.com</string>
+		<string>https://pro.server.com</string>
 		<key>basePath</key>
 		<string>/v1/public</string>
 	</dict>
 	<key>staging</key>
 	<dict>
 		<key>api-token</key>
-		<string>a42b6d2f81c8ca1d0c30e5c99149b8f5</string>
+		<string>128039471029387</string>
 		<key>private-api-token</key>
-		<string>a23b10d30b1a2b726bd2873baa26a0a7220382e6</string>
+		<string>1237480192374097123894710234</string>
 		<key>serverURL</key>
-		<string>https://gateway.marvel.com</string>
+		<string>https://stg.server.com</string>
 		<key>basePath</key>
-		<string>/v1/public</string>
+		<string>/v2/public</string>
 	</dict>
 </dict>
 </plist>

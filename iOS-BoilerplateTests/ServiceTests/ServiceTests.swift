@@ -17,7 +17,6 @@ class ServiceTests: QuickSpec {
             var networkService: MarvelService?
 
             beforeEach {
-                NetworkingInjector.apiClient = Http.Client()
                 networkService = MarvelService()
             }
 

@@ -10,11 +10,15 @@ struct MarvelServiceError: Error {
     var description: String
 }
 
-class MarvelService: NetworkingInjected {
+class MarvelService {
+    private var marvelAPIClient = Http.Client(baseURL: "https://gateway.marvel.com",
+                                              basePath: "/v1/public",
+                                              defaultHeaders: ["Accept": "application/json",
+                                                               "secret": "a42b6d2f81c8ca1d0c30e5c99149b8f5"])
     private var serverUrl = ""
 
     func listCharacters(_ onFinish: @escaping (Http.Result<[Marvel.CharacterDto]>) -> Void) {
-        apiClient.request(MarvelAPI.characters()) { result in
+        marvelAPIClient.request(MarvelAPI.characters()) { result in
             switch result {
             case let .success(response):
                 guard let array = response.data?.results else {
@@ -30,7 +34,7 @@ class MarvelService: NetworkingInjected {
     }
 
     func characterDetail(of id: Int, _ onFinish: @escaping (Http.Result<Marvel.CharacterDto>) -> Void) {
-        apiClient.request(MarvelAPI.character(id)) { result in
+        marvelAPIClient.request(MarvelAPI.character(id)) { result in
             switch result {
             case let .success(response):
                 guard let dto = response.data?.results?[0] else {
