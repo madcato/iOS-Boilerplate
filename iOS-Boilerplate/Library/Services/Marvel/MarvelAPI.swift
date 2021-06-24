@@ -29,8 +29,8 @@ enum MarvelAPI {
 
     private static func getAuthParameters() -> Http.Parameters {
         let timeStamp = Date().timeIntervalSince1970.description
-        let publicKey = Configuration.apiToken
-        let privateKey = Configuration.privateToken
+        let publicKey = "a42b6d2f81c8ca1d0c30e5c99149b8f5"
+        let privateKey = "a23b10d30b1a2b726bd2873baa26a0a7220382e6"
         let hash = "\(timeStamp)\(privateKey)\(publicKey)".md5()
         return ["apikey": publicKey, "ts": timeStamp, "hash": hash]
     }

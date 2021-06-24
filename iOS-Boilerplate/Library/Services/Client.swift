@@ -11,13 +11,15 @@ import Foundation
 extension Http {
 class Client {
     private let session: URLSession!
-    private let baseURL = URL(string:
-                                Configuration.serverURL)! // swiftlint:disable:this force_unwrapping
-        .appendingPathComponent(Configuration.basePath)
+    private let baseURL: URL!
     private let queue = DispatchQueue(label: "ClientHttpQueue")
     private var dataTask: URLSessionDataTask?
 
-    init(defaultHeaders: [AnyHashable: Any]? = nil) {
+    init(baseURL: String, basePath: String, defaultHeaders: [AnyHashable: Any]? = nil) {
+        guard let url = URL(string: baseURL)?.appendingPathComponent(basePath) else {
+            fatalError("Invalid url or base path: \(baseURL) - \(basePath)")
+        }
+        self.baseURL = url
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = defaultHeaders
         self.session = URLSession(configuration: configuration)

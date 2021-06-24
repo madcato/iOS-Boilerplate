@@ -15,7 +15,7 @@ class MockAPIClient: Http.Client {
     var objectToReturn: Http.Result<Marvel.ResponseDto>?
 
     init() {
-        super.init()
+        super.init(baseURL: "http://www.server.com", basePath: "/path")
     }
 
     override func request<ResponseDto>(_ endpoint: Http.Endpoint<ResponseDto>,
