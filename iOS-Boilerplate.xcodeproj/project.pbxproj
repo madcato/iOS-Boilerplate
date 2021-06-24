@@ -301,7 +301,6 @@
 		3485E82C21A5B1EF002248B7 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		3485E82E21A5B496002248B7 /* ConfigurationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTest.swift; sourceTree = "<group>"; };
 		3487742B21A6BD43001675D3 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
-		34B916F221C0EE7400409CB8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		34BE875D21B57AE300B4FD22 /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
 		34BE876421B590D100B4FD22 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		34BE878721B5928200B4FD22 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
@@ -577,7 +576,6 @@
 				0BFD564026566A290035ABF9 /* FLEX.xcframework */,
 				0BFD563D26566A290035ABF9 /* Quick.xcframework */,
 				0BFD563E26566A290035ABF9 /* SQLite.xcframework */,
-				34B916F221C0EE7400409CB8 /* libsqlite3.tbd */,
 				3420DF8621AFECA20004C59F /* ImageIO.framework */,
 			);
 			name = Frameworks;
