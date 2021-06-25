@@ -1,2 +1,3 @@
 Carthage/**
 fastlane/**
+xcov_output/**
