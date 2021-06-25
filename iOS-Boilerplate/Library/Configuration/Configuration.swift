@@ -8,6 +8,13 @@
 
 import UIKit
 
+enum ConfigurationKey: String {
+    case kServerURLkey = "serverURL"
+    case kAPIToken = "api-token"
+    case kAPIPrivateToken = "private-api-token"
+    case kBasePath = "basePath"
+}
+
 class Configuration {
     static var environment: Environment = {
         if let configuration = Bundle.main.object(forInfoDictionaryKey: "Configuration") as? String {
@@ -24,38 +31,17 @@ class Configuration {
         return Environment.integration
     }()
 
-    static var serverURL: String {
-        info(with: kServerURLkey)
-    }
-
-    static var apiToken: String {
-        info(with: kAPIToken)
-    }
-
-    static var privateToken: String {
-        info(with: kAPIPrivateToken)
-    }
-
-    static var basePath: String {
-        info(with: kBasePath)
-    }
-
-    private static func info(with key: String) -> String {
+    static func value(for key: ConfigurationKey) -> String {
         guard let conf = environmentsConfig[environment.rawValue] else {
             print("Environment \(environment.rawValue) not defined")
             return ""
         }
-        guard let result = conf[key] else {
+        guard let result = conf[key.rawValue] else {
             print("Key \(key) not defined in enviroments.plist")  // Key not defined in enviroments.plist
             return ""
         }
         return result
     }
-
-    private static let kServerURLkey = "serverURL"
-    private static let kAPIToken = "api-token"
-    private static let kAPIPrivateToken = "private-api-token"
-    private static let kBasePath = "basePath"
 
     private init() {}
 

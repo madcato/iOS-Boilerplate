@@ -8,10 +8,10 @@
 
 //Injector has an instance to the concrete class
 enum NetworkingInjector {
-    static var apiClient = Http.Client(baseURL: Configuration.serverURL,
-                                       basePath: Configuration.basePath,
+    static var apiClient = Http.Client(baseURL: Configuration.value(for: .kServerURLkey),
+                                       basePath: Configuration.value(for: .kBasePath),
                                        defaultHeaders: ["Accept": "application/json",
-                                                        "secret": Configuration.apiToken])
+                                                        "secret": Configuration.value(for: .kAPIToken)])
 }
 
 // Injected refers to the injector
