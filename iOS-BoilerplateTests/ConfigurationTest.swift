@@ -28,22 +28,22 @@ class ConfigurationTest: XCTestCase {
 
     func testServerURLConfiguration() {
         Configuration.environment = Environment.integration
-        XCTAssertEqual(Configuration.serverURL, "https://int.server.com")
+        XCTAssertEqual(Configuration.value(for: .kServerURLkey), "https://int.server.com")
     }
 
     func testApiTokenConfiguration() {
         Configuration.environment = Environment.integration
-        XCTAssertEqual(Configuration.apiToken, "2341251251235")
+        XCTAssertEqual(Configuration.value(for: .kAPIToken), "2341251251235")
     }
 
     func testChangeEnviromentConfiguration() {
         Configuration.environment = Environment.production
-        XCTAssertEqual(Configuration.serverURL, "https://pro.server.com")
-        XCTAssertEqual(Configuration.apiToken, "8281989128282")
+        XCTAssertEqual(Configuration.value(for: .kServerURLkey), "https://pro.server.com")
+        XCTAssertEqual(Configuration.value(for: .kAPIToken), "8281989128282")
 
         Configuration.environment = Environment.staging
-        XCTAssertEqual(Configuration.serverURL, "https://stg.server.com")
-        XCTAssertEqual(Configuration.apiToken, "128039471029387")
+        XCTAssertEqual(Configuration.value(for: .kServerURLkey), "https://stg.server.com")
+        XCTAssertEqual(Configuration.value(for: .kAPIToken), "128039471029387")
     }
 
 }
