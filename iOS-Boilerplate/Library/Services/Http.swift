@@ -11,6 +11,10 @@ import UIKit
 
 enum Http {
 
+enum Constant {
+    static let railsDefaultDateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+}
+
 enum Result<Response> {
     case success(Response)
     case error(Int, String)
@@ -78,7 +82,11 @@ extension Http.Endpoint where Response: Swift.Decodable {
                      path: Http.Path,
                      parameters: Http.Parameters? = nil) {
         self.init(method: method, path: path, parameters: parameters) {
-            try JSONDecoder().decode(Response.self, from: $0)
+            let decoder = JSONDecoder()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = Http.Constant.railsDefaultDateFormat
+            decoder.dateDecodingStrategy = .formatted(dateFormatter)
+            return try decoder.decode(Response.self, from: $0)
         }
     }
 }
