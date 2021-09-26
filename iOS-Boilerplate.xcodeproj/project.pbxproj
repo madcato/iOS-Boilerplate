@@ -43,7 +43,6 @@
 		0B10D3D02684FAAC00C2AAEC /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B10D3CF2684FAAC00C2AAEC /* ReSwift */; };
 		0B10D3D42684FBF200C2AAEC /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 0B10D3D32684FBF200C2AAEC /* Quick */; };
 		0B10D3DA2684FC5D00C2AAEC /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 0B10D3D92684FC5D00C2AAEC /* Nimble */; };
-		0B2AEE05266FBBD9007689A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2AEE04266FBBD9007689A3 /* Constants.swift */; };
 		0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
 		0BFD564F26566A290035ABF9 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; };
 		0BFD565026566A290035ABF9 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -219,7 +218,6 @@
 		0B10D3BE2684ADE800C2AAEC /* ImageDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDto.swift; sourceTree = "<group>"; };
 		0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelDto.swift; sourceTree = "<group>"; };
 		0B10D3C22684B3CF00C2AAEC /* MarvelDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailTests.swift; sourceTree = "<group>"; };
-		0B2AEE04266FBBD9007689A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0B9C0C37267B21B800999AB4 /* String+hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hash.swift"; sourceTree = "<group>"; };
 		0BFD563D26566A290035ABF9 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 		0BFD563E26566A290035ABF9 /* SQLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SQLite.xcframework; path = Carthage/Build/SQLite.xcframework; sourceTree = "<group>"; };
@@ -464,14 +462,6 @@
 				0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */,
 			);
 			path = Marvel;
-			sourceTree = "<group>";
-		};
-		0B2AEE03266FBBC4007689A3 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				0B2AEE04266FBBD9007689A3 /* Constants.swift */,
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		340088CE21A81A7E0072B1F0 /* DTO */ = {
@@ -772,7 +762,6 @@
 		3485E7C321A57F7F002248B7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				0B2AEE03266FBBC4007689A3 /* Constants */,
 				34D48F4921CBAD19001CEADF /* Controls */,
 				34D48F1521CBAA8E001CEADF /* Theme */,
 				3485E81821A5A6A6002248B7 /* Configuration */,
@@ -1326,7 +1315,6 @@
 				0B10D3C42684B48500C2AAEC /* MarvelService.swift in Sources */,
 				0B0E513A22BD589E00C1D31E /* GithubEventsPresenter.swift in Sources */,
 				340088FC21A822940072B1F0 /* AppInfo.swift in Sources */,
-				0B2AEE05266FBBD9007689A3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
