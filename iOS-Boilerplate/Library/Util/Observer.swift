@@ -29,27 +29,27 @@ extension Observer {
   }
 }
 
-//protocol Subject {
+// protocol Subject {
 //  associatedtype Value
 //  mutating func add(observer: AnyObserver<Value>)
 //  mutating func remove(observer: AnyObserver<Value>)
 //  func fireNotification()
-//}
+// }
 //
-//class UserView {
+// class UserView {
 //  func render(user: User) {
 //    print("User is now: \(user)")
 //  }
-//}
+// }
 //
-//extension UserView: Observer {
+// extension UserView: Observer {
 //  func update(value: User) {
 //    self.render(user: value)
 //  }
-//}
+// }
 //
-//@propertyWrapper
-//struct Observed<Value>: Subject {
+// @propertyWrapper
+// struct Observed<Value>: Subject {
 //  init(initialValue: Value) {
 //    self.value = initialValue
 //  }
@@ -73,9 +73,9 @@ extension Observer {
 //  func fireNotification() {
 //    self.observers.forEach { $0.update(value: self.value) }
 //  }
-//}
+// }
 //
-//struct SampleClass {
+// struct SampleClass {
 //  @Observed
 //  var user = User()
 //
@@ -86,4 +86,4 @@ extension Observer {
 //    user.name = "Phoenix"
 //  }
 //
-//}
+// }

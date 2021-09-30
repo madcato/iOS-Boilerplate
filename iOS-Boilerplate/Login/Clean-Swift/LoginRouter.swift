@@ -13,7 +13,7 @@
 import UIKit
 
 @objc protocol LoginRoutingLogic {
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
+    // func routeToSomewhere(segue: UIStoryboardSegue?)
     func dismiss()
 }
 
@@ -40,8 +40,8 @@ class LoginRouter: NSObject, LoginRoutingLogic, LoginDataPassing {
         viewController?.dismiss(animated: true)
     }
 
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
-    //{
+    // func routeToSomewhere(segue: UIStoryboardSegue?)
+    // {
     //  if let segue = segue {
     //    let destinationVC = segue.destination as! SomewhereViewController
     //    var destinationDS = destinationVC.router!.dataStore!
@@ -54,19 +54,19 @@ class LoginRouter: NSObject, LoginRoutingLogic, LoginDataPassing {
     //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
     //    navigateToSomewhere(source: viewController!, destination: destinationVC)
     //  }
-    //}
+    // }
 
     // MARK: Navigation
 
-    //func navigateToSomewhere(source: LoginViewController, destination: SomewhereViewController)
-    //{
+    // func navigateToSomewhere(source: LoginViewController, destination: SomewhereViewController)
+    // {
     //  source.show(destination, sender: nil)
-    //}
+    // }
 
     // MARK: Passing data
 
-    //func passDataToSomewhere(source: LoginDataStore, destination: inout SomewhereDataStore)
-    //{
+    // func passDataToSomewhere(source: LoginDataStore, destination: inout SomewhereDataStore)
+    // {
     //  destination.name = source.name
-//}
+// }
 }

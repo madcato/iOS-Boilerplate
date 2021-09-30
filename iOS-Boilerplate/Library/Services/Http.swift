@@ -52,7 +52,7 @@ final class Endpoint<Response> {
 
 // MARK: - Http Request
 
-//class Request {
+// class Request {
 //
 //    func baseUrl() -> String {
 //        return Configuration.serverURL + Configuration.basePath
@@ -71,7 +71,7 @@ final class Endpoint<Response> {
 //    //        -H 'secret: aakjsdklfj;ajasdfghlkajsdkfj'
 //    //        -X POST http://localhost:3000/api/v1/employee_user/login -d "{\"email\":\"vela.dan@gmail.com\",
 //    //                                                                     \"password\":\"tQDJC43S1OmTvnitug9edA\"}"
-//}
+// }
 
 }  // struct Http
 

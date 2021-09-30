@@ -6,7 +6,7 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
-//Injector has an instance to the concrete class
+// Injector has an instance to the concrete class
 enum NetworkingInjector {
     static var apiClient = Http.Client(baseURL: Configuration.value(for: .kServerURLkey),
                                        basePath: Configuration.value(for: .kBasePath),
@@ -21,14 +21,14 @@ extension NetworkingInjected {
     var apiClient: Http.Client { NetworkingInjector.apiClient }
 }
 
-//class ViewController: UIViewController, NetworkingInjected {
+// class ViewController: UIViewController, NetworkingInjected {
 //    func fetchCurrentWeather() {
 //        apiClient.fetch(...)
 //    }
-//}
+// }
 //
-//func test() {
+// func test() {
 //    NetworkingInjector.apiClient = MockAPIClient()
 //    let viewController = ViewController()
 //    viewController.fetchCurrentWeather()
-//}
+// }

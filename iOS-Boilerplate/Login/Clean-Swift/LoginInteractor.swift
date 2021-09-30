@@ -17,13 +17,13 @@ protocol LoginBusinessLogic {
 }
 
 protocol LoginDataStore {
-    //var name: String { get set }
+    // var name: String { get set }
 }
 
 class LoginInteractor: LoginBusinessLogic, LoginDataStore {
     var presenter: LoginPresentationLogic?
     var worker: LoginWorker?
-    //var name: String = ""
+    // var name: String = ""
 
     // MARK: Do something
 
