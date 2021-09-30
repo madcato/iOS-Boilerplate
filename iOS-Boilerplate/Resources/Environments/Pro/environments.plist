@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>api-token</key>
+	<string>8281989128282</string>
+	<key>private-api-token</key>
+	<string>1928374123764917283640871263</string>
+	<key>serverURL</key>
+	<string>https://pro.server.com</string>
+	<key>basePath</key>
+	<string>/v1/public</string>
+</dict>
+</plist>

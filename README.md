@@ -59,10 +59,16 @@ Project
 │   └───Resources               // Resource files, like images, grouped by type
 │   │   │   Images.xcassets     // Keep all images in one asset to help searches
 │   │   │
-│   │   └───environments        // Plist files with the configuration of each environment
-│   │   │   |   integration.plist
-│   │   │   |   production.plist
-│   │   │   |   staging.plist
+│   │   └───Environments        // Plist files with the configuration of each environment
+│   │   │   │
+│   │   │   └───Pro
+│   │   │   │   └enviroments.plist
+│   │   │   │
+│   │   │   └───Dev
+│   │   │   │   └enviroments.plist
+│   │   │   │
+│   │   │   └───UAT
+│   │   │       └enviroments.plist
 │   │   │
 │   │   └───pdf
 │   │   └───certificates
