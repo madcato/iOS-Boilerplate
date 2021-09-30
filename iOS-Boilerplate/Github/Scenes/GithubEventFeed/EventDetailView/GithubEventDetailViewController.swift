@@ -59,7 +59,8 @@ class GithubEventDetailViewController: UIViewController, GithubEventDetailViewCo
   }
 }
 
-//This should be on configurator but for some reason storyboard doesn't detect ViewController's name if placed there
+/// This should be on configurator but for some reason storyboard
+/// doesn't detect ViewController's name if placed there
 extension GithubEventDetailViewController: GithubEventDetailPresenterOutput {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     router?.passDataToNextScene(for: segue)

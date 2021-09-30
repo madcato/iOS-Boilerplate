@@ -4,11 +4,19 @@ included:
   - iOS-BoilerplateUITests
 excluded:
   - Tests/SwiftLintFrameworkTests/Resources
+  - ./*/main.swift
+  - ./*/LinuxMain.swift
+  - ./*/TestHelpers.swift
+  - ./*/shim.swift
+  - ./*/AutomaticRuleTests.generated.swift
 analyzer_rules:
   - unused_import
 disabled_rules:
   - nesting
   - implicitly_unwrapped_optional
+  - inclusive_language
+  - unavailable_function
+  - redundant_type_annotation
 opt_in_rules:
   - anyobject_protocol
   - array_init
@@ -74,20 +82,11 @@ opt_in_rules:
   - untyped_error_in_catch
   - vertical_parameter_alignment_on_call
   - yoda_condition
-
 identifier_name:
   excluded:
     - id
 number_separator:
   minimum_length: 5
-file_name:
-  excluded:
-    - main.swift
-    - LinuxMain.swift
-    - TestHelpers.swift
-    - shim.swift
-    - AutomaticRuleTests.generated.swift
-
 custom_rules:
   rule_id:
     included: Source/SwiftLintFramework/Rules/.+/\w+\.swift

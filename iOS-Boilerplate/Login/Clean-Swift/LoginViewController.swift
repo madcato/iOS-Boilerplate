@@ -70,7 +70,7 @@ class LoginViewController: UITableViewController, LoginDisplayLogic {
 
     // MARK: Do Login
 
-    //@IBOutlet weak var nameTextField: UITextField!
+    // @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet private weak var userName: UITextField!
     @IBOutlet private weak var password: UITextField!
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
