@@ -41,9 +41,198 @@
 		0B10D3C42684B48500C2AAEC /* MarvelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BC2684ADC400C2AAEC /* MarvelService.swift */; };
 		0B10D3C52684B48900C2AAEC /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BB2684ADC000C2AAEC /* MarvelAPI.swift */; };
 		0B10D3D02684FAAC00C2AAEC /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B10D3CF2684FAAC00C2AAEC /* ReSwift */; };
-		0B10D3D42684FBF200C2AAEC /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 0B10D3D32684FBF200C2AAEC /* Quick */; };
-		0B10D3DA2684FC5D00C2AAEC /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 0B10D3D92684FC5D00C2AAEC /* Nimble */; };
 		0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
+		0BC2283D27049B9F00D560FF /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2283C27049B9F00D560FF /* Icons.xcassets */; };
+		0BC2284B27049C9F00D560FF /* UIViewController+navigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F021A820630072B1F0 /* UIViewController+navigationItem.swift */; };
+		0BC2284C27049C9F00D560FF /* UIResponder+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */; };
+		0BC2284D27049C9F00D560FF /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510722BD589E00C1D31E /* CreateEvent.swift */; };
+		0BC2284E27049C9F00D560FF /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510E22BD589E00C1D31E /* GithubAPI.swift */; };
+		0BC2284F27049C9F00D560FF /* GithubEventsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511722BD589E00C1D31E /* GithubEventsConfigurator.swift */; };
+		0BC2285027049C9F00D560FF /* PushEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511322BD589E00C1D31E /* PushEventTableViewCell.swift */; };
+		0BC2285127049C9F00D560FF /* PersonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E80D21A58A5C002248B7 /* PersonDTO.swift */; };
+		0BC2285227049C9F00D560FF /* String+urlEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E621A81F930072B1F0 /* String+urlEncode.swift */; };
+		0BC2285327049C9F00D560FF /* ImageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BE2684ADE800C2AAEC /* ImageDto.swift */; };
+		0BC2285427049C9F00D560FF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E82C21A5B1EF002248B7 /* Environment.swift */; };
+		0BC2285527049C9F00D560FF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2B0592420CAE500B615AC /* Array.swift */; };
+		0BC2285627049C9F00D560FF /* PushEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510922BD589E00C1D31E /* PushEvent.swift */; };
+		0BC2285727049C9F00D560FF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E81921A5A716002248B7 /* Configuration.swift */; };
+		0BC2285827049C9F00D560FF /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2B0572420CA1800B615AC /* Optional.swift */; };
+		0BC2285927049C9F00D560FF /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B2024288CB000F194E3 /* Observer.swift */; };
+		0BC2285A27049C9F00D560FF /* GithubEventsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511822BD589E00C1D31E /* GithubEventsWorker.swift */; };
+		0BC2285B27049C9F00D560FF /* MainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4E21CBAE82001CEADF /* MainLabel.swift */; };
+		0BC2285C27049C9F00D560FF /* WatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510822BD589E00C1D31E /* WatchEvent.swift */; };
+		0BC2285D27049C9F00D560FF /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */; };
+		0BC2285E27049C9F00D560FF /* SimpleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F5021CBAE97001CEADF /* SimpleLabel.swift */; };
+		0BC2285F27049C9F00D560FF /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58421E89A7F0058C1E0 /* LoginModels.swift */; };
+		0BC2286027049C9F00D560FF /* GithubEventsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511522BD589E00C1D31E /* GithubEventsInteractor.swift */; };
+		0BC2286127049C9F00D560FF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE878721B5928200B4FD22 /* Client.swift */; };
+		0BC2286227049C9F00D560FF /* GithubEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511B22BD589E00C1D31E /* GithubEventDetailViewController.swift */; };
+		0BC2286327049C9F00D560FF /* PropertyListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DF21A81F4C0072B1F0 /* PropertyListHelper.swift */; };
+		0BC2286427049C9F00D560FF /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F5221CBAEB5001CEADF /* CancelButton.swift */; };
+		0BC2286527049C9F00D560FF /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510B22BD589E00C1D31E /* Feed.swift */; };
+		0BC2286627049C9F00D560FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58521E89A7F0058C1E0 /* LoginViewController.swift */; };
+		0BC2286727049C9F00D560FF /* GithubEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511222BD589E00C1D31E /* GithubEventTableViewCell.swift */; };
+		0BC2286827049C9F00D560FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DFE521B03ADA0004C59F /* DetailViewController.swift */; };
+		0BC2286927049C9F00D560FF /* UIViewController+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F321A820640072B1F0 /* UIViewController+showAlert.swift */; };
+		0BC2286A27049C9F00D560FF /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58321E89A7F0058C1E0 /* LoginRouter.swift */; };
+		0BC2286B27049C9F00D560FF /* GithubEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510C22BD589E00C1D31E /* GithubEvent.swift */; };
+		0BC2286C27049C9F00D560FF /* GithubEventsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511622BD589E00C1D31E /* GithubEventsModels.swift */; };
+		0BC2286D27049C9F00D560FF /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E421A81F930072B1F0 /* Serializator.swift */; };
+		0BC2286E27049C9F00D560FF /* MarvelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */; };
+		0BC2286F27049C9F00D560FF /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
+		0BC2287027049C9F00D560FF /* AppDelegate+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */; };
+		0BC2287127049C9F00D560FF /* DownloadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510222BD588900C1D31E /* DownloadImageView.swift */; };
+		0BC2287227049C9F00D560FF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */; };
+		0BC2287327049C9F00D560FF /* Decodable+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C321B80BF100BC9E1C /* Decodable+Codable.swift */; };
+		0BC2287427049C9F00D560FF /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FB21A822940072B1F0 /* System.swift */; };
+		0BC2287527049C9F00D560FF /* iOS_Boilerplate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3485E79321A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld */; };
+		0BC2287627049C9F00D560FF /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58221E89A7F0058C1E0 /* LoginWorker.swift */; };
+		0BC2287727049C9F00D560FF /* GithubEventDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511C22BD589E00C1D31E /* GithubEventDetailInteractor.swift */; };
+		0BC2287827049C9F00D560FF /* UIView+border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F121A820630072B1F0 /* UIView+border.swift */; };
+		0BC2287927049C9F00D560FF /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58621E89A7F0058C1E0 /* LoginInteractor.swift */; };
+		0BC2287A27049C9F00D560FF /* GithubEventDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511E22BD589E00C1D31E /* GithubEventDetailPresenter.swift */; };
+		0BC2287B27049C9F00D560FF /* EventDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3F21B13DD6005B0A84 /* EventDTO.swift */; };
+		0BC2287C27049C9F00D560FF /* AutoEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3221B135C0005B0A84 /* AutoEquatable.swift */; };
+		0BC2287D27049C9F00D560FF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088D721A81AB00072B1F0 /* CoreDataStack.swift */; };
+		0BC2287E27049C9F00D560FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78E21A55E05002248B7 /* ViewController.swift */; };
+		0BC2287F27049C9F00D560FF /* GithubEventDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512122BD589E00C1D31E /* GithubEventDetailConfigurator.swift */; };
+		0BC2288027049C9F00D560FF /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418A0F721CCD66400BBF17A /* MainButton.swift */; };
+		0BC2288127049C9F00D560FF /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E521A81F930072B1F0 /* String+subscript.swift */; };
+		0BC2288227049C9F00D560FF /* GithubEventDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511A22BD589E00C1D31E /* GithubEventDetailRouter.swift */; };
+		0BC2288327049C9F00D560FF /* UIViewController+imageBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088EF21A820630072B1F0 /* UIViewController+imageBackground.swift */; };
+		0BC2288427049C9F00D560FF /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487742B21A6BD43001675D3 /* Http.swift */; };
+		0BC2288527049C9F00D560FF /* GithubEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511422BD589E00C1D31E /* GithubEventsViewController.swift */; };
+		0BC2288627049C9F00D560FF /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
+		0BC2288727049C9F00D560FF /* LoginReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B2D242C896000F194E3 /* LoginReduxViewController.swift */; };
+		0BC2288827049C9F00D560FF /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
+		0BC2288927049C9F00D560FF /* Date+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E221A81F930072B1F0 /* Date+JSON.swift */; };
+		0BC2288A27049C9F00D560FF /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DD21A81E8E0072B1F0 /* UrlHelper.swift */; };
+		0BC2288B27049C9F00D560FF /* BlinkingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1E24288C5F00F194E3 /* BlinkingImage.swift */; };
+		0BC2288C27049C9F00D560FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78C21A55E05002248B7 /* AppDelegate.swift */; };
+		0BC2288D27049C9F00D560FF /* StarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510A22BD589E00C1D31E /* StarEvent.swift */; };
+		0BC2288E27049C9F00D560FF /* GithubEventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512222BD589E00C1D31E /* GithubEventsRouter.swift */; };
+		0BC2288F27049C9F00D560FF /* OSEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E321A81F930072B1F0 /* OSEmailValidator.swift */; };
+		0BC2289027049C9F00D560FF /* BookDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F7642621A6F64B00E68956 /* BookDTO.swift */; };
+		0BC2289127049C9F00D560FF /* CommitMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512022BD589E00C1D31E /* CommitMessageTableViewCell.swift */; };
+		0BC2289227049C9F00D560FF /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
+		0BC2289327049C9F00D560FF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58121E89A7F0058C1E0 /* LoginPresenter.swift */; };
+		0BC2289427049C9F00D560FF /* CALayer+XibConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F221A820630072B1F0 /* CALayer+XibConfiguration.swift */; };
+		0BC2289527049C9F00D560FF /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BB2684ADC000C2AAEC /* MarvelAPI.swift */; };
+		0BC2289627049C9F00D560FF /* NetworkingInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C521B8152400BC9E1C /* NetworkingInjector.swift */; };
+		0BC2289727049C9F00D560FF /* GithubEventDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511D22BD589E00C1D31E /* GithubEventDetailModels.swift */; };
+		0BC2289827049C9F00D560FF /* OSDNIValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E721A81F930072B1F0 /* OSDNIValidator.swift */; };
+		0BC2289927049C9F00D560FF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE876421B590D100B4FD22 /* API.swift */; };
+		0BC2289A27049C9F00D560FF /* MarvelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BC2684ADC400C2AAEC /* MarvelService.swift */; };
+		0BC2289B27049C9F00D560FF /* GithubEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512322BD589E00C1D31E /* GithubEventsPresenter.swift */; };
+		0BC2289C27049C9F00D560FF /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FA21A822940072B1F0 /* AppInfo.swift */; };
+		0BC228A027049C9F00D560FF /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; };
+		0BC228A127049C9F00D560FF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3420DF8621AFECA20004C59F /* ImageIO.framework */; };
+		0BC228A327049C9F00D560FF /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2284327049C9F00D560FF /* ReSwift */; };
+		0BC228A727049C9F00D560FF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342AC58D21E89A8F0058C1E0 /* Login.storyboard */; };
+		0BC228A927049C9F00D560FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79021A55E05002248B7 /* Main.storyboard */; };
+		0BC228AB27049C9F00D560FF /* Github.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B0E513B22BD58B300C1D31E /* Github.storyboard */; };
+		0BC228AC27049C9F00D560FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34F54BB8240FCCB30079398C /* Localizable.strings */; };
+		0BC228AD27049C9F00D560FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79821A55E07002248B7 /* LaunchScreen.storyboard */; };
+		0BC228AE27049C9F00D560FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79621A55E07002248B7 /* Assets.xcassets */; };
+		0BC228B127049C9F00D560FF /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BC228C027049CB000D560FF /* UIViewController+navigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F021A820630072B1F0 /* UIViewController+navigationItem.swift */; };
+		0BC228C127049CB000D560FF /* UIResponder+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */; };
+		0BC228C227049CB000D560FF /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510722BD589E00C1D31E /* CreateEvent.swift */; };
+		0BC228C327049CB000D560FF /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510E22BD589E00C1D31E /* GithubAPI.swift */; };
+		0BC228C427049CB000D560FF /* GithubEventsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511722BD589E00C1D31E /* GithubEventsConfigurator.swift */; };
+		0BC228C527049CB000D560FF /* PushEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511322BD589E00C1D31E /* PushEventTableViewCell.swift */; };
+		0BC228C627049CB000D560FF /* PersonDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E80D21A58A5C002248B7 /* PersonDTO.swift */; };
+		0BC228C727049CB000D560FF /* String+urlEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E621A81F930072B1F0 /* String+urlEncode.swift */; };
+		0BC228C827049CB000D560FF /* ImageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BE2684ADE800C2AAEC /* ImageDto.swift */; };
+		0BC228C927049CB000D560FF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E82C21A5B1EF002248B7 /* Environment.swift */; };
+		0BC228CA27049CB000D560FF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2B0592420CAE500B615AC /* Array.swift */; };
+		0BC228CB27049CB000D560FF /* PushEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510922BD589E00C1D31E /* PushEvent.swift */; };
+		0BC228CC27049CB000D560FF /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E81921A5A716002248B7 /* Configuration.swift */; };
+		0BC228CD27049CB000D560FF /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F2B0572420CA1800B615AC /* Optional.swift */; };
+		0BC228CE27049CB000D560FF /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B2024288CB000F194E3 /* Observer.swift */; };
+		0BC228CF27049CB000D560FF /* GithubEventsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511822BD589E00C1D31E /* GithubEventsWorker.swift */; };
+		0BC228D027049CB000D560FF /* MainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4E21CBAE82001CEADF /* MainLabel.swift */; };
+		0BC228D127049CB000D560FF /* WatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510822BD589E00C1D31E /* WatchEvent.swift */; };
+		0BC228D227049CB000D560FF /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */; };
+		0BC228D327049CB000D560FF /* SimpleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F5021CBAE97001CEADF /* SimpleLabel.swift */; };
+		0BC228D427049CB000D560FF /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58421E89A7F0058C1E0 /* LoginModels.swift */; };
+		0BC228D527049CB000D560FF /* GithubEventsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511522BD589E00C1D31E /* GithubEventsInteractor.swift */; };
+		0BC228D627049CB000D560FF /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE878721B5928200B4FD22 /* Client.swift */; };
+		0BC228D727049CB000D560FF /* GithubEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511B22BD589E00C1D31E /* GithubEventDetailViewController.swift */; };
+		0BC228D827049CB000D560FF /* PropertyListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DF21A81F4C0072B1F0 /* PropertyListHelper.swift */; };
+		0BC228D927049CB000D560FF /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F5221CBAEB5001CEADF /* CancelButton.swift */; };
+		0BC228DA27049CB000D560FF /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510B22BD589E00C1D31E /* Feed.swift */; };
+		0BC228DB27049CB000D560FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58521E89A7F0058C1E0 /* LoginViewController.swift */; };
+		0BC228DC27049CB000D560FF /* GithubEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511222BD589E00C1D31E /* GithubEventTableViewCell.swift */; };
+		0BC228DD27049CB000D560FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DFE521B03ADA0004C59F /* DetailViewController.swift */; };
+		0BC228DE27049CB000D560FF /* UIViewController+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F321A820640072B1F0 /* UIViewController+showAlert.swift */; };
+		0BC228DF27049CB000D560FF /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58321E89A7F0058C1E0 /* LoginRouter.swift */; };
+		0BC228E027049CB000D560FF /* GithubEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510C22BD589E00C1D31E /* GithubEvent.swift */; };
+		0BC228E127049CB000D560FF /* GithubEventsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511622BD589E00C1D31E /* GithubEventsModels.swift */; };
+		0BC228E227049CB000D560FF /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E421A81F930072B1F0 /* Serializator.swift */; };
+		0BC228E327049CB000D560FF /* MarvelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */; };
+		0BC228E427049CB000D560FF /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
+		0BC228E527049CB000D560FF /* AppDelegate+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */; };
+		0BC228E627049CB000D560FF /* DownloadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510222BD588900C1D31E /* DownloadImageView.swift */; };
+		0BC228E727049CB000D560FF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */; };
+		0BC228E827049CB000D560FF /* Decodable+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C321B80BF100BC9E1C /* Decodable+Codable.swift */; };
+		0BC228E927049CB000D560FF /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FB21A822940072B1F0 /* System.swift */; };
+		0BC228EA27049CB000D560FF /* iOS_Boilerplate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3485E79321A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld */; };
+		0BC228EB27049CB000D560FF /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58221E89A7F0058C1E0 /* LoginWorker.swift */; };
+		0BC228EC27049CB000D560FF /* GithubEventDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511C22BD589E00C1D31E /* GithubEventDetailInteractor.swift */; };
+		0BC228ED27049CB000D560FF /* UIView+border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F121A820630072B1F0 /* UIView+border.swift */; };
+		0BC228EE27049CB000D560FF /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58621E89A7F0058C1E0 /* LoginInteractor.swift */; };
+		0BC228EF27049CB000D560FF /* GithubEventDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511E22BD589E00C1D31E /* GithubEventDetailPresenter.swift */; };
+		0BC228F027049CB000D560FF /* EventDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3F21B13DD6005B0A84 /* EventDTO.swift */; };
+		0BC228F127049CB000D560FF /* AutoEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3221B135C0005B0A84 /* AutoEquatable.swift */; };
+		0BC228F227049CB000D560FF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088D721A81AB00072B1F0 /* CoreDataStack.swift */; };
+		0BC228F327049CB000D560FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78E21A55E05002248B7 /* ViewController.swift */; };
+		0BC228F427049CB000D560FF /* GithubEventDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512122BD589E00C1D31E /* GithubEventDetailConfigurator.swift */; };
+		0BC228F527049CB000D560FF /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418A0F721CCD66400BBF17A /* MainButton.swift */; };
+		0BC228F627049CB000D560FF /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E521A81F930072B1F0 /* String+subscript.swift */; };
+		0BC228F727049CB000D560FF /* GithubEventDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511A22BD589E00C1D31E /* GithubEventDetailRouter.swift */; };
+		0BC228F827049CB000D560FF /* UIViewController+imageBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088EF21A820630072B1F0 /* UIViewController+imageBackground.swift */; };
+		0BC228F927049CB000D560FF /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3487742B21A6BD43001675D3 /* Http.swift */; };
+		0BC228FA27049CB000D560FF /* GithubEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511422BD589E00C1D31E /* GithubEventsViewController.swift */; };
+		0BC228FB27049CB000D560FF /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
+		0BC228FC27049CB000D560FF /* LoginReduxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B2D242C896000F194E3 /* LoginReduxViewController.swift */; };
+		0BC228FD27049CB000D560FF /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
+		0BC228FE27049CB000D560FF /* Date+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E221A81F930072B1F0 /* Date+JSON.swift */; };
+		0BC228FF27049CB000D560FF /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DD21A81E8E0072B1F0 /* UrlHelper.swift */; };
+		0BC2290027049CB000D560FF /* BlinkingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1E24288C5F00F194E3 /* BlinkingImage.swift */; };
+		0BC2290127049CB000D560FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78C21A55E05002248B7 /* AppDelegate.swift */; };
+		0BC2290227049CB000D560FF /* StarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510A22BD589E00C1D31E /* StarEvent.swift */; };
+		0BC2290327049CB000D560FF /* GithubEventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512222BD589E00C1D31E /* GithubEventsRouter.swift */; };
+		0BC2290427049CB000D560FF /* OSEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E321A81F930072B1F0 /* OSEmailValidator.swift */; };
+		0BC2290527049CB000D560FF /* BookDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F7642621A6F64B00E68956 /* BookDTO.swift */; };
+		0BC2290627049CB000D560FF /* CommitMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512022BD589E00C1D31E /* CommitMessageTableViewCell.swift */; };
+		0BC2290727049CB000D560FF /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
+		0BC2290827049CB000D560FF /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58121E89A7F0058C1E0 /* LoginPresenter.swift */; };
+		0BC2290927049CB000D560FF /* CALayer+XibConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F221A820630072B1F0 /* CALayer+XibConfiguration.swift */; };
+		0BC2290A27049CB000D560FF /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BB2684ADC000C2AAEC /* MarvelAPI.swift */; };
+		0BC2290B27049CB000D560FF /* NetworkingInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C521B8152400BC9E1C /* NetworkingInjector.swift */; };
+		0BC2290C27049CB000D560FF /* GithubEventDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511D22BD589E00C1D31E /* GithubEventDetailModels.swift */; };
+		0BC2290D27049CB000D560FF /* OSDNIValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E721A81F930072B1F0 /* OSDNIValidator.swift */; };
+		0BC2290E27049CB000D560FF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE876421B590D100B4FD22 /* API.swift */; };
+		0BC2290F27049CB000D560FF /* MarvelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BC2684ADC400C2AAEC /* MarvelService.swift */; };
+		0BC2291027049CB000D560FF /* GithubEventsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E512322BD589E00C1D31E /* GithubEventsPresenter.swift */; };
+		0BC2291127049CB000D560FF /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088FA21A822940072B1F0 /* AppInfo.swift */; };
+		0BC2291527049CB000D560FF /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; };
+		0BC2291627049CB000D560FF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3420DF8621AFECA20004C59F /* ImageIO.framework */; };
+		0BC2291827049CB000D560FF /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC228B827049CB000D560FF /* ReSwift */; };
+		0BC2291C27049CB000D560FF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342AC58D21E89A8F0058C1E0 /* Login.storyboard */; };
+		0BC2291E27049CB000D560FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79021A55E05002248B7 /* Main.storyboard */; };
+		0BC2292027049CB000D560FF /* Github.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B0E513B22BD58B300C1D31E /* Github.storyboard */; };
+		0BC2292127049CB000D560FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34F54BB8240FCCB30079398C /* Localizable.strings */; };
+		0BC2292227049CB000D560FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79821A55E07002248B7 /* LaunchScreen.storyboard */; };
+		0BC2292327049CB000D560FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79621A55E07002248B7 /* Assets.xcassets */; };
+		0BC2292627049CB000D560FF /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BC2292C27049E6200D560FF /* Icons_dev.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2284027049BCA00D560FF /* Icons_dev.xcassets */; };
+		0BC2292D27049E6500D560FF /* Icons_uat.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2283E27049BBB00D560FF /* Icons_uat.xcassets */; };
+		0BC229362704A4B000D560FF /* environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BC229342704A3A700D560FF /* environments.plist */; };
+		0BC229372704A4B400D560FF /* environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BC229352704A3A800D560FF /* environments.plist */; };
+		0BC2293E2704A74C00D560FF /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2293D2704A74C00D560FF /* Nimble */; };
+		0BC229402704A75900D560FF /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2293F2704A75900D560FF /* Quick */; };
 		0BFD564F26566A290035ABF9 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; };
 		0BFD565026566A290035ABF9 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0BFD565B26566BC70035ABF9 /* TestStringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD565A26566BC70035ABF9 /* TestStringHash.swift */; };
@@ -73,10 +262,7 @@
 		3418A0F821CCD66400BBF17A /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418A0F721CCD66400BBF17A /* MainButton.swift */; };
 		341C20B421B66881007227E2 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE875D21B57AE300B4FD22 /* ServiceTests.swift */; };
 		3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
-		3420DF6321AFDF0D0004C59F /* AutoEquatable.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */; };
 		3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */; };
-		3420DF6A21AFDFEB0004C59F /* AutoMock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6621AFDFE60004C59F /* AutoMock.generated.swift */; };
-		3420DF6B21AFE0730004C59F /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
 		3420DFE621B03ADA0004C59F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DFE521B03ADA0004C59F /* DetailViewController.swift */; };
 		342AC58721E89A7F0058C1E0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58121E89A7F0058C1E0 /* LoginPresenter.swift */; };
 		342AC58821E89A7F0058C1E0 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58221E89A7F0058C1E0 /* LoginWorker.swift */; };
@@ -91,8 +277,6 @@
 		34306A3321B135C0005B0A84 /* AutoEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3221B135C0005B0A84 /* AutoEquatable.swift */; };
 		34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
 		34306A4021B13DD6005B0A84 /* EventDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3F21B13DD6005B0A84 /* EventDTO.swift */; };
-		34306A4121B148DF005B0A84 /* AutoEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3221B135C0005B0A84 /* AutoEquatable.swift */; };
-		34306A4221B148E2005B0A84 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
 		34322B142428842A00F194E3 /* SnapshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B132428842A00F194E3 /* SnapshotUITests.swift */; };
 		34322B1D242885EF00F194E3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1C242885EF00F194E3 /* SnapshotHelper.swift */; };
 		34322B1F24288C5F00F194E3 /* BlinkingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1E24288C5F00F194E3 /* BlinkingImage.swift */; };
@@ -155,6 +339,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0BC228B027049C9F00D560FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0BC228B127049C9F00D560FF /* FLEX.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BC2292527049CB000D560FF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0BC2292627049CB000D560FF /* FLEX.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BFD565526566A290035ABF9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +425,15 @@
 		0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelDto.swift; sourceTree = "<group>"; };
 		0B10D3C22684B3CF00C2AAEC /* MarvelDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailTests.swift; sourceTree = "<group>"; };
 		0B9C0C37267B21B800999AB4 /* String+hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hash.swift"; sourceTree = "<group>"; };
+		0BC2283C27049B9F00D560FF /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		0BC2283E27049BBB00D560FF /* Icons_uat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons_uat.xcassets; sourceTree = "<group>"; };
+		0BC2284027049BCA00D560FF /* Icons_dev.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons_dev.xcassets; sourceTree = "<group>"; };
+		0BC228B527049C9F00D560FF /* iOS-Boilerplate-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplate-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BC228B627049C9F00D560FF /* iOS-Boilerplate copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOS-Boilerplate copy-Info.plist"; path = "/Users/danielvela/projects/iOS-Boilerplate/iOS-Boilerplate copy-Info.plist"; sourceTree = "<absolute>"; };
+		0BC2292A27049CB000D560FF /* iOS-Boilerplate-uat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplate-uat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BC2292B27049CB100D560FF /* iOS-Boilerplate copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOS-Boilerplate copy2-Info.plist"; path = "/Users/danielvela/projects/iOS-Boilerplate/iOS-Boilerplate copy2-Info.plist"; sourceTree = "<absolute>"; };
+		0BC229342704A3A700D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
+		0BC229352704A3A800D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
 		0BFD563D26566A290035ABF9 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 		0BFD563E26566A290035ABF9 /* SQLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SQLite.xcframework; path = Carthage/Build/SQLite.xcframework; sourceTree = "<group>"; };
 		0BFD564026566A290035ABF9 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FLEX.xcframework; path = Carthage/Build/FLEX.xcframework; sourceTree = "<group>"; };
@@ -315,6 +530,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0BC2289E27049C9F00D560FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC228A027049C9F00D560FF /* FLEX.xcframework in Frameworks */,
+				0BC228A127049C9F00D560FF /* ImageIO.framework in Frameworks */,
+				0BC228A327049C9F00D560FF /* ReSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BC2291327049CB000D560FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC2291527049CB000D560FF /* FLEX.xcframework in Frameworks */,
+				0BC2291627049CB000D560FF /* ImageIO.framework in Frameworks */,
+				0BC2291827049CB000D560FF /* ReSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34322B0E2428842A00F194E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,10 +561,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B10D3DA2684FC5D00C2AAEC /* Nimble in Frameworks */,
 				0BFD564F26566A290035ABF9 /* FLEX.xcframework in Frameworks */,
 				340D313421EDDEB000E5936D /* ImageIO.framework in Frameworks */,
-				0B10D3D42684FBF200C2AAEC /* Quick in Frameworks */,
 				0B10D3D02684FAAC00C2AAEC /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +571,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC229402704A75900D560FF /* Quick in Frameworks */,
+				0BC2293E2704A74C00D560FF /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +697,30 @@
 				0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */,
 			);
 			path = Marvel;
+			sourceTree = "<group>";
+		};
+		0BC229312704A39100D560FF /* UAT */ = {
+			isa = PBXGroup;
+			children = (
+				0BC229352704A3A800D560FF /* environments.plist */,
+			);
+			path = UAT;
+			sourceTree = "<group>";
+		};
+		0BC229322704A39700D560FF /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				0BC229342704A3A700D560FF /* environments.plist */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		0BC229332704A3A000D560FF /* Pro */ = {
+			isa = PBXGroup;
+			children = (
+				3485E82721A5B0D9002248B7 /* environments.plist */,
+			);
+			path = Pro;
 			sourceTree = "<group>";
 		};
 		340088CE21A81A7E0072B1F0 /* DTO */ = {
@@ -675,6 +934,8 @@
 				34322B122428842A00F194E3 /* SnapshotUITests */,
 				3485E78A21A55E05002248B7 /* Products */,
 				3420DF8521AFECA20004C59F /* Frameworks */,
+				0BC228B627049C9F00D560FF /* iOS-Boilerplate copy-Info.plist */,
+				0BC2292B27049CB100D560FF /* iOS-Boilerplate copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -685,6 +946,8 @@
 				3485E7A021A55E07002248B7 /* iOS-BoilerplateTests.xctest */,
 				3485E7AB21A55E07002248B7 /* iOS-BoilerplateUITests.xctest */,
 				34322B112428842A00F194E3 /* SnapshotUITests.xctest */,
+				0BC228B527049C9F00D560FF /* iOS-Boilerplate-dev.app */,
+				0BC2292A27049CB000D560FF /* iOS-Boilerplate-uat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -700,6 +963,9 @@
 				3485E7C321A57F7F002248B7 /* Library */,
 				3485E7C821A58014002248B7 /* Resources */,
 				3485E79621A55E07002248B7 /* Assets.xcassets */,
+				0BC2283C27049B9F00D560FF /* Icons.xcassets */,
+				0BC2284027049BCA00D560FF /* Icons_dev.xcassets */,
+				0BC2283E27049BBB00D560FF /* Icons_uat.xcassets */,
 				3485E7CE21A58095002248B7 /* Supporting Files */,
 			);
 			path = "iOS-Boilerplate";
@@ -891,7 +1157,9 @@
 		3485E81321A5A246002248B7 /* Environments */ = {
 			isa = PBXGroup;
 			children = (
-				3485E82721A5B0D9002248B7 /* environments.plist */,
+				0BC229332704A3A000D560FF /* Pro */,
+				0BC229322704A39700D560FF /* Dev */,
+				0BC229312704A39100D560FF /* UAT */,
 			);
 			path = Environments;
 			sourceTree = "<group>";
@@ -956,6 +1224,56 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0BC2284227049C9F00D560FF /* iOS-Boilerplate-dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BC228B227049C9F00D560FF /* Build configuration list for PBXNativeTarget "iOS-Boilerplate-dev" */;
+			buildPhases = (
+				0BC2284927049C9F00D560FF /* Twine */,
+				0BC2284A27049C9F00D560FF /* Sources */,
+				0BC2289D27049C9F00D560FF /* Swiftlint */,
+				0BC2289E27049C9F00D560FF /* Frameworks */,
+				0BC228A427049C9F00D560FF /* Increment build number */,
+				0BC228A527049C9F00D560FF /* Increment Version on Archive */,
+				0BC228A627049C9F00D560FF /* Resources */,
+				0BC228B027049C9F00D560FF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Boilerplate-dev";
+			packageProductDependencies = (
+				0BC2284327049C9F00D560FF /* ReSwift */,
+			);
+			productName = "iOS-Boilerplate";
+			productReference = 0BC228B527049C9F00D560FF /* iOS-Boilerplate-dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BC228B727049CB000D560FF /* iOS-Boilerplate-uat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BC2292727049CB000D560FF /* Build configuration list for PBXNativeTarget "iOS-Boilerplate-uat" */;
+			buildPhases = (
+				0BC228BE27049CB000D560FF /* Twine */,
+				0BC228BF27049CB000D560FF /* Sources */,
+				0BC2291227049CB000D560FF /* Swiftlint */,
+				0BC2291327049CB000D560FF /* Frameworks */,
+				0BC2291927049CB000D560FF /* Increment build number */,
+				0BC2291A27049CB000D560FF /* Increment Version on Archive */,
+				0BC2291B27049CB000D560FF /* Resources */,
+				0BC2292527049CB000D560FF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Boilerplate-uat";
+			packageProductDependencies = (
+				0BC228B827049CB000D560FF /* ReSwift */,
+			);
+			productName = "iOS-Boilerplate";
+			productReference = 0BC2292A27049CB000D560FF /* iOS-Boilerplate-uat.app */;
+			productType = "com.apple.product-type.application";
+		};
 		34322B102428842A00F194E3 /* SnapshotUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34322B1A2428842A00F194E3 /* Build configuration list for PBXNativeTarget "SnapshotUITests" */;
@@ -994,8 +1312,6 @@
 			name = "iOS-Boilerplate";
 			packageProductDependencies = (
 				0B10D3CF2684FAAC00C2AAEC /* ReSwift */,
-				0B10D3D32684FBF200C2AAEC /* Quick */,
-				0B10D3D92684FC5D00C2AAEC /* Nimble */,
 			);
 			productName = "iOS-Boilerplate";
 			productReference = 3485E78921A55E05002248B7 /* iOS-Boilerplate.app */;
@@ -1017,6 +1333,8 @@
 			);
 			name = "iOS-BoilerplateTests";
 			packageProductDependencies = (
+				0BC2293D2704A74C00D560FF /* Nimble */,
+				0BC2293F2704A75900D560FF /* Quick */,
 			);
 			productName = "iOS-BoilerplateTests";
 			productReference = 3485E7A021A55E07002248B7 /* iOS-BoilerplateTests.xctest */;
@@ -1089,13 +1407,15 @@
 			packageReferences = (
 				0B10D3CE2684FAAC00C2AAEC /* XCRemoteSwiftPackageReference "ReSwift" */,
 				0B10D3D22684FBF200C2AAEC /* XCRemoteSwiftPackageReference "Quick" */,
-				0B10D3D82684FC5D00C2AAEC /* XCRemoteSwiftPackageReference "Nimble" */,
+				0BC2293C2704A74C00D560FF /* XCRemoteSwiftPackageReference "Nimble" */,
 			);
 			productRefGroup = 3485E78A21A55E05002248B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3485E78821A55E05002248B7 /* iOS-Boilerplate */,
+				0BC2284227049C9F00D560FF /* iOS-Boilerplate-dev */,
+				0BC228B727049CB000D560FF /* iOS-Boilerplate-uat */,
 				3485E79F21A55E07002248B7 /* iOS-BoilerplateTests */,
 				3485E7AA21A55E07002248B7 /* iOS-BoilerplateUITests */,
 				34322B102428842A00F194E3 /* SnapshotUITests */,
@@ -1104,6 +1424,36 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0BC228A627049C9F00D560FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC228A727049C9F00D560FF /* Login.storyboard in Resources */,
+				0BC228A927049C9F00D560FF /* Main.storyboard in Resources */,
+				0BC229362704A4B000D560FF /* environments.plist in Resources */,
+				0BC2292C27049E6200D560FF /* Icons_dev.xcassets in Resources */,
+				0BC228AB27049C9F00D560FF /* Github.storyboard in Resources */,
+				0BC228AC27049C9F00D560FF /* Localizable.strings in Resources */,
+				0BC228AD27049C9F00D560FF /* LaunchScreen.storyboard in Resources */,
+				0BC228AE27049C9F00D560FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BC2291B27049CB000D560FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC2292D27049E6500D560FF /* Icons_uat.xcassets in Resources */,
+				0BC2291C27049CB000D560FF /* Login.storyboard in Resources */,
+				0BC2291E27049CB000D560FF /* Main.storyboard in Resources */,
+				0BC229372704A4B400D560FF /* environments.plist in Resources */,
+				0BC2292027049CB000D560FF /* Github.storyboard in Resources */,
+				0BC2292127049CB000D560FF /* Localizable.strings in Resources */,
+				0BC2292227049CB000D560FF /* LaunchScreen.storyboard in Resources */,
+				0BC2292327049CB000D560FF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34322B0F2428842A00F194E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1116,8 +1466,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				342AC58E21E89A8F0058C1E0 /* Login.storyboard in Resources */,
+				0BC2283D27049B9F00D560FF /* Icons.xcassets in Resources */,
 				3487744921A6C011001675D3 /* Main.storyboard in Resources */,
-				3420DF6321AFDF0D0004C59F /* AutoEquatable.stencil in Resources */,
 				0B0E513C22BD58B300C1D31E /* Github.storyboard in Resources */,
 				34F54BBA240FCCB30079398C /* Localizable.strings in Resources */,
 				3487744821A6C004001675D3 /* LaunchScreen.storyboard in Resources */,
@@ -1145,6 +1495,150 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0BC2284927049C9F00D560FF /* Twine */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Twine;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# twine generate-all-localization-files twine.txt iOS-Boilerplate/Resources/Strings/ --format apple\n";
+		};
+		0BC2289D27049C9F00D560FF /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint lint --config .swiftlint.yml\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+		0BC228A427049C9F00D560FF /* Increment build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Increment build number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# xcode-build-bump.sh\n# @desc Auto-increment the build number every time the project is run. \n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 6. Insure that your starting build number is set to a whole integer and not a float (e.g. 1, not 1.0)\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		0BC228A527049C9F00D560FF /* Increment Version on Archive */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Version on Archive";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# xcode-version-bump.sh\n# @desc Auto-increment the version number (only) when a project is archived for export. \n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Check the checkbox \"Run script only when installing\"\n# 6. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 7. Insure your starting version number is in SemVer format (e.g. 1.0.0)\n\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		0BC228BE27049CB000D560FF /* Twine */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Twine;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# twine generate-all-localization-files twine.txt iOS-Boilerplate/Resources/Strings/ --format apple\n";
+		};
+		0BC2291227049CB000D560FF /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint lint --config .swiftlint.yml\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+		0BC2291927049CB000D560FF /* Increment build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Increment build number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# xcode-build-bump.sh\n# @desc Auto-increment the build number every time the project is run. \n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 6. Insure that your starting build number is set to a whole integer and not a float (e.g. 1, not 1.0)\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+		0BC2291A27049CB000D560FF /* Increment Version on Archive */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Version on Archive";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# xcode-version-bump.sh\n# @desc Auto-increment the version number (only) when a project is archived for export. \n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Check the checkbox \"Run script only when installing\"\n# 6. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 7. Insure your starting version number is in SemVer format (e.g. 1.0.0)\n\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
 		3440F63D21BE88D60092CAF9 /* Increment build number */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1220,6 +1714,184 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0BC2284A27049C9F00D560FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC2284B27049C9F00D560FF /* UIViewController+navigationItem.swift in Sources */,
+				0BC2284C27049C9F00D560FF /* UIResponder+ChangeRootController.swift in Sources */,
+				0BC2284D27049C9F00D560FF /* CreateEvent.swift in Sources */,
+				0BC2284E27049C9F00D560FF /* GithubAPI.swift in Sources */,
+				0BC2284F27049C9F00D560FF /* GithubEventsConfigurator.swift in Sources */,
+				0BC2285027049C9F00D560FF /* PushEventTableViewCell.swift in Sources */,
+				0BC2285127049C9F00D560FF /* PersonDTO.swift in Sources */,
+				0BC2285227049C9F00D560FF /* String+urlEncode.swift in Sources */,
+				0BC2285327049C9F00D560FF /* ImageDto.swift in Sources */,
+				0BC2285427049C9F00D560FF /* Environment.swift in Sources */,
+				0BC2285527049C9F00D560FF /* Array.swift in Sources */,
+				0BC2285627049C9F00D560FF /* PushEvent.swift in Sources */,
+				0BC2285727049C9F00D560FF /* Configuration.swift in Sources */,
+				0BC2285827049C9F00D560FF /* Optional.swift in Sources */,
+				0BC2285927049C9F00D560FF /* Observer.swift in Sources */,
+				0BC2285A27049C9F00D560FF /* GithubEventsWorker.swift in Sources */,
+				0BC2285B27049C9F00D560FF /* MainLabel.swift in Sources */,
+				0BC2285C27049C9F00D560FF /* WatchEvent.swift in Sources */,
+				0BC2285D27049C9F00D560FF /* AutoEquatable.generated.swift in Sources */,
+				0BC2285E27049C9F00D560FF /* SimpleLabel.swift in Sources */,
+				0BC2285F27049C9F00D560FF /* LoginModels.swift in Sources */,
+				0BC2286027049C9F00D560FF /* GithubEventsInteractor.swift in Sources */,
+				0BC2286127049C9F00D560FF /* Client.swift in Sources */,
+				0BC2286227049C9F00D560FF /* GithubEventDetailViewController.swift in Sources */,
+				0BC2286327049C9F00D560FF /* PropertyListHelper.swift in Sources */,
+				0BC2286427049C9F00D560FF /* CancelButton.swift in Sources */,
+				0BC2286527049C9F00D560FF /* Feed.swift in Sources */,
+				0BC2286627049C9F00D560FF /* LoginViewController.swift in Sources */,
+				0BC2286727049C9F00D560FF /* GithubEventTableViewCell.swift in Sources */,
+				0BC2286827049C9F00D560FF /* DetailViewController.swift in Sources */,
+				0BC2286927049C9F00D560FF /* UIViewController+showAlert.swift in Sources */,
+				0BC2286A27049C9F00D560FF /* LoginRouter.swift in Sources */,
+				0BC2286B27049C9F00D560FF /* GithubEvent.swift in Sources */,
+				0BC2286C27049C9F00D560FF /* GithubEventsModels.swift in Sources */,
+				0BC2286D27049C9F00D560FF /* Serializator.swift in Sources */,
+				0BC2286E27049C9F00D560FF /* MarvelDto.swift in Sources */,
+				0BC2286F27049C9F00D560FF /* AutoMockable.swift in Sources */,
+				0BC2287027049C9F00D560FF /* AppDelegate+Theme.swift in Sources */,
+				0BC2287127049C9F00D560FF /* DownloadImageView.swift in Sources */,
+				0BC2287227049C9F00D560FF /* BackgroundView.swift in Sources */,
+				0BC2287327049C9F00D560FF /* Decodable+Codable.swift in Sources */,
+				0BC2287427049C9F00D560FF /* System.swift in Sources */,
+				0BC2287527049C9F00D560FF /* iOS_Boilerplate.xcdatamodeld in Sources */,
+				0BC2287627049C9F00D560FF /* LoginWorker.swift in Sources */,
+				0BC2287727049C9F00D560FF /* GithubEventDetailInteractor.swift in Sources */,
+				0BC2287827049C9F00D560FF /* UIView+border.swift in Sources */,
+				0BC2287927049C9F00D560FF /* LoginInteractor.swift in Sources */,
+				0BC2287A27049C9F00D560FF /* GithubEventDetailPresenter.swift in Sources */,
+				0BC2287B27049C9F00D560FF /* EventDTO.swift in Sources */,
+				0BC2287C27049C9F00D560FF /* AutoEquatable.swift in Sources */,
+				0BC2287D27049C9F00D560FF /* CoreDataStack.swift in Sources */,
+				0BC2287E27049C9F00D560FF /* ViewController.swift in Sources */,
+				0BC2287F27049C9F00D560FF /* GithubEventDetailConfigurator.swift in Sources */,
+				0BC2288027049C9F00D560FF /* MainButton.swift in Sources */,
+				0BC2288127049C9F00D560FF /* String+subscript.swift in Sources */,
+				0BC2288227049C9F00D560FF /* GithubEventDetailRouter.swift in Sources */,
+				0BC2288327049C9F00D560FF /* UIViewController+imageBackground.swift in Sources */,
+				0BC2288427049C9F00D560FF /* Http.swift in Sources */,
+				0BC2288527049C9F00D560FF /* GithubEventsViewController.swift in Sources */,
+				0BC2288627049C9F00D560FF /* FakeProtocol.swift in Sources */,
+				0BC2288727049C9F00D560FF /* LoginReduxViewController.swift in Sources */,
+				0BC2288827049C9F00D560FF /* String+hash.swift in Sources */,
+				0BC2288927049C9F00D560FF /* Date+JSON.swift in Sources */,
+				0BC2288A27049C9F00D560FF /* UrlHelper.swift in Sources */,
+				0BC2288B27049C9F00D560FF /* BlinkingImage.swift in Sources */,
+				0BC2288C27049C9F00D560FF /* AppDelegate.swift in Sources */,
+				0BC2288D27049C9F00D560FF /* StarEvent.swift in Sources */,
+				0BC2288E27049C9F00D560FF /* GithubEventsRouter.swift in Sources */,
+				0BC2288F27049C9F00D560FF /* OSEmailValidator.swift in Sources */,
+				0BC2289027049C9F00D560FF /* BookDTO.swift in Sources */,
+				0BC2289127049C9F00D560FF /* CommitMessageTableViewCell.swift in Sources */,
+				0BC2289227049C9F00D560FF /* TestHelper.swift in Sources */,
+				0BC2289327049C9F00D560FF /* LoginPresenter.swift in Sources */,
+				0BC2289427049C9F00D560FF /* CALayer+XibConfiguration.swift in Sources */,
+				0BC2289527049C9F00D560FF /* MarvelAPI.swift in Sources */,
+				0BC2289627049C9F00D560FF /* NetworkingInjector.swift in Sources */,
+				0BC2289727049C9F00D560FF /* GithubEventDetailModels.swift in Sources */,
+				0BC2289827049C9F00D560FF /* OSDNIValidator.swift in Sources */,
+				0BC2289927049C9F00D560FF /* API.swift in Sources */,
+				0BC2289A27049C9F00D560FF /* MarvelService.swift in Sources */,
+				0BC2289B27049C9F00D560FF /* GithubEventsPresenter.swift in Sources */,
+				0BC2289C27049C9F00D560FF /* AppInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BC228BF27049CB000D560FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC228C027049CB000D560FF /* UIViewController+navigationItem.swift in Sources */,
+				0BC228C127049CB000D560FF /* UIResponder+ChangeRootController.swift in Sources */,
+				0BC228C227049CB000D560FF /* CreateEvent.swift in Sources */,
+				0BC228C327049CB000D560FF /* GithubAPI.swift in Sources */,
+				0BC228C427049CB000D560FF /* GithubEventsConfigurator.swift in Sources */,
+				0BC228C527049CB000D560FF /* PushEventTableViewCell.swift in Sources */,
+				0BC228C627049CB000D560FF /* PersonDTO.swift in Sources */,
+				0BC228C727049CB000D560FF /* String+urlEncode.swift in Sources */,
+				0BC228C827049CB000D560FF /* ImageDto.swift in Sources */,
+				0BC228C927049CB000D560FF /* Environment.swift in Sources */,
+				0BC228CA27049CB000D560FF /* Array.swift in Sources */,
+				0BC228CB27049CB000D560FF /* PushEvent.swift in Sources */,
+				0BC228CC27049CB000D560FF /* Configuration.swift in Sources */,
+				0BC228CD27049CB000D560FF /* Optional.swift in Sources */,
+				0BC228CE27049CB000D560FF /* Observer.swift in Sources */,
+				0BC228CF27049CB000D560FF /* GithubEventsWorker.swift in Sources */,
+				0BC228D027049CB000D560FF /* MainLabel.swift in Sources */,
+				0BC228D127049CB000D560FF /* WatchEvent.swift in Sources */,
+				0BC228D227049CB000D560FF /* AutoEquatable.generated.swift in Sources */,
+				0BC228D327049CB000D560FF /* SimpleLabel.swift in Sources */,
+				0BC228D427049CB000D560FF /* LoginModels.swift in Sources */,
+				0BC228D527049CB000D560FF /* GithubEventsInteractor.swift in Sources */,
+				0BC228D627049CB000D560FF /* Client.swift in Sources */,
+				0BC228D727049CB000D560FF /* GithubEventDetailViewController.swift in Sources */,
+				0BC228D827049CB000D560FF /* PropertyListHelper.swift in Sources */,
+				0BC228D927049CB000D560FF /* CancelButton.swift in Sources */,
+				0BC228DA27049CB000D560FF /* Feed.swift in Sources */,
+				0BC228DB27049CB000D560FF /* LoginViewController.swift in Sources */,
+				0BC228DC27049CB000D560FF /* GithubEventTableViewCell.swift in Sources */,
+				0BC228DD27049CB000D560FF /* DetailViewController.swift in Sources */,
+				0BC228DE27049CB000D560FF /* UIViewController+showAlert.swift in Sources */,
+				0BC228DF27049CB000D560FF /* LoginRouter.swift in Sources */,
+				0BC228E027049CB000D560FF /* GithubEvent.swift in Sources */,
+				0BC228E127049CB000D560FF /* GithubEventsModels.swift in Sources */,
+				0BC228E227049CB000D560FF /* Serializator.swift in Sources */,
+				0BC228E327049CB000D560FF /* MarvelDto.swift in Sources */,
+				0BC228E427049CB000D560FF /* AutoMockable.swift in Sources */,
+				0BC228E527049CB000D560FF /* AppDelegate+Theme.swift in Sources */,
+				0BC228E627049CB000D560FF /* DownloadImageView.swift in Sources */,
+				0BC228E727049CB000D560FF /* BackgroundView.swift in Sources */,
+				0BC228E827049CB000D560FF /* Decodable+Codable.swift in Sources */,
+				0BC228E927049CB000D560FF /* System.swift in Sources */,
+				0BC228EA27049CB000D560FF /* iOS_Boilerplate.xcdatamodeld in Sources */,
+				0BC228EB27049CB000D560FF /* LoginWorker.swift in Sources */,
+				0BC228EC27049CB000D560FF /* GithubEventDetailInteractor.swift in Sources */,
+				0BC228ED27049CB000D560FF /* UIView+border.swift in Sources */,
+				0BC228EE27049CB000D560FF /* LoginInteractor.swift in Sources */,
+				0BC228EF27049CB000D560FF /* GithubEventDetailPresenter.swift in Sources */,
+				0BC228F027049CB000D560FF /* EventDTO.swift in Sources */,
+				0BC228F127049CB000D560FF /* AutoEquatable.swift in Sources */,
+				0BC228F227049CB000D560FF /* CoreDataStack.swift in Sources */,
+				0BC228F327049CB000D560FF /* ViewController.swift in Sources */,
+				0BC228F427049CB000D560FF /* GithubEventDetailConfigurator.swift in Sources */,
+				0BC228F527049CB000D560FF /* MainButton.swift in Sources */,
+				0BC228F627049CB000D560FF /* String+subscript.swift in Sources */,
+				0BC228F727049CB000D560FF /* GithubEventDetailRouter.swift in Sources */,
+				0BC228F827049CB000D560FF /* UIViewController+imageBackground.swift in Sources */,
+				0BC228F927049CB000D560FF /* Http.swift in Sources */,
+				0BC228FA27049CB000D560FF /* GithubEventsViewController.swift in Sources */,
+				0BC228FB27049CB000D560FF /* FakeProtocol.swift in Sources */,
+				0BC228FC27049CB000D560FF /* LoginReduxViewController.swift in Sources */,
+				0BC228FD27049CB000D560FF /* String+hash.swift in Sources */,
+				0BC228FE27049CB000D560FF /* Date+JSON.swift in Sources */,
+				0BC228FF27049CB000D560FF /* UrlHelper.swift in Sources */,
+				0BC2290027049CB000D560FF /* BlinkingImage.swift in Sources */,
+				0BC2290127049CB000D560FF /* AppDelegate.swift in Sources */,
+				0BC2290227049CB000D560FF /* StarEvent.swift in Sources */,
+				0BC2290327049CB000D560FF /* GithubEventsRouter.swift in Sources */,
+				0BC2290427049CB000D560FF /* OSEmailValidator.swift in Sources */,
+				0BC2290527049CB000D560FF /* BookDTO.swift in Sources */,
+				0BC2290627049CB000D560FF /* CommitMessageTableViewCell.swift in Sources */,
+				0BC2290727049CB000D560FF /* TestHelper.swift in Sources */,
+				0BC2290827049CB000D560FF /* LoginPresenter.swift in Sources */,
+				0BC2290927049CB000D560FF /* CALayer+XibConfiguration.swift in Sources */,
+				0BC2290A27049CB000D560FF /* MarvelAPI.swift in Sources */,
+				0BC2290B27049CB000D560FF /* NetworkingInjector.swift in Sources */,
+				0BC2290C27049CB000D560FF /* GithubEventDetailModels.swift in Sources */,
+				0BC2290D27049CB000D560FF /* OSDNIValidator.swift in Sources */,
+				0BC2290E27049CB000D560FF /* API.swift in Sources */,
+				0BC2290F27049CB000D560FF /* MarvelService.swift in Sources */,
+				0BC2291027049CB000D560FF /* GithubEventsPresenter.swift in Sources */,
+				0BC2291127049CB000D560FF /* AppInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34322B0D2428842A00F194E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1323,18 +1995,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3438809821ECA62E002FCBE5 /* LoginWorkerTests.swift in Sources */,
-				3420DF6B21AFE0730004C59F /* FakeProtocol.swift in Sources */,
 				3485E83021A5B5FB002248B7 /* ConfigurationTest.swift in Sources */,
 				3438809621ECA62E002FCBE5 /* LoginViewControllerTests.swift in Sources */,
 				34306A2B21B12335005B0A84 /* EventTests.swift in Sources */,
 				3485E81021A59083002248B7 /* PersonDTOTests.swift in Sources */,
 				34306A2D21B12367005B0A84 /* ModelHelper.swift in Sources */,
-				34306A4121B148DF005B0A84 /* AutoEquatable.swift in Sources */,
-				3420DF6A21AFDFEB0004C59F /* AutoMock.generated.swift in Sources */,
 				0BFD565B26566BC70035ABF9 /* TestStringHash.swift in Sources */,
 				3438809921ECA62E002FCBE5 /* LoginPresenterTests.swift in Sources */,
 				341C20B421B66881007227E2 /* ServiceTests.swift in Sources */,
-				34306A4221B148E2005B0A84 /* AutoMockable.swift in Sources */,
 				0B0E513F22BD605D00C1D31E /* TestHelper.swift in Sources */,
 				3438809721ECA62E002FCBE5 /* LoginInteractorTests.swift in Sources */,
 				3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */,
@@ -1402,6 +2070,110 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0BC228B327049C9F00D560FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "iOS-Boilerplate copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(SYMROOT)/Debug$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.iOS-Boilerplate-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BC228B427049C9F00D560FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "iOS-Boilerplate copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(SYMROOT)/Debug$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.iOS-Boilerplate-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0BC2292827049CB000D560FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "iOS-Boilerplate copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(SYMROOT)/Debug$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.iOS-Boilerplate-uat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BC2292927049CB000D560FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TW65EXAM4U;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "iOS-Boilerplate copy2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"$(SYMROOT)/Debug$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.iOS-Boilerplate-uat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		34322B182428842A00F194E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1719,6 +2491,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0BC228B227049C9F00D560FF /* Build configuration list for PBXNativeTarget "iOS-Boilerplate-dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BC228B327049C9F00D560FF /* Debug */,
+				0BC228B427049C9F00D560FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BC2292727049CB000D560FF /* Build configuration list for PBXNativeTarget "iOS-Boilerplate-uat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BC2292827049CB000D560FF /* Debug */,
+				0BC2292927049CB000D560FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		34322B1A2428842A00F194E3 /* Build configuration list for PBXNativeTarget "SnapshotUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1783,12 +2573,28 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		0B10D3D82684FC5D00C2AAEC /* XCRemoteSwiftPackageReference "Nimble" */ = {
+		0BC2284427049C9F00D560FF /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		0BC228B927049CB000D560FF /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		0BC2293C2704A74C00D560FF /* XCRemoteSwiftPackageReference "Nimble" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Quick/Nimble.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.2.0;
+				minimumVersion = 9.2.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1799,15 +2605,25 @@
 			package = 0B10D3CE2684FAAC00C2AAEC /* XCRemoteSwiftPackageReference "ReSwift" */;
 			productName = ReSwift;
 		};
-		0B10D3D32684FBF200C2AAEC /* Quick */ = {
+		0BC2284327049C9F00D560FF /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC2284427049C9F00D560FF /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+		0BC228B827049CB000D560FF /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC228B927049CB000D560FF /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+		0BC2293D2704A74C00D560FF /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC2293C2704A74C00D560FF /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		0BC2293F2704A75900D560FF /* Quick */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0B10D3D22684FBF200C2AAEC /* XCRemoteSwiftPackageReference "Quick" */;
 			productName = Quick;
-		};
-		0B10D3D92684FC5D00C2AAEC /* Nimble */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0B10D3D82684FC5D00C2AAEC /* XCRemoteSwiftPackageReference "Nimble" */;
-			productName = Nimble;
 		};
 /* End XCSwiftPackageProductDependency section */
 

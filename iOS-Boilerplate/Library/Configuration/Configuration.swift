@@ -16,27 +16,8 @@ enum ConfigurationKey: String {
 }
 
 class Configuration {
-    static var environment: Environment = {
-        if let configuration = Bundle.main.object(forInfoDictionaryKey: "Configuration") as? String {
-            if configuration == "staging" {
-                return Environment.staging
-            }
-            if configuration == "integration" {
-                return Environment.integration
-            }
-            if configuration == "production" {
-                return Environment.production
-            }
-        }
-        return Environment.integration
-    }()
-
     static func value(for key: ConfigurationKey) -> String {
-        guard let conf = environmentsConfig[environment.rawValue] else {
-            print("Environment \(environment.rawValue) not defined")
-            return ""
-        }
-        guard let result = conf[key.rawValue] else {
+        guard let result = environmentsConfig[key.rawValue] else {
             print("Key \(key) not defined in enviroments.plist")  // Key not defined in enviroments.plist
             return ""
         }
@@ -45,9 +26,9 @@ class Configuration {
 
     private init() {}
 
-    private static var internalEnvironmentsConfig: [String: [String: String]] = [:]
+    private static var internalEnvironmentsConfig: [String: String] = [:]
 
-    private static var environmentsConfig: [String: [String: String]] = {
+    private static var environmentsConfig: [String: String] = {
         let conf = internalEnvironmentsConfig
         if conf.isEmpty == false {
             return conf
@@ -59,7 +40,7 @@ class Configuration {
                 let plist = try PropertyListSerialization.propertyList(from: data,
                                                                        options: prop,
                                                                        format: nil)
-                    as? [String: [String: String]]
+                    as? [String: String]
                 if let result = plist {
                     internalEnvironmentsConfig = result
                     return result
