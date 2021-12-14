@@ -263,7 +263,7 @@ Files:
 
 Inside the project, the group ```Github```, there is a coomplete table view controller and detail view controlles for showing Github event.
 
-## Recomendations
+## Recommendations
 
 - Use font styles instead custon or system fonts. Define de font as `Title 1`, `Body`, `Caption` see [UIFontTextStyle Apple documentation](https://developer.apple.com/documentation/uikit/uifonttextstyle). This allows users to activate Acessibility custom fonts.
 - Define custom meaningful names for colors, like: `orangeAction`, `redMain`, `yellowAccent`, `brandBlue`. This way, if the designer needs to change one color, it's easier to change it in only one place.
@@ -299,4 +299,16 @@ Define where to capture screens in the file `SnapshotUITest\SnapshotUITest.swift
 Then capture screenshots by running: `$ fastlane snapshot`
 
 Upload those screenshots files to the App Store with: `$ fastlane deliver`
+
+## Localization helpers
+
+### LocalizedString
+Use class **LocalizedString** to handle localizations in models and view models.
+
+    let label = LocalizedString(label: "main_name")
+    uiLabel <= label
+
+### LocalizedLabel
+This class inherits from UILabel. Use this class to auto localize the text of a label loaded from a UIStoryboard. Create a UILabel control in yout Interface Builder, then change the field "Custom class" from UILabel to LocalizedLabel, and set in the "text" field the identifier of the label to be translated.
+
 

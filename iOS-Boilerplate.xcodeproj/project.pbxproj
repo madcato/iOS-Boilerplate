@@ -42,6 +42,8 @@
 		0B10D3C52684B48900C2AAEC /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BB2684ADC000C2AAEC /* MarvelAPI.swift */; };
 		0B10D3D02684FAAC00C2AAEC /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B10D3CF2684FAAC00C2AAEC /* ReSwift */; };
 		0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
+		0BB45F8E27679A0D00564BB7 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB45F8D27679A0D00564BB7 /* LocalizedString.swift */; };
+		0BB45F902767AA1600564BB7 /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB45F8F2767AA1600564BB7 /* LocalizedLabel.swift */; };
 		0BC2283D27049B9F00D560FF /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2283C27049B9F00D560FF /* Icons.xcassets */; };
 		0BC2284B27049C9F00D560FF /* UIViewController+navigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088F021A820630072B1F0 /* UIViewController+navigationItem.swift */; };
 		0BC2284C27049C9F00D560FF /* UIResponder+ChangeRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DB21A81E5C0072B1F0 /* UIResponder+ChangeRootController.swift */; };
@@ -425,6 +427,8 @@
 		0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelDto.swift; sourceTree = "<group>"; };
 		0B10D3C22684B3CF00C2AAEC /* MarvelDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailTests.swift; sourceTree = "<group>"; };
 		0B9C0C37267B21B800999AB4 /* String+hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hash.swift"; sourceTree = "<group>"; };
+		0BB45F8D27679A0D00564BB7 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		0BB45F8F2767AA1600564BB7 /* LocalizedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedLabel.swift; sourceTree = "<group>"; };
 		0BC2283C27049B9F00D560FF /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		0BC2283E27049BBB00D560FF /* Icons_uat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons_uat.xcassets; sourceTree = "<group>"; };
 		0BC2284027049BCA00D560FF /* Icons_dev.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons_dev.xcassets; sourceTree = "<group>"; };
@@ -744,6 +748,7 @@
 				340088DD21A81E8E0072B1F0 /* UrlHelper.swift */,
 				340088DF21A81F4C0072B1F0 /* PropertyListHelper.swift */,
 				34322B2024288CB000F194E3 /* Observer.swift */,
+				0BB45F8D27679A0D00564BB7 /* LocalizedString.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1213,6 +1218,7 @@
 				0B0E510222BD588900C1D31E /* DownloadImageView.swift */,
 				3418A0F721CCD66400BBF17A /* MainButton.swift */,
 				34D48F4C21CBAE6B001CEADF /* BackgroundView.swift */,
+				0BB45F8F2767AA1600564BB7 /* LocalizedLabel.swift */,
 				34D48F4E21CBAE82001CEADF /* MainLabel.swift */,
 				34D48F5021CBAE97001CEADF /* SimpleLabel.swift */,
 				34D48F5221CBAEB5001CEADF /* CancelButton.swift */,
@@ -1961,6 +1967,7 @@
 				3418A0F821CCD66400BBF17A /* MainButton.swift in Sources */,
 				340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */,
 				0B0E513222BD589E00C1D31E /* GithubEventDetailRouter.swift in Sources */,
+				0BB45F8E27679A0D00564BB7 /* LocalizedString.swift in Sources */,
 				340088F421A820640072B1F0 /* UIViewController+imageBackground.swift in Sources */,
 				34F7641E21A6E4E400E68956 /* Http.swift in Sources */,
 				0B0E512D22BD589E00C1D31E /* GithubEventsViewController.swift in Sources */,
@@ -1982,6 +1989,7 @@
 				0B10D3C52684B48900C2AAEC /* MarvelAPI.swift in Sources */,
 				341810C621B8152400BC9E1C /* NetworkingInjector.swift in Sources */,
 				0B0E513522BD589E00C1D31E /* GithubEventDetailModels.swift in Sources */,
+				0BB45F902767AA1600564BB7 /* LocalizedLabel.swift in Sources */,
 				340088ED21A81F930072B1F0 /* OSDNIValidator.swift in Sources */,
 				34BE876521B590D100B4FD22 /* API.swift in Sources */,
 				0B10D3C42684B48500C2AAEC /* MarvelService.swift in Sources */,
