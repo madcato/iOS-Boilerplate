@@ -235,6 +235,10 @@
 		0BC229372704A4B400D560FF /* environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BC229352704A3A800D560FF /* environments.plist */; };
 		0BC2293E2704A74C00D560FF /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2293D2704A74C00D560FF /* Nimble */; };
 		0BC229402704A75900D560FF /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2293F2704A75900D560FF /* Quick */; };
+		0BE5933D278308320059EF8B /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5933C278308320059EF8B /* Info.storyboard */; };
+		0BE593402783085A0059EF8B /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5933F2783085A0059EF8B /* InfoPresenter.swift */; };
+		0BE593422783093C0059EF8B /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE593412783093C0059EF8B /* InfoRouter.swift */; };
+		0BE5934427830A000059EF8B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5934327830A000059EF8B /* InfoViewController.swift */; };
 		0BFD564F26566A290035ABF9 /* FLEX.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; };
 		0BFD565026566A290035ABF9 /* FLEX.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD564026566A290035ABF9 /* FLEX.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0BFD565B26566BC70035ABF9 /* TestStringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD565A26566BC70035ABF9 /* TestStringHash.swift */; };
@@ -438,6 +442,10 @@
 		0BC2292B27049CB100D560FF /* iOS-Boilerplate copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOS-Boilerplate copy2-Info.plist"; path = "/Users/danielvela/projects/iOS-Boilerplate/iOS-Boilerplate copy2-Info.plist"; sourceTree = "<absolute>"; };
 		0BC229342704A3A700D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
 		0BC229352704A3A800D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
+		0BE5933C278308320059EF8B /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		0BE5933F2783085A0059EF8B /* InfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPresenter.swift; sourceTree = "<group>"; };
+		0BE593412783093C0059EF8B /* InfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRouter.swift; sourceTree = "<group>"; };
+		0BE5934327830A000059EF8B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		0BFD563D26566A290035ABF9 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 		0BFD563E26566A290035ABF9 /* SQLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SQLite.xcframework; path = Carthage/Build/SQLite.xcframework; sourceTree = "<group>"; };
 		0BFD564026566A290035ABF9 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FLEX.xcframework; path = Carthage/Build/FLEX.xcframework; sourceTree = "<group>"; };
@@ -727,6 +735,26 @@
 			path = Pro;
 			sourceTree = "<group>";
 		};
+		0BE5933B278308080059EF8B /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5933E2783083D0059EF8B /* Clean-Swift */,
+				0BE5933C278308320059EF8B /* Info.storyboard */,
+			);
+			name = Info;
+			path = Startup/Info;
+			sourceTree = "<group>";
+		};
+		0BE5933E2783083D0059EF8B /* Clean-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				0BE5933F2783085A0059EF8B /* InfoPresenter.swift */,
+				0BE593412783093C0059EF8B /* InfoRouter.swift */,
+				0BE5934327830A000059EF8B /* InfoViewController.swift */,
+			);
+			path = "Clean-Swift";
+			sourceTree = "<group>";
+		};
 		340088CE21A81A7E0072B1F0 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
@@ -963,6 +991,7 @@
 				340C8C5221A8385500D7178F /* iOS-Boilerplate.entitlements */,
 				3485E7C021A5639E002248B7 /* Startup */,
 				342AC55121E897F40058C1E0 /* Login */,
+				0BE5933B278308080059EF8B /* Info */,
 				3485E7C221A57F4F002248B7 /* Feature001 */,
 				0B0E510422BD589E00C1D31E /* Github */,
 				3485E7C321A57F7F002248B7 /* Library */,
@@ -1471,6 +1500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE5933D278308320059EF8B /* Info.storyboard in Resources */,
 				342AC58E21E89A8F0058C1E0 /* Login.storyboard in Resources */,
 				0BC2283D27049B9F00D560FF /* Icons.xcassets in Resources */,
 				3487744921A6C011001675D3 /* Main.storyboard in Resources */,
@@ -1939,6 +1969,7 @@
 				34D48F5321CBAEB6001CEADF /* CancelButton.swift in Sources */,
 				0B0E512822BD589E00C1D31E /* Feed.swift in Sources */,
 				342AC58B21E89A7F0058C1E0 /* LoginViewController.swift in Sources */,
+				0BE5934427830A000059EF8B /* InfoViewController.swift in Sources */,
 				0B0E512B22BD589E00C1D31E /* GithubEventTableViewCell.swift in Sources */,
 				3420DFE621B03ADA0004C59F /* DetailViewController.swift in Sources */,
 				340088F821A820640072B1F0 /* UIViewController+showAlert.swift in Sources */,
@@ -1991,9 +2022,11 @@
 				0B0E513522BD589E00C1D31E /* GithubEventDetailModels.swift in Sources */,
 				0BB45F902767AA1600564BB7 /* LocalizedLabel.swift in Sources */,
 				340088ED21A81F930072B1F0 /* OSDNIValidator.swift in Sources */,
+				0BE593402783085A0059EF8B /* InfoPresenter.swift in Sources */,
 				34BE876521B590D100B4FD22 /* API.swift in Sources */,
 				0B10D3C42684B48500C2AAEC /* MarvelService.swift in Sources */,
 				0B0E513A22BD589E00C1D31E /* GithubEventsPresenter.swift in Sources */,
+				0BE593422783093C0059EF8B /* InfoRouter.swift in Sources */,
 				340088FC21A822940072B1F0 /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

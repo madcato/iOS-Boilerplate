@@ -35,4 +35,8 @@ enum AppInfo {
         UserDefaults.standard.set(appVersionText, forKey: "preference_app_version")
         UserDefaults.standard.synchronize()
     }
+
+    static var appInfo: String = {
+        String(format: "%@ - %@ (%@)", appName(), appVersion(), appBuildVersion())
+    }()
 }

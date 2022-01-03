@@ -32,6 +32,10 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         LoginRouter.showLogin(over: self)
     }
 
+    @IBAction private func infoButtonPressed(_ sender: UIBarButtonItem) {
+        InfoRouter.showInfo(over: self)
+    }
+
     @objc
     func insertNewObject(_ sender: Any) {
         let newEvent = database.createObject() as Event
