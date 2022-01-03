@@ -131,6 +131,7 @@ Included in the project directly using [Carthage](https://github.com/Carthage/Ca
 - Theme classes (in order to make easy to control the colors of the app using UIAppearance class)
 - Login made with [Clean-Swift architecture](https://clean-swift.com/)
 - Login made with [Redux-iOS architecture](https://github.com/ReSwift/ReSwift)
+- Rails project showing an API and a swift client sample: [Swift URLSession Experiment](https://github.com/madcato/Swift-URLSession-Experiment)
 
 ### Integrations
 
