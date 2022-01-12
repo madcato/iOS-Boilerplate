@@ -183,7 +183,7 @@ First, check out the source, including all the dependencies:
 #### [Fastlane](https://docs.fastlane.tools/getting-started/ios/setup/)
 
     $ xcode-select --install
-    $ brew cask install fastlane
+    $ brew install fastlane
 
 #### [Sourcery](https://github.com/krzysztofzablocki/Sourcery)
 
@@ -217,19 +217,19 @@ Open the project, HolaBarcelona.xcodeproj, and build and run.
 
 ### Build with fastlane
 
-    $  bundle exec fastlane build
+    $ fastlane build
 
 The computer where fastlane is going to run must have the provissioning and private key installed
 
 ### Send app to TestFlight with fastlane
 
-    $  bundle exec fastlane beta
+    $ fastlane beta
 
 The computer where fastlane is going to run must have the provissioning and private key installed
 
 ### Launch tests with fastlane
 
-    $  bundle exec fastlane tests
+    $ fastlane tests
 
 
 ## Recommended links
