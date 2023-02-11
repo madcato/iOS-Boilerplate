@@ -15,10 +15,11 @@ extension AppDelegate {
     static var almostWhite = UIColor(red: 0.9, green: 0.9, blue: 1.0, alpha: 1.0)
     static var lightGray = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
     static var darkMainColor = UIColor(red: 0x8C / 0xFF, green: 0x8E / 0xFF, blue: 0x8F / 0xFF, alpha: 1.0)
+    static var darkBlueColor = UIColor(red: 0x10 / 0xFF, green: 0x10 / 0xFF, blue: 0xFF / 0xFF, alpha: 1.0)
 
     /// Main color styles
     static var navBarColor = secondaryColor
-    static var navBarTextColor = almostWhite
+    static var navBarTextColor = darkBlueColor
     static var mainButtonColor = mainColor
     static var mainButtonTextColor = secondaryColor
     static var cancelButtonColor = lightGray
@@ -48,6 +49,7 @@ extension AppDelegate {
             NSAttributedString.Key.foregroundColor: AppDelegate.navBarTextColor]
         UIBarButtonItem.appearance().setTitleTextAttributes([
             NSAttributedString.Key.foregroundColor: AppDelegate.navBarTextColor], for: UIControl.State())
+        UIBarButtonItem.appearance().tintColor = AppDelegate.navBarTextColor
         MainButton.appearance().backgroundColor = AppDelegate.mainButtonColor
         MainButton.appearance().setTitleColor(AppDelegate.mainButtonTextColor, for: UIControl.State())
         CancelButton.appearance().backgroundColor = AppDelegate.cancelButtonColor

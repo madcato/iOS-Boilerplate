@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     static var shared: AppDelegate {
+        assert(Thread.current.isMainThread == true)
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
             return delegate
         }
@@ -30,6 +31,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var internalDatabase: CoreDataStack = {
         CoreDataStack(modelName: "iOS_Boilerplate")
+    }()
+
+    static var backgroundDatabase: CoreDataStack {
+        shared.internalBackgroundDatabase
+    }
+
+    lazy var internalBackgroundDatabase: CoreDataStack = {
+        CoreDataStack(backgroundWithMaster: internalDatabase)
     }()
 
     func application(_ application: UIApplication,

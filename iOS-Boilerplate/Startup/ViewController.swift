@@ -95,6 +95,8 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
             }
             configureCell(tableView.cellForRow(at: indexPath),
                           withEvent: anObject as? Event)
+            animateCell(tableView.cellForRow(at: indexPath),
+                        withEvent: anObject as? Event)
         case .move:
             guard let indexPath = indexPath,
                   let newIndexPath = newIndexPath else {
@@ -102,6 +104,8 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
             }
             configureCell(tableView.cellForRow(at: indexPath),
                           withEvent: anObject as? Event)
+            animateCell(tableView.cellForRow(at: indexPath),
+                        withEvent: anObject as? Event)
             tableView.moveRow(at: indexPath, to: newIndexPath)
         @unknown default:
             fatalError("Uknown case value for enum NSFetchedResultsChangeType")
@@ -177,4 +181,41 @@ class ViewController: UITableViewController, NSFetchedResultsControllerDelegate 
         cell?.textLabel?.text = event?.timestamp?.description
     }
 
+    func animateCell(_ cell: UITableViewCell?, withEvent event: Event?) {
+        if let textLabel = cell?.textLabel {
+            UIView.transition(with: textLabel,
+                              duration: 0.3,
+                              options: .transitionCrossDissolve,
+                              animations: {
+                textLabel.textColor = UIColor.purple.withAlphaComponent(0.7)
+                textLabel.text = event?.timestamp?.description
+            }, completion: { _ in
+                UIView.transition(with: textLabel,
+                                  duration: 0.3,
+                                  options: .transitionCrossDissolve) {
+                    textLabel.textColor = UIColor.black
+                }
+            })
+        }
+    }
+
+    // test
+    @IBAction private func startBackgroundInsertTapped(_ sender: Any) {
+        let backgroundDatabase = TestBackgroundChanger(mainDatabase: AppDelegate.database)
+        let event = fetchedResultsController.object(at: IndexPath(row: 0, section: 0))
+        let eventId = event.objectID
+        DispatchQueue.global(qos: .background).async {
+            for _ in 0...3 {
+                let newEvent = backgroundDatabase.createObject() as Event
+                newEvent.timestamp = Date()
+                backgroundDatabase.saveContext()
+                Thread.sleep(forTimeInterval: 3.0)
+            }
+
+            if let event = backgroundDatabase.database.getObject(byId: eventId) as? Event {
+                event.timestamp = Date()
+                backgroundDatabase.saveContext()
+            }
+        }
+    }
 }
