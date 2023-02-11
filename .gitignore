@@ -74,7 +74,6 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
-*.cer
 
 # Code Injection
 #
@@ -96,4 +95,3 @@ iOSInjectionProject/
 
 ### xcov coverage report
 xcov_output
-

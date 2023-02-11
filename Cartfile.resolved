@@ -1,2 +1,6 @@
+github "Quick/Nimble" "v9.2.0"
+github "Quick/Quick" "v4.0.0"
+github "ReSwift/ReSwift" "5.0.0"
 github "SnapKit/Masonry" "v1.1.0"
 github "flipboard/FLEX" "2.4.0"
+github "stephencelis/SQLite.swift" "0.12.2"
