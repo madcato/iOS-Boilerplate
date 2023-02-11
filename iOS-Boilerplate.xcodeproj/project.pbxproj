@@ -79,7 +79,6 @@
 		0BC2286A27049C9F00D560FF /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58321E89A7F0058C1E0 /* LoginRouter.swift */; };
 		0BC2286B27049C9F00D560FF /* GithubEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510C22BD589E00C1D31E /* GithubEvent.swift */; };
 		0BC2286C27049C9F00D560FF /* GithubEventsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511622BD589E00C1D31E /* GithubEventsModels.swift */; };
-		0BC2286D27049C9F00D560FF /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E421A81F930072B1F0 /* Serializator.swift */; };
 		0BC2286E27049C9F00D560FF /* MarvelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */; };
 		0BC2286F27049C9F00D560FF /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
 		0BC2287027049C9F00D560FF /* AppDelegate+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */; };
@@ -171,7 +170,6 @@
 		0BC228DF27049CB000D560FF /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AC58321E89A7F0058C1E0 /* LoginRouter.swift */; };
 		0BC228E027049CB000D560FF /* GithubEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E510C22BD589E00C1D31E /* GithubEvent.swift */; };
 		0BC228E127049CB000D560FF /* GithubEventsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E511622BD589E00C1D31E /* GithubEventsModels.swift */; };
-		0BC228E227049CB000D560FF /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E421A81F930072B1F0 /* Serializator.swift */; };
 		0BC228E327049CB000D560FF /* MarvelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */; };
 		0BC228E427049CB000D560FF /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
 		0BC228E527049CB000D560FF /* AppDelegate+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */; };
@@ -248,7 +246,6 @@
 		340088E021A81F4C0072B1F0 /* PropertyListHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DF21A81F4C0072B1F0 /* PropertyListHelper.swift */; };
 		340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E221A81F930072B1F0 /* Date+JSON.swift */; };
 		340088E921A81F930072B1F0 /* OSEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E321A81F930072B1F0 /* OSEmailValidator.swift */; };
-		340088EA21A81F930072B1F0 /* Serializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E421A81F930072B1F0 /* Serializator.swift */; };
 		340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E521A81F930072B1F0 /* String+subscript.swift */; };
 		340088EC21A81F930072B1F0 /* String+urlEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E621A81F930072B1F0 /* String+urlEncode.swift */; };
 		340088ED21A81F930072B1F0 /* OSDNIValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088E721A81F930072B1F0 /* OSDNIValidator.swift */; };
@@ -456,7 +453,6 @@
 		340088DF21A81F4C0072B1F0 /* PropertyListHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListHelper.swift; sourceTree = "<group>"; };
 		340088E221A81F930072B1F0 /* Date+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+JSON.swift"; sourceTree = "<group>"; };
 		340088E321A81F930072B1F0 /* OSEmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSEmailValidator.swift; sourceTree = "<group>"; };
-		340088E421A81F930072B1F0 /* Serializator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializator.swift; sourceTree = "<group>"; };
 		340088E521A81F930072B1F0 /* String+subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+subscript.swift"; sourceTree = "<group>"; };
 		340088E621A81F930072B1F0 /* String+urlEncode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+urlEncode.swift"; sourceTree = "<group>"; };
 		340088E721A81F930072B1F0 /* OSDNIValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSDNIValidator.swift; sourceTree = "<group>"; };
@@ -787,7 +783,6 @@
 				340088E221A81F930072B1F0 /* Date+JSON.swift */,
 				340088E721A81F930072B1F0 /* OSDNIValidator.swift */,
 				340088E321A81F930072B1F0 /* OSEmailValidator.swift */,
-				340088E421A81F930072B1F0 /* Serializator.swift */,
 				340088E521A81F930072B1F0 /* String+subscript.swift */,
 				340088E621A81F930072B1F0 /* String+urlEncode.swift */,
 			);
@@ -1788,7 +1783,6 @@
 				0BC2286A27049C9F00D560FF /* LoginRouter.swift in Sources */,
 				0BC2286B27049C9F00D560FF /* GithubEvent.swift in Sources */,
 				0BC2286C27049C9F00D560FF /* GithubEventsModels.swift in Sources */,
-				0BC2286D27049C9F00D560FF /* Serializator.swift in Sources */,
 				0BC2286E27049C9F00D560FF /* MarvelDto.swift in Sources */,
 				0BC2286F27049C9F00D560FF /* AutoMockable.swift in Sources */,
 				0BC2287027049C9F00D560FF /* AppDelegate+Theme.swift in Sources */,
@@ -1877,7 +1871,6 @@
 				0BC228DF27049CB000D560FF /* LoginRouter.swift in Sources */,
 				0BC228E027049CB000D560FF /* GithubEvent.swift in Sources */,
 				0BC228E127049CB000D560FF /* GithubEventsModels.swift in Sources */,
-				0BC228E227049CB000D560FF /* Serializator.swift in Sources */,
 				0BC228E327049CB000D560FF /* MarvelDto.swift in Sources */,
 				0BC228E427049CB000D560FF /* AutoMockable.swift in Sources */,
 				0BC228E527049CB000D560FF /* AppDelegate+Theme.swift in Sources */,
@@ -1976,7 +1969,6 @@
 				342AC58921E89A7F0058C1E0 /* LoginRouter.swift in Sources */,
 				0B0E512922BD589E00C1D31E /* GithubEvent.swift in Sources */,
 				0B0E512F22BD589E00C1D31E /* GithubEventsModels.swift in Sources */,
-				340088EA21A81F930072B1F0 /* Serializator.swift in Sources */,
 				0B10D3C12684ADE900C2AAEC /* MarvelDto.swift in Sources */,
 				34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */,
 				34D48F4821CBABA2001CEADF /* AppDelegate+Theme.swift in Sources */,
@@ -2386,10 +2378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "iOS-Boilerplate/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2412,10 +2401,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TW65EXAM4U;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "iOS-Boilerplate/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
