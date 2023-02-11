@@ -18,8 +18,7 @@ enum ConfigurationKey: String {
 class Configuration {
     static func value(for key: ConfigurationKey) -> String {
         guard let result = environmentsConfig[key.rawValue] else {
-            print("Key \(key) not defined in enviroments.plist")  // Key not defined in enviroments.plist
-            return ""
+            fatalError("Key \(key) not defined in enviroments.plist")  // Key not defined in enviroments.plist
         }
         return result
     }
@@ -46,7 +45,7 @@ class Configuration {
                     return result
                 }
             } catch {
-                 print(error)  // Error reading environemnts.plist file
+                fatalError(error.localizedDescription)  // Error reading environemnts.plist file
             }
         }
         return [:]
