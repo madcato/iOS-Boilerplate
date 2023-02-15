@@ -55,6 +55,7 @@ Project
 │   │   └───Feed
 │   │   └───Services
 │   │   └───Extensions
+│   │   └───CoreDataArch        // Classes to manage the Core Data Architecture
 │   │
 │   └───Resources               // Resource files, like images, grouped by type
 │   │   │   Images.xcassets     // Keep all images in one asset to help searches

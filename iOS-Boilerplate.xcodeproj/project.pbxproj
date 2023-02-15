@@ -233,6 +233,16 @@
 		0BC229372704A4B400D560FF /* environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BC229352704A3A800D560FF /* environments.plist */; };
 		0BC2293E2704A74C00D560FF /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2293D2704A74C00D560FF /* Nimble */; };
 		0BC229402704A75900D560FF /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2293F2704A75900D560FF /* Quick */; };
+		0BCD07F2299BB012007F4A4C /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE593412783093C0059EF8B /* InfoRouter.swift */; };
+		0BCD07F3299BB013007F4A4C /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE593412783093C0059EF8B /* InfoRouter.swift */; };
+		0BCD07F4299BB01A007F4A4C /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5933F2783085A0059EF8B /* InfoPresenter.swift */; };
+		0BCD07F5299BB01A007F4A4C /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5933F2783085A0059EF8B /* InfoPresenter.swift */; };
+		0BD7BE97299B989800ADB87E /* CDArchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */; };
+		0BD7BE98299B989800ADB87E /* CDArchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */; };
+		0BD7BE99299B989800ADB87E /* CDArchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */; };
+		0BD7BE9B299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */; };
+		0BD7BE9C299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */; };
+		0BD7BE9D299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */; };
 		0BE5933D278308320059EF8B /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5933C278308320059EF8B /* Info.storyboard */; };
 		0BE593402783085A0059EF8B /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5933F2783085A0059EF8B /* InfoPresenter.swift */; };
 		0BE593422783093C0059EF8B /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE593412783093C0059EF8B /* InfoRouter.swift */; };
@@ -439,6 +449,8 @@
 		0BC2292B27049CB100D560FF /* iOS-Boilerplate copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOS-Boilerplate copy2-Info.plist"; path = "/Users/danielvela/projects/iOS-Boilerplate/iOS-Boilerplate copy2-Info.plist"; sourceTree = "<absolute>"; };
 		0BC229342704A3A700D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
 		0BC229352704A3A800D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
+		0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDArchTableViewController.swift; sourceTree = "<group>"; };
+		0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDArchDetailViewController.swift; sourceTree = "<group>"; };
 		0BE5933C278308320059EF8B /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 		0BE5933F2783085A0059EF8B /* InfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPresenter.swift; sourceTree = "<group>"; };
 		0BE593412783093C0059EF8B /* InfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRouter.swift; sourceTree = "<group>"; };
@@ -729,6 +741,15 @@
 				3485E82721A5B0D9002248B7 /* environments.plist */,
 			);
 			path = Pro;
+			sourceTree = "<group>";
+		};
+		0BD7BE95299B96E700ADB87E /* CoreDataArch */ = {
+			isa = PBXGroup;
+			children = (
+				0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */,
+				0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */,
+			);
+			path = CoreDataArch;
 			sourceTree = "<group>";
 		};
 		0BE5933B278308080059EF8B /* Info */ = {
@@ -1057,13 +1078,14 @@
 		3485E7C321A57F7F002248B7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				34D48F4921CBAD19001CEADF /* Controls */,
-				34D48F1521CBAA8E001CEADF /* Theme */,
-				3485E81821A5A6A6002248B7 /* Configuration */,
 				3485E7C621A57FE1002248B7 /* Extensions */,
 				3485E7C521A57FD4002248B7 /* Feed */,
+				3485E81821A5A6A6002248B7 /* Configuration */,
+				34D48F4921CBAD19001CEADF /* Controls */,
+				0BD7BE95299B96E700ADB87E /* CoreDataArch */,
 				3485E7C421A57FA2002248B7 /* Model */,
 				3485E7C721A57FF3002248B7 /* Services */,
+				34D48F1521CBAA8E001CEADF /* Theme */,
 				340088DA21A81E330072B1F0 /* Util */,
 			);
 			path = Library;
@@ -1769,6 +1791,7 @@
 				0BC2285C27049C9F00D560FF /* WatchEvent.swift in Sources */,
 				0BC2285D27049C9F00D560FF /* AutoEquatable.generated.swift in Sources */,
 				0BC2285E27049C9F00D560FF /* SimpleLabel.swift in Sources */,
+				0BCD07F2299BB012007F4A4C /* InfoRouter.swift in Sources */,
 				0BC2285F27049C9F00D560FF /* LoginModels.swift in Sources */,
 				0BC2286027049C9F00D560FF /* GithubEventsInteractor.swift in Sources */,
 				0BC2286127049C9F00D560FF /* Client.swift in Sources */,
@@ -1800,6 +1823,7 @@
 				0BC2287C27049C9F00D560FF /* AutoEquatable.swift in Sources */,
 				0BC2287D27049C9F00D560FF /* CoreDataStack.swift in Sources */,
 				0BC2287E27049C9F00D560FF /* ViewController.swift in Sources */,
+				0BD7BE98299B989800ADB87E /* CDArchTableViewController.swift in Sources */,
 				0BC2287F27049C9F00D560FF /* GithubEventDetailConfigurator.swift in Sources */,
 				0BC2288027049C9F00D560FF /* MainButton.swift in Sources */,
 				0BC2288127049C9F00D560FF /* String+subscript.swift in Sources */,
@@ -1827,8 +1851,10 @@
 				0BC2289727049C9F00D560FF /* GithubEventDetailModels.swift in Sources */,
 				0BC2289827049C9F00D560FF /* OSDNIValidator.swift in Sources */,
 				0BC2289927049C9F00D560FF /* API.swift in Sources */,
+				0BCD07F4299BB01A007F4A4C /* InfoPresenter.swift in Sources */,
 				0BC2289A27049C9F00D560FF /* MarvelService.swift in Sources */,
 				0BC2289B27049C9F00D560FF /* GithubEventsPresenter.swift in Sources */,
+				0BD7BE9C299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */,
 				0BC2289C27049C9F00D560FF /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1857,6 +1883,7 @@
 				0BC228D127049CB000D560FF /* WatchEvent.swift in Sources */,
 				0BC228D227049CB000D560FF /* AutoEquatable.generated.swift in Sources */,
 				0BC228D327049CB000D560FF /* SimpleLabel.swift in Sources */,
+				0BCD07F3299BB013007F4A4C /* InfoRouter.swift in Sources */,
 				0BC228D427049CB000D560FF /* LoginModels.swift in Sources */,
 				0BC228D527049CB000D560FF /* GithubEventsInteractor.swift in Sources */,
 				0BC228D627049CB000D560FF /* Client.swift in Sources */,
@@ -1888,6 +1915,7 @@
 				0BC228F127049CB000D560FF /* AutoEquatable.swift in Sources */,
 				0BC228F227049CB000D560FF /* CoreDataStack.swift in Sources */,
 				0BC228F327049CB000D560FF /* ViewController.swift in Sources */,
+				0BD7BE99299B989800ADB87E /* CDArchTableViewController.swift in Sources */,
 				0BC228F427049CB000D560FF /* GithubEventDetailConfigurator.swift in Sources */,
 				0BC228F527049CB000D560FF /* MainButton.swift in Sources */,
 				0BC228F627049CB000D560FF /* String+subscript.swift in Sources */,
@@ -1915,8 +1943,10 @@
 				0BC2290C27049CB000D560FF /* GithubEventDetailModels.swift in Sources */,
 				0BC2290D27049CB000D560FF /* OSDNIValidator.swift in Sources */,
 				0BC2290E27049CB000D560FF /* API.swift in Sources */,
+				0BCD07F5299BB01A007F4A4C /* InfoPresenter.swift in Sources */,
 				0BC2290F27049CB000D560FF /* MarvelService.swift in Sources */,
 				0BC2291027049CB000D560FF /* GithubEventsPresenter.swift in Sources */,
+				0BD7BE9D299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */,
 				0BC2291127049CB000D560FF /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1954,6 +1984,7 @@
 				0B0E512522BD589E00C1D31E /* WatchEvent.swift in Sources */,
 				3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */,
 				34D48F5121CBAE97001CEADF /* SimpleLabel.swift in Sources */,
+				0BD7BE9B299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */,
 				342AC58A21E89A7F0058C1E0 /* LoginModels.swift in Sources */,
 				0B0E512E22BD589E00C1D31E /* GithubEventsInteractor.swift in Sources */,
 				34BE878821B5928200B4FD22 /* Client.swift in Sources */,
@@ -1968,6 +1999,7 @@
 				340088F821A820640072B1F0 /* UIViewController+showAlert.swift in Sources */,
 				342AC58921E89A7F0058C1E0 /* LoginRouter.swift in Sources */,
 				0B0E512922BD589E00C1D31E /* GithubEvent.swift in Sources */,
+				0BD7BE97299B989800ADB87E /* CDArchTableViewController.swift in Sources */,
 				0B0E512F22BD589E00C1D31E /* GithubEventsModels.swift in Sources */,
 				0B10D3C12684ADE900C2AAEC /* MarvelDto.swift in Sources */,
 				34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */,

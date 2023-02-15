@@ -8,22 +8,26 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: CDArchDetailViewController {
     @IBOutlet private weak var detailDescriptionLabel: UILabel!
 
-    func configureView() {
-        // Update the user interface for the detail item
-        detailDescriptionLabel?.text = detailItem?.timestamp?.description
+    var event: Event? {
+        detailItem as? Event
     }
 
-    func animateChange() {
-        if detailDescriptionLabel.text != detailItem?.timestamp?.description {
+    override func configureView() {
+        // Update the user interface for the detail item
+        detailDescriptionLabel?.text = event?.timestamp?.description
+    }
+
+    override func animateChange() {
+        if detailDescriptionLabel.text != event?.timestamp?.description {
             UIView.transition(with: self.detailDescriptionLabel,
                               duration: 0.3,
                               options: .transitionCrossDissolve,
                               animations: {
                 self.detailDescriptionLabel.textColor = UIColor.purple.withAlphaComponent(0.7)
-                self.detailDescriptionLabel.text = self.detailItem?.timestamp?.description
+                self.detailDescriptionLabel.text = self.event?.timestamp?.description
             }, completion: { _ in
                 UIView.transition(with: self.detailDescriptionLabel,
                                   duration: 0.3,
@@ -34,40 +38,10 @@ class DetailViewController: UIViewController {
         }
     }
 
-    func configureNotification() {
-        if let detail = detailItem {
-            NotificationCenter.default.addObserver(forName: Notification.Name.NSManagedObjectContextDidSave,
-                                                   object: nil,
-                                                   queue: nil) { [weak self] notif in
-                if let setObjects = notif.userInfo?[NSUpdatedObjectsKey] as? Set<Event>,
-                   setObjects.first?.objectID == detail.objectID {
-                    DispatchQueue.main.async {
-                        self?.animateChange()
-                    }
-                }
-            }
-        }
-    }
-
-    deinit {
-        if let detail = detailItem {
-            NotificationCenter.default.removeObserver(self,
-                                                      name: Notification.Name.NSManagedObjectContextDidSave,
-                                                      object: detail.managedObjectContext)
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         configureView()
-    }
-
-    var detailItem: Event? {
-        didSet {
-            configureView()
-            configureNotification()
-        }
     }
 
     // Code Test
@@ -101,7 +75,12 @@ class TestBackgroundChanger {
                 return
             }
             event.timestamp = Date()
-            self?.database.saveContext()
+            do {
+                try event.managedObjectContext?.save()
+            } catch {
+                fatalError("Error saving item. \(error)")
+            }
+//            self?.database.saveContext()
         }
     }
 
