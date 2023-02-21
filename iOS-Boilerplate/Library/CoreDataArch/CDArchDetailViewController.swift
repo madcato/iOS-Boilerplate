@@ -31,7 +31,7 @@ class CDArchDetailViewController: UIViewController {
             NotificationCenter.default.addObserver(forName: Notification.Name.NSManagedObjectContextDidSave,
                                                    object: nil,
                                                    queue: nil) { [weak self] notif in
-                if let setObjects = notif.userInfo?[NSUpdatedObjectsKey] as? Set<Event>,
+                if let setObjects = notif.userInfo?[NSUpdatedObjectsKey] as? Set<NSManagedObject>,
                    setObjects.first?.objectID == detail.objectID {
                     DispatchQueue.main.async {
                         self?.animateChange()

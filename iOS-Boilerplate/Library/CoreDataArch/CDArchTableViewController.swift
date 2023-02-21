@@ -91,7 +91,7 @@ class CDArchTableViewController: UITableViewController, NSFetchedResultsControll
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let object = fetchedResultsController().object(at: indexPath)
-                guard let controller = segue.destination as? DetailViewController else {
+                guard let controller = segue.destination as? CDArchDetailViewController else {
                         return
                     }
                 controller.detailItem = object
