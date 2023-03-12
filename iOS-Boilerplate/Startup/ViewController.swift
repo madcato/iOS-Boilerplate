@@ -78,9 +78,11 @@ class ViewController: CDArchTableViewController {
 
     func configureCell(_ cell: UITableViewCell?, withEvent event: Event?) {
         cell?.textLabel?.text = event?.timestamp?.description
+        animateCell(cell, withData: event)
     }
 
-    override func animateCell(_ cell: UITableViewCell?, withData data: NSManagedObject?) {
+    private func animateCell(_ cell: UITableViewCell?, withData data: NSManagedObject?) {
+
         if let textLabel = cell?.textLabel {
             UIView.transition(with: textLabel,
                               duration: 0.3,

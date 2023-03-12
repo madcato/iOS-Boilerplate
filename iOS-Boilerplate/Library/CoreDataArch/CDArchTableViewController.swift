@@ -14,19 +14,33 @@ class CDArchTableViewController: UITableViewController, NSFetchedResultsControll
         AppDelegate.database
     }()
 
+    private var fetched: NSFetchedResultsController<NSManagedObject>!
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     // MARK: - Fetched results controller
     func fetchedResultsController() -> NSFetchedResultsController<NSManagedObject> {
-        fatalError("Override this method, and don't call super.fetchedResultsController()")
+        fetched
+    }
+
+    func createFetchedResultsController(_ entityName: String,
+                                        _ sortBy: SortBy? = nil,
+                                        _ wherePredicate: Where? = nil,
+                                        sectionNameKeyPath: String? = nil) {
+        fetched = database.createFetchedResultsController(entityName,
+                                                          sortBy,
+                                                          wherePredicate,
+                                                          sectionNameKeyPath: sectionNameKeyPath)
+        fetched.delegate = self
+        database.fetch(fetched)
     }
 
     func controllerWillChangeContent(
         _ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        tableView.beginUpdates()
-    }
+            tableView.beginUpdates()
+        }
 
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>,
                     didChange sectionInfo: NSFetchedResultsSectionInfo,
@@ -34,7 +48,7 @@ class CDArchTableViewController: UITableViewController, NSFetchedResultsControll
                     for type: NSFetchedResultsChangeType) {
         switch type {
         case .insert:
-            tableView.insertSections(IndexSet(integer: sectionIndex), with: .fade)
+            tableView.insertSections(IndexSet(integer: sectionIndex), with: .right)
         case .delete:
             tableView.deleteSections(IndexSet(integer: sectionIndex), with: .fade)
         default:
@@ -52,30 +66,26 @@ class CDArchTableViewController: UITableViewController, NSFetchedResultsControll
             guard let newIndexPath = newIndexPath else {
                 return
             }
-            tableView.insertRows(at: [newIndexPath], with: .fade)
+            tableView.insertRows(at: [newIndexPath], with: .right)
         case .delete:
             guard let indexPath = indexPath else {
                 return
             }
             tableView.deleteRows(at: [indexPath], with: .fade)
         case .update:
-            guard let indexPath = indexPath else {
+            guard let indexPath = indexPath,
+                  let cell = tableView.cellForRow(at: indexPath) else {
                 return
             }
-            configureCell(tableView.cellForRow(at: indexPath),
-                          withData: anObject as? NSManagedObject)
-            animateCell(tableView.cellForRow(at: indexPath),
-                        withData: anObject as? NSManagedObject)
+            configureCell(cell, withData: anObject as? NSManagedObject)
         case .move:
             guard let indexPath = indexPath,
-                  let newIndexPath = newIndexPath else {
+                  let newIndexPath = newIndexPath,
+                  let cell = tableView.cellForRow(at: indexPath) else {
                 return
             }
-            configureCell(tableView.cellForRow(at: indexPath),
-                          withData: anObject as? NSManagedObject)
-            animateCell(tableView.cellForRow(at: indexPath),
-                        withData: anObject as? NSManagedObject)
             tableView.moveRow(at: indexPath, to: newIndexPath)
+            configureCell(cell, withData: anObject as? NSManagedObject)
         @unknown default:
             fatalError("Uknown case value for enum NSFetchedResultsChangeType")
         }
@@ -92,8 +102,8 @@ class CDArchTableViewController: UITableViewController, NSFetchedResultsControll
             if let indexPath = tableView.indexPathForSelectedRow {
                 let object = fetchedResultsController().object(at: indexPath)
                 guard let controller = segue.destination as? CDArchDetailViewController else {
-                        return
-                    }
+                    return
+                }
                 controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
@@ -115,7 +125,7 @@ class CDArchTableViewController: UITableViewController, NSFetchedResultsControll
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath)
         let event = fetchedResultsController().object(at: indexPath)
         configureCell(cell, withData: event)
         return cell
@@ -147,7 +157,6 @@ class CDArchTableViewController: UITableViewController, NSFetchedResultsControll
     }
 
     // MARK: Override this methods
-    func configureCell(_ cell: UITableViewCell?, withData data: NSManagedObject?) { }
 
-    func animateCell(_ cell: UITableViewCell?, withData data: NSManagedObject?) { }
+    func configureCell(_ cell: UITableViewCell?, withData data: NSManagedObject?) { }
 }
