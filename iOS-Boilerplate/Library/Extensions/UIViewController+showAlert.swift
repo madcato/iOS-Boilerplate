@@ -1,24 +1,19 @@
 //
 //  UIViewController+showAlert.swift
-//  OSFramework
+//  lishop-swift-uikit
 //
-//  Created by Daniel Vela on 19/04/2017.
-//  Copyright © 2017 Daniel Vela. All rights reserved.
+//  Created by Daniel Vela on 7/3/23.
 //
 
-import Foundation
 import UIKit
 
 extension UIViewController {
     func showAlert(_ message: String, title: String? = nil, onFinish: @escaping () -> Void = {}) {
-        if #available(iOS 8.0, *) {
-            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in onFinish() })
-            self.present(alert, animated: true) {}
-        } else {
-            let alertView = UIAlertView(title: nil, message: message, delegate: nil, cancelButtonTitle: "OK")
-            alertView.show()
-        }
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK",
+                                                               comment: "showAlert button"),
+                                      style: .default) { _ in onFinish() })
+        self.present(alert, animated: true) {}
     }
 
     static func showAlertOnTopController(_ message: String,

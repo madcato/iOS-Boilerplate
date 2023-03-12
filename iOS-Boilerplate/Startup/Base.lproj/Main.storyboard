@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14L-N8-VFo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14L-N8-VFo">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,9 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="k92-Ks-rHT">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3S-v8-2fg" customClass="MainButton" customModule="iOS_Boilerplate" customModuleProvider="target">
+                                    <rect key="frame" x="51.5" y="4.5" width="272" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="o5p-bA-EIV"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="272" id="ppL-UK-rAh"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Start background insert"/>
+                                    <connections>
+                                        <action selector="startBackgroundInsertTapped:" destination="Vpc-OB-a2y" eventType="touchUpInside" id="E6W-HG-Zoy"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="O3S-v8-2fg" firstAttribute="centerX" secondItem="k92-Ks-rHT" secondAttribute="centerX" id="I0d-Qr-rIP"/>
+                                <constraint firstItem="O3S-v8-2fg" firstAttribute="centerY" secondItem="k92-Ks-rHT" secondAttribute="centerY" id="g8P-mO-FNN"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="eW3-cG-oJP">
-                                <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="94" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eW3-cG-oJP" id="LL7-DP-mHU">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -53,9 +77,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYj-vk-nJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="-71"/>
+            <point key="canvasLocation" x="517.60000000000002" y="-71.514242878560722"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail-->
         <scene sceneID="VzJ-hr-aEf">
             <objects>
                 <viewController id="FTI-5k-RNN" customClass="DetailViewController" customModule="iOS_Boilerplate" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,6 +105,13 @@
                             <constraint firstItem="bwf-fi-cj0" firstAttribute="centerX" secondItem="Vh8-fO-zcb" secondAttribute="centerX" id="jjz-3o-Vfd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Detail" id="3hc-sc-bnv">
+                        <barButtonItem key="rightBarButtonItem" title="Test change" id="nMw-9R-lfF">
+                            <connections>
+                                <action selector="testChangeTapped:" destination="FTI-5k-RNN" id="Vmc-kk-5na"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="bwf-fi-cj0" id="zpp-Vy-cYv"/>
                     </connections>
@@ -107,6 +138,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

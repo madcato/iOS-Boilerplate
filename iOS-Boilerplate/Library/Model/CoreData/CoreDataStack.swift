@@ -9,24 +9,27 @@
 import CoreData
 import Foundation
 
+// swiftlint:disable type_body_length
 class CoreDataStack: NSObject {
+    let persistentContainer: NSPersistentContainer!
 
     init(modelName: String, testing: Bool = false) {
         assert(Thread.current.isMainThread == true) // Create this variable from the main thread
-        self.managedObjectModel = NSManagedObjectModel()
-        self.persistentStoreCoordinator = NSPersistentStoreCoordinator()
-        self.managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
-        super.init()
-        self.managedObjectModel = self.createObjectModel(modelName)
-        self.persistentStoreCoordinator = self.createPersistentStore(modelName + ".sqlite", testing: testing)
-        self.managedObjectContext = self.createObjectContext(self.persistentStoreCoordinator)
+        self.persistentContainer = NSPersistentContainer(name: modelName)
+        self.persistentContainer.loadPersistentStores { _, error in
+            if let error = error {
+                fatalError("Unable to load persistent store \(error)")
+            }
+        }
+        self.managedObjectContext = self.persistentContainer.viewContext
+        self.managedObjectContext.automaticallyMergesChangesFromParent = true
     }
 
     init(backgroundWithMaster database: CoreDataStack) {
         assert(Thread.current.isMainThread == false) // Create this variable from a background thread
-        self.managedObjectModel = database.managedObjectModel
-        self.persistentStoreCoordinator = database.persistentStoreCoordinator
-        self.managedObjectContext = database.createObjectContextForPrivateThread()
+        self.persistentContainer = database.persistentContainer
+        self.managedObjectContext = database.persistentContainer.newBackgroundContext()
+        self.managedObjectContext.automaticallyMergesChangesFromParent = true
     }
 
     private func createObjectModel(_ modelName: String) -> NSManagedObjectModel {
@@ -124,9 +127,13 @@ class CoreDataStack: NSObject {
         return urls[urls.count - 1]
     }()
 
-    private var managedObjectModel: NSManagedObjectModel
+    private var managedObjectModel: NSManagedObjectModel {
+        persistentContainer.managedObjectModel
+    }
 
-    private var persistentStoreCoordinator: NSPersistentStoreCoordinator
+    private var persistentStoreCoordinator: NSPersistentStoreCoordinator {
+        persistentContainer.persistentStoreCoordinator
+    }
 
     internal var managedObjectContext: NSManagedObjectContext
 
@@ -136,6 +143,15 @@ class CoreDataStack: NSObject {
         if managedObjectContext.hasChanges {
             do {
                 try managedObjectContext.save()
+                managedObjectContext.parent?.performAndWait { [weak self] in
+                    do {
+                        try self?.managedObjectContext.parent?.save()
+                    } catch {
+                        let nserror = error as NSError
+                        NSLog("Unresolved error \(nserror), \(nserror.userInfo)")
+                        abort()
+                    }
+                }
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                 // abort() causes the application to generate a crash log and terminate.
@@ -149,6 +165,10 @@ class CoreDataStack: NSObject {
     }
 
     // MARK: - Core Data quering
+    func getObject<T: NSManagedObject>(byId id: NSManagedObjectID) -> T? {
+        let obj = self.managedObjectContext.object(with: id) as? T
+        return obj
+    }
 
     func getObject<T: NSManagedObject>(ofType entityName: String, _ wherePredicate: Where) -> T? {
         let fetchRequest = NSFetchRequest<T>()

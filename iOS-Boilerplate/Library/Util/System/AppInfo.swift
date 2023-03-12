@@ -25,7 +25,7 @@ enum AppInfo {
 
     static func appBuildVersion() -> String {
         guard let appBuildVersionStr = Bundle.main.infoDictionary?["CFBundleVersion"]  as? String else {
-            return "app_buidl_version"
+            return "app_build_version"
         }
         return appBuildVersionStr
     }

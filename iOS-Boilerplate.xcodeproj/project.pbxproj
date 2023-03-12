@@ -233,6 +233,25 @@
 		0BC229372704A4B400D560FF /* environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BC229352704A3A800D560FF /* environments.plist */; };
 		0BC2293E2704A74C00D560FF /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2293D2704A74C00D560FF /* Nimble */; };
 		0BC229402704A75900D560FF /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC2293F2704A75900D560FF /* Quick */; };
+		0BCD07F2299BB012007F4A4C /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE593412783093C0059EF8B /* InfoRouter.swift */; };
+		0BCD07F3299BB013007F4A4C /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE593412783093C0059EF8B /* InfoRouter.swift */; };
+		0BCD07F4299BB01A007F4A4C /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5933F2783085A0059EF8B /* InfoPresenter.swift */; };
+		0BCD07F5299BB01A007F4A4C /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5933F2783085A0059EF8B /* InfoPresenter.swift */; };
+		0BD7BE97299B989800ADB87E /* CDArchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */; };
+		0BD7BE98299B989800ADB87E /* CDArchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */; };
+		0BD7BE99299B989800ADB87E /* CDArchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */; };
+		0BD7BE9B299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */; };
+		0BD7BE9C299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */; };
+		0BD7BE9D299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */; };
+		0BE521BC29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521B929BDFBDB0039FEE9 /* UINavigationController+extension.swift */; };
+		0BE521BD29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521B929BDFBDB0039FEE9 /* UINavigationController+extension.swift */; };
+		0BE521BE29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521B929BDFBDB0039FEE9 /* UINavigationController+extension.swift */; };
+		0BE521BF29BDFBDC0039FEE9 /* UIView+animateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521BA29BDFBDC0039FEE9 /* UIView+animateLabel.swift */; };
+		0BE521C029BDFBDC0039FEE9 /* UIView+animateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521BA29BDFBDC0039FEE9 /* UIView+animateLabel.swift */; };
+		0BE521C129BDFBDC0039FEE9 /* UIView+animateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521BA29BDFBDC0039FEE9 /* UIView+animateLabel.swift */; };
+		0BE521C629BDFE5F0039FEE9 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521C529BDFE5F0039FEE9 /* BorderedButton.swift */; };
+		0BE521C729BDFE5F0039FEE9 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521C529BDFE5F0039FEE9 /* BorderedButton.swift */; };
+		0BE521C829BDFE5F0039FEE9 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521C529BDFE5F0039FEE9 /* BorderedButton.swift */; };
 		0BE5933D278308320059EF8B /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE5933C278308320059EF8B /* Info.storyboard */; };
 		0BE593402783085A0059EF8B /* InfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5933F2783085A0059EF8B /* InfoPresenter.swift */; };
 		0BE593422783093C0059EF8B /* InfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE593412783093C0059EF8B /* InfoRouter.swift */; };
@@ -439,6 +458,11 @@
 		0BC2292B27049CB100D560FF /* iOS-Boilerplate copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOS-Boilerplate copy2-Info.plist"; path = "/Users/danielvela/projects/iOS-Boilerplate/iOS-Boilerplate copy2-Info.plist"; sourceTree = "<absolute>"; };
 		0BC229342704A3A700D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
 		0BC229352704A3A800D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
+		0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDArchTableViewController.swift; sourceTree = "<group>"; };
+		0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDArchDetailViewController.swift; sourceTree = "<group>"; };
+		0BE521B929BDFBDB0039FEE9 /* UINavigationController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+extension.swift"; sourceTree = "<group>"; };
+		0BE521BA29BDFBDC0039FEE9 /* UIView+animateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+animateLabel.swift"; sourceTree = "<group>"; };
+		0BE521C529BDFE5F0039FEE9 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		0BE5933C278308320059EF8B /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 		0BE5933F2783085A0059EF8B /* InfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPresenter.swift; sourceTree = "<group>"; };
 		0BE593412783093C0059EF8B /* InfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRouter.swift; sourceTree = "<group>"; };
@@ -731,6 +755,15 @@
 			path = Pro;
 			sourceTree = "<group>";
 		};
+		0BD7BE95299B96E700ADB87E /* CoreDataArch */ = {
+			isa = PBXGroup;
+			children = (
+				0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */,
+				0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */,
+			);
+			path = CoreDataArch;
+			sourceTree = "<group>";
+		};
 		0BE5933B278308080059EF8B /* Info */ = {
 			isa = PBXGroup;
 			children = (
@@ -793,9 +826,11 @@
 			isa = PBXGroup;
 			children = (
 				340088F221A820630072B1F0 /* CALayer+XibConfiguration.swift */,
+				0BE521BA29BDFBDC0039FEE9 /* UIView+animateLabel.swift */,
 				340088F121A820630072B1F0 /* UIView+border.swift */,
 				340088EF21A820630072B1F0 /* UIViewController+imageBackground.swift */,
 				340088F021A820630072B1F0 /* UIViewController+navigationItem.swift */,
+				0BE521B929BDFBDB0039FEE9 /* UINavigationController+extension.swift */,
 				340088F321A820640072B1F0 /* UIViewController+showAlert.swift */,
 			);
 			path = View;
@@ -1057,13 +1092,14 @@
 		3485E7C321A57F7F002248B7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				34D48F4921CBAD19001CEADF /* Controls */,
-				34D48F1521CBAA8E001CEADF /* Theme */,
-				3485E81821A5A6A6002248B7 /* Configuration */,
 				3485E7C621A57FE1002248B7 /* Extensions */,
 				3485E7C521A57FD4002248B7 /* Feed */,
+				3485E81821A5A6A6002248B7 /* Configuration */,
+				34D48F4921CBAD19001CEADF /* Controls */,
+				0BD7BE95299B96E700ADB87E /* CoreDataArch */,
 				3485E7C421A57FA2002248B7 /* Model */,
 				3485E7C721A57FF3002248B7 /* Services */,
+				34D48F1521CBAA8E001CEADF /* Theme */,
 				340088DA21A81E330072B1F0 /* Util */,
 			);
 			path = Library;
@@ -1247,6 +1283,7 @@
 				34D48F5021CBAE97001CEADF /* SimpleLabel.swift */,
 				34D48F5221CBAEB5001CEADF /* CancelButton.swift */,
 				34322B1E24288C5F00F194E3 /* BlinkingImage.swift */,
+				0BE521C529BDFE5F0039FEE9 /* BorderedButton.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -1769,6 +1806,7 @@
 				0BC2285C27049C9F00D560FF /* WatchEvent.swift in Sources */,
 				0BC2285D27049C9F00D560FF /* AutoEquatable.generated.swift in Sources */,
 				0BC2285E27049C9F00D560FF /* SimpleLabel.swift in Sources */,
+				0BCD07F2299BB012007F4A4C /* InfoRouter.swift in Sources */,
 				0BC2285F27049C9F00D560FF /* LoginModels.swift in Sources */,
 				0BC2286027049C9F00D560FF /* GithubEventsInteractor.swift in Sources */,
 				0BC2286127049C9F00D560FF /* Client.swift in Sources */,
@@ -1798,9 +1836,12 @@
 				0BC2287A27049C9F00D560FF /* GithubEventDetailPresenter.swift in Sources */,
 				0BC2287B27049C9F00D560FF /* EventDTO.swift in Sources */,
 				0BC2287C27049C9F00D560FF /* AutoEquatable.swift in Sources */,
+				0BE521C729BDFE5F0039FEE9 /* BorderedButton.swift in Sources */,
 				0BC2287D27049C9F00D560FF /* CoreDataStack.swift in Sources */,
 				0BC2287E27049C9F00D560FF /* ViewController.swift in Sources */,
+				0BD7BE98299B989800ADB87E /* CDArchTableViewController.swift in Sources */,
 				0BC2287F27049C9F00D560FF /* GithubEventDetailConfigurator.swift in Sources */,
+				0BE521C029BDFBDC0039FEE9 /* UIView+animateLabel.swift in Sources */,
 				0BC2288027049C9F00D560FF /* MainButton.swift in Sources */,
 				0BC2288127049C9F00D560FF /* String+subscript.swift in Sources */,
 				0BC2288227049C9F00D560FF /* GithubEventDetailRouter.swift in Sources */,
@@ -1810,6 +1851,7 @@
 				0BC2288627049C9F00D560FF /* FakeProtocol.swift in Sources */,
 				0BC2288727049C9F00D560FF /* LoginReduxViewController.swift in Sources */,
 				0BC2288827049C9F00D560FF /* String+hash.swift in Sources */,
+				0BE521BD29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */,
 				0BC2288927049C9F00D560FF /* Date+JSON.swift in Sources */,
 				0BC2288A27049C9F00D560FF /* UrlHelper.swift in Sources */,
 				0BC2288B27049C9F00D560FF /* BlinkingImage.swift in Sources */,
@@ -1827,8 +1869,10 @@
 				0BC2289727049C9F00D560FF /* GithubEventDetailModels.swift in Sources */,
 				0BC2289827049C9F00D560FF /* OSDNIValidator.swift in Sources */,
 				0BC2289927049C9F00D560FF /* API.swift in Sources */,
+				0BCD07F4299BB01A007F4A4C /* InfoPresenter.swift in Sources */,
 				0BC2289A27049C9F00D560FF /* MarvelService.swift in Sources */,
 				0BC2289B27049C9F00D560FF /* GithubEventsPresenter.swift in Sources */,
+				0BD7BE9C299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */,
 				0BC2289C27049C9F00D560FF /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1857,6 +1901,7 @@
 				0BC228D127049CB000D560FF /* WatchEvent.swift in Sources */,
 				0BC228D227049CB000D560FF /* AutoEquatable.generated.swift in Sources */,
 				0BC228D327049CB000D560FF /* SimpleLabel.swift in Sources */,
+				0BCD07F3299BB013007F4A4C /* InfoRouter.swift in Sources */,
 				0BC228D427049CB000D560FF /* LoginModels.swift in Sources */,
 				0BC228D527049CB000D560FF /* GithubEventsInteractor.swift in Sources */,
 				0BC228D627049CB000D560FF /* Client.swift in Sources */,
@@ -1886,9 +1931,12 @@
 				0BC228EF27049CB000D560FF /* GithubEventDetailPresenter.swift in Sources */,
 				0BC228F027049CB000D560FF /* EventDTO.swift in Sources */,
 				0BC228F127049CB000D560FF /* AutoEquatable.swift in Sources */,
+				0BE521C829BDFE5F0039FEE9 /* BorderedButton.swift in Sources */,
 				0BC228F227049CB000D560FF /* CoreDataStack.swift in Sources */,
 				0BC228F327049CB000D560FF /* ViewController.swift in Sources */,
+				0BD7BE99299B989800ADB87E /* CDArchTableViewController.swift in Sources */,
 				0BC228F427049CB000D560FF /* GithubEventDetailConfigurator.swift in Sources */,
+				0BE521C129BDFBDC0039FEE9 /* UIView+animateLabel.swift in Sources */,
 				0BC228F527049CB000D560FF /* MainButton.swift in Sources */,
 				0BC228F627049CB000D560FF /* String+subscript.swift in Sources */,
 				0BC228F727049CB000D560FF /* GithubEventDetailRouter.swift in Sources */,
@@ -1898,6 +1946,7 @@
 				0BC228FB27049CB000D560FF /* FakeProtocol.swift in Sources */,
 				0BC228FC27049CB000D560FF /* LoginReduxViewController.swift in Sources */,
 				0BC228FD27049CB000D560FF /* String+hash.swift in Sources */,
+				0BE521BE29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */,
 				0BC228FE27049CB000D560FF /* Date+JSON.swift in Sources */,
 				0BC228FF27049CB000D560FF /* UrlHelper.swift in Sources */,
 				0BC2290027049CB000D560FF /* BlinkingImage.swift in Sources */,
@@ -1915,8 +1964,10 @@
 				0BC2290C27049CB000D560FF /* GithubEventDetailModels.swift in Sources */,
 				0BC2290D27049CB000D560FF /* OSDNIValidator.swift in Sources */,
 				0BC2290E27049CB000D560FF /* API.swift in Sources */,
+				0BCD07F5299BB01A007F4A4C /* InfoPresenter.swift in Sources */,
 				0BC2290F27049CB000D560FF /* MarvelService.swift in Sources */,
 				0BC2291027049CB000D560FF /* GithubEventsPresenter.swift in Sources */,
+				0BD7BE9D299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */,
 				0BC2291127049CB000D560FF /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1951,9 +2002,11 @@
 				34322B2124288CB000F194E3 /* Observer.swift in Sources */,
 				0B0E513122BD589E00C1D31E /* GithubEventsWorker.swift in Sources */,
 				34D48F4F21CBAE82001CEADF /* MainLabel.swift in Sources */,
+				0BE521BC29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */,
 				0B0E512522BD589E00C1D31E /* WatchEvent.swift in Sources */,
 				3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */,
 				34D48F5121CBAE97001CEADF /* SimpleLabel.swift in Sources */,
+				0BD7BE9B299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */,
 				342AC58A21E89A7F0058C1E0 /* LoginModels.swift in Sources */,
 				0B0E512E22BD589E00C1D31E /* GithubEventsInteractor.swift in Sources */,
 				34BE878821B5928200B4FD22 /* Client.swift in Sources */,
@@ -1966,10 +2019,13 @@
 				0B0E512B22BD589E00C1D31E /* GithubEventTableViewCell.swift in Sources */,
 				3420DFE621B03ADA0004C59F /* DetailViewController.swift in Sources */,
 				340088F821A820640072B1F0 /* UIViewController+showAlert.swift in Sources */,
+				0BE521C629BDFE5F0039FEE9 /* BorderedButton.swift in Sources */,
 				342AC58921E89A7F0058C1E0 /* LoginRouter.swift in Sources */,
 				0B0E512922BD589E00C1D31E /* GithubEvent.swift in Sources */,
+				0BD7BE97299B989800ADB87E /* CDArchTableViewController.swift in Sources */,
 				0B0E512F22BD589E00C1D31E /* GithubEventsModels.swift in Sources */,
 				0B10D3C12684ADE900C2AAEC /* MarvelDto.swift in Sources */,
+				0BE521BF29BDFBDC0039FEE9 /* UIView+animateLabel.swift in Sources */,
 				34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */,
 				34D48F4821CBABA2001CEADF /* AppDelegate+Theme.swift in Sources */,
 				0B0E510322BD588A00C1D31E /* DownloadImageView.swift in Sources */,
@@ -2115,7 +2171,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "iOS-Boilerplate copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2141,7 +2197,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "iOS-Boilerplate copy-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2167,7 +2223,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "iOS-Boilerplate copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2193,7 +2249,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "iOS-Boilerplate copy2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2301,7 +2357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2360,7 +2416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -2380,7 +2436,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "iOS-Boilerplate/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2403,7 +2459,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "iOS-Boilerplate/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
