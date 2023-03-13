@@ -47,6 +47,14 @@ jobs:
       #     xcodebuild test-without-building -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
       - name: Archive
         env:
+          $test_env: ${{ env.TEST_VAR }}
+          $test_vars: ${{ vars.TEST_VAR }}
+        run: |
+          echo "TEST_VAR: $TEST_VAR"
+          echo "TEST_env: $test_env"
+          echo "TEST_vars: $test_vars"
+      - name: Archive
+        env:
           scheme: ${{ 'default' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
