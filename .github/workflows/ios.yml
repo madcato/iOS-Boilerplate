@@ -12,6 +12,10 @@ on:
   # pull_request:
   #   branches: [ "master" ]
 
+env:
+  TEST_VAR_ENV_END: ${{ env.TEST_VAR22 }}
+  TEST_VAR_VARS_ENV: ${{ vars.TEST_VAR22 }}
+
 jobs:
   build:
     name: Build and Test default scheme using any available iPhone simulator
@@ -40,9 +44,11 @@ jobs:
           echo "END4"
           echo $TEST_VAR_GITHUB
           echo "END5"
+          echo $TEST_VAR_ENV_END
+          echo "END6"
+          echo $TEST_VAR_VARS_ENV
+          echo "END7"
           echo "Environment: $ENVIRONMENT"
-      - name: PRU env
-        run: env
       # - name: Checkout
       #   uses: actions/checkout@v3
       # - name: Set Default Scheme
