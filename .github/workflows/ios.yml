@@ -51,8 +51,11 @@ jobs:
           $test_vars: ${{ vars.TEST_VAR }}
         run: |
           echo "TEST_VAR: $TEST_VAR"
+          echo $TEST_VAR
           echo "TEST_env: $test_env"
+          echo $test_env
           echo "TEST_vars: $test_vars"
+          echo $test_vars
       - name: Archive
         env:
           scheme: ${{ 'default' }}
