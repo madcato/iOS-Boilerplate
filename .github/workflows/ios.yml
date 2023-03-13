@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Test vars
         env:
-          TEST_VAR_ENV: ${{ env.TEST.TEST_VAR22 }}
+          TEST_VAR_ENV: ${{ secrets.TEST.TEST_VAR22 }}
           TEST_VAR_VARS: ${{ vars.TEST_VAR22 }}
           TEST_VAR_RR: ${{ vars.TEST_VAR }}
           TEST_VAR_GITHUB: ${{ github.TEST_VAR22 }}
