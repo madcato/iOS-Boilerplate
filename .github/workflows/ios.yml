@@ -22,6 +22,7 @@ jobs:
         env:
           TEST_VAR_ENV: ${{ env.TEST_VAR22 }}
           TEST_VAR_VARS: ${{ vars.TEST_VAR22 }}
+          TEST_VAR_RR: ${{ vars.TEST_VAR }}
           ENVIRONMENT: ${{ inputs.environment }}
         run: |
           echo "INIT"
@@ -30,6 +31,12 @@ jobs:
           echo $TEST_VAR_VARS
           echo "$TEST_VAR_VARS"
           echo "END"
+          echo $TEST_VAR22
+          echo "END2"
+          echo $TEST_VAR
+          echo "END3"
+          echo $TEST_VAR_RR
+          echo "END3"
           echo "Environment: $ENVIRONMENT"
       # - name: Checkout
       #   uses: actions/checkout@v3
