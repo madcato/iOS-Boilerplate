@@ -41,6 +41,7 @@ jobs:
           echo $TEST_VAR_GITHUB
           echo "END5"
           echo "Environment: $ENVIRONMENT"
+      - name: PRU env
         run: env
       # - name: Checkout
       #   uses: actions/checkout@v3
