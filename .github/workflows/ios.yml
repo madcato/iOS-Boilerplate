@@ -12,9 +12,6 @@ on:
   # pull_request:
   #   branches: [ "master" ]
 
-env:
-  TEST_VAR_VARS_ENV: ${{ vars.TEST_VAR22 }}
-
 jobs:
   build:
     name: Build and Test default scheme using any available iPhone simulator
@@ -23,29 +20,14 @@ jobs:
     steps:
       - name: Test vars
         env:
-          TEST_VAR_ENV: ${{ secrets.TEST.TEST_VAR22 }}
           TEST_VAR_VARS: ${{ vars.TEST_VAR22 }}
           TEST_VAR_RR: ${{ vars.TEST_VAR }}
           TEST_VAR_GITHUB: ${{ github.TEST_VAR22 }}
           ENVIRONMENT: ${{ inputs.environment }}
         run: |
           echo "INIT"
-          echo $TEST_VAR_ENV
-          echo "$TEST_VAR_ENV"
           echo $TEST_VAR_VARS
-          echo "$TEST_VAR_VARS"
-          echo "END"
-          echo $TEST_VAR22
-          echo "END2"
-          echo $TEST_VAR
-          echo "END3"
-          echo $TEST_VAR_RR
-          echo "END4"
-          echo $TEST_VAR_GITHUB
-          echo "END5"
-          echo "END6"
-          echo $TEST_VAR_VARS_ENV
-          echo "END7"
+          echo TEST_VAR_GITHUB
           echo "Environment: $ENVIRONMENT"
       # - name: Checkout
       #   uses: actions/checkout@v3
