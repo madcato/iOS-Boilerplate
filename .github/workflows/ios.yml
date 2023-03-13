@@ -23,6 +23,7 @@ jobs:
           TEST_VAR_ENV: ${{ env.TEST_VAR22 }}
           TEST_VAR_VARS: ${{ vars.TEST_VAR22 }}
           TEST_VAR_RR: ${{ vars.TEST_VAR }}
+          TEST_VAR_GITHUB: ${{ github.TEST_VAR22 }}
           ENVIRONMENT: ${{ inputs.environment }}
         run: |
           echo "INIT"
@@ -36,8 +37,11 @@ jobs:
           echo $TEST_VAR
           echo "END3"
           echo $TEST_VAR_RR
-          echo "END3"
+          echo "END4"
+          echo $TEST_VAR_GITHUB
+          echo "END5"
           echo "Environment: $ENVIRONMENT"
+        run: env
       # - name: Checkout
       #   uses: actions/checkout@v3
       # - name: Set Default Scheme
