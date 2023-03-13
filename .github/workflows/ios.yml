@@ -20,6 +20,9 @@ jobs:
           default="iOS-Boilerplate"
           echo $default | cat >default
           echo Using default scheme: $default
+      - name: Install dependencies
+        run: |
+          carthage update --use-xcframeworks
       - name: Build
         env:
           scheme: ${{ 'default' }}
