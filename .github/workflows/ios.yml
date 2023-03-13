@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Test vars
         env:
-          test_var: ${{ TEST_VAR22 }}
+          test_var: ${{ env.TEST_VAR22 }}
         run: |
           echo "INIT"
           echo $test_var
