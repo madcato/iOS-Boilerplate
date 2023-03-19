@@ -243,6 +243,9 @@
 		0BD7BE9B299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */; };
 		0BD7BE9C299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */; };
 		0BD7BE9D299BA30400ADB87E /* CDArchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */; };
+		0BDCF6C229C7AE35009BB1B4 /* UIView+ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDCF6C129C7AE35009BB1B4 /* UIView+ActivityView.swift */; };
+		0BDCF6C329C7AE35009BB1B4 /* UIView+ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDCF6C129C7AE35009BB1B4 /* UIView+ActivityView.swift */; };
+		0BDCF6C429C7AE35009BB1B4 /* UIView+ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDCF6C129C7AE35009BB1B4 /* UIView+ActivityView.swift */; };
 		0BE521BC29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521B929BDFBDB0039FEE9 /* UINavigationController+extension.swift */; };
 		0BE521BD29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521B929BDFBDB0039FEE9 /* UINavigationController+extension.swift */; };
 		0BE521BE29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE521B929BDFBDB0039FEE9 /* UINavigationController+extension.swift */; };
@@ -460,6 +463,7 @@
 		0BC229352704A3A800D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
 		0BD7BE96299B989800ADB87E /* CDArchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDArchTableViewController.swift; sourceTree = "<group>"; };
 		0BD7BE9A299BA30400ADB87E /* CDArchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDArchDetailViewController.swift; sourceTree = "<group>"; };
+		0BDCF6C129C7AE35009BB1B4 /* UIView+ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ActivityView.swift"; sourceTree = "<group>"; };
 		0BE521B929BDFBDB0039FEE9 /* UINavigationController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+extension.swift"; sourceTree = "<group>"; };
 		0BE521BA29BDFBDC0039FEE9 /* UIView+animateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+animateLabel.swift"; sourceTree = "<group>"; };
 		0BE521C529BDFE5F0039FEE9 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
@@ -1130,6 +1134,7 @@
 				34F2B0572420CA1800B615AC /* Optional.swift */,
 				34F2B0592420CAE500B615AC /* Array.swift */,
 				0B9C0C37267B21B800999AB4 /* String+hash.swift */,
+				0BDCF6C129C7AE35009BB1B4 /* UIView+ActivityView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1853,6 +1858,7 @@
 				0BC2288827049C9F00D560FF /* String+hash.swift in Sources */,
 				0BE521BD29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */,
 				0BC2288927049C9F00D560FF /* Date+JSON.swift in Sources */,
+				0BDCF6C329C7AE35009BB1B4 /* UIView+ActivityView.swift in Sources */,
 				0BC2288A27049C9F00D560FF /* UrlHelper.swift in Sources */,
 				0BC2288B27049C9F00D560FF /* BlinkingImage.swift in Sources */,
 				0BC2288C27049C9F00D560FF /* AppDelegate.swift in Sources */,
@@ -1948,6 +1954,7 @@
 				0BC228FD27049CB000D560FF /* String+hash.swift in Sources */,
 				0BE521BE29BDFBDC0039FEE9 /* UINavigationController+extension.swift in Sources */,
 				0BC228FE27049CB000D560FF /* Date+JSON.swift in Sources */,
+				0BDCF6C429C7AE35009BB1B4 /* UIView+ActivityView.swift in Sources */,
 				0BC228FF27049CB000D560FF /* UrlHelper.swift in Sources */,
 				0BC2290027049CB000D560FF /* BlinkingImage.swift in Sources */,
 				0BC2290127049CB000D560FF /* AppDelegate.swift in Sources */,
@@ -2053,6 +2060,7 @@
 				3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */,
 				34322B30242D1C9300F194E3 /* LoginReduxViewController.swift in Sources */,
 				0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */,
+				0BDCF6C229C7AE35009BB1B4 /* UIView+ActivityView.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,
 				34322B1F24288C5F00F194E3 /* BlinkingImage.swift in Sources */,
