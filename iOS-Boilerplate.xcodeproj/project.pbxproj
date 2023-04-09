@@ -41,6 +41,9 @@
 		0B10D3C42684B48500C2AAEC /* MarvelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BC2684ADC400C2AAEC /* MarvelService.swift */; };
 		0B10D3C52684B48900C2AAEC /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BB2684ADC000C2AAEC /* MarvelAPI.swift */; };
 		0B10D3D02684FAAC00C2AAEC /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B10D3CF2684FAAC00C2AAEC /* ReSwift */; };
+		0B49B29529E306E700AF7EAF /* String+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49B29429E306E700AF7EAF /* String+Currency.swift */; };
+		0B49B29629E306F300AF7EAF /* String+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49B29429E306E700AF7EAF /* String+Currency.swift */; };
+		0B49B29729E306F300AF7EAF /* String+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49B29429E306E700AF7EAF /* String+Currency.swift */; };
 		0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
 		0BB45F8E27679A0D00564BB7 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB45F8D27679A0D00564BB7 /* LocalizedString.swift */; };
 		0BB45F902767AA1600564BB7 /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB45F8F2767AA1600564BB7 /* LocalizedLabel.swift */; };
@@ -449,6 +452,7 @@
 		0B10D3BE2684ADE800C2AAEC /* ImageDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDto.swift; sourceTree = "<group>"; };
 		0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelDto.swift; sourceTree = "<group>"; };
 		0B10D3C22684B3CF00C2AAEC /* MarvelDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailTests.swift; sourceTree = "<group>"; };
+		0B49B29429E306E700AF7EAF /* String+Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Currency.swift"; sourceTree = "<group>"; };
 		0B9C0C37267B21B800999AB4 /* String+hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hash.swift"; sourceTree = "<group>"; };
 		0BB45F8D27679A0D00564BB7 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		0BB45F8F2767AA1600564BB7 /* LocalizedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedLabel.swift; sourceTree = "<group>"; };
@@ -1134,6 +1138,7 @@
 				34F2B0572420CA1800B615AC /* Optional.swift */,
 				34F2B0592420CAE500B615AC /* Array.swift */,
 				0B9C0C37267B21B800999AB4 /* String+hash.swift */,
+				0B49B29429E306E700AF7EAF /* String+Currency.swift */,
 				0BDCF6C129C7AE35009BB1B4 /* UIView+ActivityView.swift */,
 			);
 			path = Extensions;
@@ -1794,6 +1799,7 @@
 				0BC2284B27049C9F00D560FF /* UIViewController+navigationItem.swift in Sources */,
 				0BC2284C27049C9F00D560FF /* UIResponder+ChangeRootController.swift in Sources */,
 				0BC2284D27049C9F00D560FF /* CreateEvent.swift in Sources */,
+				0B49B29629E306F300AF7EAF /* String+Currency.swift in Sources */,
 				0BC2284E27049C9F00D560FF /* GithubAPI.swift in Sources */,
 				0BC2284F27049C9F00D560FF /* GithubEventsConfigurator.swift in Sources */,
 				0BC2285027049C9F00D560FF /* PushEventTableViewCell.swift in Sources */,
@@ -1890,6 +1896,7 @@
 				0BC228C027049CB000D560FF /* UIViewController+navigationItem.swift in Sources */,
 				0BC228C127049CB000D560FF /* UIResponder+ChangeRootController.swift in Sources */,
 				0BC228C227049CB000D560FF /* CreateEvent.swift in Sources */,
+				0B49B29729E306F300AF7EAF /* String+Currency.swift in Sources */,
 				0BC228C327049CB000D560FF /* GithubAPI.swift in Sources */,
 				0BC228C427049CB000D560FF /* GithubEventsConfigurator.swift in Sources */,
 				0BC228C527049CB000D560FF /* PushEventTableViewCell.swift in Sources */,
@@ -2043,6 +2050,7 @@
 				342AC58821E89A7F0058C1E0 /* LoginWorker.swift in Sources */,
 				0B0E513422BD589E00C1D31E /* GithubEventDetailInteractor.swift in Sources */,
 				340088F621A820640072B1F0 /* UIView+border.swift in Sources */,
+				0B49B29529E306E700AF7EAF /* String+Currency.swift in Sources */,
 				342AC58C21E89A7F0058C1E0 /* LoginInteractor.swift in Sources */,
 				0B0E513622BD589E00C1D31E /* GithubEventDetailPresenter.swift in Sources */,
 				34306A4021B13DD6005B0A84 /* EventDTO.swift in Sources */,
