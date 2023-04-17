@@ -29,59 +29,33 @@ Project
 │   │   └───Migration          // Classes and models for persisted data migrations
 │   │                          //  between versions
 │   │
-│   └───Feature001             // Classes, resources, storyboards related to only one feature
-│   │   │   Feature001Model.swift
-│   │   │   Feature001UI.storyboard
-│   │   │   Feature001ViewController.swift
-│   │   │
-│   │   └───Cells
-│   │
-│   └───Feature002
-│   │
-│   └───Feature003
-│   │
-│   └───Feature004
-│   │
-│   └───ComplexFeature001
-│   │   │
-│   │   └───Subfeature002
-│   │   │
-│   │   └───Subfeature003
-│   │
 │   └───Library                 // keep in this group all shared code between features
 │   │   │
 │   │   └───Configuration       // Classes with the app configuration, like serverURL 
 │   │   └───Model               // Persisted data model
-│   │   └───Feed
 │   │   └───Services
 │   │   └───Extensions
-│   │   └───CoreDataArch        // Classes to manage the Core Data Architecture
 │   │
 │   └───Resources               // Resource files, like images, grouped by type
-│   │   │   Images.xcassets     // Keep all images in one asset to help searches
-│   │   │
-│   │   └───Environments        // Plist files with the configuration of each environment
-│   │   │   │
-│   │   │   └───Pro
-│   │   │   │   └enviroments.plist
-│   │   │   │
-│   │   │   └───Dev
-│   │   │   │   └enviroments.plist
-│   │   │   │
-│   │   │   └───UAT
-│   │   │       └enviroments.plist
-│   │   │
-│   │   └───pdf
-│   │   └───certificates
-│   │   └───html
-│   │   └───json
-│   │   └───video
-│   │   └───plist
-│   │
-│   └───Supporting Files
-│       │   iOS-Boilerplate.entitlements
-│       │   Info.plist
-│       │   main.m
+│       │
+│       └───Environments        // Plist files with the configuration of each environment
+│       │   │
+│       │   └───Pro
+│       │   │   └enviroments.plist
+│       │   │
+│       │   └───Dev
+│       │   │   └enviroments.plist
+│       │   │
+│       │   └───UAT
+│       │       └enviroments.plist
+│       │
+│       └───pdf
+│       └───certificates
+│       └───html
+│       └───json
+│       └───video
+│       └───plist
+│   
 │
 └───Frameworks                // External projects,libraries and frameworks
 │    │
@@ -99,18 +73,7 @@ Project
 ```
 
 ### External frameworks
-
-Included in the project directly using [Carthage](https://github.com/Carthage/Carthage). This way is easier to manage versions of this external frameworks. Carthage does not add much build time, because it builds the frameworks previously and add them to the repository.
-
-- [Mansonry](https://github.com/SnapKit/Masonry)
-  To use Constraints from code without becoming insane
-- [Nimble](https://github.com/Quick/Nimble)
-  To define expectations for automated testing
-- [Quick](https://github.com/Quick/Quick)
-  BDD for Swift
-- [FLEX](https://github.com/Flipboard/FLEX
-  Debugging helper. (Press the screen during 4 seconds with two fingers to launch helper)
-- [Unidirectional Data Flow in Swift - Inspired by Redux](https://github.com/ReSwift/ReSwift)
+- [The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture)
 
 #### Carthage version setting
 

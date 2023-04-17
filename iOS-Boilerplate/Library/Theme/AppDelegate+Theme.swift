@@ -50,14 +50,6 @@ extension AppDelegate {
         UIBarButtonItem.appearance().setTitleTextAttributes([
             NSAttributedString.Key.foregroundColor: AppDelegate.navBarTextColor], for: UIControl.State())
         UIBarButtonItem.appearance().tintColor = AppDelegate.navBarTextColor
-        MainButton.appearance().backgroundColor = AppDelegate.mainButtonColor
-        MainButton.appearance().setTitleColor(AppDelegate.mainButtonTextColor, for: UIControl.State())
-        CancelButton.appearance().backgroundColor = AppDelegate.cancelButtonColor
-        CancelButton.appearance().setTitleColor(AppDelegate.cancelButtonTextColor, for: UIControl.State())
-        BackgroundView.appearance().backgroundColor = AppDelegate.backgroundViewColor
-        MainLabel.appearance().textColor = AppDelegate.mainLabelTextColor
-        MainLabel.appearance().backgroundColor = AppDelegate.mainLabelBackColor
-        SimpleLabel.appearance().textColor = AppDelegate.simpleLabelTextColor
         UISwitch.appearance().onTintColor = AppDelegate.darkMainColor
     }
 }

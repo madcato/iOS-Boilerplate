@@ -7,9 +7,6 @@
 //
 
 import CoreData
-#if DEBUG
-import FLEX
-#endif
 import UIKit
 
 @UIApplicationMain
@@ -45,9 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         configureAppearance()
-        #if DEBUG
-        configureFLEXLauncher()
-        #endif
         return true
     }
 
@@ -65,20 +59,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         internalDatabase.saveContext()
-    }
-
-    // MARK: - FLEX
-
-    private func configureFLEXLauncher() {
-        let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(AppDelegate.launchFLEX))
-        recognizer.minimumPressDuration = 4.0
-        recognizer.numberOfTapsRequired = 0
-        recognizer.numberOfTouchesRequired = 2  // Use two fingers
-        self.window?.addGestureRecognizer(recognizer)
-    }
-
-    @objc
-    private func launchFLEX() {
-        FLEXManager.shared().showExplorer()
     }
 }
