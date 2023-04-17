@@ -61,8 +61,6 @@
 		3485E82A21A5B0D9002248B7 /* environments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3485E82721A5B0D9002248B7 /* environments.plist */; };
 		3485E82D21A5B1F0002248B7 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E82C21A5B1EF002248B7 /* Environment.swift */; };
 		3485E83021A5B5FB002248B7 /* ConfigurationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E82E21A5B496002248B7 /* ConfigurationTest.swift */; };
-		3487744821A6C004001675D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79821A55E07002248B7 /* LaunchScreen.storyboard */; };
-		3487744921A6C011001675D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79021A55E05002248B7 /* Main.storyboard */; };
 		34BE876521B590D100B4FD22 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE876421B590D100B4FD22 /* API.swift */; };
 		34BE878821B5928200B4FD22 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE878721B5928200B4FD22 /* Client.swift */; };
 		34D48F4821CBABA2001CEADF /* AppDelegate+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D48F4721CBABA2001CEADF /* AppDelegate+Theme.swift */; };
@@ -173,10 +171,8 @@
 		3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
 		3438809521ECA62E002FCBE5 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		3485E78921A55E05002248B7 /* iOS-Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3485E79121A55E05002248B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3485E79421A55E05002248B7 /* iOS_Boilerplate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Boilerplate.xcdatamodel; sourceTree = "<group>"; };
 		3485E79621A55E07002248B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3485E79921A55E07002248B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3485E79B21A55E07002248B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3485E7A021A55E07002248B7 /* iOS-BoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-BoilerplateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485E7A421A55E07002248B7 /* BoilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoilerplateTests.swift; sourceTree = "<group>"; };
@@ -503,8 +499,6 @@
 		3485E7C021A5639E002248B7 /* Startup */ = {
 			isa = PBXGroup;
 			children = (
-				3485E79821A55E07002248B7 /* LaunchScreen.storyboard */,
-				3485E79021A55E05002248B7 /* Main.storyboard */,
 				3485E7C121A56513002248B7 /* Migration */,
 			);
 			path = Startup;
@@ -849,9 +843,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC2283D27049B9F00D560FF /* Icons.xcassets in Resources */,
-				3487744921A6C011001675D3 /* Main.storyboard in Resources */,
 				34F54BBA240FCCB30079398C /* Localizable.strings in Resources */,
-				3487744821A6C004001675D3 /* LaunchScreen.storyboard in Resources */,
 				3485E79721A55E07002248B7 /* Assets.xcassets in Resources */,
 				3485E82A21A5B0D9002248B7 /* environments.plist in Resources */,
 			);
@@ -1037,22 +1029,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3485E79021A55E05002248B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3485E79121A55E05002248B7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3485E79821A55E07002248B7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3485E79921A55E07002248B7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		34F54BB8240FCCB30079398C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
