@@ -51,7 +51,6 @@
 		3438809721ECA62E002FCBE5 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809321ECA62E002FCBE5 /* LoginInteractorTests.swift */; };
 		3438809821ECA62E002FCBE5 /* LoginWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */; };
 		3438809921ECA62E002FCBE5 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3438809521ECA62E002FCBE5 /* LoginPresenterTests.swift */; };
-		3485E78D21A55E05002248B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E78C21A55E05002248B7 /* AppDelegate.swift */; };
 		3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3485E79321A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld */; };
 		3485E79721A55E07002248B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3485E79621A55E07002248B7 /* Assets.xcassets */; };
 		3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485E7A421A55E07002248B7 /* BoilerplateTests.swift */; };
@@ -174,7 +173,6 @@
 		3438809421ECA62E002FCBE5 /* LoginWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorkerTests.swift; sourceTree = "<group>"; };
 		3438809521ECA62E002FCBE5 /* LoginPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		3485E78921A55E05002248B7 /* iOS-Boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Boilerplate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3485E78C21A55E05002248B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3485E79121A55E05002248B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3485E79421A55E05002248B7 /* iOS_Boilerplate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Boilerplate.xcdatamodel; sourceTree = "<group>"; };
 		3485E79621A55E07002248B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -505,7 +503,6 @@
 		3485E7C021A5639E002248B7 /* Startup */ = {
 			isa = PBXGroup;
 			children = (
-				3485E78C21A55E05002248B7 /* AppDelegate.swift */,
 				3485E79821A55E07002248B7 /* LaunchScreen.storyboard */,
 				3485E79021A55E05002248B7 /* Main.storyboard */,
 				3485E7C121A56513002248B7 /* Migration */,
@@ -976,7 +973,6 @@
 				0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,
-				3485E78D21A55E05002248B7 /* AppDelegate.swift in Sources */,
 				340088E921A81F930072B1F0 /* OSEmailValidator.swift in Sources */,
 				34F7642721A6F64B00E68956 /* BookDTO.swift in Sources */,
 				0B0E513E22BD605D00C1D31E /* TestHelper.swift in Sources */,
