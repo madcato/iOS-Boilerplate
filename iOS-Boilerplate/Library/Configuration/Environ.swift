@@ -1,5 +1,5 @@
 //
-//  Environment.swift
+//  Environ.swift
 //  iOS-Boilerplate
 //
 //  Created by Daniel Vela Angulo on 21/11/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Environment: String {
+enum Environ: String {
     case production
     case staging
     case integration
