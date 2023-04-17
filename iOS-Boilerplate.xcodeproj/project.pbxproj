@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		0B10D3C52684B48900C2AAEC /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BB2684ADC000C2AAEC /* MarvelAPI.swift */; };
 		0B49B29529E306E700AF7EAF /* String+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49B29429E306E700AF7EAF /* String+Currency.swift */; };
 		0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
+		0BB3383029EDB58900A589F5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0BB3382F29EDB58900A589F5 /* ComposableArchitecture */; };
 		0BB45F8E27679A0D00564BB7 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB45F8D27679A0D00564BB7 /* LocalizedString.swift */; };
 		0BC2283D27049B9F00D560FF /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2283C27049B9F00D560FF /* Icons.xcassets */; };
 		0BFD565B26566BC70035ABF9 /* TestStringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD565A26566BC70035ABF9 /* TestStringHash.swift */; };
@@ -131,8 +132,6 @@
 		0BC2283C27049B9F00D560FF /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		0BC2283E27049BBB00D560FF /* Icons-uat.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Icons-uat.xcassets"; sourceTree = "<group>"; };
 		0BC2284027049BCA00D560FF /* Icons-dev.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Icons-dev.xcassets"; sourceTree = "<group>"; };
-		0BC228B627049C9F00D560FF /* iOS-Boilerplate copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOS-Boilerplate copy-Info.plist"; path = "/Users/danielvela/projects/iOS-Boilerplate/iOS-Boilerplate copy-Info.plist"; sourceTree = "<absolute>"; };
-		0BC2292B27049CB100D560FF /* iOS-Boilerplate copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "iOS-Boilerplate copy2-Info.plist"; path = "/Users/danielvela/projects/iOS-Boilerplate/iOS-Boilerplate copy2-Info.plist"; sourceTree = "<absolute>"; };
 		0BC229342704A3A700D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
 		0BC229352704A3A800D560FF /* environments.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = environments.plist; sourceTree = "<group>"; };
 		0BFD563D26566A290035ABF9 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
@@ -218,6 +217,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB3383029EDB58900A589F5 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,8 +445,6 @@
 				34322B122428842A00F194E3 /* SnapshotUITests */,
 				3485E78A21A55E05002248B7 /* Products */,
 				3420DF8521AFECA20004C59F /* Frameworks */,
-				0BC228B627049C9F00D560FF /* iOS-Boilerplate copy-Info.plist */,
-				0BC2292B27049CB100D560FF /* iOS-Boilerplate copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -734,6 +732,7 @@
 			);
 			name = "iOS-Boilerplate";
 			packageProductDependencies = (
+				0BB3382F29EDB58900A589F5 /* ComposableArchitecture */,
 			);
 			productName = "iOS-Boilerplate";
 			productReference = 3485E78921A55E05002248B7 /* iOS-Boilerplate.app */;
@@ -785,8 +784,9 @@
 		3485E78121A55E05002248B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = veladan;
 				TargetAttributes = {
 					34322B102428842A00F194E3 = {
@@ -825,6 +825,7 @@
 			);
 			mainGroup = 3485E78021A55E05002248B7;
 			packageReferences = (
+				0BB3382E29EDB58900A589F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 3485E78A21A55E05002248B7 /* Products */;
 			projectDirPath = "";
@@ -1413,6 +1414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BB3382E29EDB58900A589F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BB3382F29EDB58900A589F5 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BB3382E29EDB58900A589F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3485E79321A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld */ = {
