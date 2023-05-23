@@ -13,11 +13,6 @@ extension String {
         self.count
     }
 
-    subscript(integerIndex: Int) -> Character {
-        let index = self.index(startIndex, offsetBy: integerIndex)
-        return self[index]
-    }
-
     subscript(integerRange: Range<Int>) -> String {
         let start = self.index(startIndex, offsetBy: integerRange.lowerBound)
         let end = self.index(startIndex, offsetBy: integerRange.upperBound)
