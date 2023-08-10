@@ -10,38 +10,24 @@ import XCTest
 
 class MarvelDetailTests: XCTestCase {
 
-    func testListCharacters() {
-        let expectation = XCTestExpectation(description: "MarvelService")
-        var characterListResult: [Marvel.CharacterDto]?
-        MarvelService().listCharacters { result in
-            switch result {
-            case let .success(response):
-                XCTAssertGreaterThan(response.count, 0)
-                characterListResult = response
-                expectation.fulfill()
-            case let .error(id, string):
-                print("Error: \(id), \(string)")
-            }
+    func testListCharacters() async {
+        do {
+            let result = try await MarvelService().listCharacters()
+            XCTAssertGreaterThan(result.count, 0)
+        } catch {
+            XCTAssertTrue(false)
         }
-        wait(for: [expectation], timeout: 10.0)
-        XCTAssertNotNil(characterListResult)
     }
 
-    func testCharacter() {
+    func testCharacter() async {
         let id = 1_011_334
-        let expectation = XCTestExpectation(description: "MarvelService")
-        var character: Marvel.CharacterDto?
-        MarvelService().characterDetail(of: id) { result in
-            switch result {
-            case let .success(response):
-                character = response
-                expectation.fulfill()
-            case let .error(id, string):
-                print("Error: \(id), \(string)")
-            }
+        do {
+            let result = try await MarvelService().characterDetail(with: id)
+            XCTAssertNotNil(result)
+        } catch {
+            XCTAssertTrue(false)
         }
-        wait(for: [expectation], timeout: 10.0)
-        XCTAssertNotNil(character)
+        
     }
 
 }

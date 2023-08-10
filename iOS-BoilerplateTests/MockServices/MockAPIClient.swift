@@ -7,8 +7,6 @@
 //
 
 @testable import iOS_Boilerplate
-import Nimble
-import Quick
 import XCTest
 
 class MockAPIClient: Http.Client {

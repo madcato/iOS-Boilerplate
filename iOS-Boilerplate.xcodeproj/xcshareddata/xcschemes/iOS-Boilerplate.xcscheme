@@ -20,6 +20,34 @@
                ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3485E7AA21A55E07002248B7"
+               BuildableName = "iOS-BoilerplateUITests.xctest"
+               BlueprintName = "iOS-BoilerplateUITests"
+               ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "34322B102428842A00F194E3"
+               BuildableName = "SnapshotUITests.xctest"
+               BlueprintName = "SnapshotUITests"
+               ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -55,26 +83,6 @@
                BlueprintIdentifier = "3485E79F21A55E07002248B7"
                BuildableName = "iOS-BoilerplateTests.xctest"
                BlueprintName = "iOS-BoilerplateTests"
-               ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3485E7AA21A55E07002248B7"
-               BuildableName = "iOS-BoilerplateUITests.xctest"
-               BlueprintName = "iOS-BoilerplateUITests"
-               ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "34322B102428842A00F194E3"
-               BuildableName = "SnapshotUITests.xctest"
-               BlueprintName = "SnapshotUITests"
                ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
             </BuildableReference>
          </TestableReference>

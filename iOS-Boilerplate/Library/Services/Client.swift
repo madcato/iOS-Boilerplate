@@ -77,6 +77,36 @@ class Client {
         }
         dataTask?.resume()
     }
+    
+    /// request data. This is a GET HTTPrequest (async/await)
+    /// - param endpoint: url of the endpoint and the type of the response.
+    ///               The response will be decoded to this format
+    /// - param completion: this block will be called at the end of the processing, with the resul or the error
+    ///
+    func request<Response>(_ endpoint: Http.Endpoint<Response>) async throws -> Response {
+        guard endpoint.method == .get else {
+            fatalError("This method only handle GET")
+        }
+        let url = url(path: endpoint.path)
+        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
+        if let parameters: [String: String?] = endpoint.parameters as? [String: String?] {
+            components?.queryItems = parameters.map { key, value in
+                URLQueryItem(name: key, value: value)
+            }
+        }
+        if let finalQuery = components?.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B") {
+            components?.percentEncodedQuery = finalQuery
+        }
+        let urlRequest = URLRequest(url: components?.url ?? url)
+        let (data, response) = try await session.data(for: urlRequest)
+        if let response = response as? HTTPURLResponse,
+           response.statusCode == 200 {
+            let responseData = try endpoint.decode(data)
+            return responseData
+        } else {
+            throw Http.Error.invalidResponse
+        }
+    }
 
     private func url(path: Http.Path) -> URL {
         baseURL.appendingPathComponent(path)

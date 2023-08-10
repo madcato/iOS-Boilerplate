@@ -27,6 +27,10 @@ enum Method {
     case patch
     case delete
 }
+    
+enum Error: Swift.Error {
+    case invalidResponse
+}
 
 // MARK: - Http Endpoint
 

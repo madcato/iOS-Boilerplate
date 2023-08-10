@@ -11,12 +11,12 @@
 import Foundation
 
 enum API {
-    static func bookNomadsISBN(_ isbn: String) -> Http.Endpoint<BookDTO> {
-        Http.Endpoint(
-            method: .get,
-            path: "/isbn/\(isbn)"
-        )
-    }
+//    static func bookNomadsISBN(_ isbn: String) -> Http.Endpoint<BookDTO> {
+//        Http.Endpoint(
+//            method: .get,
+//            path: "/isbn/\(isbn)"
+//        )
+//    }
 
 //    /* namespace */ enum Customer {
 //        private static let path = "customer/profile"
