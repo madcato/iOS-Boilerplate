@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PersonDTO: Codable, AutoEquatable {
+struct PersonDTO: Codable {
     enum CodingKeys: String, CodingKey {
         case title = "title"
         case name = "userName"

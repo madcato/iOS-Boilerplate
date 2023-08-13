@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BookDTO: Codable, AutoEquatable {
+struct BookDTO: Codable {
     enum CodingKeys: String, CodingKey {
         case isbn = "ISBN"
         case title = "Title"

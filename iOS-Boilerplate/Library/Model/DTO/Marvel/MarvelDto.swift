@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ResponseDto2: Decodable, AutoEquatable {
+struct ResponseDto2: Decodable {
     let code: Int?
     let status: String?
     let copyright: String?
@@ -20,7 +20,7 @@ enum Marvel {
 
 // MARK: - MarvelDto main response
 
-struct ResponseDto: Decodable, AutoEquatable {
+struct ResponseDto: Decodable {
     let code: Int?
     let status: String?
     let copyright: String?

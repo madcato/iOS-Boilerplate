@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,11 +41,7 @@
 		341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C321B80BF100BC9E1C /* Decodable+Codable.swift */; };
 		341810C621B8152400BC9E1C /* NetworkingInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810C521B8152400BC9E1C /* NetworkingInjector.swift */; };
 		341810CB21B8321400BC9E1C /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341810CA21B8321400BC9E1C /* MockAPIClient.swift */; };
-		3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6021AFDCD40004C59F /* FakeProtocol.swift */; };
-		3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */; };
 		34306A3021B1259A005B0A84 /* Event.json in Resources */ = {isa = PBXBuildFile; fileRef = 34306A2F21B1259A005B0A84 /* Event.json */; };
-		34306A3321B135C0005B0A84 /* AutoEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3221B135C0005B0A84 /* AutoEquatable.swift */; };
-		34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3421B135D6005B0A84 /* AutoMockable.swift */; };
 		34306A4021B13DD6005B0A84 /* EventDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34306A3F21B13DD6005B0A84 /* EventDTO.swift */; };
 		34322B142428842A00F194E3 /* SnapshotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B132428842A00F194E3 /* SnapshotUITests.swift */; };
 		34322B1D242885EF00F194E3 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34322B1C242885EF00F194E3 /* SnapshotHelper.swift */; };
@@ -157,15 +153,8 @@
 		341810C321B80BF100BC9E1C /* Decodable+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Codable.swift"; sourceTree = "<group>"; };
 		341810C521B8152400BC9E1C /* NetworkingInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingInjector.swift; sourceTree = "<group>"; };
 		341810CA21B8321400BC9E1C /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
-		3420DF5F21AFDBB90004C59F /* AutoMock.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoMock.stencil; sourceTree = "<group>"; };
-		3420DF6021AFDCD40004C59F /* FakeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeProtocol.swift; sourceTree = "<group>"; };
-		3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AutoEquatable.stencil; sourceTree = "<group>"; };
-		3420DF6621AFDFE60004C59F /* AutoMock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMock.generated.swift; sourceTree = "<group>"; };
-		3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
 		3420DF8621AFECA20004C59F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		34306A2F21B1259A005B0A84 /* Event.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Event.json; sourceTree = "<group>"; };
-		34306A3221B135C0005B0A84 /* AutoEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoEquatable.swift; sourceTree = "<group>"; };
-		34306A3421B135D6005B0A84 /* AutoMockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockable.swift; sourceTree = "<group>"; };
 		34306A3F21B13DD6005B0A84 /* EventDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDTO.swift; sourceTree = "<group>"; };
 		34322B112428842A00F194E3 /* SnapshotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34322B132428842A00F194E3 /* SnapshotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotUITests.swift; sourceTree = "<group>"; };
@@ -342,34 +331,6 @@
 			path = MockServices;
 			sourceTree = "<group>";
 		};
-		3420DF5721AFDB220004C59F /* Sourcery */ = {
-			isa = PBXGroup;
-			children = (
-				34306A3121B13570005B0A84 /* Markers */,
-				3420DF6521AFDFA30004C59F /* Outputs */,
-				3420DF6421AFDF980004C59F /* Templates */,
-			);
-			path = Sourcery;
-			sourceTree = "<group>";
-		};
-		3420DF6421AFDF980004C59F /* Templates */ = {
-			isa = PBXGroup;
-			children = (
-				3420DF6221AFDF0D0004C59F /* AutoEquatable.stencil */,
-				3420DF5F21AFDBB90004C59F /* AutoMock.stencil */,
-			);
-			path = Templates;
-			sourceTree = "<group>";
-		};
-		3420DF6521AFDFA30004C59F /* Outputs */ = {
-			isa = PBXGroup;
-			children = (
-				3420DF6721AFDFE60004C59F /* AutoEquatable.generated.swift */,
-				3420DF6621AFDFE60004C59F /* AutoMock.generated.swift */,
-			);
-			path = Outputs;
-			sourceTree = "<group>";
-		};
 		3420DF8521AFECA20004C59F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,13 +342,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3420DFF421B03B870004C59F /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
 		34306A2E21B12587005B0A84 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,15 +349,6 @@
 				3485E81121A59358002248B7 /* Person.json */,
 			);
 			path = Fixtures;
-			sourceTree = "<group>";
-		};
-		34306A3121B13570005B0A84 /* Markers */ = {
-			isa = PBXGroup;
-			children = (
-				34306A3221B135C0005B0A84 /* AutoEquatable.swift */,
-				34306A3421B135D6005B0A84 /* AutoMockable.swift */,
-			);
-			path = Markers;
 			sourceTree = "<group>";
 		};
 		34322B122428842A00F194E3 /* SnapshotUITests */ = {
@@ -427,7 +372,6 @@
 		3485E78021A55E05002248B7 = {
 			isa = PBXGroup;
 			children = (
-				3420DF5721AFDB220004C59F /* Sourcery */,
 				3485E78B21A55E05002248B7 /* iOS-Boilerplate */,
 				3485E7A321A55E07002248B7 /* iOS-BoilerplateTests */,
 				3485E7AE21A55E07002248B7 /* iOS-BoilerplateUITests */,
@@ -516,7 +460,6 @@
 				3485E81821A5A6A6002248B7 /* Configuration */,
 				3485E7C421A57FA2002248B7 /* Model */,
 				3485E7C721A57FF3002248B7 /* Services */,
-				34D48F1521CBAA8E001CEADF /* Theme */,
 				340088DA21A81E330072B1F0 /* Util */,
 			);
 			path = Library;
@@ -526,7 +469,6 @@
 			isa = PBXGroup;
 			children = (
 				34B9171A21C0EE9A00409CB8 /* CoreData */,
-				3420DFF421B03B870004C59F /* Entities */,
 				340088CE21A81A7E0072B1F0 /* DTO */,
 			);
 			path = Model;
@@ -535,7 +477,6 @@
 		3485E7C621A57FE1002248B7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3420DF6021AFDCD40004C59F /* FakeProtocol.swift */,
 				341810C321B80BF100BC9E1C /* Decodable+Codable.swift */,
 				34F2B0572420CA1800B615AC /* Optional.swift */,
 				34F2B0592420CAE500B615AC /* Array.swift */,
@@ -676,13 +617,6 @@
 				0B10D3C22684B3CF00C2AAEC /* MarvelDetailTests.swift */,
 			);
 			path = ServiceTests;
-			sourceTree = "<group>";
-		};
-		34D48F1521CBAA8E001CEADF /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -868,6 +802,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		3440F63D21BE88D60092CAF9 /* Increment build number */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -886,6 +821,7 @@
 		};
 		3440F63E21BE89160092CAF9 /* Increment Version on Archive */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 8;
 			files = (
 			);
@@ -904,6 +840,7 @@
 		};
 		34F7642821A7092800E68956 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -944,25 +881,21 @@
 				34F2B05A2420CAE500B615AC /* Array.swift in Sources */,
 				3485E81A21A5A716002248B7 /* Configuration.swift in Sources */,
 				34F2B0582420CA1800B615AC /* Optional.swift in Sources */,
-				3420DF6921AFDFE70004C59F /* AutoEquatable.generated.swift in Sources */,
 				0BB3386F29EDB7C400A589F5 /* ContentView.swift in Sources */,
 				34BE878821B5928200B4FD22 /* Client.swift in Sources */,
 				0BBFE30A2A1D40DE00E63CED /* UIView+ActivityView.swift in Sources */,
 				340088E021A81F4C0072B1F0 /* PropertyListHelper.swift in Sources */,
 				0B10D3C12684ADE900C2AAEC /* MarvelDto.swift in Sources */,
-				34306A3521B135D6005B0A84 /* AutoMockable.swift in Sources */,
 				0BB3387129EDB85C00A589F5 /* Persistance.swift in Sources */,
 				341810C421B80BF100BC9E1C /* Decodable+Codable.swift in Sources */,
 				340088FD21A822940072B1F0 /* System.swift in Sources */,
 				3485E79521A55E05002248B7 /* iOS_Boilerplate.xcdatamodeld in Sources */,
 				0B49B29529E306E700AF7EAF /* String+Currency.swift in Sources */,
 				34306A4021B13DD6005B0A84 /* EventDTO.swift in Sources */,
-				34306A3321B135C0005B0A84 /* AutoEquatable.swift in Sources */,
 				340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */,
 				340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */,
 				0BB45F8E27679A0D00564BB7 /* LocalizedString.swift in Sources */,
 				34F7641E21A6E4E400E68956 /* Http.swift in Sources */,
-				3420DF6121AFDCD40004C59F /* FakeProtocol.swift in Sources */,
 				0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,
