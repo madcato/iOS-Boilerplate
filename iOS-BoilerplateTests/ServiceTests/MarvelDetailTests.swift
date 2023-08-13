@@ -27,7 +27,6 @@ class MarvelDetailTests: XCTestCase {
         } catch {
             XCTAssertTrue(false)
         }
-        
     }
 
 }

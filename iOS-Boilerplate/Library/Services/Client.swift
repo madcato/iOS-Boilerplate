@@ -77,7 +77,7 @@ class Client {
         }
         dataTask?.resume()
     }
-    
+
     /// request data. This is a GET HTTPrequest (async/await)
     /// - param endpoint: url of the endpoint and the type of the response.
     ///               The response will be decoded to this format

@@ -10,8 +10,9 @@ import UIKit
 
 class BlinkingImage: UIImageView {
   override func awakeFromNib() {
-    UIView.animate(withDuration: 1.2, delay: 0.0, options: [.autoreverse, .repeat, .curveEaseInOut], animations: {
+      super.awakeFromNib()
+    UIView.animate(withDuration: 1.2, delay: 0.0, options: [.autoreverse, .repeat, .curveEaseInOut]) {
       self.alpha = 0.10
-    })
+    }
   }
 }

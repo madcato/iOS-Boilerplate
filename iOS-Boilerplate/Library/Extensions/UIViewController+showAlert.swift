@@ -27,7 +27,7 @@ extension UIViewController {
         }
         rootViewController?.showAlert(message, title: title, onFinish: onFinish)
     }
-    
+
     static func rootViewController() -> UIViewController? {
         let keyWindow = UIApplication
             .shared

@@ -9,7 +9,7 @@
 import SwiftUI
 
 @main
-struct iOSBoilerplateApp: App {
+struct MainiOSBoilerplateApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
@@ -19,4 +19,3 @@ struct iOSBoilerplateApp: App {
         }
     }
 }
-

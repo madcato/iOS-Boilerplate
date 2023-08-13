@@ -374,3 +374,4 @@ class SortBy {
         return sortDescriptors
     }
 }
+// swiftlint:enable type_body_length

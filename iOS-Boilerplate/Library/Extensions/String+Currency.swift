@@ -9,7 +9,9 @@ import Foundation
 
 extension String {
     func currencyString() -> String {
-        guard let value = Double(self) else { return "" }
+        guard let value = Double(self) else {
+            return ""
+        }
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.maximumFractionDigits = 2

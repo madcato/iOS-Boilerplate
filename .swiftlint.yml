@@ -17,8 +17,8 @@ disabled_rules:
   - inclusive_language
   - unavailable_function
   - redundant_type_annotation
+  - force_unwrapping
 opt_in_rules:
-  - anyobject_protocol
   - array_init
   - attributes
   - closure_body_length
@@ -34,12 +34,10 @@ opt_in_rules:
   - empty_string
   - empty_xctest_method
   - explicit_init
-  - explicit_self
   - extension_access_modifier
   - fallthrough
   - fatal_error_message
   - first_where
-  - force_unwrapping
   - function_default_parameter_at_end
   - identical_operands
   - implicit_return

@@ -9,12 +9,12 @@ import Foundation
 
 extension String {
   subscript(index: Int) -> Character {
-    return self[self.index(self.startIndex, offsetBy: index)]
+    self[self.index(self.startIndex, offsetBy: index)]
   }
 }
 
 extension String {
-  public func levenshtein(_ other: String) -> Int {
+  func levenshtein(_ other: String) -> Int {
     let sCount = self.count
     let oCount = other.count
     guard sCount != 0 else {

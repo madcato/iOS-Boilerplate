@@ -8,7 +8,7 @@
 import Foundation
 import StoreKit
 
-protocol StoreKitDelegate {
+protocol StoreKitDelegate: class {
     func productsDownloaded(_ availableProducts: [String: SKProduct])
     func paymentStarted()
     func restoreStarted()
@@ -22,7 +22,7 @@ class StoreKit: NSObject {
 
   var delegate: StoreKitDelegate?
   var isAuthorizedForPayments: Bool {
-      return SKPaymentQueue.canMakePayments()
+    SKPaymentQueue.canMakePayments()
   }
 
   private var productRequest: SKProductsRequest!
@@ -30,7 +30,7 @@ class StoreKit: NSObject {
   private var availableProducts: [String: SKProduct] = [:]
 
   static func canMAkePayments() -> Bool {
-      return SKPaymentQueue.canMakePayments()
+      SKPaymentQueue.canMakePayments()
   }
   func configureObserver(with delegate: StoreKitDelegate?, productIds: [String]) {
       self.delegate = delegate
