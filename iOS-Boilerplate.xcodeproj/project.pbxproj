@@ -116,6 +116,7 @@
 		0B10D3BE2684ADE800C2AAEC /* ImageDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDto.swift; sourceTree = "<group>"; };
 		0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelDto.swift; sourceTree = "<group>"; };
 		0B10D3C22684B3CF00C2AAEC /* MarvelDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailTests.swift; sourceTree = "<group>"; };
+		0B28122E2A88CDF800A48CE9 /* Icons-demo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Icons-demo.xcassets"; sourceTree = "<group>"; };
 		0B49B29429E306E700AF7EAF /* String+Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Currency.swift"; sourceTree = "<group>"; };
 		0B9C0C37267B21B800999AB4 /* String+hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hash.swift"; sourceTree = "<group>"; };
 		0BB3386C29EDB77800A589F5 /* iOS-BoilerplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS-BoilerplateApp.swift"; sourceTree = "<group>"; };
@@ -403,6 +404,7 @@
 				0BC2283C27049B9F00D560FF /* Icons.xcassets */,
 				0BC2284027049BCA00D560FF /* Icons-dev.xcassets */,
 				0BC2283E27049BBB00D560FF /* Icons-uat.xcassets */,
+				0B28122E2A88CDF800A48CE9 /* Icons-demo.xcassets */,
 				3485E7CE21A58095002248B7 /* Supporting Files */,
 			);
 			path = "iOS-Boilerplate";
