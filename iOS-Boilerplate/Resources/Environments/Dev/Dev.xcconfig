@@ -1,0 +1,21 @@
+//
+//  Dev.xcconfig
+//  iOS-Boilerplate
+//
+//  Created by Daniel Vela on 13/8/23.
+//  Copyright © 2023 veladan. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BP_APP_NAME = iOS-Boilerplate Dev
+BP_APP_VERSION = 0.2
+BP_APP_BUNDLE_ID = org.veladan.iOS-Boilerplate.Dev
+BP_APP_ICON = AppIconDev
+
+API_TOKEN = 128039471029387
+PRIVATE_API_TOKEN = 1237480192374097123894710234
+SERVER_URL = https:\/\/dev.server.com
+BASE_PATH = /v2/public
+BP_ENVIRONMENT = Dev

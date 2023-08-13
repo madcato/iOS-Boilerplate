@@ -1,0 +1,21 @@
+//
+//  Staging.xcconfig
+//  iOS-Boilerplate
+//
+//  Created by Daniel Vela on 13/8/23.
+//  Copyright © 2023 veladan. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BP_APP_NAME = iOS-Boilerplate QA
+BP_APP_VERSION = 0.2
+BP_APP_BUNDLE_ID = org.veladan.iOS-Boilerplate.Staging
+BP_APP_ICON = AppIconStaging
+
+API_TOKEN = 2341251251235
+PRIVATE_API_TOKEN = 123513613487509834608234724
+SERVER_URL = https:\/\/sta.server.com
+BASE_PATH = /v1/public
+BP_ENVIRONMENT = Staging

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1430"
-   version = "1.3">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BC228B727049CB000D560FF"
-               BuildableName = "iOS-Boilerplate-uat.app"
-               BlueprintName = "iOS-Boilerplate-uat"
+               BlueprintIdentifier = "3485E78821A55E05002248B7"
+               BuildableName = "iOS-Boilerplate.app"
+               BlueprintName = "iOS-Boilerplate"
                ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,12 +26,11 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "QA"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -44,9 +43,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BC228B727049CB000D560FF"
-            BuildableName = "iOS-Boilerplate-uat.app"
-            BlueprintName = "iOS-Boilerplate-uat"
+            BlueprintIdentifier = "3485E78821A55E05002248B7"
+            BuildableName = "iOS-Boilerplate.app"
+            BlueprintName = "iOS-Boilerplate"
             ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +60,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BC228B727049CB000D560FF"
-            BuildableName = "iOS-Boilerplate-uat.app"
-            BlueprintName = "iOS-Boilerplate-uat"
+            BlueprintIdentifier = "3485E78821A55E05002248B7"
+            BuildableName = "iOS-Boilerplate.app"
+            BlueprintName = "iOS-Boilerplate"
             ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -72,7 +71,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "QA"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

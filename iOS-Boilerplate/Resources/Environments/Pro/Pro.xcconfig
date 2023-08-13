@@ -1,0 +1,21 @@
+//
+//  Pro.xcconfig
+//  iOS-Boilerplate
+//
+//  Created by Daniel Vela on 13/8/23.
+//  Copyright © 2023 veladan. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BP_APP_NAME = iOS-Boilerplate
+BP_APP_VERSION = 0.1
+BP_APP_BUNDLE_ID = org.veladan.iOS-Boilerplate
+BP_APP_ICON = AppIcon
+
+API_TOKEN = 8281989128282
+PRIVATE_API_TOKEN = 1928374123764917283640871263
+SERVER_URL = https:\/\/pro.server.com
+BASE_PATH = /v1/public
+BP_ENVIRONMENT = Pro

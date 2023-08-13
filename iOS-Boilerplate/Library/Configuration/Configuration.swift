@@ -8,46 +8,22 @@
 
 import UIKit
 
-enum ConfigurationKey: String {
-    case kServerURLkey = "serverURL"
-    case kAPIToken = "api-token"
-    case kAPIPrivateToken = "private-api-token"
-    case kBasePath = "basePath"
-}
-
 class Configuration {
-    static func value(for key: ConfigurationKey) -> String {
-        guard let result = environmentsConfig[key.rawValue] else {
-            fatalError("Key \(key) not defined in enviroments.plist")  // Key not defined in enviroments.plist
+    enum Key: String {
+        case serverURL = "serverURL"
+        case apiToken = "api-token"
+        case apiPrivateToken = "private-api-token"
+        case basePath = "basePath"
+        case environment = "environment"
+    }
+
+    static func value(for key: Key) -> String {
+        guard let result = (Bundle.main.infoDictionary?[key.rawValue] as? String)?
+            .replacingOccurrences(of: "\\", with: "") else {
+            fatalError("Environment variable \(key.rawValue) not found or incorrect format in \"Info.plist\"")
         }
         return result
     }
 
     private init() {}
-
-    private static var internalEnvironmentsConfig: [String: String] = [:]
-
-    private static var environmentsConfig: [String: String] = {
-        let conf = internalEnvironmentsConfig
-        if conf.isEmpty == false {
-            return conf
-        }
-        if let url = Bundle.main.url(forResource: "environments", withExtension: "plist") {
-            do {
-                let data = try Data(contentsOf: url)
-                let prop = PropertyListSerialization.ReadOptions(rawValue: 0)
-                let plist = try PropertyListSerialization.propertyList(from: data,
-                                                                       options: prop,
-                                                                       format: nil)
-                    as? [String: String]
-                if let result = plist {
-                    internalEnvironmentsConfig = result
-                    return result
-                }
-            } catch {
-                fatalError(error.localizedDescription)  // Error reading environemnts.plist file
-            }
-        }
-        return [:]
-    }()
 }
