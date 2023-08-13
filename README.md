@@ -129,7 +129,6 @@ Project
 * iOS 10+
 * brew
 * fastlane
-* sourcery
 * swiftlint
 
 ### Getting the source
@@ -148,12 +147,6 @@ First, check out the source, including all the dependencies:
 
     $ xcode-select --install
     $ brew install fastlane
-
-#### [Sourcery](https://github.com/krzysztofzablocki/Sourcery)
-
-    $ brew install sourcery
-
-Configure Sourcery editing file `.sourcery.yml` in the root of the project.
 
 #### [SwiftLint](https://github.com/realm/SwiftLint)
 
