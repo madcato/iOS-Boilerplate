@@ -35,7 +35,6 @@ extension Decodable {
                 fatalError("Unresolved error \(error)")
             #endif
         }
-        return nil
     }
 }
 

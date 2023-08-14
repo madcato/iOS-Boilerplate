@@ -251,12 +251,12 @@
 			path = Controls;
 			sourceTree = "<group>";
 		};
-		0BBFE3122A1D414100E63CED /* StorKit */ = {
+		0BBFE3122A1D414100E63CED /* StoreKit */ = {
 			isa = PBXGroup;
 			children = (
 				0BBFE3132A1D414A00E63CED /* MarlaStoreKit.swift */,
 			);
-			path = StorKit;
+			path = StoreKit;
 			sourceTree = "<group>";
 		};
 		0BC229312704A39100D560FF /* Staging */ = {
@@ -456,7 +456,7 @@
 		3485E7C321A57F7F002248B7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				0BBFE3122A1D414100E63CED /* StorKit */,
+				0BBFE3122A1D414100E63CED /* StoreKit */,
 				0BBFE30E2A1D412700E63CED /* Controls */,
 				3485E7C621A57FE1002248B7 /* Extensions */,
 				3485E81821A5A6A6002248B7 /* Configuration */,
