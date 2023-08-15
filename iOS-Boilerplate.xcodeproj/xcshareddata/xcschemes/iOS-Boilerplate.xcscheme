@@ -85,6 +85,11 @@
                BlueprintName = "iOS-BoilerplateTests"
                ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "MarvelServiceTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

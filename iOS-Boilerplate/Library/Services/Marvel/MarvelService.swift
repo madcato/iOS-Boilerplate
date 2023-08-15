@@ -16,8 +16,8 @@ class MarvelService {
                                               defaultHeaders: ["Accept": "application/json",
                                                                "secret": "a42b6d2f81c8ca1d0c30e5c99149b8f5"])
 
-    func listCharacters() async throws -> [Marvel.CharacterDto] {
-        let response: Marvel.ResponseDto = try await marvelAPIClient.request(MarvelAPI.characters())
+    func listCharacters(_ query: Marvel.CharacterListQuery? = nil) async throws -> [Marvel.CharacterDto] {
+        let response: Marvel.ResponseDto = try await marvelAPIClient.request(MarvelAPI.characters(query))
         return response.data!.results!
     }
 

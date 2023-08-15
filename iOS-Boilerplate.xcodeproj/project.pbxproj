@@ -12,7 +12,6 @@
 		0B0E514022BD605D00C1D31E /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0E513D22BD605D00C1D31E /* TestHelper.swift */; };
 		0B10D3C02684ADE900C2AAEC /* ImageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BE2684ADE800C2AAEC /* ImageDto.swift */; };
 		0B10D3C12684ADE900C2AAEC /* MarvelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */; };
-		0B10D3C32684B3CF00C2AAEC /* MarvelDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3C22684B3CF00C2AAEC /* MarvelDetailTests.swift */; };
 		0B10D3C42684B48500C2AAEC /* MarvelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BC2684ADC400C2AAEC /* MarvelService.swift */; };
 		0B10D3C52684B48900C2AAEC /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BB2684ADC000C2AAEC /* MarvelAPI.swift */; };
 		0B49B29529E306E700AF7EAF /* String+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49B29429E306E700AF7EAF /* String+Currency.swift */; };
@@ -26,6 +25,8 @@
 		0BBFE30C2A1D40DE00E63CED /* Levenshtein.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFE3062A1D40DE00E63CED /* Levenshtein.swift */; };
 		0BBFE30D2A1D40DE00E63CED /* UIView+roundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBFE3092A1D40DE00E63CED /* UIView+roundCorners.swift */; };
 		0BC2283D27049B9F00D560FF /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2283C27049B9F00D560FF /* Icons.xcassets */; };
+		0BC28E7F2A8B7388000B9F15 /* MarvelServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC28E7E2A8B7388000B9F15 /* MarvelServiceTests.swift */; };
+		0BC28E812A8B7C99000B9F15 /* Dictionarizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC28E802A8B7C99000B9F15 /* Dictionarizable.swift */; };
 		0BFD565B26566BC70035ABF9 /* TestStringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD565A26566BC70035ABF9 /* TestStringHash.swift */; };
 		340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088D721A81AB00072B1F0 /* CoreDataStack.swift */; };
 		340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DD21A81E8E0072B1F0 /* UrlHelper.swift */; };
@@ -113,7 +114,6 @@
 		0B10D3BC2684ADC400C2AAEC /* MarvelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelService.swift; sourceTree = "<group>"; };
 		0B10D3BE2684ADE800C2AAEC /* ImageDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDto.swift; sourceTree = "<group>"; };
 		0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelDto.swift; sourceTree = "<group>"; };
-		0B10D3C22684B3CF00C2AAEC /* MarvelDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailTests.swift; sourceTree = "<group>"; };
 		0B28123B2A88D86E00A48CE9 /* Demo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Demo.xcconfig; sourceTree = "<group>"; };
 		0B28123C2A88D88300A48CE9 /* Pro.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Pro.xcconfig; sourceTree = "<group>"; };
 		0B28123D2A88D88E00A48CE9 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
@@ -133,6 +133,8 @@
 		0BBFE3112A1D413500E63CED /* MainTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextView.swift; sourceTree = "<group>"; };
 		0BBFE3132A1D414A00E63CED /* MarlaStoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarlaStoreKit.swift; sourceTree = "<group>"; };
 		0BC2283C27049B9F00D560FF /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		0BC28E7E2A8B7388000B9F15 /* MarvelServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelServiceTests.swift; sourceTree = "<group>"; };
+		0BC28E802A8B7C99000B9F15 /* Dictionarizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionarizable.swift; sourceTree = "<group>"; };
 		0BFD563D26566A290035ABF9 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 		0BFD563E26566A290035ABF9 /* SQLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SQLite.xcframework; path = Carthage/Build/SQLite.xcframework; sourceTree = "<group>"; };
 		0BFD564026566A290035ABF9 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FLEX.xcframework; path = Carthage/Build/FLEX.xcframework; sourceTree = "<group>"; };
@@ -488,6 +490,7 @@
 				0BBFE3072A1D40DE00E63CED /* UIView+ActivityView.swift */,
 				0BBFE3092A1D40DE00E63CED /* UIView+roundCorners.swift */,
 				0BBFE3082A1D40DE00E63CED /* UIViewController+showAlert.swift */,
+				0BC28E802A8B7C99000B9F15 /* Dictionarizable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -616,7 +619,7 @@
 		34BE873B21B57ABE00B4FD22 /* ServiceTests */ = {
 			isa = PBXGroup;
 			children = (
-				0B10D3C22684B3CF00C2AAEC /* MarvelDetailTests.swift */,
+				0BC28E7E2A8B7388000B9F15 /* MarvelServiceTests.swift */,
 			);
 			path = ServiceTests;
 			sourceTree = "<group>";
@@ -876,6 +879,7 @@
 			files = (
 				0BBFE30B2A1D40DE00E63CED /* UIViewController+showAlert.swift in Sources */,
 				3485E80E21A58A5C002248B7 /* PersonDTO.swift in Sources */,
+				0BC28E812A8B7C99000B9F15 /* Dictionarizable.swift in Sources */,
 				340088EC21A81F930072B1F0 /* String+urlEncode.swift in Sources */,
 				0B10D3C02684ADE900C2AAEC /* ImageDto.swift in Sources */,
 				34F2B05A2420CAE500B615AC /* Array.swift in Sources */,
@@ -924,7 +928,7 @@
 				0B0E513F22BD605D00C1D31E /* TestHelper.swift in Sources */,
 				3485E7A521A55E07002248B7 /* BoilerplateTests.swift in Sources */,
 				341810CB21B8321400BC9E1C /* MockAPIClient.swift in Sources */,
-				0B10D3C32684B3CF00C2AAEC /* MarvelDetailTests.swift in Sources */,
+				0BC28E7F2A8B7388000B9F15 /* MarvelServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
