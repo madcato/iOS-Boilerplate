@@ -24,18 +24,18 @@ final class MarvelDownloaderTests: XCTestCase {
 
     func testFirstDownload() async throws {
         try await downloader?.downloadAndStoreCharacters()
-        let count = database?.count("MarvelCharacter")
+        let count = MarvelCharacter.count(in: database!)
         XCTAssertEqual(count, 100)
     }
 
     func testTwoDownloads() async throws {
         try await downloader?.downloadAndStoreCharacters()
-        var count = database?.count("MarvelCharacter")
+        var count = MarvelCharacter.count(in: database!)
         XCTAssertEqual(count, 100)
 
         // Second download must not change number of characters
         try await downloader?.downloadAndStoreCharacters()
-        count = database?.count("MarvelCharacter")
+        count = MarvelCharacter.count(in: database!)
         XCTAssertEqual(count, 100)
     }
 }

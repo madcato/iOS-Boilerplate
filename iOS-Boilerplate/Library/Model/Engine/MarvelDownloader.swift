@@ -24,12 +24,11 @@ class MarvelDownloader {
             let query = Marvel.CharacterListQuery(limit: downloadLimit)
             let characterList = try await service.listCharacters(query)
             characterList.forEach { character in
-                guard database.getObject(ofType: "MarvelCharacter",
-                                         Where(predicate: "marvelId == %@", arguments: [character.id])) == nil else {
+                guard MarvelCharacter.getObject(by: "marvelId", equalTo: character.id, in: database) == nil else {
                     // This character already exits
                     return
                 }
-                guard let object = database.createObject(entityName: "MarvelCharacter") as? MarvelCharacter else {
+                guard let object = MarvelCharacter.create(in: database) else {
                     fatalError("Imposible to create MarvelCharacter CoreData object")
                 }
 

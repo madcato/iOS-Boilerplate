@@ -17,6 +17,8 @@
 		0B49B29529E306E700AF7EAF /* String+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B49B29429E306E700AF7EAF /* String+Currency.swift */; };
 		0B89C7B52A8B8F2800251A7A /* iOS_Boilerplate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7B32A8B8F2800251A7A /* iOS_Boilerplate.xcdatamodeld */; };
 		0B89C7B72A8BCBD000251A7A /* MarvelDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7B62A8BCBD000251A7A /* MarvelDownloaderTests.swift */; };
+		0B89C7BA2A8BD2AA00251A7A /* MarvelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7B92A8BD2AA00251A7A /* MarvelCharacter.swift */; };
+		0B89C7BC2A8BD30D00251A7A /* CoreDataStackEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7BB2A8BD30D00251A7A /* CoreDataStackEntity.swift */; };
 		0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
 		0BB3386D29EDB77800A589F5 /* iOS-BoilerplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3386C29EDB77800A589F5 /* iOS-BoilerplateApp.swift */; };
 		0BB3386F29EDB7C400A589F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3386E29EDB7C400A589F5 /* ContentView.swift */; };
@@ -123,6 +125,8 @@
 		0B49B29429E306E700AF7EAF /* String+Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Currency.swift"; sourceTree = "<group>"; };
 		0B89C7B42A8B8F2800251A7A /* iOS_Boilerplate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS_Boilerplate.xcdatamodel; sourceTree = "<group>"; };
 		0B89C7B62A8BCBD000251A7A /* MarvelDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDownloaderTests.swift; sourceTree = "<group>"; };
+		0B89C7B92A8BD2AA00251A7A /* MarvelCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacter.swift; sourceTree = "<group>"; };
+		0B89C7BB2A8BD30D00251A7A /* CoreDataStackEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackEntity.swift; sourceTree = "<group>"; };
 		0B9C0C37267B21B800999AB4 /* String+hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hash.swift"; sourceTree = "<group>"; };
 		0BB3386C29EDB77800A589F5 /* iOS-BoilerplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS-BoilerplateApp.swift"; sourceTree = "<group>"; };
 		0BB3386E29EDB7C400A589F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -245,6 +249,15 @@
 				0B28123B2A88D86E00A48CE9 /* Demo.xcconfig */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		0B89C7B82A8BD29300251A7A /* Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				0B89C7B32A8B8F2800251A7A /* iOS_Boilerplate.xcdatamodeld */,
+				0B89C7B92A8BD2AA00251A7A /* MarvelCharacter.swift */,
+			);
+			path = Marvel;
 			sourceTree = "<group>";
 		};
 		0BBFE30E2A1D412700E63CED /* Controls */ = {
@@ -623,8 +636,9 @@
 		34B9171A21C0EE9A00409CB8 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				0B89C7B32A8B8F2800251A7A /* iOS_Boilerplate.xcdatamodeld */,
+				0B89C7B82A8BD29300251A7A /* Marvel */,
 				340088D721A81AB00072B1F0 /* CoreDataStack.swift */,
+				0B89C7BB2A8BD30D00251A7A /* CoreDataStackEntity.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -898,6 +912,7 @@
 				0B10D3C02684ADE900C2AAEC /* ImageDto.swift in Sources */,
 				34F2B05A2420CAE500B615AC /* Array.swift in Sources */,
 				3485E81A21A5A716002248B7 /* Configuration.swift in Sources */,
+				0B89C7BA2A8BD2AA00251A7A /* MarvelCharacter.swift in Sources */,
 				34F2B0582420CA1800B615AC /* Optional.swift in Sources */,
 				0BB3386F29EDB7C400A589F5 /* ContentView.swift in Sources */,
 				34BE878821B5928200B4FD22 /* Client.swift in Sources */,
@@ -914,6 +929,7 @@
 				340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */,
 				340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */,
 				0BB45F8E27679A0D00564BB7 /* LocalizedString.swift in Sources */,
+				0B89C7BC2A8BD30D00251A7A /* CoreDataStackEntity.swift in Sources */,
 				34F7641E21A6E4E400E68956 /* Http.swift in Sources */,
 				0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,

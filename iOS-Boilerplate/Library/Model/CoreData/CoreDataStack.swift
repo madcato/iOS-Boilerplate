@@ -336,7 +336,7 @@ class CoreDataStack: NSObject {
 class Where {
     var predicate: NSPredicate
 
-    init(predicate: String, arguments: [Any]?) {
+    init(predicate: String, arguments: [Any]? = nil) {
         self.predicate = NSPredicate(format: predicate, argumentArray: arguments)
     }
 }
