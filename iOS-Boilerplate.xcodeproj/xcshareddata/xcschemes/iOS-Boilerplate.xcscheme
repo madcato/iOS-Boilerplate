@@ -94,6 +94,17 @@
                </Test>
             </SkippedTests>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B89C7C02A8BDA9500251A7A"
+               BuildableName = "iOS-BoilerplateAPITests.xctest"
+               BlueprintName = "iOS-BoilerplateAPITests"
+               ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
