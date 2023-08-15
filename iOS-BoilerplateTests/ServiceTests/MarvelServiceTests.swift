@@ -10,6 +10,7 @@
 import XCTest
 
 // IMPORTANT: Launch this tests only manually
+// to avoid internet queries wait time
 final class MarvelServiceTests: XCTestCase {
     var service: MarvelService!
 

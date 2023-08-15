@@ -87,6 +87,9 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "MarvelDownloaderTests">
+               </Test>
+               <Test
                   Identifier = "MarvelServiceTests">
                </Test>
             </SkippedTests>

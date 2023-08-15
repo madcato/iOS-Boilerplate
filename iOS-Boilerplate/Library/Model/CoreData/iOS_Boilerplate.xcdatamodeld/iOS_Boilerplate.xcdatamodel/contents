@@ -9,7 +9,4 @@
         <attribute name="resourceUrl" optional="YES" attributeType="String"/>
         <attribute name="thumbnailUrl" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="MarvelDisclaimer" representedClassName="MarvelDisclaimer" syncable="YES" codeGenerationType="class">
-        <attribute name="text" optional="YES" attributeType="String"/>
-    </entity>
 </model>
