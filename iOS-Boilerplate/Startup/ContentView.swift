@@ -20,24 +20,30 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink(destination: DetailView(item: item)) {
-                        HStack {
-                            if let url = URL(string: item.thumbnailUrl ?? "") {
-                                URLImage(url: url)
-                                    .border(Color.black, width: 2)
-                                    .cornerRadius(10.0)
-                                    .frame(width: 50, height: 50)
-                                    .clipped()
+            VStack {
+                List {
+                    ForEach(items) { item in
+                        NavigationLink(destination: DetailView(item: item)) {
+                            HStack {
+                                if let url = URL(string: item.thumbnailUrl ?? "") {
+                                    URLImage(url: url)
+                                        .border(Color.black, width: 2)
+                                        .cornerRadius(10.0)
+                                        .frame(width: 50, height: 50)
+                                        .clipped()
+                                }
+                                Text(item.name ?? "No name")
                             }
-                            Text(item.name ?? "No name")
                         }
                     }
                 }
+                Spacer()
+                Text("Data provided by Marvel. © 2023 MARVEL")
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                    .padding()
             }
             .navigationBarTitle("Marvel Characters", displayMode: .large)
-
         }
     }
 }
