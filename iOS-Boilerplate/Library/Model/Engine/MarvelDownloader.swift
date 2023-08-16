@@ -32,10 +32,12 @@ class MarvelDownloader {
                     fatalError("Imposible to create MarvelCharacter CoreData object")
                 }
 
-                object.charactherDescription = character.description
+                object.characterDescription = character.description
                 object.marvelId = Int64(character.id)
                 object.name = character.name
-                object.resourceUrl = character.urls?.first?.url
+                object.resourceUrl = character.urls?.first { urlDto in
+                    urlDto.type == "detail" ? true : false
+                }?.url
                 object.thumbnailUrl = character.thumbnail?.urlString
                 object.favourite = false
             }

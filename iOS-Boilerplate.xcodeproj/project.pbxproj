@@ -21,6 +21,8 @@
 		0B89C7C42A8BDA9500251A7A /* iOS_BoilerplateAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7C32A8BDA9500251A7A /* iOS_BoilerplateAPITests.swift */; };
 		0B89C7CC2A8BDAAD00251A7A /* MarvelServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC28E7E2A8B7388000B9F15 /* MarvelServiceTests.swift */; };
 		0B89C7CD2A8BDAB100251A7A /* MarvelDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7B62A8BCBD000251A7A /* MarvelDownloaderTests.swift */; };
+		0B91E4BB2A8D41350044F0CC /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91E4BA2A8D41350044F0CC /* URLImage.swift */; };
+		0B91E4BD2A8D439C0044F0CC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91E4BC2A8D439C0044F0CC /* DetailView.swift */; };
 		0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
 		0BB3386D29EDB77800A589F5 /* iOS-BoilerplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3386C29EDB77800A589F5 /* iOS-BoilerplateApp.swift */; };
 		0BB3386F29EDB7C400A589F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3386E29EDB7C400A589F5 /* ContentView.swift */; };
@@ -137,6 +139,8 @@
 		0B89C7BB2A8BD30D00251A7A /* CoreDataStackEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackEntity.swift; sourceTree = "<group>"; };
 		0B89C7C12A8BDA9500251A7A /* iOS-BoilerplateAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-BoilerplateAPITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B89C7C32A8BDA9500251A7A /* iOS_BoilerplateAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_BoilerplateAPITests.swift; sourceTree = "<group>"; };
+		0B91E4BA2A8D41350044F0CC /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		0B91E4BC2A8D439C0044F0CC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		0B9C0C37267B21B800999AB4 /* String+hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hash.swift"; sourceTree = "<group>"; };
 		0BB3386C29EDB77800A589F5 /* iOS-BoilerplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS-BoilerplateApp.swift"; sourceTree = "<group>"; };
 		0BB3386E29EDB7C400A589F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -291,6 +295,7 @@
 				0BBFE30F2A1D413500E63CED /* BlinkingImage.swift */,
 				0BBFE3102A1D413500E63CED /* GentleActivityIndicatorView.swift */,
 				0BBFE3112A1D413500E63CED /* MainTextView.swift */,
+				0B91E4BA2A8D41350044F0CC /* URLImage.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -496,6 +501,7 @@
 				0BB3386C29EDB77800A589F5 /* iOS-BoilerplateApp.swift */,
 				0BB3386E29EDB7C400A589F5 /* ContentView.swift */,
 				0BB3387029EDB85C00A589F5 /* Persistance.swift */,
+				0B91E4BC2A8D439C0044F0CC /* DetailView.swift */,
 			);
 			path = Startup;
 			sourceTree = "<group>";
@@ -979,6 +985,7 @@
 				0B10D3C02684ADE900C2AAEC /* ImageDto.swift in Sources */,
 				34F2B05A2420CAE500B615AC /* Array.swift in Sources */,
 				3485E81A21A5A716002248B7 /* Configuration.swift in Sources */,
+				0B91E4BB2A8D41350044F0CC /* URLImage.swift in Sources */,
 				0B89C7BA2A8BD2AA00251A7A /* MarvelCharacter.swift in Sources */,
 				34F2B0582420CA1800B615AC /* Optional.swift in Sources */,
 				0BB3386F29EDB7C400A589F5 /* ContentView.swift in Sources */,
@@ -996,6 +1003,7 @@
 				340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */,
 				340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */,
 				0BB45F8E27679A0D00564BB7 /* LocalizedString.swift in Sources */,
+				0B91E4BD2A8D439C0044F0CC /* DetailView.swift in Sources */,
 				0B89C7BC2A8BD30D00251A7A /* CoreDataStackEntity.swift in Sources */,
 				34F7641E21A6E4E400E68956 /* Http.swift in Sources */,
 				0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */,
