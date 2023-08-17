@@ -33,6 +33,12 @@ struct ContentView: View {
                                         .clipped()
                                 }
                                 Text(item.name ?? "No name")
+                                Spacer()
+                                if item.favourite {
+                                    Image("favorite_star")
+                                        .resizable()
+                                        .frame(width: 50, height: 50)
+                                }
                             }
                         }
                     }
