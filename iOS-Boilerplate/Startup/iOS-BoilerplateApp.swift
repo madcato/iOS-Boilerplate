@@ -10,17 +10,18 @@ import SwiftUI
 
 @main
 struct MainiOSBoilerplateApp: App {
-    let persistenceController = CoreDataStack(modelName: "iOS_Boilerplate")
+    let coreDataStack = CoreDataStack(modelName: "iOS_Boilerplate")
     @State private var showingAlert = false
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.managedObjectContext)
+                .environmentObject(coreDataStack)
+                .environment(\.managedObjectContext, coreDataStack.managedObjectContext)
                 .onAppear {
                     Task {
                         do {
-                            let downloader = MarvelDownloader(with: persistenceController, and: MarvelService())
+                            let downloader = MarvelDownloader(with: coreDataStack, and: MarvelService())
                             try await downloader.downloadAndStoreCharacters()
                         } catch {
                             print(error)
@@ -36,5 +37,3 @@ struct MainiOSBoilerplateApp: App {
         }
     }
 }
-
-

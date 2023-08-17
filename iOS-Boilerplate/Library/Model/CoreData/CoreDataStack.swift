@@ -10,7 +10,7 @@ import CoreData
 import Foundation
 
 // swiftlint:disable type_body_length
-class CoreDataStack: NSObject {
+class CoreDataStack: NSObject, ObservableObject {
     let persistentContainer: NSPersistentContainer!
 
     init(modelName: String, testing: Bool = false) {

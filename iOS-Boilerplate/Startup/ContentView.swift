@@ -10,11 +10,11 @@ import CoreData
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext)
-    private var viewContext
+    @EnvironmentObject var coreDataStack: CoreDataStack
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \MarvelCharacter.marvelId, ascending: true)],
+        entity: MarvelCharacter.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \MarvelCharacter.name, ascending: true)],
         animation: .default)
     private var items: FetchedResults<MarvelCharacter>  // swiftlint:disable:this let_var_whitespace
 

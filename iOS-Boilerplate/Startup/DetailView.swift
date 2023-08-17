@@ -9,9 +9,8 @@
 import SwiftUI
 
 struct DetailView: View {
+    @EnvironmentObject var coreDataStack: CoreDataStack
     @ObservedObject var item: MarvelCharacter
-    @Environment(\.managedObjectContext)
-    var managedObjectContext
 
     var body: some View {
         NavigationView {
@@ -40,11 +39,7 @@ struct DetailView: View {
         .navigationBarItems(trailing:
                                 Button(action: {
             item.favourite.toggle()
-            do {
-                try self.managedObjectContext.save()
-            } catch {
-                print("Error saving managed object context: \(error)")
-            }
+            coreDataStack.saveContext()
         }, label: {
             Image(systemName: item.favourite ? "star.fill" : "star")
         }))
