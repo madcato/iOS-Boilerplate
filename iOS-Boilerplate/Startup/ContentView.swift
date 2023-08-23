@@ -18,31 +18,12 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<MarvelCharacter>  // swiftlint:disable:this let_var_whitespace
 
+    @State private var isShowingRegistryForm = false
+
     var body: some View {
         NavigationView {
             VStack {
-                List {
-                    ForEach(items) { item in
-                        NavigationLink(destination: DetailView(item: item)) {
-                            HStack {
-                                if let url = URL(string: item.thumbnailUrl ?? "") {
-                                    URLImage(url: url)
-                                        .border(Color.black, width: 2)
-                                        .cornerRadius(10.0)
-                                        .frame(width: 50, height: 50)
-                                        .clipped()
-                                }
-                                Text(item.name ?? "No name")
-                                Spacer()
-                                if item.favourite {
-                                    Image("favorite_star")
-                                        .resizable()
-                                        .frame(width: 50, height: 50)
-                                }
-                            }
-                        }
-                    }
-                }
+                ContentViewBody(items: items)
                 Spacer()
                 Text("Data provided by Marvel. © 2023 MARVEL")
                     .font(.caption)
@@ -50,6 +31,43 @@ struct ContentView: View {
                     .padding()
             }
             .navigationBarTitle("Marvel Characters", displayMode: .large)
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                isShowingRegistryForm = true
+            }, label: {
+                    Text("Register")
+                })
+                .sheet(isPresented: $isShowingRegistryForm) {
+                                        RegistryForm(user: User.create(in: coreDataStack)!)
+                })
+        }
+    }
+}
+
+struct ContentViewBody: View {
+    var items: FetchedResults<MarvelCharacter>
+    var body: some View {
+        List {
+            ForEach(items) { item in
+                NavigationLink(destination: DetailView(item: item)) {
+                    HStack {
+                        if let url = URL(string: item.thumbnailUrl ?? "") {
+                            URLImage(url: url)
+                                .border(Color.black, width: 2)
+                                .cornerRadius(10.0)
+                                .frame(width: 50, height: 50)
+                                .clipped()
+                        }
+                        Text(item.name ?? "No name")
+                        Spacer()
+                        if item.favourite {
+                            Image("favorite_star")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                        }
+                    }
+                }
+            }
         }
     }
 }

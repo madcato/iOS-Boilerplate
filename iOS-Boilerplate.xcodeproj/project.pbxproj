@@ -35,6 +35,9 @@
 		0BC2283D27049B9F00D560FF /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2283C27049B9F00D560FF /* Icons.xcassets */; };
 		0BC28E812A8B7C99000B9F15 /* Dictionarizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC28E802A8B7C99000B9F15 /* Dictionarizable.swift */; };
 		0BC28E842A8B8DEE000B9F15 /* MarvelDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC28E832A8B8DEE000B9F15 /* MarvelDownloader.swift */; };
+		0BE44C242A9657FD002C659A /* RegistryForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44C232A9657FD002C659A /* RegistryForm.swift */; };
+		0BE44C262A9662F7002C659A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44C252A9662F6002C659A /* User.swift */; };
+		0BE44C282A966C4E002C659A /* FormTextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE44C272A966C4E002C659A /* FormTextInput.swift */; };
 		0BFD565B26566BC70035ABF9 /* TestStringHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD565A26566BC70035ABF9 /* TestStringHash.swift */; };
 		340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088D721A81AB00072B1F0 /* CoreDataStack.swift */; };
 		340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340088DD21A81E8E0072B1F0 /* UrlHelper.swift */; };
@@ -158,6 +161,9 @@
 		0BC28E7E2A8B7388000B9F15 /* MarvelServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelServiceTests.swift; sourceTree = "<group>"; };
 		0BC28E802A8B7C99000B9F15 /* Dictionarizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionarizable.swift; sourceTree = "<group>"; };
 		0BC28E832A8B8DEE000B9F15 /* MarvelDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDownloader.swift; sourceTree = "<group>"; };
+		0BE44C232A9657FD002C659A /* RegistryForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistryForm.swift; sourceTree = "<group>"; };
+		0BE44C252A9662F6002C659A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0BE44C272A966C4E002C659A /* FormTextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextInput.swift; sourceTree = "<group>"; };
 		0BFD563D26566A290035ABF9 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
 		0BFD563E26566A290035ABF9 /* SQLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SQLite.xcframework; path = Carthage/Build/SQLite.xcframework; sourceTree = "<group>"; };
 		0BFD564026566A290035ABF9 /* FLEX.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FLEX.xcframework; path = Carthage/Build/FLEX.xcframework; sourceTree = "<group>"; };
@@ -277,6 +283,7 @@
 			children = (
 				0B89C7B32A8B8F2800251A7A /* iOS_Boilerplate.xcdatamodeld */,
 				0B89C7B92A8BD2AA00251A7A /* MarvelCharacter.swift */,
+				0BE44C252A9662F6002C659A /* User.swift */,
 			);
 			path = Marvel;
 			sourceTree = "<group>";
@@ -296,6 +303,7 @@
 				0BBFE3102A1D413500E63CED /* GentleActivityIndicatorView.swift */,
 				0BBFE3112A1D413500E63CED /* MainTextView.swift */,
 				0B91E4BA2A8D41350044F0CC /* URLImage.swift */,
+				0BE44C272A966C4E002C659A /* FormTextInput.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -338,6 +346,14 @@
 				0BC28E832A8B8DEE000B9F15 /* MarvelDownloader.swift */,
 			);
 			path = Engine;
+			sourceTree = "<group>";
+		};
+		0BE44C222A9657DC002C659A /* Registry */ = {
+			isa = PBXGroup;
+			children = (
+				0BE44C232A9657FD002C659A /* RegistryForm.swift */,
+			);
+			path = Registry;
 			sourceTree = "<group>";
 		};
 		340088CE21A81A7E0072B1F0 /* DTO */ = {
@@ -460,6 +476,7 @@
 			children = (
 				340C8C5221A8385500D7178F /* iOS-Boilerplate.entitlements */,
 				3485E7C021A5639E002248B7 /* Startup */,
+				0BE44C222A9657DC002C659A /* Registry */,
 				3485E7C321A57F7F002248B7 /* Library */,
 				3485E7C821A58014002248B7 /* Resources */,
 				3485E79621A55E07002248B7 /* Assets.xcassets */,
@@ -979,6 +996,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BBFE30B2A1D40DE00E63CED /* UIViewController+showAlert.swift in Sources */,
+				0BE44C242A9657FD002C659A /* RegistryForm.swift in Sources */,
 				3485E80E21A58A5C002248B7 /* PersonDTO.swift in Sources */,
 				0BC28E812A8B7C99000B9F15 /* Dictionarizable.swift in Sources */,
 				340088EC21A81F930072B1F0 /* String+urlEncode.swift in Sources */,
@@ -1000,6 +1018,7 @@
 				34306A4021B13DD6005B0A84 /* EventDTO.swift in Sources */,
 				0B89C7B52A8B8F2800251A7A /* iOS_Boilerplate.xcdatamodeld in Sources */,
 				0BC28E842A8B8DEE000B9F15 /* MarvelDownloader.swift in Sources */,
+				0BE44C262A9662F7002C659A /* User.swift in Sources */,
 				340088D821A81AB00072B1F0 /* CoreDataStack.swift in Sources */,
 				340088EB21A81F930072B1F0 /* String+subscript.swift in Sources */,
 				0BB45F8E27679A0D00564BB7 /* LocalizedString.swift in Sources */,
@@ -1021,6 +1040,7 @@
 				0B10D3C42684B48500C2AAEC /* MarvelService.swift in Sources */,
 				0BBFE30D2A1D40DE00E63CED /* UIView+roundCorners.swift in Sources */,
 				340088FC21A822940072B1F0 /* AppInfo.swift in Sources */,
+				0BE44C282A966C4E002C659A /* FormTextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
