@@ -23,6 +23,7 @@
 		0B89C7CD2A8BDAB100251A7A /* MarvelDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7B62A8BCBD000251A7A /* MarvelDownloaderTests.swift */; };
 		0B91E4BB2A8D41350044F0CC /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91E4BA2A8D41350044F0CC /* URLImage.swift */; };
 		0B91E4BD2A8D439C0044F0CC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91E4BC2A8D439C0044F0CC /* DetailView.swift */; };
+		0B97EC4F2A979D8E007D78FD /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97EC4E2A979D8E007D78FD /* UserList.swift */; };
 		0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9C0C37267B21B800999AB4 /* String+hash.swift */; };
 		0BB3386D29EDB77800A589F5 /* iOS-BoilerplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3386C29EDB77800A589F5 /* iOS-BoilerplateApp.swift */; };
 		0BB3386F29EDB7C400A589F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3386E29EDB7C400A589F5 /* ContentView.swift */; };
@@ -144,6 +145,7 @@
 		0B89C7C32A8BDA9500251A7A /* iOS_BoilerplateAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_BoilerplateAPITests.swift; sourceTree = "<group>"; };
 		0B91E4BA2A8D41350044F0CC /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		0B91E4BC2A8D439C0044F0CC /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0B97EC4E2A979D8E007D78FD /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
 		0B9C0C37267B21B800999AB4 /* String+hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+hash.swift"; sourceTree = "<group>"; };
 		0BB3386C29EDB77800A589F5 /* iOS-BoilerplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOS-BoilerplateApp.swift"; sourceTree = "<group>"; };
 		0BB3386E29EDB7C400A589F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				0BE44C232A9657FD002C659A /* RegistryForm.swift */,
+				0B97EC4E2A979D8E007D78FD /* UserList.swift */,
 			);
 			path = Registry;
 			sourceTree = "<group>";
@@ -1025,6 +1028,7 @@
 				0B91E4BD2A8D439C0044F0CC /* DetailView.swift in Sources */,
 				0B89C7BC2A8BD30D00251A7A /* CoreDataStackEntity.swift in Sources */,
 				34F7641E21A6E4E400E68956 /* Http.swift in Sources */,
+				0B97EC4F2A979D8E007D78FD /* UserList.swift in Sources */,
 				0B9C0C38267B21B800999AB4 /* String+hash.swift in Sources */,
 				340088E821A81F930072B1F0 /* Date+JSON.swift in Sources */,
 				340088DE21A81E8E0072B1F0 /* UrlHelper.swift in Sources */,

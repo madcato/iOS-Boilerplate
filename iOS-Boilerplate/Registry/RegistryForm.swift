@@ -11,7 +11,7 @@ import SwiftUI
 
 struct RegistryForm: View {
     @EnvironmentObject var coreDataStack: CoreDataStack
-    @StateObject var user: User
+    @Binding var user: User?
     @State var name: String = ""
     @State var surname: String = ""
     @State var email: String = ""
@@ -69,24 +69,24 @@ struct RegistryForm: View {
         }
 
     func loadData() {
-        name = user.name ?? ""
-        surname = user.surname ?? ""
-        email = user.email ?? ""
-        dni = user.dni ?? ""
+        name = user?.name ?? ""
+        surname = user?.surname ?? ""
+        email = user?.email ?? ""
+        dni = user?.dni ?? ""
     }
 
     func hasChanges() -> Bool {
-        name != (user.name ?? "") ||
-        surname != (user.surname ?? "") ||
-        email != (user.email ?? "") ||
-        dni != (user.dni ?? "")
+        name != (user?.name ?? "") ||
+        surname != (user?.surname ?? "") ||
+        email != (user?.email ?? "") ||
+        dni != (user?.dni ?? "")
     }
 
     func saveUser() {
-        user.name = name
-        user.surname = surname
-        user.email = email
-        user.dni = dni
+        user?.name = name
+        user?.surname = surname
+        user?.email = email
+        user?.dni = dni
         coreDataStack.saveContext()
     }
 

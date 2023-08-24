@@ -35,10 +35,10 @@ struct ContentView: View {
                                     Button(action: {
                 isShowingRegistryForm = true
             }, label: {
-                    Text("Register")
+                    Text("Users")
                 })
                 .sheet(isPresented: $isShowingRegistryForm) {
-                                        RegistryForm(user: User.create(in: coreDataStack)!)
+                    UserList()
                 })
         }
     }
