@@ -112,9 +112,33 @@ struct RegistryForm: View {
         if !dniTest.evaluate(with: dni) {
             dniError = "Please enter a valid DNI/NIE"
             return false
-        }
+        } else {
+            let letterArray = "TRWAGMYFPDXBNJZSQVHLCKE"
+            var nieNumber = String(dni.dropFirst().prefix(7))
+            let initialLetter = dni.prefix(1)
 
-        return true
+            switch initialLetter {
+            case "X":
+                nieNumber = "0" + nieNumber
+            case "Y":
+                nieNumber = "1" + nieNumber
+            case "Z":
+                nieNumber = "2" + nieNumber
+            default:
+                nieNumber = initialLetter + nieNumber
+            }
+
+            let position = Int(nieNumber)! % 23
+            let expectedLetter = String(letterArray[letterArray.index(letterArray.startIndex, offsetBy: position)])
+            let receivedLetter = String(dni.suffix(1))
+
+            if expectedLetter == receivedLetter {
+                return true
+            } else {
+                dniError = "Please enter a correct DNI/NIE"
+                return false
+            }
+        }
     }
 
     func dismiss() {
