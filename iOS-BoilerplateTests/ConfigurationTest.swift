@@ -22,10 +22,10 @@ class ConfigurationTest: XCTestCase {
     }
 
     func testServerURLConfiguration() {
-        XCTAssertEqual(Configuration.value(for: .kServerURLkey), "https://pro.server.com")
+        XCTAssertEqual(Configuration.value(for: .serverURL), "https://dev.server.com")
     }
 
     func testApiTokenConfiguration() {
-        XCTAssertEqual(Configuration.value(for: .kAPIToken), "8281989128282")
+        XCTAssertEqual(Configuration.value(for: .apiToken), "128039471029387")
     }
 }

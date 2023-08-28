@@ -11,11 +11,11 @@
 import Foundation
 
 enum MarvelAPI {
-    static func characters() -> Http.Endpoint<Marvel.ResponseDto> {
+    static func characters(_ query: Marvel.CharacterListQuery? = nil) -> Http.Endpoint<Marvel.ResponseDto> {
         Http.Endpoint(
             method: .get,
             path: "/characters",
-            parameters: getAuthParameters()
+            parameters: getAuthParameters().merging(query?.dictionarized ?? [:]) { _, new in new }
         )
     }
 

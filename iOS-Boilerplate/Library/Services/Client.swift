@@ -89,16 +89,19 @@ class Client {
         }
         let url = url(path: endpoint.path)
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-        if let parameters: [String: String?] = endpoint.parameters as? [String: String?] {
-            components?.queryItems = parameters.map { key, value in
-                URLQueryItem(name: key, value: value)
-            }
+        components?.queryItems = endpoint.parameters?.map { pair in
+            URLQueryItem(name: pair.0, value: String(describing: pair.1))
         }
         if let finalQuery = components?.percentEncodedQuery?.replacingOccurrences(of: "+", with: "%2B") {
             components?.percentEncodedQuery = finalQuery
         }
         let urlRequest = URLRequest(url: components?.url ?? url)
         let (data, response) = try await session.data(for: urlRequest)
+        print("--------------")
+        print("\(response)")
+        print("--------------")
+        print("\(String(data: data, encoding: .utf8) ?? "Invalid Data string encoding")")
+        print("--------------")
         if let response = response as? HTTPURLResponse,
            response.statusCode == 200 {
             let responseData = try endpoint.decode(data)

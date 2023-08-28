@@ -17,7 +17,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(BP_APP_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>640</string>
+	<string>979</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
@@ -72,11 +72,11 @@
 	<string>$(API_TOKEN)</string>
 	<key>basePath</key>
 	<string>$(BASE_PATH)</string>
+	<key>environment</key>
+	<string>$(BP_ENVIRONMENT)</string>
 	<key>private-api-token</key>
 	<string>$(PRIVATE_API_TOKEN)</string>
 	<key>serverURL</key>
 	<string>$(SERVER_URL)</string>
-	<key>environment</key>
-	<string>$(BP_ENVIRONMENT)</string>
 </dict>
 </plist>

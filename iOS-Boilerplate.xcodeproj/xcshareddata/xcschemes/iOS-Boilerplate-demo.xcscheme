@@ -28,6 +28,29 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3485E7AA21A55E07002248B7"
+               BuildableName = "iOS-BoilerplateUITests.xctest"
+               BlueprintName = "iOS-BoilerplateUITests"
+               ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B89C7C02A8BDA9500251A7A"
+               BuildableName = "iOS-BoilerplateAPITests.xctest"
+               BlueprintName = "iOS-BoilerplateAPITests"
+               ReferencedContainer = "container:iOS-Boilerplate.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Demo"

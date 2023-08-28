@@ -10,7 +10,7 @@ import CoreData
 import Foundation
 
 // swiftlint:disable type_body_length
-class CoreDataStack: NSObject {
+class CoreDataStack: NSObject, ObservableObject {
     let persistentContainer: NSPersistentContainer!
 
     init(modelName: String, testing: Bool = false) {
@@ -336,7 +336,7 @@ class CoreDataStack: NSObject {
 class Where {
     var predicate: NSPredicate
 
-    init(predicate: String, arguments: [Any]?) {
+    init(predicate: String, arguments: [Any]? = nil) {
         self.predicate = NSPredicate(format: predicate, argumentArray: arguments)
     }
 }
