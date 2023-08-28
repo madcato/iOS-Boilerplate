@@ -72,17 +72,6 @@ Project
 └───Products
 ```
 
-### External frameworks
-- [The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture)
-
-#### Carthage version setting
-
-[Read about Semver](http://semver.org/) to know the meaning of each component in the version code string: a.b.c
-
-\>= 1.0 for “at least version 1.0”       
-~> 1.0 for “compatible with version 1.0”    
-== 1.0 for “exactly version 1.0”    
-
 ### Sample codes
 
 - [Swift 4 json parsing and creating](https://grokswift.com/json-swift-4/) _(See class Library/Model/PersonDTO.swift)_
@@ -101,8 +90,6 @@ Project
 
 - [fastlane](https://fastlane.tools)
   To manage the build of the project and publish the app into TestFlight and App Store
-- [CI/CD with giltlab](https://docs.gitlab.com/ee/ci/yaml/)
-  To create automated jobs for building, analyze code and publications
 - [Swiftlint](https://github.com/realm/SwiftLint)
   To analyze statically code quality
 
@@ -125,8 +112,8 @@ Project
 
 ### Requirements
 
-* Xcode 12+
-* iOS 10+
+* Xcode 14+
+* iOS 14+
 * brew
 * fastlane
 * swiftlint
@@ -154,24 +141,6 @@ First, check out the source, including all the dependencies:
 
 Configure SwiftLint editing file `.swiftlint.yml` in the root of the project.
 
-#### [Twine](https://github.com/scelis/twine)
-
-    $ gem install twine
-
-The twine file is in the root directory.
-
-#### [Carthage](https://github.com/Carthage/Carthage)
-
-    $ brew install carthage
-
-### Building it
-
-First, update carthage:
-
-    $ carthage update --use-xcframeworks
-
-Open the project, HolaBarcelona.xcodeproj, and build and run.
-
 ### Build with fastlane
 
     $ fastlane build
@@ -195,32 +164,6 @@ The computer where fastlane is going to run must have the provissioning and priv
 - https://kean.github.io/post/api-client
 - https://clean-swift.com/clean-swift-ios-architecture/
 
-
-## Implementation sample with Clean-Swift Architecture
-
-In the group ```iOS-Boilerplate/Login/Clean-Swift``` you can find the sample files implementing a login functionality using an [architecture named Clean-Swift](https://clean-swift.com/clean-swift-ios-architecture/):
-
-Files:
-
-- LoginViewController: view controller that manages the login view.
-- LoginModels: Structs to move data between view controller, interactor and presenter
-- LoginInteractor: This class is used from the view controller in order to run the operations launched by the user interacting with the UI. Also manages any other requirement from the view controller.
-- LoginPresenter: This class adapts the data to the final data types that will be showed in the view. Transformations like Date to String and texts translations are made by this class.
-- LoginRouter: This class manages the view transitions.
-- LoginWorker: This class implements the functionality.
-
-## Implementation sample with Redux Architecture
-
-In the group ```iOS-Boilerplate/Login/Redux``` you can find the sample files implementing a login functionality using an [Redux based architecture named ReSwift](https://github.com/ReSwift/ReSwift):
-
-Files:
-
-- LoginReduxViewController: view controller that manages the login view, also Store, Action and Reducer.
-
-## Antoher implementation sample with Clean-Swift Architecture
-
-Inside the project, the group ```Github```, there is a coomplete table view controller and detail view controlles for showing Github event.
-
 ## Recommendations
 
 - Use font styles instead custon or system fonts. Define de font as `Title 1`, `Body`, `Caption` see [UIFontTextStyle Apple documentation](https://developer.apple.com/documentation/uikit/uifonttextstyle). This allows users to activate Acessibility custom fonts.
@@ -229,13 +172,6 @@ Inside the project, the group ```Github```, there is a coomplete table view cont
 - Define custom a `Theme` class to define color, appearances and control styles. To allow to change theme or to create new ones.
 - Define custom clases inheriting form `UIButton`, `UILabel`, etc, to define styles of controls. Examples: `MainButton` class, `CancelButton` class. Use this clases implementation (or its appearances) to define colors, layouts and fonts. Assign this classes in the `Storyboards`.
 - Use `Storyboards` links to avoid creating only one big `Storyboard`, this makes compilation slower and git merging it a mess.
-
-
-## Multi language with Twine
-
-This project includes Twine. The input twine text file is in the base path of the project. In order to share this file with other projects (.Net, Android) its recommended that this file is included into a submodule git repository in order to share it with the rest of the projects. 
-
-This way, each time the repository is refreshed via a `git pull --recurse-submodules`, the last version of the twine file is downloaded.
 
 ## Screenshots with fastlane
 
