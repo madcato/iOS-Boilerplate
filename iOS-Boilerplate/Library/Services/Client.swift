@@ -100,11 +100,7 @@ class Client {
         print("--------------")
         print("\(response)")
         print("--------------")
-        if let content = String(data: data, encoding: .utf8) {
-            print("\(content)")
-        } else {
-            print("Undecodable data")
-        }
+        print("\(String(data: data, encoding: .utf8) ?? "Invalid Data string encoding")")
         print("--------------")
         if let response = response as? HTTPURLResponse,
            response.statusCode == 200 {
