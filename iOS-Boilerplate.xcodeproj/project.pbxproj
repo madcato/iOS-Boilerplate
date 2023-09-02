@@ -14,13 +14,13 @@
 		0B10D3C12684ADE900C2AAEC /* MarvelDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BF2684ADE900C2AAEC /* MarvelDto.swift */; };
 		0B10D3C42684B48500C2AAEC /* MarvelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BC2684ADC400C2AAEC /* MarvelService.swift */; };
 		0B10D3C52684B48900C2AAEC /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B10D3BB2684ADC000C2AAEC /* MarvelAPI.swift */; };
-		0B6866942AA39ABC009B86DB /* BoilerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 0B6866932AA39ABC009B86DB /* BoilerLib */; };
 		0B89C7B52A8B8F2800251A7A /* iOS_Boilerplate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7B32A8B8F2800251A7A /* iOS_Boilerplate.xcdatamodeld */; };
 		0B89C7BA2A8BD2AA00251A7A /* MarvelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7B92A8BD2AA00251A7A /* MarvelCharacter.swift */; };
 		0B89C7C42A8BDA9500251A7A /* iOS_BoilerplateAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7C32A8BDA9500251A7A /* iOS_BoilerplateAPITests.swift */; };
 		0B89C7CC2A8BDAAD00251A7A /* MarvelServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC28E7E2A8B7388000B9F15 /* MarvelServiceTests.swift */; };
 		0B89C7CD2A8BDAB100251A7A /* MarvelDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B89C7B62A8BCBD000251A7A /* MarvelDownloaderTests.swift */; };
 		0B91E4BD2A8D439C0044F0CC /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91E4BC2A8D439C0044F0CC /* DetailView.swift */; };
+		0B9681F62AA3A3A100D6A222 /* BoilerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 0B9681F52AA3A3A100D6A222 /* BoilerLib */; };
 		0B97EC4F2A979D8E007D78FD /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97EC4E2A979D8E007D78FD /* UserList.swift */; };
 		0BB3386D29EDB77800A589F5 /* iOS-BoilerplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3386C29EDB77800A589F5 /* iOS-BoilerplateApp.swift */; };
 		0BB3386F29EDB7C400A589F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3386E29EDB7C400A589F5 /* ContentView.swift */; };
@@ -120,8 +120,6 @@
 		0BC2283C27049B9F00D560FF /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		0BC28E7E2A8B7388000B9F15 /* MarvelServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelServiceTests.swift; sourceTree = "<group>"; };
 		0BC28E832A8B8DEE000B9F15 /* MarvelDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDownloader.swift; sourceTree = "<group>"; };
-		0BE28E702AA38D6600E54319 /* BoilerLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BoilerLib; sourceTree = "<group>"; };
-		0BE28E722AA3912500E54319 /* BoilerLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BoilerLib; sourceTree = "<group>"; };
 		0BE44C232A9657FD002C659A /* RegistryForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistryForm.swift; sourceTree = "<group>"; };
 		0BE44C252A9662F6002C659A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0BFD563D26566A290035ABF9 /* Quick.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Quick.xcframework; path = Carthage/Build/Quick.xcframework; sourceTree = "<group>"; };
@@ -172,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B6866942AA39ABC009B86DB /* BoilerLib in Frameworks */,
+				0B9681F62AA3A3A100D6A222 /* BoilerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,14 +275,6 @@
 			path = Engine;
 			sourceTree = "<group>";
 		};
-		0BE28E712AA3912500E54319 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				0BE28E722AA3912500E54319 /* BoilerLib */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		0BE44C222A9657DC002C659A /* Registry */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,8 +336,6 @@
 		3485E78021A55E05002248B7 = {
 			isa = PBXGroup;
 			children = (
-				0BE28E712AA3912500E54319 /* Packages */,
-				0BE28E702AA38D6600E54319 /* BoilerLib */,
 				3485E78B21A55E05002248B7 /* iOS-Boilerplate */,
 				3485E7A321A55E07002248B7 /* iOS-BoilerplateTests */,
 				3485E7AE21A55E07002248B7 /* iOS-BoilerplateUITests */,
@@ -617,11 +605,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				0BE28E742AA392E000E54319 /* PBXTargetDependency */,
 			);
 			name = "iOS-Boilerplate";
 			packageProductDependencies = (
-				0B6866932AA39ABC009B86DB /* BoilerLib */,
+				0B9681F52AA3A3A100D6A222 /* BoilerLib */,
 			);
 			productName = "iOS-Boilerplate";
 			productReference = 3485E78921A55E05002248B7 /* iOS-Boilerplate.app */;
@@ -718,6 +705,7 @@
 			);
 			mainGroup = 3485E78021A55E05002248B7;
 			packageReferences = (
+				0B9681F42AA3A3A100D6A222 /* XCRemoteSwiftPackageReference "BoilerLib" */,
 			);
 			productRefGroup = 3485E78A21A55E05002248B7 /* Products */;
 			projectDirPath = "";
@@ -907,10 +895,6 @@
 			isa = PBXTargetDependency;
 			target = 3485E78821A55E05002248B7 /* iOS-Boilerplate */;
 			targetProxy = 0B89C7C52A8BDA9500251A7A /* PBXContainerItemProxy */;
-		};
-		0BE28E742AA392E000E54319 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = 0BE28E732AA392E000E54319 /* BoilerLib */;
 		};
 		34322B172428842A00F194E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1707,13 +1691,21 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCSwiftPackageProductDependency section */
-		0B6866932AA39ABC009B86DB /* BoilerLib */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = BoilerLib;
+/* Begin XCRemoteSwiftPackageReference section */
+		0B9681F42AA3A3A100D6A222 /* XCRemoteSwiftPackageReference "BoilerLib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/madcato/BoilerLib.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
 		};
-		0BE28E732AA392E000E54319 /* BoilerLib */ = {
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B9681F52AA3A3A100D6A222 /* BoilerLib */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 0B9681F42AA3A3A100D6A222 /* XCRemoteSwiftPackageReference "BoilerLib" */;
 			productName = BoilerLib;
 		};
 /* End XCSwiftPackageProductDependency section */
