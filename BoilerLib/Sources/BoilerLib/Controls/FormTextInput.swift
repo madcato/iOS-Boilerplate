@@ -8,11 +8,18 @@
 
 import SwiftUI
 
-struct FormTextInput: View {
-    var label: String
-    var error: String
-    @Binding var text: String
-    var body: some View {
+public struct FormTextInput: View {
+    public var label: String
+    public var error: String
+    @Binding public var text: String
+
+    public init(label: String, error: String, text: Binding<String>) {
+        self.label = label
+        self.error = error
+        self._text = text
+    }
+
+    public var body: some View {
         VStack {
             HStack {
                 TextField(label, text: $text)

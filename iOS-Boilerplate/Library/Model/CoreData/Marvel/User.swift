@@ -6,6 +6,8 @@
 //  Copyright © 2023 veladan. All rights reserved.
 //
 
+import BoilerLib
+
 extension User: CoreDataStackEntity {
-    typealias TypeEntity = User
+    public typealias TypeEntity = User
 }

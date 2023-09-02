@@ -9,18 +9,18 @@
 import Foundation
 import UIKit
 
-enum Http {
+public enum Http {
 
 enum Constant {
     static let railsDefaultDateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 }
 
-enum Result<Response> {
+public enum Result<Response> {
     case success(Response)
     case error(Int, String)
 }
 
-enum Method {
+public enum Method {
     case get
     case post
     case put
@@ -34,16 +34,16 @@ enum Error: Swift.Error {
 
 // MARK: - Http Endpoint
 
-typealias Parameters = [String: Any]
-typealias Path = String
+public typealias Parameters = [String: Any]
+public typealias Path = String
 
-final class Endpoint<Response> {
+public final class Endpoint<Response> {
     let method: Method
     let path: Path
     let parameters: Parameters?
     let decode: (Data) throws -> Response
 
-    init(method: Method,
+    public init(method: Method,
          path: Path,
          parameters: Parameters? = nil,
          decode: @escaping (Data) throws -> Response) {
@@ -81,7 +81,7 @@ final class Endpoint<Response> {
 
 // MARK: - Endpoint extensions
 
-extension Http.Endpoint where Response: Swift.Decodable {
+public extension Http.Endpoint where Response: Swift.Decodable {
     convenience init(method: Http.Method,
                      path: Http.Path,
                      parameters: Http.Parameters? = nil) {
@@ -95,7 +95,7 @@ extension Http.Endpoint where Response: Swift.Decodable {
     }
 }
 
-extension Http.Endpoint where Response == Void {
+public extension Http.Endpoint where Response == Void {
     convenience init(method: Http.Method,
                      path: Http.Path,
                      parameters: Http.Parameters? = nil) {

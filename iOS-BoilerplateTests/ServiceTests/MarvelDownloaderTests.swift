@@ -6,6 +6,7 @@
 //  Copyright © 2023 veladan. All rights reserved.
 //
 
+@testable import BoilerLib
 @testable import iOS_Boilerplate
 import XCTest
 

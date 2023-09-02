@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol Dictionarizable {
+public protocol Dictionarizable {
     var dictionarized: [String: Any] { get }
 }
 
-extension Dictionarizable {
+public extension Dictionarizable {
     /// Convert to arrays, one with the keys and other with the values, into a Dictionary<String:Any>
     /// Removes nil values
     func dictionarize(_ keys: [String], _ values: [Any?]) -> [String: Any] {

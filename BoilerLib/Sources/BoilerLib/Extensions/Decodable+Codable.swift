@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Decodable {
+public extension Decodable {
     /// Decode this object from a json from a Data object
     static func decode<T: Decodable>(object jsonData: Data) -> T? {
         let decoder = JSONDecoder()
@@ -38,7 +38,7 @@ extension Decodable {
     }
 }
 
-extension Encodable {
+public extension Encodable {
     /// Encode this object into a Data object of type json
     static func encode<T: Encodable>(object: T) -> Data? {
         let encoder = JSONEncoder()

@@ -5,6 +5,8 @@
 //  Created by Daniel Vela on 14/4/21.
 //
 
+import BoilerLib
+
 struct MarvelServiceError: Error {
     var id: Int
     var description: String

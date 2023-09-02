@@ -9,13 +9,13 @@
 import Foundation
 
 extension Http {
-class Client {
+public class Client {
     private let session: URLSession!
     private let baseURL: URL!
     private let queue = DispatchQueue(label: "ClientHttpQueue")
     private var dataTask: URLSessionDataTask?
 
-    init(baseURL: String, basePath: String, defaultHeaders: [AnyHashable: Any]? = nil) {
+    public init(baseURL: String, basePath: String, defaultHeaders: [AnyHashable: Any]? = nil) {
         guard let url = URL(string: baseURL)?.appendingPathComponent(basePath) else {
             fatalError("Invalid url or base path: \(baseURL) - \(basePath)")
         }
@@ -30,7 +30,7 @@ class Client {
     ///               The response will be decoded to this format
     /// - param completion: this block will be called at the end of the processing, with the resul or the error
     ///
-    func request<Response>(_ endpoint: Http.Endpoint<Response>,
+    public func request<Response>(_ endpoint: Http.Endpoint<Response>,
                            completion: @escaping (Http.Result<Response>) -> Void) {
         guard dataTask == nil else {
             fatalError("Trying to launch a data task before finising previous.")
@@ -83,7 +83,7 @@ class Client {
     ///               The response will be decoded to this format
     /// - param completion: this block will be called at the end of the processing, with the resul or the error
     ///
-    func request<Response>(_ endpoint: Http.Endpoint<Response>) async throws -> Response {
+    public func request<Response>(_ endpoint: Http.Endpoint<Response>) async throws -> Response {
         guard endpoint.method == .get else {
             fatalError("This method only handle GET")
         }

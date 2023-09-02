@@ -7,6 +7,7 @@
 //
 
 import CoreData
+import BoilerLib
 import SwiftUI
 
 struct ContentView: View {

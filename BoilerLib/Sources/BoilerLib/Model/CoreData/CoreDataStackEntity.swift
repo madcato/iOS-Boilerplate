@@ -8,11 +8,11 @@
 
 import CoreData
 
-protocol CoreDataStackEntity {
+public protocol CoreDataStackEntity {
     associatedtype TypeEntity
 }
 
-extension CoreDataStackEntity {
+public extension CoreDataStackEntity {
     static func all(from database: CoreDataStack) -> [TypeEntity]? {
         database.getObjects(ofType: String(describing: TypeEntity.self)) as? [TypeEntity]
     }

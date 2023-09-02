@@ -8,7 +8,7 @@
 import Foundation
 import StoreKit
 
-protocol StoreKitDelegate: class {
+protocol StoreKitDelegate: AnyObject {
     func productsDownloaded(_ availableProducts: [String: SKProduct])
     func paymentStarted()
     func restoreStarted()

@@ -8,6 +8,7 @@
 
 // SAMPLE CODE
 
+import BoilerLib
 import Foundation
 
 enum MarvelAPI {

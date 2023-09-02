@@ -6,11 +6,14 @@
 //  Copyright © 2018 veladan. All rights reserved.
 //
 
-@testable import iOS_Boilerplate
+@testable import BoilerLib
 import XCTest
 
 class MockAPIClient: Http.Client {
-    var objectToReturn: Http.Result<Marvel.ResponseDto>?
+    struct ResponseDto: Codable {
+        var name: String
+    }
+    var objectToReturn: Http.Result<ResponseDto>?
 
     init() {
         super.init(baseURL: "http://www.server.com", basePath: "/path")

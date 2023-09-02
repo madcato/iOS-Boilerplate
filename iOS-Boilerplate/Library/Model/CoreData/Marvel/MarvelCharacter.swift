@@ -6,6 +6,8 @@
 //  Copyright © 2023 veladan. All rights reserved.
 //
 
+import BoilerLib
+
 extension MarvelCharacter: CoreDataStackEntity {
-    typealias TypeEntity = MarvelCharacter
+    public typealias TypeEntity = MarvelCharacter
 }

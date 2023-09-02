@@ -9,14 +9,14 @@
 import Combine
 import SwiftUI
 
-struct URLImage: View {
+public struct URLImage: View {
     @StateObject private var loader: ImageLoader
 
-    init(url: URL) {
+    public init(url: URL) {
         _loader = StateObject(wrappedValue: ImageLoader(url: url))
     }
 
-    var body: some View {
+    public var body: some View {
         if let image = loader.image {
             Image(uiImage: image)
                 .resizable()
@@ -26,7 +26,7 @@ struct URLImage: View {
     }
 }
 
-class ImageLoader: ObservableObject {
+public class ImageLoader: ObservableObject {
     @Published var image: UIImage?
 
     var url: URL

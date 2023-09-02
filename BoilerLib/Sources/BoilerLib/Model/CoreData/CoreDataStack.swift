@@ -10,10 +10,10 @@ import CoreData
 import Foundation
 
 // swiftlint:disable type_body_length
-class CoreDataStack: NSObject, ObservableObject {
+public class CoreDataStack: NSObject, ObservableObject {
     let persistentContainer: NSPersistentContainer!
 
-    init(modelName: String, testing: Bool = false) {
+    public init(modelName: String, testing: Bool = false) {
         assert(Thread.current.isMainThread == true) // Create this variable from the main thread
         self.persistentContainer = NSPersistentContainer(name: modelName)
         self.persistentContainer.loadPersistentStores { _, error in
@@ -25,7 +25,7 @@ class CoreDataStack: NSObject, ObservableObject {
         self.managedObjectContext.automaticallyMergesChangesFromParent = true
     }
 
-    init(backgroundWithMaster database: CoreDataStack) {
+    public init(backgroundWithMaster database: CoreDataStack) {
         assert(Thread.current.isMainThread == false) // Create this variable from a background thread
         self.persistentContainer = database.persistentContainer
         self.managedObjectContext = database.persistentContainer.newBackgroundContext()
@@ -135,11 +135,11 @@ class CoreDataStack: NSObject, ObservableObject {
         persistentContainer.persistentStoreCoordinator
     }
 
-    internal var managedObjectContext: NSManagedObjectContext
+    public var managedObjectContext: NSManagedObjectContext
 
     // MARK: - Core Data Saving support
 
-    func saveContext () {
+    public func saveContext () {
         if managedObjectContext.hasChanges {
             do {
                 try managedObjectContext.save()
@@ -165,12 +165,12 @@ class CoreDataStack: NSObject, ObservableObject {
     }
 
     // MARK: - Core Data quering
-    func getObject<T: NSManagedObject>(byId id: NSManagedObjectID) -> T? {
+    public func getObject<T: NSManagedObject>(byId id: NSManagedObjectID) -> T? {
         let obj = self.managedObjectContext.object(with: id) as? T
         return obj
     }
 
-    func getObject<T: NSManagedObject>(ofType entityName: String, _ wherePredicate: Where) -> T? {
+    public func getObject<T: NSManagedObject>(ofType entityName: String, _ wherePredicate: Where) -> T? {
         let fetchRequest = NSFetchRequest<T>()
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
         assert(entity != nil)
@@ -193,7 +193,7 @@ class CoreDataStack: NSObject, ObservableObject {
         }
     }
 
-    func getObjects(ofType entityName: String,
+    public func getObjects(ofType entityName: String,
                     _ sortBy: SortBy? = nil,
                     _ wherePredicate: Where? = nil) -> [Any] {
         let fetchRequest = NSFetchRequest<NSManagedObject>()
@@ -218,7 +218,7 @@ class CoreDataStack: NSObject, ObservableObject {
         }
     }
 
-    func createFetchedResultsController<T: NSManagedObject>(_ entityName: String,
+    public func createFetchedResultsController<T: NSManagedObject>(_ entityName: String,
                                                             _ sortBy: SortBy? = nil,
                                                             _ wherePredicate: Where? = nil,
                                                             sectionNameKeyPath: String? = nil) ->
@@ -243,7 +243,7 @@ class CoreDataStack: NSObject, ObservableObject {
             return aFetchedResultsController
     }
 
-    func fetch<T: NSManagedObject>(_ fetchedResultController: NSFetchedResultsController<T>) {
+    public func fetch<T: NSManagedObject>(_ fetchedResultController: NSFetchedResultsController<T>) {
         do {
             try fetchedResultController.performFetch()
         } catch let error as NSError {
@@ -251,18 +251,17 @@ class CoreDataStack: NSObject, ObservableObject {
         }
     }
 
-    @available(iOS 10.0, *)
-    func createObject<T: NSManagedObject>() -> T {
+    public func createObject<T: NSManagedObject>() -> T {
         T(context: self.managedObjectContext)
     }
 
-    func createObject(entityName: String) -> NSManagedObject {
+    public func createObject(entityName: String) -> NSManagedObject {
         let managedObject = NSEntityDescription.insertNewObject(forEntityName: entityName,
                                                                 into: self.managedObjectContext)
         return managedObject
     }
 
-    func deleteObjects(_ entityName: String, wherePredicate: Where? = nil) {
+    public func deleteObjects(_ entityName: String, wherePredicate: Where? = nil) {
         let fetchRequest = NSFetchRequest<NSManagedObject>()
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: self.managedObjectContext)
         assert(entity != nil)
@@ -282,11 +281,11 @@ class CoreDataStack: NSObject, ObservableObject {
         }
     }
 
-    func delete(_ object: NSManagedObject) {
+    public func delete(_ object: NSManagedObject) {
         self.managedObjectContext.delete(object)
     }
 
-    func deleteAll(entities entityName: String) {
+    public func deleteAll(entities entityName: String) {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entityName)
         fetchRequest.includesPropertyValues = false
         do {
@@ -301,7 +300,7 @@ class CoreDataStack: NSObject, ObservableObject {
 
     }
 
-    func count(_ entityName: String) -> Int {
+    public func count(_ entityName: String) -> Int {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         request.includesPropertyValues = false
         do {
@@ -333,7 +332,7 @@ class CoreDataStack: NSObject, ObservableObject {
     }
 }
 
-class Where {
+public class Where {
     var predicate: NSPredicate
 
     init(predicate: String, arguments: [Any]? = nil) {
@@ -341,7 +340,7 @@ class Where {
     }
 }
 
-class SortBy {
+public class SortBy {
     var sortDescriptors: [NSSortDescriptor]
 
     // Sample:

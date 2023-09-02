@@ -6,6 +6,7 @@
 //  Copyright © 2023 veladan. All rights reserved.
 //
 
+import BoilerLib
 import CoreData
 import SwiftUI
 
