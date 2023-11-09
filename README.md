@@ -244,9 +244,48 @@ classDiagram
   }
   class ConcreteIntent1 {
     value anyValue
+    block success()
+    block error()
   }
   class ConcreteIntent2 {
     String anyString
     Int anyInt
+    block success()
+    block customReturn()
+    block error()
+  }
+  class ConcreteReducer1 {
+    reduce(any ConcreteIntent1)
+  }
+  class ConcreteReducer2 {
+    reduce(any ConcreteIntent2)
   }
 ```
+
+### Callbacks
+
+When a concrete reducer must answer some data to the object that started the reduction, all the data must be returned by blocks of code. This includes errors, secuences, or any custom return value. Blocks can be called asynchronously
+
+## PR and versioning
+
+Best method to keep a good flow of commits and merges is to use Gitlab Flow ([What is GitLab Flow?](https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/)).
+
+If your are developing alone, and you don't require to have different versions published at the same time, best is to use `main` branch as production one. Then each new feature or fix can be developed and tested in its own branch. Finally that branch can be merged directly to `main` branch to be published in the next upload to production.
+
+To manage versions best solution is to create tags. Each time you make a PR merge, check if the new changes are a `major` change, `minor` change or a `fix`. Then follow the instructions in the following section.
+
+Each new PR merged into `main` should be tagged with its versión, or use this version change only when publishing.
+
+### Versioning and tagging
+
+Usually versions have four numbers (three main, one for build if necessary), and also sometimes a suffix is needed to specify what kind of version is this.
+
+- `major` Change this number by adding one when the changes make this version become imcompatibe with previous one, and users must create new accounts or to migrate data from one an another. What best determine this is the data integrity: if a new verision make user data incompatible with previous one, then is a **major** change. But also can use this change to specify great changes in the app, like changing entire UI.
+- `minor` This number indicates one or more feature addition. But the app doesn't require data migration, or any other great change. Minor versions usually indicate that this app, library or code is compatible with previous minor versions.
+- `fix` Change this number when you are adding only features fixes.
+- `build` This number indicates a new build of the same code. Usually used in pre-production enviroments to help QA to identify what is the version where they found bugs.
+- `suffix` This identifier usually is some text to distinguish between different compilations, like different tarjets `.arm`, `.x86`, also to mark the state of the release `.alpha`, `.beta`, `.candidate`
+
+### Merging policy
+
+The best merge policies are **Squash and Merge** or **Squash and Rebase** (the last one keeps `main` branch cleaner),the **squash** is really useful avoid leaving a lot of commits into the `main` branch.
