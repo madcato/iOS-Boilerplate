@@ -29,10 +29,14 @@ Project
 │   │   └───Migration          // Classes and models for persisted data migrations
 │   │                          //  between versions
 │   │
-│   └───Library                 // keep in this group all shared code between features
+|   └───Features               // Features must be the real base of hole app.
+|   |   |
+|   |   └───SampleFeature1     // Each feature will have its own subdirectory structure
+│   │
+│   └───Shared                 // keep in this group all shared code between features
 │   │   │
-│   │   └───Configuration       // Classes with the app configuration, like serverURL 
-│   │   └───Model               // Persisted data model
+│   │   └───Configuration      // Classes with the app configuration, like serverURL 
+│   │   └───Model              // Shared data model. Each Features will have its own models
 │   │   └───Services
 │   │   └───Extensions
 │   │
@@ -57,7 +61,7 @@ Project
 │       └───plist
 │   
 │
-└───Frameworks                // External projects,libraries and frameworks
+└───Frameworks                // External projects, Swift Pacages, libraries and frameworks
 │    │
 │    └───CoreMotion.framework
 │    │   libz.dylib
@@ -108,7 +112,7 @@ Project
 - [Swift style guide](wiki) Mantain in your wiki the conventions used by your team
   [Use Linkeding swift style guide](https://github.com/linkedin/swift-style-guide)
 
-## HowTo install
+## How To install
 
 ### Requirements
 
@@ -197,12 +201,50 @@ Upload those screenshots files to the App Store with: `$ fastlane deliver`
 ## Localization helpers
 
 ### LocalizedString
+
 Use class **LocalizedString** to handle localizations in models and view models.
 
     let label = LocalizedString(label: "main_name")
     uiLabel <= label
 
 ### LocalizedLabel
+
 This class inherits from UILabel. Use this class to auto localize the text of a label loaded from a UIStoryboard. Create a UILabel control in yout Interface Builder, then change the field "Custom class" from UILabel to LocalizedLabel, and set in the "text" field the identifier of the label to be translated.
 
+## Architecture
 
+Don't use a mainstream architecture because of 'everyone do it'.
+
+One methodology to make different parts of your app indepdendent from each other y to use a **ReducerCenter**.
+
+## Reducer architecture
+
+- **ReducerCenter.shared** is a singleton where each object that want to reduce some operation (called intents), must registered. Any code that want a reduction of an operation, must create an object of an **Intent** subclass, initialize it and pass it to the **ReducerCenter.shared.reduce(operation: any Intent)** method.
+- **Intent** Any struct that represent an operation to be reduced must implement this interface. Intents are only a way to make independent some clases: doesn't represent only to a user action, system event, notification. It can represent anything that must be reduced to other state.
+- **Reducer** Any object that want to behave as a reducer of intents must implement this interface. Then it must implement the **reduce** method and be registered in the **ReducerCenter**.
+
+---
+title: Reducer architecture diagram
+---
+classDiagram
+  ReducerCenter o-- Reducer
+  Intent <|-- ConcreteIntent1
+  Intent <|-- ConcreteIntent2
+  Reducer <|-- ConcreteReducer1
+  Reducer <|-- ConcreteReducer2
+  ConcreteReducer1 ..> ConcreteIntent1
+  ConcreteReducer2 ..> ConcreteIntent2
+  class ReducerCenter {
+    reduce(any Intent)
+    registry(any Intent, any Reducer)
+  }
+  class Reducer {
+    reduce(any Intent)
+  }
+  class ConcreteIntent1 {
+    value anyValue
+  }
+  class ConcreteIntent2 {
+    String anyString
+    Int anyInt
+  }
