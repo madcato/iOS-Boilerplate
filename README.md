@@ -223,6 +223,7 @@ One methodology to make different parts of your app indepdendent from each other
 - **Intent** Any struct that represent an operation to be reduced must implement this interface. Intents are only a way to make independent some clases: doesn't represent only to a user action, system event, notification. It can represent anything that must be reduced to other state.
 - **Reducer** Any object that want to behave as a reducer of intents must implement this interface. Then it must implement the **reduce** method and be registered in the **ReducerCenter**.
 
+```mermaid
 ---
 title: Reducer architecture diagram
 ---
@@ -248,3 +249,4 @@ classDiagram
     String anyString
     Int anyInt
   }
+```
