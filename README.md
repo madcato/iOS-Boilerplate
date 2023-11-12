@@ -29,10 +29,14 @@ Project
 │   │   └───Migration          // Classes and models for persisted data migrations
 │   │                          //  between versions
 │   │
-│   └───Library                 // keep in this group all shared code between features
+|   └───Features               // Features must be the real base of hole app.
+|   |   |
+|   |   └───SampleFeature1     // Each feature will have its own subdirectory structure
+│   │
+│   └───Shared                 // keep in this group all shared code between features
 │   │   │
-│   │   └───Configuration       // Classes with the app configuration, like serverURL 
-│   │   └───Model               // Persisted data model
+│   │   └───Configuration      // Classes with the app configuration, like serverURL 
+│   │   └───Model              // Shared data model. Each Features will have its own models
 │   │   └───Services
 │   │   └───Extensions
 │   │
@@ -57,7 +61,7 @@ Project
 │       └───plist
 │   
 │
-└───Frameworks                // External projects,libraries and frameworks
+└───Frameworks                // External projects, Swift Pacages, libraries and frameworks
 │    │
 │    └───CoreMotion.framework
 │    │   libz.dylib
@@ -108,7 +112,7 @@ Project
 - [Swift style guide](wiki) Mantain in your wiki the conventions used by your team
   [Use Linkeding swift style guide](https://github.com/linkedin/swift-style-guide)
 
-## HowTo install
+## How To install
 
 ### Requirements
 
@@ -197,12 +201,91 @@ Upload those screenshots files to the App Store with: `$ fastlane deliver`
 ## Localization helpers
 
 ### LocalizedString
+
 Use class **LocalizedString** to handle localizations in models and view models.
 
     let label = LocalizedString(label: "main_name")
     uiLabel <= label
 
 ### LocalizedLabel
+
 This class inherits from UILabel. Use this class to auto localize the text of a label loaded from a UIStoryboard. Create a UILabel control in yout Interface Builder, then change the field "Custom class" from UILabel to LocalizedLabel, and set in the "text" field the identifier of the label to be translated.
 
+## Architecture
 
+Don't use a mainstream architecture because of 'everyone do it'.
+
+One methodology to make different parts of your app indepdendent from each other y to use a **ReducerCenter**.
+
+## Reducer architecture
+
+- **ReducerCenter.shared** is a singleton where each object that want to reduce some operation (called intents), must registered. Any code that want a reduction of an operation, must create an object of an **Intent** subclass, initialize it and pass it to the **ReducerCenter.shared.reduce(operation: any Intent)** method.
+- **Intent** Any struct that represent an operation to be reduced must implement this interface. Intents are only a way to make independent some clases: doesn't represent only to a user action, system event, notification. It can represent anything that must be reduced to other state.
+- **Reducer** Any object that want to behave as a reducer of intents must implement this interface. Then it must implement the **reduce** method and be registered in the **ReducerCenter**.
+
+```mermaid
+---
+title: Reducer architecture diagram
+---
+classDiagram
+  ReducerCenter o-- Reducer
+  Intent <|-- ConcreteIntent1
+  Intent <|-- ConcreteIntent2
+  Reducer <|-- ConcreteReducer1
+  Reducer <|-- ConcreteReducer2
+  ConcreteReducer1 ..> ConcreteIntent1
+  ConcreteReducer2 ..> ConcreteIntent2
+  class ReducerCenter {
+    reduce(any Intent)
+    registry(any Intent, any Reducer)
+  }
+  class Reducer {
+    reduce(any Intent)
+  }
+  class ConcreteIntent1 {
+    value anyValue
+    block success()
+    block error()
+  }
+  class ConcreteIntent2 {
+    String anyString
+    Int anyInt
+    block success()
+    block customReturn()
+    block error()
+  }
+  class ConcreteReducer1 {
+    reduce(any ConcreteIntent1)
+  }
+  class ConcreteReducer2 {
+    reduce(any ConcreteIntent2)
+  }
+```
+
+### Callbacks
+
+When a concrete reducer must answer some data to the object that started the reduction, all the data must be returned by blocks of code. This includes errors, secuences, or any custom return value. Blocks can be called asynchronously
+
+## PR and versioning
+
+Best method to keep a good flow of commits and merges is to use Gitlab Flow ([What is GitLab Flow?](https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/)).
+
+If your are developing alone, and you don't require to have different versions published at the same time, best is to use `main` branch as production one. Then each new feature or fix can be developed and tested in its own branch. Finally that branch can be merged directly to `main` branch to be published in the next upload to production.
+
+To manage versions best solution is to create tags. Each time you make a PR merge, check if the new changes are a `major` change, `minor` change or a `fix`. Then follow the instructions in the following section.
+
+Each new PR merged into `main` should be tagged with its versión, or use this version change only when publishing.
+
+### Versioning and tagging
+
+Usually versions have four numbers (three main, one for build if necessary), and also sometimes a suffix is needed to specify what kind of version is this.
+
+- `major` Change this number by adding one when the changes make this version become imcompatibe with previous one, and users must create new accounts or to migrate data from one an another. What best determine this is the data integrity: if a new verision make user data incompatible with previous one, then is a **major** change. But also can use this change to specify great changes in the app, like changing entire UI.
+- `minor` This number indicates one or more feature addition. But the app doesn't require data migration, or any other great change. Minor versions usually indicate that this app, library or code is compatible with previous minor versions.
+- `fix` Change this number when you are adding only features fixes.
+- `build` This number indicates a new build of the same code. Usually used in pre-production enviroments to help QA to identify what is the version where they found bugs.
+- `suffix` This identifier usually is some text to distinguish between different compilations, like different tarjets `.arm`, `.x86`, also to mark the state of the release `.alpha`, `.beta`, `.candidate`
+
+### Merging policy
+
+The best merge policies are **Squash and Merge** or **Squash and Rebase** (the last one keeps `main` branch cleaner),the **squash** is really useful avoid leaving a lot of commits into the `main` branch.
