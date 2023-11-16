@@ -5,7 +5,7 @@
 //  Created by Daniel Vela on 14/4/21.
 //
 
-import BoilerLib
+import BLNetwork
 
 struct MarvelServiceError: Error {
     var id: Int
