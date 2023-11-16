@@ -6,7 +6,8 @@
 //  Copyright © 2023 veladan. All rights reserved.
 //
 
-import BoilerLib
+import BLUtility
+
 import Foundation
 
 /// This class downloads a limited amount of Marvel characters and stores them into
