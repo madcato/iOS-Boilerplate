@@ -6,7 +6,7 @@
 //  Copyright © 2023 veladan. All rights reserved.
 //
 
-import BoilerLib
+import BLUtility
 import SwiftUI
 
 struct UserList: View {

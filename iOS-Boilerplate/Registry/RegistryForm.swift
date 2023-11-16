@@ -6,8 +6,8 @@
 //  Copyright © 2023 veladan. All rights reserved.
 //
 
-import BoilerLib
 import CoreData
+import BLUtility
 import SwiftUI
 
 struct RegistryForm: View {
